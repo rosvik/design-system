@@ -1,9 +1,9 @@
-# `@atb/theme`
+# `@atb-as/theme`
 
 ## Install
 
 ```sh
-yarn add @atb/theme
+yarn add @atb-as/theme
 ```
 
 ## Usage
@@ -11,14 +11,14 @@ yarn add @atb/theme
 Import through `ts`/`js`:
 
 ```ts
-import {colors} from '@atb/theme';
+import {colors} from '@atb-as/theme';
 
 console.log(colors.primary.gray_100); //=> #F5F5F6
 console.log(colors.text.dark); //=> #000000
 ```
 
 ```ts
-import {themes} from '@atb/theme';
+import {themes} from '@atb-as/theme';
 
 console.log(themes.light.colors.background_0);
 ```

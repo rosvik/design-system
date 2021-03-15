@@ -1,5 +1,5 @@
 {
-  "name": "@atb/design-system",
+  "name": "@atb-as/design-system",
   "version": "1.0.0",
   "description": "Collection of packages for managing colors, themes and shared design",
   "main": "index.js",

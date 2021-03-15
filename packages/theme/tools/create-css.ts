@@ -46,6 +46,8 @@ function theme(themeName: Mode) {
   return `.${themeName} {
 ${extract('border')}
 
+${extract('spacings')}
+
 ${extract('icon')}
 
 ${extract('text')}

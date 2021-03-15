@@ -6,8 +6,7 @@
   "license": "EUPL-1.2",
   "private": true,
   "workspaces": [
-    "packages/*",
-    "web"
+    "packages/*"
   ],
   "keywords": [
     "design system",

@@ -27,6 +27,23 @@ console.log(themes.light.colors.background_0);
 
 Or you could import CSS files or as CSS Modules. The actual content is currently the same, but named differently to be imported by CSS modules.
 
+#### Theming with CSS
+
+Uses CSS Custom Properties to do theming. This means by default it only support newer browsers. This needs to be compansated for by the consumer if wanted.
+By setting class `light` or `dark` on a parent component the cascading of custom props will change the theme. This means we can set what level we want the theming to operate on.
+
+```html
+<body class="light">
+  <!-- My content -->
+</body>
+
+<body class="dark">
+  <!-- My content -->
+</body>
+```
+
+**You must set either `light` or `dark` for themes to work.**
+
 #### Regular CSS
 
 With regular CSS.

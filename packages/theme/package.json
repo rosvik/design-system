@@ -27,5 +27,8 @@
   "dependencies": {
     "hex-to-rgba": "^2.0.1"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "gitHead": "8233949a173570decf614d6279c538904e4e471d"
 }

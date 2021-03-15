@@ -5,8 +5,8 @@
     "declaration": true,
     "outDir": "./lib",
     "sourceMap": true,
-    "noEmit": true
+    "noEmit": false
   },
-  "exclude": ["node_modules", "lib"],
-  "include": ["src", "tools"]
+  "exclude": ["node_modules", "lib", "tools"],
+  "include": ["src"]
 }

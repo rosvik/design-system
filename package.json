@@ -24,6 +24,7 @@
     "clean": "lerna run clean",
     "pub": "lerna publish",
     "bootstrap": "lerna bootstrap",
-    "build-all": "lerna run build"
+    "build-all": "lerna run build",
+    "pack-all": "lerna run pack"
   }
 }

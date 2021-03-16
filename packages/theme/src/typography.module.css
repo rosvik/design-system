@@ -1,0 +1,144 @@
+
+/* Require included fonts. Fetched from URLs and not locally
+   to leverage better CDN caching. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Base Typgraphy Custom Properties */
+:root {
+  /* Definitions for body__primary */
+  --baseTypo-body__primary-fontSize: 1rem;
+  --baseTypo-body__primary-lineHeight: 1.25rem;
+  --baseTypo-body__primary-letterSpacing: 0.03125rem;
+
+  /* Definitions for body__primary--bold */
+  --baseTypo-body__primary--bold-fontSize: 1rem;
+  --baseTypo-body__primary--bold-lineHeight: 1.25rem;
+  --baseTypo-body__primary--bold-letterSpacing: 0.03125rem;
+  --baseTypo-body__primary--bold-fontWeight: 500;
+
+  /* Definitions for body__primary--underline */
+  --baseTypo-body__primary--underline-fontSize: 1rem;
+  --baseTypo-body__primary--underline-lineHeight: 1.25rem;
+  --baseTypo-body__primary--underline-letterSpacing: 0.03125rem;
+  --baseTypo-body__primary--underline-textDecorationLine: underline;
+
+  /* Definitions for body__primary--jumbo */
+  --baseTypo-body__primary--jumbo-fontSize: 2rem;
+  --baseTypo-body__primary--jumbo-lineHeight: 2.5rem;
+  --baseTypo-body__primary--jumbo-letterSpacing: 0.015625rem;
+
+  /* Definitions for body__secondary */
+  --baseTypo-body__secondary-fontSize: 0.875rem;
+  --baseTypo-body__secondary-lineHeight: 1.25rem;
+  --baseTypo-body__secondary-letterSpacing: 0.015625rem;
+
+  /* Definitions for body__secondary--bold */
+  --baseTypo-body__secondary--bold-fontSize: 0.875rem;
+  --baseTypo-body__secondary--bold-lineHeight: 1.25rem;
+  --baseTypo-body__secondary--bold-letterSpacing: 0.015625rem;
+  --baseTypo-body__secondary--bold-fontWeight: 500;
+
+  /* Definitions for body__tertiary */
+  --baseTypo-body__tertiary-fontSize: 0.75rem;
+  --baseTypo-body__tertiary-lineHeight: 1rem;
+  --baseTypo-body__tertiary-letterSpacing: 0.025rem;
+
+  /* Definitions for body__tertiary--strike */
+  --baseTypo-body__tertiary--strike-fontSize: 0.75rem;
+  --baseTypo-body__tertiary--strike-lineHeight: 1rem;
+  --baseTypo-body__tertiary--strike-letterSpacing: 0.025rem;
+  --baseTypo-body__tertiary--strike-textDecorationLine: line-through;
+
+  /* Definitions for heading__title */
+  --baseTypo-heading__title-fontSize: 1rem;
+  --baseTypo-heading__title-lineHeight: 1.25rem;
+  --baseTypo-heading__title-letterSpacing: 0.03125rem;
+  --baseTypo-heading__title-fontWeight: bold;
+
+  /* Definitions for heading__component */
+  --baseTypo-heading__component-fontSize: 1rem;
+  --baseTypo-heading__component-lineHeight: 1.25rem;
+  --baseTypo-heading__component-letterSpacing: 0.03125rem;
+  --baseTypo-heading__component-fontWeight: 500;
+
+  /* Definitions for heading__paragraph */
+  --baseTypo-heading__paragraph-fontSize: 1rem;
+  --baseTypo-heading__paragraph-lineHeight: 1.25rem;
+  --baseTypo-heading__paragraph-letterSpacing: 0.03125rem;
+  --baseTypo-heading__paragraph-fontWeight: 500;
+
+
+  /* Included font types */
+  --font-main: 'Roboto', sans-serif;
+}
+
+/* Main setup, base size and main font */
+:global(html) {
+  font-family: var(--font-main);
+  /* Default base size. */
+  font-size: 16px;
+}
+
+/* Typography definitions */
+.typo-body__primary {
+  font-size: var(--baseTypo-body__primary-fontSize, 1rem);
+  line-height: var(--baseTypo-body__primary-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-body__primary-letterSpacing, 0.03125rem);
+}
+.typo-body__primary--bold {
+  font-size: var(--baseTypo-body__primary--bold-fontSize, 1rem);
+  line-height: var(--baseTypo-body__primary--bold-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-body__primary--bold-letterSpacing, 0.03125rem);
+  font-weight: var(--baseTypo-body__primary--bold-fontWeight, 500);
+}
+.typo-body__primary--underline {
+  font-size: var(--baseTypo-body__primary--underline-fontSize, 1rem);
+  line-height: var(--baseTypo-body__primary--underline-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-body__primary--underline-letterSpacing, 0.03125rem);
+  text-decoration: var(--baseTypo-body__primary--underline-textDecorationLine, underline);
+}
+.typo-body__primary--jumbo {
+  font-size: var(--baseTypo-body__primary--jumbo-fontSize, 2rem);
+  line-height: var(--baseTypo-body__primary--jumbo-lineHeight, 2.5rem);
+  letter-spacing: var(--baseTypo-body__primary--jumbo-letterSpacing, 0.015625rem);
+}
+.typo-body__secondary {
+  font-size: var(--baseTypo-body__secondary-fontSize, 0.875rem);
+  line-height: var(--baseTypo-body__secondary-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-body__secondary-letterSpacing, 0.015625rem);
+}
+.typo-body__secondary--bold {
+  font-size: var(--baseTypo-body__secondary--bold-fontSize, 0.875rem);
+  line-height: var(--baseTypo-body__secondary--bold-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-body__secondary--bold-letterSpacing, 0.015625rem);
+  font-weight: var(--baseTypo-body__secondary--bold-fontWeight, 500);
+}
+.typo-body__tertiary {
+  font-size: var(--baseTypo-body__tertiary-fontSize, 0.75rem);
+  line-height: var(--baseTypo-body__tertiary-lineHeight, 1rem);
+  letter-spacing: var(--baseTypo-body__tertiary-letterSpacing, 0.025rem);
+}
+.typo-body__tertiary--strike {
+  font-size: var(--baseTypo-body__tertiary--strike-fontSize, 0.75rem);
+  line-height: var(--baseTypo-body__tertiary--strike-lineHeight, 1rem);
+  letter-spacing: var(--baseTypo-body__tertiary--strike-letterSpacing, 0.025rem);
+  text-decoration: var(--baseTypo-body__tertiary--strike-textDecorationLine, line-through);
+}
+.typo-heading__title {
+  font-size: var(--baseTypo-heading__title-fontSize, 1rem);
+  line-height: var(--baseTypo-heading__title-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-heading__title-letterSpacing, 0.03125rem);
+  font-weight: var(--baseTypo-heading__title-fontWeight, bold);
+}
+.typo-heading__component {
+  font-size: var(--baseTypo-heading__component-fontSize, 1rem);
+  line-height: var(--baseTypo-heading__component-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-heading__component-letterSpacing, 0.03125rem);
+  font-weight: var(--baseTypo-heading__component-fontWeight, 500);
+}
+.typo-heading__paragraph {
+  font-size: var(--baseTypo-heading__paragraph-fontSize, 1rem);
+  line-height: var(--baseTypo-heading__paragraph-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-heading__paragraph-letterSpacing, 0.03125rem);
+  font-weight: var(--baseTypo-heading__paragraph-fontWeight, 500);
+}

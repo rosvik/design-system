@@ -68,6 +68,12 @@
   --border-width-slim: 0.0625rem;
   --border-width-medium: 0.125rem;
 
+  --spacings-xLarge: 1.5rem;
+  --spacings-large: 1.25rem;
+  --spacings-medium: 0.75rem;
+  --spacings-small: 0.5rem;
+  --spacings-xSmall: 0.25rem;
+
   --icon-size-large: 1.75rem;
   --icon-size-normal: 1.25rem;
   --icon-size-small: 0.625rem;
@@ -128,6 +134,12 @@
   --border-width-slim: 0.0625rem;
   --border-width-medium: 0.125rem;
 
+  --spacings-xLarge: 1.5rem;
+  --spacings-large: 1.25rem;
+  --spacings-medium: 0.75rem;
+  --spacings-small: 0.5rem;
+  --spacings-xSmall: 0.25rem;
+
   --icon-size-large: 1.75rem;
   --icon-size-normal: 1.25rem;
   --icon-size-small: 0.625rem;
@@ -182,92 +194,74 @@
   background-color: var(--colors-background_0-backgroundColor);
   color: var(--colors-background_0-color);
 }
-
 .colors-background_1 {
   background-color: var(--colors-background_1-backgroundColor);
   color: var(--colors-background_1-color);
 }
-
 .colors-background_2 {
   background-color: var(--colors-background_2-backgroundColor);
   color: var(--colors-background_2-color);
 }
-
 .colors-background_3 {
   background-color: var(--colors-background_3-backgroundColor);
   color: var(--colors-background_3-color);
 }
-
 .colors-primary_1 {
   background-color: var(--colors-primary_1-backgroundColor);
   color: var(--colors-primary_1-color);
 }
-
 .colors-primary_2 {
   background-color: var(--colors-primary_2-backgroundColor);
   color: var(--colors-primary_2-color);
 }
-
 .colors-primary_3 {
   background-color: var(--colors-primary_3-backgroundColor);
   color: var(--colors-primary_3-color);
 }
-
 .colors-primary_destructive {
   background-color: var(--colors-primary_destructive-backgroundColor);
   color: var(--colors-primary_destructive-color);
 }
-
 .colors-secondary_1 {
   background-color: var(--colors-secondary_1-backgroundColor);
   color: var(--colors-secondary_1-color);
 }
-
 .colors-secondary_2 {
   background-color: var(--colors-secondary_2-backgroundColor);
   color: var(--colors-secondary_2-color);
 }
-
 .colors-secondary_3 {
   background-color: var(--colors-secondary_3-backgroundColor);
   color: var(--colors-secondary_3-color);
 }
-
 .colors-secondary_4 {
   background-color: var(--colors-secondary_4-backgroundColor);
   color: var(--colors-secondary_4-color);
 }
-
 .colors-transport_city {
   background-color: var(--colors-transport_city-backgroundColor);
   color: var(--colors-transport_city-color);
 }
-
 .colors-transport_region {
   background-color: var(--colors-transport_region-backgroundColor);
   color: var(--colors-transport_region-color);
 }
-
 .colors-transport_boat {
   background-color: var(--colors-transport_boat-backgroundColor);
   color: var(--colors-transport_boat-color);
 }
-
 .colors-transport_train {
   background-color: var(--colors-transport_train-backgroundColor);
   color: var(--colors-transport_train-color);
 }
-
 .colors-transport_airport {
   background-color: var(--colors-transport_airport-backgroundColor);
   color: var(--colors-transport_airport-color);
 }
-
 .colors-transport_plane {
   background-color: var(--colors-transport_plane-backgroundColor);
   color: var(--colors-transport_plane-color);
 }
-
 .colors-transport_other {
   background-color: var(--colors-transport_other-backgroundColor);
   color: var(--colors-transport_other-color);

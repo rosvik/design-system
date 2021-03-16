@@ -4313,6 +4313,11 @@ trim-off-newlines@^1.0.0:
   resolved "https://registry.yarnpkg.com/trim-off-newlines/-/trim-off-newlines-1.0.1.tgz#9f9ba9d9efa8764c387698bcbfeb2c848f11adb3"
   integrity sha1-n5up2e+odkw4dpi8v+sshI8RrbM=
 
+ts-deepmerge@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/ts-deepmerge/-/ts-deepmerge-1.0.7.tgz#8931501f750b3fb4d1e564d6753063fa3ed05298"
+  integrity sha512-zJInx1VKRn9S20n80P8/G19Xrov4xtcNFEUH0GwPfIUr24U/bNiw+I1X2RmQsnL2n0KT/7HQ6L5fbDuE7by/zw==
+
 ts-node@^9.1.1:
   version "9.1.1"
   resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-9.1.1.tgz#51a9a450a3e959401bda5f004a72d54b936d376d"

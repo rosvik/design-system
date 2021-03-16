@@ -1,6 +1,8 @@
 import hexToRgba from 'hex-to-rgba';
+import merge from 'ts-deepmerge';
 import {colors} from './colors';
-import {spacings, borderRadius, borderWidth, iconSizes} from './sizes';
+import {borderRadius, borderWidth, iconSizes, spacings} from './sizes';
+import {ConfigurationOverride, overrideConfig} from './utils/override-config';
 
 export type Themes = {
   light: Theme;
@@ -209,3 +211,57 @@ export const themes: Themes = {
     },
   },
 };
+
+/**
+ * Create new themes (light/dark) with optinally overriden defaults.
+ *
+ * @example extending nested features
+ * ```ts
+ * const themes = createThemes({
+ *   spacings: {
+ *     medium: 20,
+ *   },
+ * });
+ *
+ * themes.dark.spacings.medium;
+ * //=> 20
+ * ```
+ *
+ * @param overrides - Properties to override base themes with, on `Theme` level
+ * @returns themes
+ */
+export function createThemes(overrides?: ConfigurationOverride<Theme>): Themes {
+  if (!overrides) return themes;
+  return {
+    light: overrideConfig(themes.light, overrides),
+    dark: overrideConfig(themes.dark, overrides),
+  };
+}
+
+/**
+ * Use Theme as base and extend with new properties. Properties
+ * can be nested and will be deep merged.
+ *
+ * @example extending nested features
+ * ```ts
+ * type FooExtension = {
+ *   statusBarStyle: 'dark' | 'light';
+ * }
+ * const _themes = createExtendedThemes<FooExtension>({
+ *   statusBarStyle: 'dark'
+ * });
+ *
+ * _themes.dark.statusBarStyle;
+ * //=> (property) statusBarStyle: "dark" | "light"
+ * ) additional: boolean
+ * ```
+ *
+ * @param extension - Object to extend original theme. Can be nested with same keys
+ * @returns new deep merged intersection themes
+ */
+export function createExtendedThemes<T>(extension: T) {
+  return {
+    light: merge(themes.light, extension),
+    dark: merge(themes.dark, extension),
+  };
+}

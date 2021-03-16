@@ -1,0 +1,64 @@
+
+:root {
+
+/* Base Typgraphy Custom Properties */
+  --baseTypo-heroTitle-fontSize: 2rem;
+  --baseTypo-heroTitle-lineHeight: 2.5rem;
+
+  --baseTypo-pageTitle-fontSize: 1.625rem;
+  --baseTypo-pageTitle-lineHeight: 2rem;
+
+  --baseTypo-sectionHeadline-fontSize: 1.4375rem;
+  --baseTypo-sectionHeadline-lineHeight: 1.75rem;
+
+  --baseTypo-itemHeadline-fontSize: 1.25rem;
+  --baseTypo-itemHeadline-lineHeight: 1.5rem;
+
+  --baseTypo-paragraphHeadline-fontSize: 1rem;
+  --baseTypo-paragraphHeadline-lineHeight: 1.25rem;
+  --baseTypo-paragraphHeadline-fontWeight: 600;
+
+  --baseTypo-body-fontSize: 1rem;
+  --baseTypo-body-lineHeight: 1.25rem;
+
+  --baseTypo-lead-fontSize: 0.875rem;
+  --baseTypo-lead-lineHeight: 1.25rem;
+
+  --baseTypo-label-fontSize: 0.75rem;
+  --baseTypo-label-lineHeight: 1rem;
+}
+
+/* Typography definitions */
+.typo-heroTitle {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.typo-pageTitle {
+  font-size: 1.625rem;
+  line-height: 2rem;
+}
+.typo-sectionHeadline {
+  font-size: 1.4375rem;
+  line-height: 1.75rem;
+}
+.typo-itemHeadline {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+.typo-paragraphHeadline {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+.typo-body {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+.typo-lead {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.typo-label {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}

@@ -18,6 +18,7 @@ async function output() {
 
 function generateCss() {
   const colorStrings = indentJoin(printWithPrefix('baseColor', colors));
+  const typo = createTextTypeStyles();
 
   return `
 :root {
@@ -25,6 +26,8 @@ function generateCss() {
 /* Base color data */
 ${colorStrings}
 
+/* Base Typgraphy Custom Properties */
+${printTextStyleCustomProps(typo)}
 }
 
 /* Light theme data */
@@ -37,7 +40,7 @@ ${theme('dark')}
 ${printContrastColors(themes.light.colors)}
 
 /* Typography definitions */
-${printTextStyleClasses(createTextTypeStyles())}
+${printTextStyleClasses(typo)}
 `;
 }
 
@@ -126,6 +129,24 @@ ${properties}
   }
 
   return data.join('\n');
+}
+function printTextStyleCustomProps(obj: TextTypeStyles) {
+  let data: string[] = [];
+  for (let [name, typeStyle] of Object.entries(obj)) {
+    const properties = Object.keys(typeStyle)
+      .reduce<string[]>((acc, key) => {
+        const key_ = key as ValidStyleProps;
+        const val = typeStyle[key_];
+        if (!val) return acc;
+        const line = `--baseTypo-${name}-${key}: ${maybeCnvertToRem(val)};`;
+        return acc.concat(indentLine(line));
+      }, [])
+      .join('\n');
+
+    data = data.concat(properties);
+  }
+
+  return data.join('\n\n');
 }
 
 function indentLine(list: string) {

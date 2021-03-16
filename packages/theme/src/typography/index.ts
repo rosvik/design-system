@@ -44,6 +44,7 @@ export function getFontBook(type: PlatformTypes) {
  * })
  * ```
  *
+ * @param type - What platform to fetch text styles from (Android, iOS, Web)
  * @param overrides - Properties to override base config with
  * @returns text type styles
  */
@@ -72,11 +73,11 @@ export function createTextTypeStyles(
  *   },
  * });
  *
- *
  * console.log(foo.paragraphHeadline.additional);
  * //=> (property) additional: boolean
  * ```
  *
+ * @param type - What platform to fetch text styles from (Android, iOS, Web)
  * @param extension - Object to extend original text type style. Can be nested with same keys as style
  * @returns new deep merged intersection
  */

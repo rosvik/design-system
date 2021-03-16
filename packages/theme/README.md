@@ -23,6 +23,76 @@ import {themes} from '@atb-as/theme';
 console.log(themes.light.colors.background_0);
 ```
 
+#### Theme API
+
+##### `createThemes(overrides?: ConfigurationOverride<Theme>): Themes`
+
+Create new themes (light/dark) with optinally overriden defaults
+
+```ts
+const themes = createThemes({
+  spacings: {
+    medium: 20,
+  },
+});
+themes.dark.spacings.medium;
+//=> 20
+```
+
+
+##### `createExtendedThemes<T>(extension: T)`
+
+Use Theme as base and extend with new properties. Properties can be nested and will be deep merged.
+
+```ts
+type FooExtension = {
+  statusBarStyle: 'dark' | 'light';
+}
+const _themes = createExtendedThemes<FooExtension>({
+  statusBarStyle: 'dark'
+});
+_themes.dark.statusBarStyle;
+//=> (property) statusBarStyle: "dark" | "light"
+```
+
+#### Typography API
+
+##### `createTextTypeStyles(PlatformTypes, ConfigurationOverride<TextTypeStyles>)`
+
+Create new text type style with optinally overriden defaults.
+
+```ts
+createTextTypeStyles({
+  paragraphHeadline: {
+    fontWeight: Platform.select({
+      ios: '600',
+      android: 'bold'
+    })
+  }
+})
+```
+
+##### `extendTextTypeStyles<T>(type: PlatformTypes, extension: T)`
+
+Use text type style as base and extend with new properties. Properties can be nested and will be deep merged.
+
+```ts
+type Foo = {
+  paragraphHeadline: {
+    additional: boolean;
+  };
+};
+const foo = extendTextTypeStyles<Foo>({
+  paragraphHeadline: {
+    additional: true,
+  },
+});
+
+console.log(foo.paragraphHeadline.additional);
+//=> (property) additional: boolean
+```
+
+
 ### Usage CSS
 
 Or you could import CSS files or as CSS Modules. The actual content is currently the same, but named differently to be imported by CSS modules.
@@ -72,4 +142,19 @@ With regular CSS.
 .mySpecificClassName {
   composes: colors-transport_train;
 }
+```
+
+
+### Building locally
+
+From monorepo root, to generate CSS run:
+
+```
+yarn workspace @atb-as/theme create-css
+```
+
+or from project root:
+
+```
+yarn create-css
 ```

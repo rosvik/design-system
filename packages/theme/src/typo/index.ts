@@ -2,10 +2,13 @@ import merge from 'ts-deepmerge';
 import {TextTypeStyles} from '../typo';
 import {ConfigurationOverride, overrideConfig} from '../utils/override-config';
 
-import {androidTextTypeStyles} from './android';
-import {iosTextTypeStyles} from './ios';
+import {androidTextTypeStyles, androidFontData} from './android';
+import {iosTextTypeStyles, iosFontData} from './ios';
 
-type PlatformTypes = 'ios' | 'android';
+type _MappedPlatforms = 'ios' | 'android';
+type PlatformTypes = _MappedPlatforms | 'web';
+const mapType = (a: PlatformTypes): _MappedPlatforms =>
+  a === 'ios' ? 'ios' : 'android';
 
 export * from './types';
 export {androidTextTypeStyles, iosTextTypeStyles};
@@ -14,6 +17,21 @@ export const textTypeStyles = {
   android: androidTextTypeStyles,
   ios: iosTextTypeStyles,
 };
+
+export const fonts = {
+  android: androidFontData,
+  ios: iosFontData,
+};
+
+/**
+ * Get fonts for platform. Web should use Android as platform.
+ *
+ * @param overrides - Properties to override base config with
+ * @returns text type styles
+ */
+export function getFontData(type: PlatformTypes = 'android') {
+  return fonts[mapType(type)];
+}
 
 /**
  * Create new text type style with optinally overriden defaults.
@@ -34,8 +52,8 @@ export function createTextTypeStyles(
   type: PlatformTypes = 'android',
   overrides?: ConfigurationOverride<TextTypeStyles>,
 ) {
-  if (!overrides) return textTypeStyles[type];
-  return overrideConfig(textTypeStyles[type], overrides);
+  if (!overrides) return textTypeStyles[mapType(type)];
+  return overrideConfig(textTypeStyles[mapType(type)], overrides);
 }
 
 /**
@@ -64,5 +82,5 @@ export function createTextTypeStyles(
  * @returns new deep merged intersection
  */
 export function extendTextTypeStyles<T>(type: PlatformTypes, extension: T) {
-  return merge(textTypeStyles[type], extension);
+  return merge(textTypeStyles[mapType(type)], extension);
 }

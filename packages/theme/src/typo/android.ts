@@ -1,4 +1,4 @@
-import {TextStyle, TextTypeStyles} from './types';
+import {FontData, TextStyle, TextTypeStyles} from './types';
 
 const primaryBase: TextStyle = {
   fontSize: 16,
@@ -16,11 +16,19 @@ const tertiaryBase: TextStyle = {
   letterSpacing: 0.4,
 };
 
+export const androidFontData: FontData = {
+  roboto: {
+    url:
+      'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap',
+    fontFamily: `'Roboto', sans-serif`,
+  },
+};
+
 export const androidTextTypeStyles: TextTypeStyles = {
   body__primary: primaryBase,
   'body__primary--bold': {
     ...primaryBase,
-    fontWeight: '600',
+    fontWeight: '500',
   },
   'body__primary--underline': {
     ...primaryBase,
@@ -34,7 +42,7 @@ export const androidTextTypeStyles: TextTypeStyles = {
   body__secondary: secondaryBase,
   'body__secondary--bold': {
     ...secondaryBase,
-    fontWeight: '600',
+    fontWeight: '500',
   },
   body__tertiary: tertiaryBase,
   'body__tertiary--strike': {
@@ -47,10 +55,10 @@ export const androidTextTypeStyles: TextTypeStyles = {
   },
   heading__component: {
     ...primaryBase,
-    fontWeight: '600',
+    fontWeight: '500',
   },
   heading__paragraph: {
     ...primaryBase,
-    fontWeight: '600',
+    fontWeight: '500',
   },
 };

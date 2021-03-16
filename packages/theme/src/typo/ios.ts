@@ -1,4 +1,4 @@
-import {TextStyle, TextTypeStyles} from './types';
+import {FontData, TextStyle, TextTypeStyles} from './types';
 
 const primaryBase: TextStyle = {
   fontSize: 16,
@@ -14,6 +14,12 @@ const tertiaryBase: TextStyle = {
   fontSize: 12,
   lineHeight: 16,
   letterSpacing: 0,
+};
+
+export const iosFontData: FontData = {
+  systemFont: {
+    fontFamily: `'SF Pro Text', -apple-system, BlinkMacSystemFont`,
+  },
 };
 
 export const iosTextTypeStyles: TextTypeStyles = {

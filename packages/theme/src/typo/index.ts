@@ -11,7 +11,6 @@ const mapType = (a: PlatformTypes): _MappedPlatforms =>
   a === 'ios' ? 'ios' : 'android';
 
 export * from './types';
-export {androidTextTypeStyles, iosTextTypeStyles};
 
 export const textTypeStyles = {
   android: androidTextTypeStyles,
@@ -29,7 +28,7 @@ export const fonts = {
  * @param overrides - Properties to override base config with
  * @returns text type styles
  */
-export function getFontData(type: PlatformTypes = 'android') {
+export function getFontBook(type: PlatformTypes) {
   return fonts[mapType(type)];
 }
 
@@ -49,7 +48,7 @@ export function getFontData(type: PlatformTypes = 'android') {
  * @returns text type styles
  */
 export function createTextTypeStyles(
-  type: PlatformTypes = 'android',
+  type: PlatformTypes,
   overrides?: ConfigurationOverride<TextTypeStyles>,
 ) {
   if (!overrides) return textTypeStyles[mapType(type)];

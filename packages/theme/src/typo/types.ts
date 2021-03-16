@@ -12,11 +12,12 @@ export const textNames = [
   'heading__paragraph',
 ] as const;
 
-export type FontData = {
-  [fontName: string]: {
-    url?: string;
-    fontFamily: string;
-  };
+export type FontMetadata = {
+  url?: string;
+  fontFamily: string;
+};
+export type FontBook = {
+  [fontName: string]: FontMetadata;
 };
 
 export type TextNames = typeof textNames[number];

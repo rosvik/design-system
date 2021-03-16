@@ -19,7 +19,7 @@ export default async function outputTypography() {
 }
 
 function generateCss() {
-  const typo = createTextTypeStyles();
+  const typo = createTextTypeStyles('web');
 
   return `
 /* Base Typgraphy Custom Properties */

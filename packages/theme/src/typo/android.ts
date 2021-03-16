@@ -1,4 +1,4 @@
-import {FontData, TextStyle, TextTypeStyles} from './types';
+import {FontBook, TextStyle, TextTypeStyles} from './types';
 
 const primaryBase: TextStyle = {
   fontSize: 16,
@@ -16,7 +16,7 @@ const tertiaryBase: TextStyle = {
   letterSpacing: 0.4,
 };
 
-export const androidFontData: FontData = {
+export const androidFontData: FontBook = {
   roboto: {
     url:
       'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap',

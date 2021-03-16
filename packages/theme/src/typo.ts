@@ -14,13 +14,13 @@ export const textNames = [
 
 export type TextNames = typeof textNames[number];
 
-type TextStyle = {
-  fontSize?: number;
-  lineHeight?: number;
+export type TextStyle = {
+  fontSize: number;
+  lineHeight: number;
   fontWeight?: string;
 };
 
-type TextTypeStyles = {[key in TextNames]: TextStyle};
+export type TextTypeStyles = {[key in TextNames]: TextStyle};
 
 export const textTypeStyles: TextTypeStyles = {
   heroTitle: {fontSize: 32, lineHeight: 40},

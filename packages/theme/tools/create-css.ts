@@ -1,7 +1,8 @@
-import {ContrastColor, Mode, Theme, themes} from '../src';
-import {colors} from '../src/colors';
 import {writeFile} from 'fs/promises';
 import {join} from 'path';
+import {ContrastColor, Mode, Theme, themes} from '../src';
+import {colors} from '../src/colors';
+import {createTextTypeStyles, TextStyle, TextTypeStyles} from '../src/typo';
 
 output().then(() => console.log('Written css'), console.error);
 
@@ -17,7 +18,6 @@ async function output() {
 
 function generateCss() {
   const colorStrings = indentJoin(printWithPrefix('baseColor', colors));
-  const colorPairs = printContrastColors(themes.light.colors).join('\n\n');
 
   return `
 :root {
@@ -34,7 +34,11 @@ ${theme('light')}
 ${theme('dark')}
 
 /* Theme color pairs */
-${colorPairs}`;
+${printContrastColors(themes.light.colors)}
+
+/* Typography definitions */
+${printTextStyleClasses(createTextTypeStyles())}
+`;
 }
 
 function theme(themeName: Mode) {
@@ -83,21 +87,53 @@ function printWithPrefix<T>(
 
 function printContrastColors(obj: {[key: string]: ContrastColor}) {
   let data: string[] = [];
-  for (let name of Object.keys(obj)) {
+  for (let name in obj) {
     data.push(`.colors-${name} {
   background-color: var(--colors-${name}-backgroundColor);
   color: var(--colors-${name}-color);
 }`);
   }
-  return data;
+  return data.join('\n');
 }
 
-function indentLines(list: string) {
+type ValidStyleProps = keyof TextStyle;
+function textStyleMapper(obj: ValidStyleProps) {
+  switch (obj) {
+    case 'fontSize':
+      return 'font-size';
+    case 'fontWeight':
+      return 'font-weight';
+    case 'lineHeight':
+      return 'line-height';
+  }
+}
+function printTextStyleClasses(obj: TextTypeStyles) {
+  let data: string[] = [];
+  for (let [name, typeStyle] of Object.entries(obj)) {
+    const properties = Object.keys(typeStyle)
+      .reduce<string[]>((acc, key) => {
+        const key_ = key as ValidStyleProps;
+        const val = typeStyle[key_];
+        if (!val) return acc;
+        const line = `${textStyleMapper(key_)}: ${maybeCnvertToRem(val)};`;
+        return acc.concat(indentLine(line));
+      }, [])
+      .join('\n');
+
+    data.push(`.typo-${name} {
+${properties}
+}`);
+  }
+
+  return data.join('\n');
+}
+
+function indentLine(list: string) {
   return Array.from({length: 3}).join(' ') + list;
 }
 
 function indentJoin(list: string[]) {
-  return list.map(indentLines).join('\n');
+  return list.map(indentLine).join('\n');
 }
 
 function maybeCnvertToRem(val: any) {

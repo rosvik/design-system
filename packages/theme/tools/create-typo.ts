@@ -38,12 +38,17 @@ const generateCustomPropertyName = (
   styleProp: ValidStyleProps,
 ) => `--baseTypo-${textName}-${styleProp}`;
 
+function valueCssConverter(_: ValidStyleProps, value: string | number) {
+  return maybeConvertToRem(value);
+}
+
 const customPropertyVariable = (
   textName: TextNames,
   styleProp: ValidStyleProps,
   value: string | number,
 ) =>
-  `var(${generateCustomPropertyName(textName, styleProp)}, ${maybeConvertToRem(
+  `var(${generateCustomPropertyName(textName, styleProp)}, ${valueCssConverter(
+    styleProp,
     value,
   )})`;
 
@@ -52,7 +57,8 @@ const declareCustomProperty = (
   styleProp: ValidStyleProps,
   value: string | number,
 ) =>
-  `${generateCustomPropertyName(textName, styleProp)}: ${maybeConvertToRem(
+  `${generateCustomPropertyName(textName, styleProp)}: ${valueCssConverter(
+    styleProp,
     value,
   )};`;
 const useCustomPropertyOnCssProperty = (
@@ -73,6 +79,10 @@ function textStyleMapper(styleProp: ValidStyleProps) {
       return 'font-weight';
     case 'lineHeight':
       return 'line-height';
+    case 'letterSpacing':
+      return 'letter-spacing';
+    case 'textDecorationLine':
+      return 'text-decoration';
   }
 }
 function printTextStyleClasses(obj: TextTypeStyles) {
@@ -104,6 +114,8 @@ function createCssProperties(name: TextNames, typeStyle: TextStyle): string {
 function printTextStyleCustomProps(obj: TextTypeStyles) {
   let data: string[] = [];
   for (let [name, typeStyle] of Object.entries(obj)) {
+    data.push(indentLine(`/* Definitions for ${name} */`));
+
     for (let [cssProperty, val] of Object.entries(typeStyle)) {
       const cssProperty_ = cssProperty as ValidStyleProps;
       if (!val) continue;
@@ -111,6 +123,7 @@ function printTextStyleCustomProps(obj: TextTypeStyles) {
       const line = declareCustomProperty(name as TextNames, cssProperty_, val);
       data.push(indentLine(line));
     }
+    data.push('');
   }
   return data.join('\n');
 }

@@ -1,40 +1,18 @@
 import merge from 'ts-deepmerge';
-import {ConfigurationOverride, overrideConfig} from './utils/override-config';
+import {TextTypeStyles} from '../typo';
+import {ConfigurationOverride, overrideConfig} from '../utils/override-config';
 
-export const textNames = [
-  'heroTitle',
-  'pageTitle',
-  'sectionHeadline',
-  'itemHeadline',
-  'paragraphHeadline',
-  'body',
-  'lead',
-  'label',
-] as const;
+import {androidTextTypeStyles} from './android';
+import {iosTextTypeStyles} from './ios';
 
-export type TextNames = typeof textNames[number];
+type PlatformTypes = 'ios' | 'android';
 
-export type TextStyle = {
-  fontSize: number;
-  lineHeight: number;
-  fontWeight?: string;
-};
+export * from './types';
+export {androidTextTypeStyles, iosTextTypeStyles};
 
-export type TextTypeStyles = {[key in TextNames]: TextStyle};
-
-export const textTypeStyles: TextTypeStyles = {
-  heroTitle: {fontSize: 32, lineHeight: 40},
-  pageTitle: {fontSize: 26, lineHeight: 32},
-  sectionHeadline: {fontSize: 23, lineHeight: 28},
-  itemHeadline: {fontSize: 20, lineHeight: 24},
-  paragraphHeadline: {
-    fontSize: 16,
-    lineHeight: 20,
-    fontWeight: '600',
-  },
-  body: {fontSize: 16, lineHeight: 20},
-  lead: {fontSize: 14, lineHeight: 20},
-  label: {fontSize: 12, lineHeight: 16},
+export const textTypeStyles = {
+  android: androidTextTypeStyles,
+  ios: iosTextTypeStyles,
 };
 
 /**
@@ -53,10 +31,11 @@ export const textTypeStyles: TextTypeStyles = {
  * @returns text type styles
  */
 export function createTextTypeStyles(
+  type: PlatformTypes = 'android',
   overrides?: ConfigurationOverride<TextTypeStyles>,
 ) {
-  if (!overrides) return textTypeStyles;
-  return overrideConfig(textTypeStyles, overrides);
+  if (!overrides) return textTypeStyles[type];
+  return overrideConfig(textTypeStyles[type], overrides);
 }
 
 /**
@@ -84,6 +63,6 @@ export function createTextTypeStyles(
  * @param extension - Object to extend original text type style. Can be nested with same keys as style
  * @returns new deep merged intersection
  */
-export function extendTextTypeStyles<T>(extension: T) {
-  return merge(textTypeStyles, extension);
+export function extendTextTypeStyles<T>(type: PlatformTypes, extension: T) {
+  return merge(textTypeStyles[type], extension);
 }

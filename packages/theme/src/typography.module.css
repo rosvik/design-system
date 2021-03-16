@@ -1,56 +1,130 @@
 
 /* Base Typgraphy Custom Properties */
 :root {
-  --baseTypo-heroTitle-fontSize: 2rem;
-  --baseTypo-heroTitle-lineHeight: 2.5rem;
-  --baseTypo-pageTitle-fontSize: 1.625rem;
-  --baseTypo-pageTitle-lineHeight: 2rem;
-  --baseTypo-sectionHeadline-fontSize: 1.4375rem;
-  --baseTypo-sectionHeadline-lineHeight: 1.75rem;
-  --baseTypo-itemHeadline-fontSize: 1.25rem;
-  --baseTypo-itemHeadline-lineHeight: 1.5rem;
-  --baseTypo-paragraphHeadline-fontSize: 1rem;
-  --baseTypo-paragraphHeadline-lineHeight: 1.25rem;
-  --baseTypo-paragraphHeadline-fontWeight: 600;
-  --baseTypo-body-fontSize: 1rem;
-  --baseTypo-body-lineHeight: 1.25rem;
-  --baseTypo-lead-fontSize: 0.875rem;
-  --baseTypo-lead-lineHeight: 1.25rem;
-  --baseTypo-label-fontSize: 0.75rem;
-  --baseTypo-label-lineHeight: 1rem;
+  /* Definitions for body__primary */
+  --baseTypo-body__primary-fontSize: 1rem;
+  --baseTypo-body__primary-lineHeight: 1.25rem;
+  --baseTypo-body__primary-letterSpacing: 0.03125rem;
+
+  /* Definitions for body__primary--bold */
+  --baseTypo-body__primary--bold-fontSize: 1rem;
+  --baseTypo-body__primary--bold-lineHeight: 1.25rem;
+  --baseTypo-body__primary--bold-letterSpacing: 0.03125rem;
+  --baseTypo-body__primary--bold-fontWeight: 600;
+
+  /* Definitions for body__primary--underline */
+  --baseTypo-body__primary--underline-fontSize: 1rem;
+  --baseTypo-body__primary--underline-lineHeight: 1.25rem;
+  --baseTypo-body__primary--underline-letterSpacing: 0.03125rem;
+  --baseTypo-body__primary--underline-textDecorationLine: underline;
+
+  /* Definitions for body__primary--jumbo */
+  --baseTypo-body__primary--jumbo-fontSize: 2rem;
+  --baseTypo-body__primary--jumbo-lineHeight: 2.5rem;
+  --baseTypo-body__primary--jumbo-letterSpacing: 0.015625rem;
+
+  /* Definitions for body__secondary */
+  --baseTypo-body__secondary-fontSize: 0.875rem;
+  --baseTypo-body__secondary-lineHeight: 1.25rem;
+  --baseTypo-body__secondary-letterSpacing: 0.015625rem;
+
+  /* Definitions for body__secondary--bold */
+  --baseTypo-body__secondary--bold-fontSize: 0.875rem;
+  --baseTypo-body__secondary--bold-lineHeight: 1.25rem;
+  --baseTypo-body__secondary--bold-letterSpacing: 0.015625rem;
+  --baseTypo-body__secondary--bold-fontWeight: 600;
+
+  /* Definitions for body__tertiary */
+  --baseTypo-body__tertiary-fontSize: 0.75rem;
+  --baseTypo-body__tertiary-lineHeight: 1rem;
+  --baseTypo-body__tertiary-letterSpacing: 0.025rem;
+
+  /* Definitions for body__tertiary--strike */
+  --baseTypo-body__tertiary--strike-fontSize: 0.75rem;
+  --baseTypo-body__tertiary--strike-lineHeight: 1rem;
+  --baseTypo-body__tertiary--strike-letterSpacing: 0.025rem;
+  --baseTypo-body__tertiary--strike-textDecorationLine: line-through;
+
+  /* Definitions for heading__title */
+  --baseTypo-heading__title-fontSize: 1rem;
+  --baseTypo-heading__title-lineHeight: 1.25rem;
+  --baseTypo-heading__title-letterSpacing: 0.03125rem;
+  --baseTypo-heading__title-fontWeight: bold;
+
+  /* Definitions for heading__component */
+  --baseTypo-heading__component-fontSize: 1rem;
+  --baseTypo-heading__component-lineHeight: 1.25rem;
+  --baseTypo-heading__component-letterSpacing: 0.03125rem;
+  --baseTypo-heading__component-fontWeight: 600;
+
+  /* Definitions for heading__paragraph */
+  --baseTypo-heading__paragraph-fontSize: 1rem;
+  --baseTypo-heading__paragraph-lineHeight: 1.25rem;
+  --baseTypo-heading__paragraph-letterSpacing: 0.03125rem;
+  --baseTypo-heading__paragraph-fontWeight: 600;
+
 }
 
 /* Typography definitions */
-.typo-heroTitle {
-  font-size: var(--baseTypo-heroTitle-fontSize, 2rem);
-  line-height: var(--baseTypo-heroTitle-lineHeight, 2.5rem);
+.typo-body__primary {
+  font-size: var(--baseTypo-body__primary-fontSize, 1rem);
+  line-height: var(--baseTypo-body__primary-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-body__primary-letterSpacing, 0.03125rem);
 }
-.typo-pageTitle {
-  font-size: var(--baseTypo-pageTitle-fontSize, 1.625rem);
-  line-height: var(--baseTypo-pageTitle-lineHeight, 2rem);
+.typo-body__primary--bold {
+  font-size: var(--baseTypo-body__primary--bold-fontSize, 1rem);
+  line-height: var(--baseTypo-body__primary--bold-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-body__primary--bold-letterSpacing, 0.03125rem);
+  font-weight: var(--baseTypo-body__primary--bold-fontWeight, 600);
 }
-.typo-sectionHeadline {
-  font-size: var(--baseTypo-sectionHeadline-fontSize, 1.4375rem);
-  line-height: var(--baseTypo-sectionHeadline-lineHeight, 1.75rem);
+.typo-body__primary--underline {
+  font-size: var(--baseTypo-body__primary--underline-fontSize, 1rem);
+  line-height: var(--baseTypo-body__primary--underline-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-body__primary--underline-letterSpacing, 0.03125rem);
+  text-decoration: var(--baseTypo-body__primary--underline-textDecorationLine, underline);
 }
-.typo-itemHeadline {
-  font-size: var(--baseTypo-itemHeadline-fontSize, 1.25rem);
-  line-height: var(--baseTypo-itemHeadline-lineHeight, 1.5rem);
+.typo-body__primary--jumbo {
+  font-size: var(--baseTypo-body__primary--jumbo-fontSize, 2rem);
+  line-height: var(--baseTypo-body__primary--jumbo-lineHeight, 2.5rem);
+  letter-spacing: var(--baseTypo-body__primary--jumbo-letterSpacing, 0.015625rem);
 }
-.typo-paragraphHeadline {
-  font-size: var(--baseTypo-paragraphHeadline-fontSize, 1rem);
-  line-height: var(--baseTypo-paragraphHeadline-lineHeight, 1.25rem);
-  font-weight: var(--baseTypo-paragraphHeadline-fontWeight, 600);
+.typo-body__secondary {
+  font-size: var(--baseTypo-body__secondary-fontSize, 0.875rem);
+  line-height: var(--baseTypo-body__secondary-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-body__secondary-letterSpacing, 0.015625rem);
 }
-.typo-body {
-  font-size: var(--baseTypo-body-fontSize, 1rem);
-  line-height: var(--baseTypo-body-lineHeight, 1.25rem);
+.typo-body__secondary--bold {
+  font-size: var(--baseTypo-body__secondary--bold-fontSize, 0.875rem);
+  line-height: var(--baseTypo-body__secondary--bold-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-body__secondary--bold-letterSpacing, 0.015625rem);
+  font-weight: var(--baseTypo-body__secondary--bold-fontWeight, 600);
 }
-.typo-lead {
-  font-size: var(--baseTypo-lead-fontSize, 0.875rem);
-  line-height: var(--baseTypo-lead-lineHeight, 1.25rem);
+.typo-body__tertiary {
+  font-size: var(--baseTypo-body__tertiary-fontSize, 0.75rem);
+  line-height: var(--baseTypo-body__tertiary-lineHeight, 1rem);
+  letter-spacing: var(--baseTypo-body__tertiary-letterSpacing, 0.025rem);
 }
-.typo-label {
-  font-size: var(--baseTypo-label-fontSize, 0.75rem);
-  line-height: var(--baseTypo-label-lineHeight, 1rem);
+.typo-body__tertiary--strike {
+  font-size: var(--baseTypo-body__tertiary--strike-fontSize, 0.75rem);
+  line-height: var(--baseTypo-body__tertiary--strike-lineHeight, 1rem);
+  letter-spacing: var(--baseTypo-body__tertiary--strike-letterSpacing, 0.025rem);
+  text-decoration: var(--baseTypo-body__tertiary--strike-textDecorationLine, line-through);
+}
+.typo-heading__title {
+  font-size: var(--baseTypo-heading__title-fontSize, 1rem);
+  line-height: var(--baseTypo-heading__title-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-heading__title-letterSpacing, 0.03125rem);
+  font-weight: var(--baseTypo-heading__title-fontWeight, bold);
+}
+.typo-heading__component {
+  font-size: var(--baseTypo-heading__component-fontSize, 1rem);
+  line-height: var(--baseTypo-heading__component-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-heading__component-letterSpacing, 0.03125rem);
+  font-weight: var(--baseTypo-heading__component-fontWeight, 600);
+}
+.typo-heading__paragraph {
+  font-size: var(--baseTypo-heading__paragraph-fontSize, 1rem);
+  line-height: var(--baseTypo-heading__paragraph-lineHeight, 1.25rem);
+  letter-spacing: var(--baseTypo-heading__paragraph-letterSpacing, 0.03125rem);
+  font-weight: var(--baseTypo-heading__paragraph-fontWeight, 600);
 }

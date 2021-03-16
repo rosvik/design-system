@@ -7,7 +7,7 @@ import {
   TextNames,
   TextStyle,
   TextTypeStyles,
-} from '../src/typo';
+} from '../src/typography';
 import {indentLine, maybeConvertToRem} from './utils';
 
 export default async function outputTypography() {

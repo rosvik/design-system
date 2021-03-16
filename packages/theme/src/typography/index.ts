@@ -1,5 +1,5 @@
 import merge from 'ts-deepmerge';
-import {TextTypeStyles} from '../typo';
+import {TextTypeStyles} from '.';
 import {ConfigurationOverride, overrideConfig} from '../utils/override-config';
 
 import {androidTextTypeStyles, androidFontData} from './android';

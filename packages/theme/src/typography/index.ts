@@ -73,7 +73,6 @@ export function createTextTypeStyles(
  *   },
  * });
  *
- *
  * console.log(foo.paragraphHeadline.additional);
  * //=> (property) additional: boolean
  * ```

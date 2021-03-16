@@ -253,7 +253,6 @@ export function createThemes(overrides?: ConfigurationOverride<Theme>): Themes {
  *
  * _themes.dark.statusBarStyle;
  * //=> (property) statusBarStyle: "dark" | "light"
- * ) additional: boolean
  * ```
  *
  * @param extension - Object to extend original theme. Can be nested with same keys

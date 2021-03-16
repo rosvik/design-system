@@ -1,6 +1,11 @@
 import {writeFile} from 'fs/promises';
 import {join} from 'path';
-import {createTextTypeStyles, TextStyle, TextTypeStyles} from '../src/typo';
+import {
+  createTextTypeStyles,
+  TextNames,
+  TextStyle,
+  TextTypeStyles,
+} from '../src/typo';
 import {indentLine, maybeConvertToRem} from './utils';
 
 export default async function outputTypography() {
@@ -17,9 +22,8 @@ function generateCss() {
   const typo = createTextTypeStyles();
 
   return `
-:root {
-
 /* Base Typgraphy Custom Properties */
+:root {
 ${printTextStyleCustomProps(typo)}
 }
 
@@ -29,8 +33,40 @@ ${printTextStyleClasses(typo)}
 }
 
 type ValidStyleProps = keyof TextStyle;
-function textStyleMapper(obj: ValidStyleProps) {
-  switch (obj) {
+const generateCustomPropertyName = (
+  textName: TextNames,
+  styleProp: ValidStyleProps,
+) => `--baseTypo-${textName}-${styleProp}`;
+
+const customPropertyVariable = (
+  textName: TextNames,
+  styleProp: ValidStyleProps,
+  value: string | number,
+) =>
+  `var(${generateCustomPropertyName(textName, styleProp)}, ${maybeConvertToRem(
+    value,
+  )})`;
+
+const declareCustomProperty = (
+  textName: TextNames,
+  styleProp: ValidStyleProps,
+  value: string | number,
+) =>
+  `${generateCustomPropertyName(textName, styleProp)}: ${maybeConvertToRem(
+    value,
+  )};`;
+const useCustomPropertyOnCssProperty = (
+  textName: TextNames,
+  styleProp: ValidStyleProps,
+  value: string | number,
+) =>
+  `${textStyleMapper(styleProp)}: ${customPropertyVariable(
+    textName,
+    styleProp,
+    value,
+  )};`;
+function textStyleMapper(styleProp: ValidStyleProps) {
+  switch (styleProp) {
     case 'fontSize':
       return 'font-size';
     case 'fontWeight':
@@ -42,15 +78,7 @@ function textStyleMapper(obj: ValidStyleProps) {
 function printTextStyleClasses(obj: TextTypeStyles) {
   let data: string[] = [];
   for (let [name, typeStyle] of Object.entries(obj)) {
-    const properties = Object.keys(typeStyle)
-      .reduce<string[]>((acc, key) => {
-        const key_ = key as ValidStyleProps;
-        const val = typeStyle[key_];
-        if (!val) return acc;
-        const line = `${textStyleMapper(key_)}: ${maybeConvertToRem(val)};`;
-        return acc.concat(indentLine(line));
-      }, [])
-      .join('\n');
+    const properties = createCssProperties(name as TextNames, typeStyle);
 
     data.push(`.typo-${name} {
 ${properties}
@@ -59,21 +87,30 @@ ${properties}
 
   return data.join('\n');
 }
+function createCssProperties(name: TextNames, typeStyle: TextStyle): string {
+  return Object.keys(typeStyle)
+    .reduce<string[]>((acc, key) => {
+      const key_ = key as ValidStyleProps;
+      const val = typeStyle[key_];
+      if (!val) return acc;
+
+      const line = useCustomPropertyOnCssProperty(name, key_, val);
+      return acc.concat(line);
+    }, [])
+    .map(indentLine)
+    .join('\n');
+}
+
 function printTextStyleCustomProps(obj: TextTypeStyles) {
   let data: string[] = [];
   for (let [name, typeStyle] of Object.entries(obj)) {
-    const properties = Object.keys(typeStyle)
-      .reduce<string[]>((acc, key) => {
-        const key_ = key as ValidStyleProps;
-        const val = typeStyle[key_];
-        if (!val) return acc;
-        const line = `--baseTypo-${name}-${key}: ${maybeConvertToRem(val)};`;
-        return acc.concat(indentLine(line));
-      }, [])
-      .join('\n');
+    for (let [cssProperty, val] of Object.entries(typeStyle)) {
+      const cssProperty_ = cssProperty as ValidStyleProps;
+      if (!val) continue;
 
-    data = data.concat(properties);
+      const line = declareCustomProperty(name as TextNames, cssProperty_, val);
+      data.push(indentLine(line));
+    }
   }
-
-  return data.join('\n\n');
+  return data.join('\n');
 }

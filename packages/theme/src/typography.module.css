@@ -1,4 +1,8 @@
 
+/* Require included fonts. Fetched from URLs and not locally
+   to leverage better CDN caching. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 /* Base Typgraphy Custom Properties */
 :root {
   /* Definitions for body__primary */
@@ -10,7 +14,7 @@
   --baseTypo-body__primary--bold-fontSize: 1rem;
   --baseTypo-body__primary--bold-lineHeight: 1.25rem;
   --baseTypo-body__primary--bold-letterSpacing: 0.03125rem;
-  --baseTypo-body__primary--bold-fontWeight: 600;
+  --baseTypo-body__primary--bold-fontWeight: 500;
 
   /* Definitions for body__primary--underline */
   --baseTypo-body__primary--underline-fontSize: 1rem;
@@ -32,7 +36,7 @@
   --baseTypo-body__secondary--bold-fontSize: 0.875rem;
   --baseTypo-body__secondary--bold-lineHeight: 1.25rem;
   --baseTypo-body__secondary--bold-letterSpacing: 0.015625rem;
-  --baseTypo-body__secondary--bold-fontWeight: 600;
+  --baseTypo-body__secondary--bold-fontWeight: 500;
 
   /* Definitions for body__tertiary */
   --baseTypo-body__tertiary-fontSize: 0.75rem;
@@ -55,14 +59,24 @@
   --baseTypo-heading__component-fontSize: 1rem;
   --baseTypo-heading__component-lineHeight: 1.25rem;
   --baseTypo-heading__component-letterSpacing: 0.03125rem;
-  --baseTypo-heading__component-fontWeight: 600;
+  --baseTypo-heading__component-fontWeight: 500;
 
   /* Definitions for heading__paragraph */
   --baseTypo-heading__paragraph-fontSize: 1rem;
   --baseTypo-heading__paragraph-lineHeight: 1.25rem;
   --baseTypo-heading__paragraph-letterSpacing: 0.03125rem;
-  --baseTypo-heading__paragraph-fontWeight: 600;
+  --baseTypo-heading__paragraph-fontWeight: 500;
 
+
+  /* Included font types */
+  --font-main: 'Roboto', sans-serif;
+}
+
+/* Main setup, base size and main font */
+:global(html) {
+  font-family: var(--font-main);
+  /* Default base size. */
+  font-size: 16px;
 }
 
 /* Typography definitions */
@@ -75,7 +89,7 @@
   font-size: var(--baseTypo-body__primary--bold-fontSize, 1rem);
   line-height: var(--baseTypo-body__primary--bold-lineHeight, 1.25rem);
   letter-spacing: var(--baseTypo-body__primary--bold-letterSpacing, 0.03125rem);
-  font-weight: var(--baseTypo-body__primary--bold-fontWeight, 600);
+  font-weight: var(--baseTypo-body__primary--bold-fontWeight, 500);
 }
 .typo-body__primary--underline {
   font-size: var(--baseTypo-body__primary--underline-fontSize, 1rem);
@@ -97,7 +111,7 @@
   font-size: var(--baseTypo-body__secondary--bold-fontSize, 0.875rem);
   line-height: var(--baseTypo-body__secondary--bold-lineHeight, 1.25rem);
   letter-spacing: var(--baseTypo-body__secondary--bold-letterSpacing, 0.015625rem);
-  font-weight: var(--baseTypo-body__secondary--bold-fontWeight, 600);
+  font-weight: var(--baseTypo-body__secondary--bold-fontWeight, 500);
 }
 .typo-body__tertiary {
   font-size: var(--baseTypo-body__tertiary-fontSize, 0.75rem);
@@ -120,11 +134,11 @@
   font-size: var(--baseTypo-heading__component-fontSize, 1rem);
   line-height: var(--baseTypo-heading__component-lineHeight, 1.25rem);
   letter-spacing: var(--baseTypo-heading__component-letterSpacing, 0.03125rem);
-  font-weight: var(--baseTypo-heading__component-fontWeight, 600);
+  font-weight: var(--baseTypo-heading__component-fontWeight, 500);
 }
 .typo-heading__paragraph {
   font-size: var(--baseTypo-heading__paragraph-fontSize, 1rem);
   line-height: var(--baseTypo-heading__paragraph-lineHeight, 1.25rem);
   letter-spacing: var(--baseTypo-heading__paragraph-letterSpacing, 0.03125rem);
-  font-weight: var(--baseTypo-heading__paragraph-fontWeight, 600);
+  font-weight: var(--baseTypo-heading__paragraph-fontWeight, 500);
 }

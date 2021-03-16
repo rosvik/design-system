@@ -2,6 +2,8 @@ import {writeFile} from 'fs/promises';
 import {join} from 'path';
 import {
   createTextTypeStyles,
+  FontBook,
+  getFontBook,
   TextNames,
   TextStyle,
   TextTypeStyles,
@@ -13,23 +15,55 @@ export default async function outputTypography() {
   const cssModule = join(base, 'typography.module.css');
   const regular = join(base, 'typography.css');
 
-  const css = generateCss();
-
-  return Promise.all([writeFile(cssModule, css), writeFile(regular, css)]);
+  return Promise.all([
+    writeFile(cssModule, generateCss(true)),
+    writeFile(regular, generateCss(false)),
+  ]);
 }
 
-function generateCss() {
+function generateCss(cssModule: boolean) {
   const typo = createTextTypeStyles('web');
+  const fonts = getFontBook('web');
 
   return `
+/* Require included fonts. Fetched from URLs and not locally
+   to leverage better CDN caching. */
+${printImportFonts(fonts)}
+
 /* Base Typgraphy Custom Properties */
 :root {
 ${printTextStyleCustomProps(typo)}
+
+  /* Included font types */
+${printFontFamilies(fonts)}
 }
+
+/* Main setup, base size and main font */
+${printHtmlMainFont(cssModule)}
 
 /* Typography definitions */
 ${printTextStyleClasses(typo)}
 `;
+}
+
+function printFontFamilies(fonts: FontBook) {
+  return Object.entries(fonts)
+    .map(([k, f]) => indentLine(`--font-${k}: ${f.fontFamily};`))
+    .join('\n');
+}
+function printHtmlMainFont(cssModule: boolean) {
+  let selector = cssModule ? ':global(html)' : 'html';
+  return `${selector} {
+  font-family: var(--font-main);
+  /* Default base size. */
+  font-size: 16px;
+}`;
+}
+function printImportFonts(fonts: FontBook) {
+  return Object.values(fonts)
+    .filter((f) => f.url)
+    .map((f) => `@import url('${f.url}');`)
+    .join('\n');
 }
 
 type ValidStyleProps = keyof TextStyle;

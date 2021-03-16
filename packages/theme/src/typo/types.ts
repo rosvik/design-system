@@ -17,6 +17,7 @@ export type FontMetadata = {
   fontFamily: string;
 };
 export type FontBook = {
+  main: FontMetadata;
   [fontName: string]: FontMetadata;
 };
 

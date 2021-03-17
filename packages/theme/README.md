@@ -115,8 +115,10 @@ Create new themes (light/dark) with optinally overriden defaults
 
 ```ts
 const themes = createThemes({
-  spacings: {
-    medium: 20,
+  light: {
+    spacings: {
+      medium: 20,
+    },
   },
 });
 themes.dark.spacings.medium;
@@ -133,7 +135,8 @@ type FooExtension = {
   statusBarStyle: 'dark' | 'light';
 }
 const _themes = createExtendedThemes<FooExtension>({
-  statusBarStyle: 'dark'
+  light: {statusBarStyle: 'dark'},
+  dark: {statusBarStyle: 'light'}
 });
 _themes.dark.statusBarStyle;
 //=> (property) statusBarStyle: "dark" | "light"

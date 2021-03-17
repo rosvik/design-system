@@ -218,8 +218,10 @@ export const themes: Themes = {
  * @example extending nested features
  * ```ts
  * const themes = createThemes({
- *   spacings: {
- *     medium: 20,
+ *   light: {
+ *     spacings: {
+ *       medium: 20,
+ *     },
  *   },
  * });
  *
@@ -230,12 +232,11 @@ export const themes: Themes = {
  * @param overrides - Properties to override base themes with, on `Theme` level
  * @returns themes
  */
-export function createThemes(overrides?: ConfigurationOverride<Theme>): Themes {
+export function createThemes(
+  overrides?: ConfigurationOverride<Themes>,
+): Themes {
   if (!overrides) return themes;
-  return {
-    light: overrideConfig(themes.light, overrides),
-    dark: overrideConfig(themes.dark, overrides),
-  };
+  return overrideConfig(themes, overrides);
 }
 
 /**
@@ -248,7 +249,8 @@ export function createThemes(overrides?: ConfigurationOverride<Theme>): Themes {
  *   statusBarStyle: 'dark' | 'light';
  * }
  * const _themes = createExtendedThemes<FooExtension>({
- *   statusBarStyle: 'dark'
+ *   light: {statusBarStyle: 'dark'},
+ *   dark: {statusBarStyle: 'light'}
  * });
  *
  * _themes.dark.statusBarStyle;
@@ -258,9 +260,9 @@ export function createThemes(overrides?: ConfigurationOverride<Theme>): Themes {
  * @param extension - Object to extend original theme. Can be nested with same keys
  * @returns new deep merged intersection themes
  */
-export function createExtendedThemes<T>(extension: T) {
+export function createExtendedThemes<T>(extension: {light: T; dark: T}) {
   return {
-    light: merge(themes.light, extension),
-    dark: merge(themes.dark, extension),
+    light: merge(themes.light, extension.light),
+    dark: merge(themes.dark, extension.dark),
   };
 }

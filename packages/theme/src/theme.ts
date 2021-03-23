@@ -80,7 +80,7 @@ export interface Theme {
 
 export type Statuses = keyof Theme['status'];
 
-const defaultTextColors: {
+export const defaultTextColors: {
   [key in TextColorType]: {[key in TextColor]: string};
 } = {
   dark: {

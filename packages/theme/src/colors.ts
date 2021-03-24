@@ -7,9 +7,9 @@ export const backgrounds = {
   },
   dark: {
     level0: '#000000',
-    level1: '#1B1C1D',
-    level2: '#292B2C',
-    level3: '#36393A',
+    level1: '#242B30',
+    level2: '#37424A',
+    level3: '#555E65',
   },
 };
 

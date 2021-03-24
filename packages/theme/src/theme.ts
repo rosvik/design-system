@@ -1,6 +1,6 @@
 import hexToRgba from 'hex-to-rgba';
 import merge from 'ts-deepmerge';
-import {colors} from './colors';
+import {backgrounds, colors} from './colors';
 import {borderRadius, borderWidth, iconSizes, spacings} from './sizes';
 import {ConfigurationOverride, overrideConfig} from './utils/override-config';
 
@@ -100,10 +100,10 @@ export const themes: Themes = {
     spacings: spacings,
 
     colors: {
-      background_0: contrastColor(colors.white, 'dark'),
-      background_1: contrastColor(colors.primary.gray_50, 'dark'),
-      background_2: contrastColor(colors.primary.gray_100, 'dark'),
-      background_3: contrastColor(colors.primary.gray_200, 'dark'),
+      background_0: contrastColor(backgrounds.light.level0, 'dark'),
+      background_1: contrastColor(backgrounds.light.level1, 'dark'),
+      background_2: contrastColor(backgrounds.light.level2, 'dark'),
+      background_3: contrastColor(backgrounds.light.level3, 'dark'),
       primary_1: contrastColor(colors.primary.green_500, 'dark'),
       primary_2: contrastColor(colors.secondary.cyan_500, 'dark'),
       primary_3: contrastColor(colors.secondary.blue_500, 'light'),
@@ -157,10 +157,10 @@ export const themes: Themes = {
     spacings: spacings,
 
     colors: {
-      background_0: contrastColor(colors.white, 'dark'),
-      background_1: contrastColor(colors.primary.gray_50, 'dark'),
-      background_2: contrastColor(colors.primary.gray_100, 'dark'),
-      background_3: contrastColor(colors.primary.gray_200, 'dark'),
+      background_0: contrastColor(backgrounds.dark.level0, 'light'),
+      background_1: contrastColor(backgrounds.dark.level1, 'light'),
+      background_2: contrastColor(backgrounds.dark.level2, 'light'),
+      background_3: contrastColor(backgrounds.dark.level3, 'light'),
       primary_1: contrastColor(colors.primary.green_500, 'dark'),
       primary_2: contrastColor(colors.secondary.blue_500, 'light'),
       primary_3: contrastColor(colors.secondary.cyan_500, 'dark'),

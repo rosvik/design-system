@@ -1,3 +1,18 @@
+export const backgrounds = {
+  light: {
+    level0: '#FFFFFF',
+    level1: '#E7E8E9',
+    level2: '#DBDDDE',
+    level3: '#CFD2D3',
+  },
+  dark: {
+    level0: '#000000',
+    level1: '#1B1C1D',
+    level2: '#292B2C',
+    level3: '#36393A',
+  },
+};
+
 export const colors = {
   white: '#ffffff',
   black: '#000000',

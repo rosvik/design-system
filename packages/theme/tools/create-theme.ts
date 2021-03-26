@@ -32,7 +32,9 @@ ${theme('light')}
 ${theme('dark')}
 
 /* Theme color pairs */
-${printContrastColors(themes.light.colors)}
+${printContrastColors('colors', themes.light.colors)}
+
+${printContrastColors('status', themes.light.status)}
 `;
 }
 
@@ -52,6 +54,8 @@ ${extract('icon')}
 ${extract('text')}
 
 ${extract('colors')}
+
+${extract('status')}
 }
 `;
 }
@@ -80,13 +84,24 @@ function printWithPrefix<T>(
   return data;
 }
 
-function printContrastColors(obj: {[key: string]: ContrastColor}) {
+type ObjColors = {[key: string]: ContrastColor | ObjColors};
+
+function printContrastColors(
+  name: string,
+  obj: ObjColors,
+  prefix: string = '',
+) {
   let data: string[] = [];
-  for (let name in obj) {
-    data.push(`.colors-${name} {
-  background-color: var(--colors-${name}-backgroundColor);
-  color: var(--colors-${name}-color);
+  for (let key in obj) {
+    const val = obj[key];
+    if (isContrastColor(val)) {
+      data.push(`.${name}${prefix}-${key} {
+  background-color: var(--${name}${prefix}-${key}-backgroundColor);
+  color: var(--${name}${prefix}-${key}-color);
 }`);
+    } else {
+      data = data.concat(printContrastColors(name, val, `-${key}`));
+    }
   }
   return data.join('\n');
 }

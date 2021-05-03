@@ -165,7 +165,7 @@ export const themes: Themes = {
       primary_2: contrastColor(colors.secondary.blue_500, 'light'),
       primary_3: contrastColor(colors.secondary.cyan_500, 'dark'),
       primary_destructive: contrastColor(colors.secondary.red_500, 'light'),
-      secondary_1: contrastColor(colors.primary.gray_300, 'dark'),
+      secondary_1: contrastColor(colors.primary.gray_50, 'dark'),
       secondary_2: contrastColor(colors.primary.gray_500, 'light'),
       secondary_3: contrastColor(colors.secondary.blue_600, 'light'),
       secondary_4: contrastColor(colors.primary.gray_600, 'light'),

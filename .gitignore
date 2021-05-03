@@ -115,6 +115,8 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# IntelliJ
+.idea
 
 .DS_Store
 

@@ -23,9 +23,15 @@
   --baseTypo-body__primary--underline-textDecorationLine: underline;
 
   /* Definitions for body__primary--jumbo */
-  --baseTypo-body__primary--jumbo-fontSize: 2rem;
+  --baseTypo-body__primary--jumbo-fontSize: 2.25rem;
   --baseTypo-body__primary--jumbo-lineHeight: 2.5rem;
   --baseTypo-body__primary--jumbo-letterSpacing: 0.015625rem;
+
+  /* Definitions for body__primary--jumbo--bold */
+  --baseTypo-body__primary--jumbo--bold-fontSize: 2.25rem;
+  --baseTypo-body__primary--jumbo--bold-lineHeight: 2.5rem;
+  --baseTypo-body__primary--jumbo--bold-letterSpacing: 0.015625rem;
+  --baseTypo-body__primary--jumbo--bold-fontWeight: bold;
 
   /* Definitions for body__secondary */
   --baseTypo-body__secondary-fontSize: 0.875rem;
@@ -98,9 +104,15 @@ html {
   text-decoration: var(--baseTypo-body__primary--underline-textDecorationLine, underline);
 }
 .typo-body__primary--jumbo {
-  font-size: var(--baseTypo-body__primary--jumbo-fontSize, 2rem);
+  font-size: var(--baseTypo-body__primary--jumbo-fontSize, 2.25rem);
   line-height: var(--baseTypo-body__primary--jumbo-lineHeight, 2.5rem);
   letter-spacing: var(--baseTypo-body__primary--jumbo-letterSpacing, 0.015625rem);
+}
+.typo-body__primary--jumbo--bold {
+  font-size: var(--baseTypo-body__primary--jumbo--bold-fontSize, 2.25rem);
+  line-height: var(--baseTypo-body__primary--jumbo--bold-lineHeight, 2.5rem);
+  letter-spacing: var(--baseTypo-body__primary--jumbo--bold-letterSpacing, 0.015625rem);
+  font-weight: var(--baseTypo-body__primary--jumbo--bold-fontWeight, bold);
 }
 .typo-body__secondary {
   font-size: var(--baseTypo-body__secondary-fontSize, 0.875rem);

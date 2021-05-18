@@ -3,6 +3,7 @@ export const textNames = [
   'body__primary--bold',
   'body__primary--underline',
   'body__primary--jumbo',
+  'body__primary--jumbo--bold',
   'body__secondary',
   'body__secondary--bold',
   'body__tertiary',

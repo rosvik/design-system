@@ -33,9 +33,15 @@ export const iosTextTypeStyles: TextTypeStyles = {
     textDecorationLine: 'underline',
   },
   'body__primary--jumbo': {
-    fontSize: 32,
+    fontSize: 36,
     lineHeight: 40,
     letterSpacing: 0.41,
+  },
+  'body__primary--jumbo--bold': {
+    fontSize: 36,
+    lineHeight: 40,
+    letterSpacing: 0.41,
+    fontWeight: 'bold'
   },
   body__secondary: secondaryBase,
   'body__secondary--bold': {

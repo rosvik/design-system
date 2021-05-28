@@ -90,20 +90,22 @@
   --colors-background_2-color: #000000;
   --colors-background_3-backgroundColor: #CFD2D3;
   --colors-background_3-color: #000000;
+  --colors-background_gray-backgroundColor: #37424A;
+  --colors-background_gray-color: #FFFFFF;
   --colors-primary_1-backgroundColor: #A2AD00;
   --colors-primary_1-color: #000000;
-  --colors-primary_2-backgroundColor: #71D6E0;
-  --colors-primary_2-color: #000000;
-  --colors-primary_3-backgroundColor: #007C92;
-  --colors-primary_3-color: #FFFFFF;
+  --colors-primary_2-backgroundColor: #007C92;
+  --colors-primary_2-color: #FFFFFF;
+  --colors-primary_3-backgroundColor: #71D6E0;
+  --colors-primary_3-color: #000000;
   --colors-primary_destructive-backgroundColor: #A51140;
   --colors-primary_destructive-color: #FFFFFF;
   --colors-secondary_1-backgroundColor: #37424A;
   --colors-secondary_1-color: #FFFFFF;
   --colors-secondary_2-backgroundColor: #AFB3B7;
   --colors-secondary_2-color: #000000;
-  --colors-secondary_3-backgroundColor: #C6EFF3;
-  --colors-secondary_3-color: #000000;
+  --colors-secondary_3-backgroundColor: #5F686E;
+  --colors-secondary_3-color: #FFFFFF;
   --colors-secondary_4-backgroundColor: #E7E8E9;
   --colors-secondary_4-color: #000000;
   --colors-transport_city-backgroundColor: #828A00;
@@ -125,9 +127,9 @@
   --status-valid-main-color: #000000;
   --status-valid-bg-backgroundColor: rgba(162, 173, 0, 0.25);
   --status-valid-bg-color: #000000;
-  --status-info-main-backgroundColor: #007C92;
-  --status-info-main-color: #FFFFFF;
-  --status-info-bg-backgroundColor: rgba(0, 124, 146, 0.25);
+  --status-info-main-backgroundColor: #71D6E0;
+  --status-info-main-color: #000000;
+  --status-info-bg-backgroundColor: rgba(113, 214, 224, 0.25);
   --status-info-bg-color: #000000;
   --status-warning-main-backgroundColor: #E4D700;
   --status-warning-main-color: #000000;
@@ -173,6 +175,8 @@
   --colors-background_2-color: #FFFFFF;
   --colors-background_3-backgroundColor: #555E65;
   --colors-background_3-color: #FFFFFF;
+  --colors-background_gray-backgroundColor: #37424A;
+  --colors-background_gray-color: #FFFFFF;
   --colors-primary_1-backgroundColor: #A2AD00;
   --colors-primary_1-color: #000000;
   --colors-primary_2-backgroundColor: #007C92;
@@ -239,6 +243,10 @@
 .colors-background_3 {
   background-color: var(--colors-background_3-backgroundColor);
   color: var(--colors-background_3-color);
+}
+.colors-background_gray {
+  background-color: var(--colors-background_gray-backgroundColor);
+  color: var(--colors-background_gray-color);
 }
 .colors-primary_1 {
   background-color: var(--colors-primary_1-backgroundColor);

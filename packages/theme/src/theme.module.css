@@ -227,6 +227,92 @@
 }
 
 
+@media (prefers-color-scheme: dark) {
+  .light {
+  --border-primary: #2C353B;
+  --border-secondary: #FFFFFF;
+  --border-focus: #71D6E0;
+  --border-radius-circle: 1.25rem;
+  --border-radius-regular: 0.5rem;
+  --border-radius-small: 0.25rem;
+  --border-width-slim: 0.0625rem;
+  --border-width-medium: 0.125rem;
+
+  --spacings-xLarge: 1.5rem;
+  --spacings-large: 1.25rem;
+  --spacings-medium: 0.75rem;
+  --spacings-small: 0.5rem;
+  --spacings-xSmall: 0.25rem;
+
+  --icon-size-large: 1.75rem;
+  --icon-size-normal: 1.25rem;
+  --icon-size-small: 0.625rem;
+
+  --text-colors-primary: #FFFFFF;
+  --text-colors-secondary: rgba(255, 255, 255, 0.6);
+  --text-colors-disabled: rgba(255, 255, 255, 0.2);
+
+  --colors-background_0-backgroundColor: #000000;
+  --colors-background_0-color: #FFFFFF;
+  --colors-background_1-backgroundColor: #242B30;
+  --colors-background_1-color: #FFFFFF;
+  --colors-background_2-backgroundColor: #37424A;
+  --colors-background_2-color: #FFFFFF;
+  --colors-background_3-backgroundColor: #555E65;
+  --colors-background_3-color: #FFFFFF;
+  --colors-background_gray-backgroundColor: #37424A;
+  --colors-background_gray-color: #FFFFFF;
+  --colors-primary_1-backgroundColor: #A2AD00;
+  --colors-primary_1-color: #000000;
+  --colors-primary_2-backgroundColor: #007C92;
+  --colors-primary_2-color: #FFFFFF;
+  --colors-primary_3-backgroundColor: #71D6E0;
+  --colors-primary_3-color: #000000;
+  --colors-primary_destructive-backgroundColor: #A51140;
+  --colors-primary_destructive-color: #FFFFFF;
+  --colors-secondary_1-backgroundColor: #E7E8E9;
+  --colors-secondary_1-color: #000000;
+  --colors-secondary_2-backgroundColor: #37424A;
+  --colors-secondary_2-color: #FFFFFF;
+  --colors-secondary_3-backgroundColor: #006375;
+  --colors-secondary_3-color: #FFFFFF;
+  --colors-secondary_4-backgroundColor: #2C353B;
+  --colors-secondary_4-color: #FFFFFF;
+  --colors-transport_city-backgroundColor: #A2AD00;
+  --colors-transport_city-color: #000000;
+  --colors-transport_region-backgroundColor: #007C92;
+  --colors-transport_region-color: #000000;
+  --colors-transport_boat-backgroundColor: #AAE6EC;
+  --colors-transport_boat-color: #000000;
+  --colors-transport_train-backgroundColor: #B74166;
+  --colors-transport_train-color: #000000;
+  --colors-transport_airport-backgroundColor: #ED6C05;
+  --colors-transport_airport-color: #000000;
+  --colors-transport_plane-backgroundColor: #BE5604;
+  --colors-transport_plane-color: #000000;
+  --colors-transport_other-backgroundColor: #878E92;
+  --colors-transport_other-color: #000000;
+
+  --status-valid-main-backgroundColor: #A2AD00;
+  --status-valid-main-color: #000000;
+  --status-valid-bg-backgroundColor: rgba(162, 173, 0, 0.25);
+  --status-valid-bg-color: #FFFFFF;
+  --status-info-main-backgroundColor: #71D6E0;
+  --status-info-main-color: #000000;
+  --status-info-bg-backgroundColor: rgba(113, 214, 224, 0.25);
+  --status-info-bg-color: #FFFFFF;
+  --status-warning-main-backgroundColor: #E4D700;
+  --status-warning-main-color: #000000;
+  --status-warning-bg-backgroundColor: rgba(228, 215, 0, 0.25);
+  --status-warning-bg-color: #000000;
+  --status-error-main-backgroundColor: #A51140;
+  --status-error-main-color: #FFFFFF;
+  --status-error-bg-backgroundColor: rgba(165, 17, 64, 0.25);
+  --status-error-bg-color: #000000;
+  }
+}
+
+
 /* Theme color pairs */
 .colors-background_0 {
   background-color: var(--colors-background_0-backgroundColor);

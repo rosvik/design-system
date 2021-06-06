@@ -31,6 +31,8 @@ ${theme('light')}
 /* Dark theme data */
 ${theme('dark')}
 
+${darkTheme()}
+
 /* Theme color pairs */
 ${printContrastColors('colors', themes.light.colors)}
 
@@ -56,6 +58,28 @@ ${extract('text')}
 ${extract('colors')}
 
 ${extract('status')}
+}
+`;
+}
+
+function darkTheme() {
+  const extract = (name: keyof Theme) =>
+    indentJoin(printWithPrefix(name, themes.dark[name], maybeConvertToRem));
+
+  return `@media (prefers-color-scheme: dark) {
+  .light {
+${extract('border')}
+
+${extract('spacings')}
+
+${extract('icon')}
+
+${extract('text')}
+
+${extract('colors')}
+
+${extract('status')}
+  }
 }
 `;
 }

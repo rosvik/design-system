@@ -67,7 +67,7 @@ function darkTheme() {
     indentJoin(printWithPrefix(name, themes.dark[name], maybeConvertToRem));
 
   return `@media (prefers-color-scheme: dark) {
-  .light {
+  .light:not(.override-light) {
 ${extract('border')}
 
 ${extract('spacings')}

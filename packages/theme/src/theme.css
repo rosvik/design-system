@@ -228,7 +228,7 @@
 
 
 @media (prefers-color-scheme: dark) {
-  .light {
+  .light:not(.override-light) {
   --border-primary: #2C353B;
   --border-secondary: #FFFFFF;
   --border-focus: #71D6E0;

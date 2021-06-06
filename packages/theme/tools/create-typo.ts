@@ -56,7 +56,7 @@ function printHtmlMainFont(cssModule: boolean) {
   return `${selector} {
   font-family: var(--font-main);
   /* Default base size. */
-  font-size: 16px;
+  font-size: 100%;
 }`;
 }
 function printImportFonts(fonts: FontBook) {

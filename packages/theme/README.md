@@ -11,16 +11,10 @@ yarn add @atb-as/theme
 
 Import through `ts`/`js`:
 
-```ts
-import {colors} from '@atb-as/theme';
-
-console.log(colors.primary.gray_100); //=> #F5F5F6
-console.log(colors.text.dark); //=> #000000
-```
 
 ```ts
-import {themes} from '@atb-as/theme';
-
+import {createThemesFor,ThemeVariant} from '@atb-as/theme';
+const themes = createThemesFor(ThemeVariant.AtB)
 console.log(themes.light.colors.background_0);
 ```
 
@@ -33,28 +27,28 @@ Or you could import CSS files or as CSS Modules. The actual content is currently
 ```ts
 // When using imports from bundlers
 
-// With CSS Modules
-import * as classNamesTheme from '@atb-as/theme/lib/theme.module.css';
+// With CSS Modules for atb-theme
+import * as classNamesTheme from '@atb-as/theme/lib/themes/atb-theme/theme.module.css';
 import * as classNamesTypo from '@atb-as/theme/lib/typography.module.css';
 
 
-// Without CSS Modules
-import '@atb-as/theme/lib/theme.css';
+// Without CSS Modules for atb-theme
+import '@atb-as/theme/lib/themes/atb-theme/theme.css';
 import '@atb-as/theme/lib/typography.css';
 ```
 
 ```css
 /* Using css/postcss/bundlers */
-@import '@atb-as/theme/lib/theme.module.css';
+@import '@atb-as/theme/lib/themes/atb-theme/theme.module.css';
 @import '@atb-as/theme/lib/typography.module.css';
 
 /* or without modules */
-@import '@atb-as/theme/lib/theme.css';
+@import '@atb-as/theme/lib/themes/atb-theme/theme.css';
 @import '@atb-as/theme/lib/typography.css';
 
 
 /* And potentially */
-@value myClassname from "@atb-as/theme/lib/theme.css";
+@value myClassname from "@atb-as/theme/lib/themes/atb-theme/theme.css";
 ```
 
 _(note: This all depends on how you setup bundlers and consumes styles.)_
@@ -109,12 +103,15 @@ With regular CSS.
 
 ### Theme API
 
-#### `createThemes(overrides?: ConfigurationOverride<Theme>): Themes`
+#### `createThemes(themes: Themes,overrides?: ConfigurationOverride<Theme>): Themes`
 
 Create new themes (light/dark) with optinally overriden defaults
 
 ```ts
-const themes = createThemes({
+const themesVariant = createThemesFor(ThemeVariant.AtB)
+const themes = createThemes(
+  themesVariant,
+  {
   light: {
     spacings: {
       medium: 20,
@@ -126,7 +123,7 @@ themes.dark.spacings.medium;
 ```
 
 
-#### `createExtendedThemes<T>(extension: T)`
+#### `createExtendedThemes<T>(themes: Themes,extension: T)`
 
 Use Theme as base and extend with new properties. Properties can be nested and will be deep merged.
 
@@ -134,7 +131,11 @@ Use Theme as base and extend with new properties. Properties can be nested and w
 type FooExtension = {
   statusBarStyle: 'dark' | 'light';
 }
-const _themes = createExtendedThemes<FooExtension>({
+const themesVariant = createThemesFor(ThemeVariant.AtB)
+
+const _themes = createExtendedThemes<FooExtension>(
+  themesVariant,
+  {
   light: {statusBarStyle: 'dark'},
   dark: {statusBarStyle: 'light'}
 });

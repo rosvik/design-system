@@ -1,0 +1,41 @@
+.themeSelector {
+  display: flex;
+  justify-content: flex-end;
+}
+.themeSelector select {
+  margin-left: var(--spacings-medium);
+}
+.themeSelector input[type='submit'] {
+  display: none;
+}
+
+.section {
+  margin-bottom: calc(3 * var(--spacings-xLarge));
+}
+
+.swatch {
+  padding: 1rem;
+  margin-bottom: var(--spacings-small);
+}
+.swatch__header {
+  display: flex;
+  justify-content: space-between;
+}
+.swatch__title {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.swatch__colors {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  font-weight: normal;
+}
+.swatch__number {
+  font-variant-numeric: tabular-nums;
+  margin-left: var(--spacings-large);
+}
+
+.typography {
+  margin-bottom: var(--spacings-large);
+}

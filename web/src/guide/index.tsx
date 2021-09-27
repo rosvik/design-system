@@ -12,8 +12,8 @@ import {
   createTextTypeStyles,
   TextStyle,
 } from '@atb-as/theme/lib/index';
-import {CSSProperties, useEffect, useRef} from 'react';
-import {formDataToQuery, queryToSettings} from '../utils/query';
+import {CSSProperties, useEffect} from 'react';
+import {queryToSettings} from '../utils/query';
 
 const fontData = createTextTypeStyles('web');
 
@@ -22,13 +22,6 @@ type GuideProps = {
 };
 export default function Guide({theme}: GuideProps) {
   const router = useRouter();
-  const form = useRef<HTMLFormElement | null>(null);
-  const onChange = () => submit(new FormData(form?.current ?? undefined));
-
-  const submit = (data: FormData) => {
-    const queryString = formDataToQuery(data);
-    router.push(`?${queryString}`);
-  };
 
   const settings = queryToSettings(router.query);
   useBodyClass([settings.mode, `override-${settings.mode}`]);
@@ -39,19 +32,15 @@ export default function Guide({theme}: GuideProps) {
 
   return (
     <Layout theme={theme}>
-      <form
-        action="/"
-        method="get"
-        ref={form}
-        onSubmit={onChange}
-        className={styles.themeSelector}
-      >
+      <form action="/" method="get" className={styles.themeSelector}>
         <label htmlFor="mode">
           Theme mode:
           <select
             name="mode"
             id="mode"
-            onChange={onChange}
+            onChange={(e) => {
+              router.push(`?mode=${e.currentTarget.value}`);
+            }}
             defaultValue={settings.mode}
           >
             <option value="dark">Dark</option>

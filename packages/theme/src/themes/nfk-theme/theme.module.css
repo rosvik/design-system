@@ -1,0 +1,429 @@
+
+:root {
+
+/* Base color data */
+  --baseColor-white: #ffffff;
+  --baseColor-black: #000000;
+  --baseColor-primary-gray_50: #E7E8E9;
+  --baseColor-primary-gray_100: #F5F5F6;
+  --baseColor-primary-gray_200: #AFB3B7;
+  --baseColor-primary-gray_300: #878E92;
+  --baseColor-primary-gray_400: #5F686E;
+  --baseColor-primary-gray_500: #37424A;
+  --baseColor-primary-gray_600: #2C353B;
+  --baseColor-primary-gray_700: #21282C;
+  --baseColor-primary-gray_800: #161A1E;
+  --baseColor-primary-gray_900: #101416;
+  --baseColor-primary-gray_950: #1B1C1D;
+  --baseColor-primary-green_100: #E3E6B3;
+  --baseColor-primary-green_200: #DADE99;
+  --baseColor-primary-green_300: #C7CE66;
+  --baseColor-primary-green_400: #B5BD33;
+  --baseColor-primary-green_500: #A2AD00;
+  --baseColor-primary-green_600: #828A00;
+  --baseColor-primary-green_700: #616800;
+  --baseColor-primary-green_800: #414500;
+  --baseColor-primary-green_900: #313400;
+  --baseColor-secondary-cyan_100: #D4F3F6;
+  --baseColor-secondary-cyan_200: #C6EFF3;
+  --baseColor-secondary-cyan_300: #AAE6EC;
+  --baseColor-secondary-cyan_400: #8DDEE6;
+  --baseColor-secondary-cyan_500: #71D6E0;
+  --baseColor-secondary-cyan_600: #5AABB3;
+  --baseColor-secondary-cyan_700: #448086;
+  --baseColor-secondary-cyan_800: #2D565A;
+  --baseColor-secondary-cyan_900: #224043;
+  --baseColor-secondary-blue_100: #B3D8DE;
+  --baseColor-secondary-blue_200: #99CBD3;
+  --baseColor-secondary-blue_300: #66B0BE;
+  --baseColor-secondary-blue_400: #3396A8;
+  --baseColor-secondary-blue_500: #007C92;
+  --baseColor-secondary-blue_600: #006375;
+  --baseColor-secondary-blue_700: #004A58;
+  --baseColor-secondary-blue_800: #00323A;
+  --baseColor-secondary-blue_900: #00252C;
+  --baseColor-secondary-brown: #584528;
+  --baseColor-secondary-orange: #C75B12;
+  --baseColor-secondary-yellow_100: #F7F3B2;
+  --baseColor-secondary-yellow_500: #E4D700;
+  --baseColor-secondary-red_100: #E4B8C6;
+  --baseColor-secondary-red_400: #B74166;
+  --baseColor-secondary-red_500: #A51140;
+  --baseColor-text-light: #FFFFFF;
+  --baseColor-text-dark: #000000;
+  --baseColor-other-orange_500: #BE5604;
+  --baseColor-other-ekspressen_500: #ED6C05;
+  --baseColor-other-ekspressen_600: #C75B12;
+
+}
+
+/* Light theme data */
+.light {
+  --border-primary: #E7E8E9;
+  --border-secondary: #000000;
+  --border-focus: #007C92;
+  --border-radius-circle: 1.25rem;
+  --border-radius-regular: 0.5rem;
+  --border-radius-small: 0.25rem;
+  --border-width-slim: 0.0625rem;
+  --border-width-medium: 0.125rem;
+
+  --spacings-xLarge: 1.5rem;
+  --spacings-large: 1.25rem;
+  --spacings-medium: 0.75rem;
+  --spacings-small: 0.5rem;
+  --spacings-xSmall: 0.25rem;
+
+  --icon-size-large: 1.75rem;
+  --icon-size-normal: 1.25rem;
+  --icon-size-small: 0.625rem;
+
+  --text-colors-primary: #000000;
+  --text-colors-secondary: rgba(0, 0, 0, 0.6);
+  --text-colors-disabled: rgba(0, 0, 0, 0.2);
+
+  --colors-background_0-backgroundColor: #FFFFFF;
+  --colors-background_0-color: #000000;
+  --colors-background_1-backgroundColor: #E7E8E9;
+  --colors-background_1-color: #000000;
+  --colors-background_2-backgroundColor: #DBDDDE;
+  --colors-background_2-color: #000000;
+  --colors-background_3-backgroundColor: #CFD2D3;
+  --colors-background_3-color: #000000;
+  --colors-background_accent-backgroundColor: #37424A;
+  --colors-background_accent-color: #FFFFFF;
+  --colors-primary_1-backgroundColor: #A2AD00;
+  --colors-primary_1-color: #000000;
+  --colors-primary_2-backgroundColor: #007C92;
+  --colors-primary_2-color: #FFFFFF;
+  --colors-primary_3-backgroundColor: #71D6E0;
+  --colors-primary_3-color: #000000;
+  --colors-primary_destructive-backgroundColor: #A51140;
+  --colors-primary_destructive-color: #FFFFFF;
+  --colors-secondary_1-backgroundColor: #37424A;
+  --colors-secondary_1-color: #FFFFFF;
+  --colors-secondary_2-backgroundColor: #AFB3B7;
+  --colors-secondary_2-color: #000000;
+  --colors-secondary_3-backgroundColor: #5F686E;
+  --colors-secondary_3-color: #FFFFFF;
+  --colors-secondary_4-backgroundColor: #E7E8E9;
+  --colors-secondary_4-color: #000000;
+  --colors-transport_city-backgroundColor: #828A00;
+  --colors-transport_city-color: #000000;
+  --colors-transport_region-backgroundColor: #007C92;
+  --colors-transport_region-color: #000000;
+  --colors-transport_boat-backgroundColor: #448086;
+  --colors-transport_boat-color: #000000;
+  --colors-transport_train-backgroundColor: #A51140;
+  --colors-transport_train-color: #000000;
+  --colors-transport_airport-backgroundColor: #C75B12;
+  --colors-transport_airport-color: #000000;
+  --colors-transport_plane-backgroundColor: #BE5604;
+  --colors-transport_plane-color: #000000;
+  --colors-transport_other-backgroundColor: #5F686E;
+  --colors-transport_other-color: #000000;
+
+  --status-valid-main-backgroundColor: #A2AD00;
+  --status-valid-main-color: #000000;
+  --status-valid-bg-backgroundColor: rgba(162, 173, 0, 0.25);
+  --status-valid-bg-color: #000000;
+  --status-info-main-backgroundColor: #71D6E0;
+  --status-info-main-color: #000000;
+  --status-info-bg-backgroundColor: rgba(113, 214, 224, 0.25);
+  --status-info-bg-color: #000000;
+  --status-warning-main-backgroundColor: #E4D700;
+  --status-warning-main-color: #000000;
+  --status-warning-bg-backgroundColor: rgba(228, 215, 0, 0.25);
+  --status-warning-bg-color: #000000;
+  --status-error-main-backgroundColor: #A51140;
+  --status-error-main-color: #FFFFFF;
+  --status-error-bg-backgroundColor: rgba(165, 17, 64, 0.25);
+  --status-error-bg-color: #000000;
+}
+
+
+/* Dark theme data */
+.dark {
+  --border-primary: #2C353B;
+  --border-secondary: #FFFFFF;
+  --border-focus: #71D6E0;
+  --border-radius-circle: 1.25rem;
+  --border-radius-regular: 0.5rem;
+  --border-radius-small: 0.25rem;
+  --border-width-slim: 0.0625rem;
+  --border-width-medium: 0.125rem;
+
+  --spacings-xLarge: 1.5rem;
+  --spacings-large: 1.25rem;
+  --spacings-medium: 0.75rem;
+  --spacings-small: 0.5rem;
+  --spacings-xSmall: 0.25rem;
+
+  --icon-size-large: 1.75rem;
+  --icon-size-normal: 1.25rem;
+  --icon-size-small: 0.625rem;
+
+  --text-colors-primary: #FFFFFF;
+  --text-colors-secondary: rgba(255, 255, 255, 0.6);
+  --text-colors-disabled: rgba(255, 255, 255, 0.2);
+
+  --colors-background_0-backgroundColor: #000000;
+  --colors-background_0-color: #FFFFFF;
+  --colors-background_1-backgroundColor: #242B30;
+  --colors-background_1-color: #FFFFFF;
+  --colors-background_2-backgroundColor: #37424A;
+  --colors-background_2-color: #FFFFFF;
+  --colors-background_3-backgroundColor: #555E65;
+  --colors-background_3-color: #FFFFFF;
+  --colors-background_accent-backgroundColor: #37424A;
+  --colors-background_accent-color: #FFFFFF;
+  --colors-primary_1-backgroundColor: #A2AD00;
+  --colors-primary_1-color: #000000;
+  --colors-primary_2-backgroundColor: #007C92;
+  --colors-primary_2-color: #FFFFFF;
+  --colors-primary_3-backgroundColor: #71D6E0;
+  --colors-primary_3-color: #000000;
+  --colors-primary_destructive-backgroundColor: #A51140;
+  --colors-primary_destructive-color: #FFFFFF;
+  --colors-secondary_1-backgroundColor: #E7E8E9;
+  --colors-secondary_1-color: #000000;
+  --colors-secondary_2-backgroundColor: #37424A;
+  --colors-secondary_2-color: #FFFFFF;
+  --colors-secondary_3-backgroundColor: #006375;
+  --colors-secondary_3-color: #FFFFFF;
+  --colors-secondary_4-backgroundColor: #2C353B;
+  --colors-secondary_4-color: #FFFFFF;
+  --colors-transport_city-backgroundColor: #A2AD00;
+  --colors-transport_city-color: #000000;
+  --colors-transport_region-backgroundColor: #007C92;
+  --colors-transport_region-color: #000000;
+  --colors-transport_boat-backgroundColor: #AAE6EC;
+  --colors-transport_boat-color: #000000;
+  --colors-transport_train-backgroundColor: #B74166;
+  --colors-transport_train-color: #000000;
+  --colors-transport_airport-backgroundColor: #ED6C05;
+  --colors-transport_airport-color: #000000;
+  --colors-transport_plane-backgroundColor: #BE5604;
+  --colors-transport_plane-color: #000000;
+  --colors-transport_other-backgroundColor: #878E92;
+  --colors-transport_other-color: #000000;
+
+  --status-valid-main-backgroundColor: #A2AD00;
+  --status-valid-main-color: #000000;
+  --status-valid-bg-backgroundColor: rgba(162, 173, 0, 0.25);
+  --status-valid-bg-color: #FFFFFF;
+  --status-info-main-backgroundColor: #71D6E0;
+  --status-info-main-color: #000000;
+  --status-info-bg-backgroundColor: rgba(113, 214, 224, 0.25);
+  --status-info-bg-color: #FFFFFF;
+  --status-warning-main-backgroundColor: #E4D700;
+  --status-warning-main-color: #000000;
+  --status-warning-bg-backgroundColor: rgba(228, 215, 0, 0.25);
+  --status-warning-bg-color: #000000;
+  --status-error-main-backgroundColor: #A51140;
+  --status-error-main-color: #FFFFFF;
+  --status-error-bg-backgroundColor: rgba(165, 17, 64, 0.25);
+  --status-error-bg-color: #000000;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .light:not(.override-light) {
+  --border-primary: #2C353B;
+  --border-secondary: #FFFFFF;
+  --border-focus: #71D6E0;
+  --border-radius-circle: 1.25rem;
+  --border-radius-regular: 0.5rem;
+  --border-radius-small: 0.25rem;
+  --border-width-slim: 0.0625rem;
+  --border-width-medium: 0.125rem;
+
+  --spacings-xLarge: 1.5rem;
+  --spacings-large: 1.25rem;
+  --spacings-medium: 0.75rem;
+  --spacings-small: 0.5rem;
+  --spacings-xSmall: 0.25rem;
+
+  --icon-size-large: 1.75rem;
+  --icon-size-normal: 1.25rem;
+  --icon-size-small: 0.625rem;
+
+  --text-colors-primary: #FFFFFF;
+  --text-colors-secondary: rgba(255, 255, 255, 0.6);
+  --text-colors-disabled: rgba(255, 255, 255, 0.2);
+
+  --colors-background_0-backgroundColor: #000000;
+  --colors-background_0-color: #FFFFFF;
+  --colors-background_1-backgroundColor: #242B30;
+  --colors-background_1-color: #FFFFFF;
+  --colors-background_2-backgroundColor: #37424A;
+  --colors-background_2-color: #FFFFFF;
+  --colors-background_3-backgroundColor: #555E65;
+  --colors-background_3-color: #FFFFFF;
+  --colors-background_accent-backgroundColor: #37424A;
+  --colors-background_accent-color: #FFFFFF;
+  --colors-primary_1-backgroundColor: #A2AD00;
+  --colors-primary_1-color: #000000;
+  --colors-primary_2-backgroundColor: #007C92;
+  --colors-primary_2-color: #FFFFFF;
+  --colors-primary_3-backgroundColor: #71D6E0;
+  --colors-primary_3-color: #000000;
+  --colors-primary_destructive-backgroundColor: #A51140;
+  --colors-primary_destructive-color: #FFFFFF;
+  --colors-secondary_1-backgroundColor: #E7E8E9;
+  --colors-secondary_1-color: #000000;
+  --colors-secondary_2-backgroundColor: #37424A;
+  --colors-secondary_2-color: #FFFFFF;
+  --colors-secondary_3-backgroundColor: #006375;
+  --colors-secondary_3-color: #FFFFFF;
+  --colors-secondary_4-backgroundColor: #2C353B;
+  --colors-secondary_4-color: #FFFFFF;
+  --colors-transport_city-backgroundColor: #A2AD00;
+  --colors-transport_city-color: #000000;
+  --colors-transport_region-backgroundColor: #007C92;
+  --colors-transport_region-color: #000000;
+  --colors-transport_boat-backgroundColor: #AAE6EC;
+  --colors-transport_boat-color: #000000;
+  --colors-transport_train-backgroundColor: #B74166;
+  --colors-transport_train-color: #000000;
+  --colors-transport_airport-backgroundColor: #ED6C05;
+  --colors-transport_airport-color: #000000;
+  --colors-transport_plane-backgroundColor: #BE5604;
+  --colors-transport_plane-color: #000000;
+  --colors-transport_other-backgroundColor: #878E92;
+  --colors-transport_other-color: #000000;
+
+  --status-valid-main-backgroundColor: #A2AD00;
+  --status-valid-main-color: #000000;
+  --status-valid-bg-backgroundColor: rgba(162, 173, 0, 0.25);
+  --status-valid-bg-color: #FFFFFF;
+  --status-info-main-backgroundColor: #71D6E0;
+  --status-info-main-color: #000000;
+  --status-info-bg-backgroundColor: rgba(113, 214, 224, 0.25);
+  --status-info-bg-color: #FFFFFF;
+  --status-warning-main-backgroundColor: #E4D700;
+  --status-warning-main-color: #000000;
+  --status-warning-bg-backgroundColor: rgba(228, 215, 0, 0.25);
+  --status-warning-bg-color: #000000;
+  --status-error-main-backgroundColor: #A51140;
+  --status-error-main-color: #FFFFFF;
+  --status-error-bg-backgroundColor: rgba(165, 17, 64, 0.25);
+  --status-error-bg-color: #000000;
+  }
+}
+
+
+/* Theme color pairs */
+.colors-background_0 {
+  background-color: var(--colors-background_0-backgroundColor);
+  color: var(--colors-background_0-color);
+}
+.colors-background_1 {
+  background-color: var(--colors-background_1-backgroundColor);
+  color: var(--colors-background_1-color);
+}
+.colors-background_2 {
+  background-color: var(--colors-background_2-backgroundColor);
+  color: var(--colors-background_2-color);
+}
+.colors-background_3 {
+  background-color: var(--colors-background_3-backgroundColor);
+  color: var(--colors-background_3-color);
+}
+.colors-background_accent {
+  background-color: var(--colors-background_accent-backgroundColor);
+  color: var(--colors-background_accent-color);
+}
+.colors-primary_1 {
+  background-color: var(--colors-primary_1-backgroundColor);
+  color: var(--colors-primary_1-color);
+}
+.colors-primary_2 {
+  background-color: var(--colors-primary_2-backgroundColor);
+  color: var(--colors-primary_2-color);
+}
+.colors-primary_3 {
+  background-color: var(--colors-primary_3-backgroundColor);
+  color: var(--colors-primary_3-color);
+}
+.colors-primary_destructive {
+  background-color: var(--colors-primary_destructive-backgroundColor);
+  color: var(--colors-primary_destructive-color);
+}
+.colors-secondary_1 {
+  background-color: var(--colors-secondary_1-backgroundColor);
+  color: var(--colors-secondary_1-color);
+}
+.colors-secondary_2 {
+  background-color: var(--colors-secondary_2-backgroundColor);
+  color: var(--colors-secondary_2-color);
+}
+.colors-secondary_3 {
+  background-color: var(--colors-secondary_3-backgroundColor);
+  color: var(--colors-secondary_3-color);
+}
+.colors-secondary_4 {
+  background-color: var(--colors-secondary_4-backgroundColor);
+  color: var(--colors-secondary_4-color);
+}
+.colors-transport_city {
+  background-color: var(--colors-transport_city-backgroundColor);
+  color: var(--colors-transport_city-color);
+}
+.colors-transport_region {
+  background-color: var(--colors-transport_region-backgroundColor);
+  color: var(--colors-transport_region-color);
+}
+.colors-transport_boat {
+  background-color: var(--colors-transport_boat-backgroundColor);
+  color: var(--colors-transport_boat-color);
+}
+.colors-transport_train {
+  background-color: var(--colors-transport_train-backgroundColor);
+  color: var(--colors-transport_train-color);
+}
+.colors-transport_airport {
+  background-color: var(--colors-transport_airport-backgroundColor);
+  color: var(--colors-transport_airport-color);
+}
+.colors-transport_plane {
+  background-color: var(--colors-transport_plane-backgroundColor);
+  color: var(--colors-transport_plane-color);
+}
+.colors-transport_other {
+  background-color: var(--colors-transport_other-backgroundColor);
+  color: var(--colors-transport_other-color);
+}
+
+.status-valid-main {
+  background-color: var(--status-valid-main-backgroundColor);
+  color: var(--status-valid-main-color);
+}
+.status-valid-bg {
+  background-color: var(--status-valid-bg-backgroundColor);
+  color: var(--status-valid-bg-color);
+}
+.status-info-main {
+  background-color: var(--status-info-main-backgroundColor);
+  color: var(--status-info-main-color);
+}
+.status-info-bg {
+  background-color: var(--status-info-bg-backgroundColor);
+  color: var(--status-info-bg-color);
+}
+.status-warning-main {
+  background-color: var(--status-warning-main-backgroundColor);
+  color: var(--status-warning-main-color);
+}
+.status-warning-bg {
+  background-color: var(--status-warning-bg-backgroundColor);
+  color: var(--status-warning-bg-color);
+}
+.status-error-main {
+  background-color: var(--status-error-main-backgroundColor);
+  color: var(--status-error-main-color);
+}
+.status-error-bg {
+  background-color: var(--status-error-bg-backgroundColor);
+  color: var(--status-error-bg-color);
+}

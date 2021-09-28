@@ -124,19 +124,15 @@ const themes: Themes = {
     status: {
       valid: {
         main: contrastColor(colors.primary.green_500, 'dark'),
-        bg: contrastColor(hexToRgba(colors.primary.green_500, 0.25), 'dark'),
       },
       info: {
         main: contrastColor(colors.secondary.cyan_500, 'dark'),
-        bg: contrastColor(hexToRgba(colors.secondary.cyan_500, 0.25), 'dark'),
       },
       warning: {
         main: contrastColor(colors.secondary.yellow_500, 'dark'),
-        bg: contrastColor(hexToRgba(colors.secondary.yellow_500, 0.25), 'dark'),
       },
       error: {
         main: contrastColor(colors.secondary.red_500, 'light'),
-        bg: contrastColor(hexToRgba(colors.secondary.red_500, 0.25), 'dark'),
       },
     },
     text: {
@@ -186,19 +182,15 @@ const themes: Themes = {
     status: {
       valid: {
         main: contrastColor(colors.primary.green_500, 'dark'),
-        bg: contrastColor(hexToRgba(colors.primary.green_500, 0.25), 'light'),
       },
       info: {
         main: contrastColor(colors.secondary.cyan_500, 'dark'),
-        bg: contrastColor(hexToRgba(colors.secondary.cyan_500, 0.25), 'light'),
       },
       warning: {
         main: contrastColor(colors.secondary.yellow_500, 'dark'),
-        bg: contrastColor(hexToRgba(colors.secondary.yellow_500, 0.25), 'dark'),
       },
       error: {
         main: contrastColor(colors.secondary.red_500, 'light'),
-        bg: contrastColor(hexToRgba(colors.secondary.red_500, 0.25), 'dark'),
       },
     },
     text: {

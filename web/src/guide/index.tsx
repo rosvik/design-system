@@ -134,7 +134,6 @@ function convertStatusesToFlatList(statuses: StatusTheme) {
 function flattenStatus(name: string, status: Status) {
   return {
     [`${name}__main`]: status.main,
-    [`${name}__bg`]: status.bg,
   };
 }
 

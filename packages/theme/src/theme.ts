@@ -20,7 +20,6 @@ export type ContrastColor = {
 
 type StatusColor = {
   main: ContrastColor;
-  bg: ContrastColor;
 };
 
 export interface Theme {

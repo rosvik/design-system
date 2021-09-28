@@ -47,19 +47,15 @@ const themes: Themes = {
     status: {
       valid: {
         main: contrastColor('#7FDABB', 'dark'),
-        bg: contrastColor(hexToRgba('#33AF85', 0.25), 'dark'),
       },
       info: {
         main: contrastColor('#99CDDA', 'dark'),
-        bg: contrastColor(hexToRgba('#0181A2', 0.25), 'dark'),
       },
       warning: {
         main: contrastColor('#FCBA63', 'dark'),
-        bg: contrastColor(hexToRgba('#FCBA63', 0.25), 'dark'),
       },
       error: {
         main: contrastColor('#A61419', 'light'),
-        bg: contrastColor(hexToRgba('#F14950', 0.25), 'dark'),
       },
     },
     text: {
@@ -109,19 +105,15 @@ const themes: Themes = {
     status: {
       valid: {
         main: contrastColor('#7FDABB', 'dark'),
-        bg: contrastColor(hexToRgba('#33AF85', 0.25), 'light'),
       },
       info: {
         main: contrastColor('#99CDDA', 'dark'),
-        bg: contrastColor(hexToRgba('#0181A2', 0.25), 'light'),
       },
       warning: {
         main: contrastColor('#FCBA63', 'dark'),
-        bg: contrastColor(hexToRgba('#FCBA63', 0.25), 'light'),
       },
       error: {
         main: contrastColor('#BE161D', 'light'),
-        bg: contrastColor(hexToRgba('#F14950', 0.25), 'light'),
       },
     },
     text: {

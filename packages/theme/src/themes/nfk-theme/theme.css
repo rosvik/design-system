@@ -68,20 +68,12 @@
 
   --status-valid-main-backgroundColor: #7FDABB;
   --status-valid-main-color: #003441;
-  --status-valid-bg-backgroundColor: rgba(51, 175, 133, 0.25);
-  --status-valid-bg-color: #003441;
   --status-info-main-backgroundColor: #99CDDA;
   --status-info-main-color: #003441;
-  --status-info-bg-backgroundColor: rgba(1, 129, 162, 0.25);
-  --status-info-bg-color: #003441;
   --status-warning-main-backgroundColor: #FCBA63;
   --status-warning-main-color: #003441;
-  --status-warning-bg-backgroundColor: rgba(252, 186, 99, 0.25);
-  --status-warning-bg-color: #003441;
   --status-error-main-backgroundColor: #A61419;
   --status-error-main-color: #FFFFFF;
-  --status-error-bg-backgroundColor: rgba(241, 73, 80, 0.25);
-  --status-error-bg-color: #003441;
 }
 
 
@@ -153,20 +145,12 @@
 
   --status-valid-main-backgroundColor: #7FDABB;
   --status-valid-main-color: #003441;
-  --status-valid-bg-backgroundColor: rgba(51, 175, 133, 0.25);
-  --status-valid-bg-color: #FFFFFF;
   --status-info-main-backgroundColor: #99CDDA;
   --status-info-main-color: #003441;
-  --status-info-bg-backgroundColor: rgba(1, 129, 162, 0.25);
-  --status-info-bg-color: #FFFFFF;
   --status-warning-main-backgroundColor: #FCBA63;
   --status-warning-main-color: #003441;
-  --status-warning-bg-backgroundColor: rgba(252, 186, 99, 0.25);
-  --status-warning-bg-color: #FFFFFF;
   --status-error-main-backgroundColor: #BE161D;
   --status-error-main-color: #FFFFFF;
-  --status-error-bg-backgroundColor: rgba(241, 73, 80, 0.25);
-  --status-error-bg-color: #FFFFFF;
 }
 
 
@@ -238,20 +222,12 @@
 
   --status-valid-main-backgroundColor: #7FDABB;
   --status-valid-main-color: #003441;
-  --status-valid-bg-backgroundColor: rgba(51, 175, 133, 0.25);
-  --status-valid-bg-color: #FFFFFF;
   --status-info-main-backgroundColor: #99CDDA;
   --status-info-main-color: #003441;
-  --status-info-bg-backgroundColor: rgba(1, 129, 162, 0.25);
-  --status-info-bg-color: #FFFFFF;
   --status-warning-main-backgroundColor: #FCBA63;
   --status-warning-main-color: #003441;
-  --status-warning-bg-backgroundColor: rgba(252, 186, 99, 0.25);
-  --status-warning-bg-color: #FFFFFF;
   --status-error-main-backgroundColor: #BE161D;
   --status-error-main-color: #FFFFFF;
-  --status-error-bg-backgroundColor: rgba(241, 73, 80, 0.25);
-  --status-error-bg-color: #FFFFFF;
   }
 }
 
@@ -342,31 +318,15 @@
   background-color: var(--status-valid-main-backgroundColor);
   color: var(--status-valid-main-color);
 }
-.status-valid-bg {
-  background-color: var(--status-valid-bg-backgroundColor);
-  color: var(--status-valid-bg-color);
-}
 .status-info-main {
   background-color: var(--status-info-main-backgroundColor);
   color: var(--status-info-main-color);
-}
-.status-info-bg {
-  background-color: var(--status-info-bg-backgroundColor);
-  color: var(--status-info-bg-color);
 }
 .status-warning-main {
   background-color: var(--status-warning-main-backgroundColor);
   color: var(--status-warning-main-color);
 }
-.status-warning-bg {
-  background-color: var(--status-warning-bg-backgroundColor);
-  color: var(--status-warning-bg-color);
-}
 .status-error-main {
   background-color: var(--status-error-main-backgroundColor);
   color: var(--status-error-main-color);
-}
-.status-error-bg {
-  background-color: var(--status-error-bg-backgroundColor);
-  color: var(--status-error-bg-color);
 }

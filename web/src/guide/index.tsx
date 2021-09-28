@@ -11,11 +11,16 @@ import {
   ThemeVariant,
   createTextTypeStyles,
   TextStyle,
+  Themes,
 } from '@atb-as/theme/lib/index';
 import {CSSProperties, useEffect} from 'react';
 import {queryToSettings} from '../utils/query';
 
 const fontData = createTextTypeStyles('web');
+
+type StatusTheme = Themes['light']['status'];
+type Status = Themes['light']['status']['valid'];
+type Colors = Themes['light']['colors'];
 
 type GuideProps = {
   theme: ThemeVariant;
@@ -27,7 +32,12 @@ export default function Guide({theme}: GuideProps) {
   useBodyClass([settings.mode, `override-${settings.mode}`]);
 
   const themeObj = createThemesFor(theme);
-  const colorPairs = Object.entries(themeObj[settings.mode].colors);
+  const [colorPairs, transportPairs] = splitColorsOnTransport(
+    themeObj[settings.mode].colors,
+  );
+  const stausPairs = Object.entries(
+    convertStatusesToFlatList(themeObj[settings.mode].status),
+  );
   const fontPairs = Object.entries(fontData);
 
   return (
@@ -64,6 +74,30 @@ export default function Guide({theme}: GuideProps) {
       </section>
 
       <section className={styles.section}>
+        <h2>Transportation</h2>
+        {transportPairs.map(([name, color]) => (
+          <Swatch
+            key={name}
+            mode={settings.mode}
+            name={name}
+            color={color as ContrastColor}
+          />
+        ))}
+      </section>
+
+      <section className={styles.section}>
+        <h2>Status</h2>
+        {stausPairs.map(([name, color]) => (
+          <Swatch
+            key={name}
+            mode={settings.mode}
+            name={name}
+            color={color as ContrastColor}
+          />
+        ))}
+      </section>
+
+      <section className={styles.section}>
         <h2>Typography</h2>
         {fontPairs.map(([name, fontStyle]) => (
           <FontType key={name} name={name} fontStyle={fontStyle} />
@@ -73,6 +107,37 @@ export default function Guide({theme}: GuideProps) {
   );
 }
 
+type ColorPair = [string, ContrastColor];
+function splitColorsOnTransport(colors: Colors): [ColorPair[], ColorPair[]] {
+  let data: [ColorPair[], ColorPair[]] = [[], []];
+
+  for (let [name, color] of Object.entries(colors)) {
+    const index = name.startsWith('transport') ? 1 : 0;
+    data[index].push([name, color]);
+  }
+
+  return data;
+}
+
+function convertStatusesToFlatList(statuses: StatusTheme) {
+  let data: {[key: string]: ContrastColor} = {};
+
+  for (let [name, status] of Object.entries(statuses)) {
+    data = {
+      ...data,
+      ...flattenStatus(name, status),
+    };
+  }
+
+  return data;
+}
+function flattenStatus(name: string, status: Status) {
+  return {
+    [`${name}__main`]: status.main,
+    [`${name}__bg`]: status.bg,
+  };
+}
+
 type SwatchProps = {
   name: string;
   mode: Mode;
@@ -80,6 +145,12 @@ type SwatchProps = {
   color: ContrastColor;
 };
 function Swatch({mode, name, color}: SwatchProps) {
+  let contrast = '';
+
+  try {
+    contrast = getContrastRatio(color.color, color.backgroundColor).toFixed(2);
+  } catch (e) {}
+
   return (
     <section
       style={{
@@ -92,9 +163,7 @@ function Swatch({mode, name, color}: SwatchProps) {
         <h3 className={styles.swatch__title}>
           {mode} / {name} + Text / {color.textColorType}
         </h3>
-        <div className={styles.swatch__number}>
-          {getContrastRatio(color.color, color.backgroundColor).toFixed(2)}
-        </div>
+        <div className={styles.swatch__number}>{contrast}</div>
       </div>
       <div className={styles.swatch__colors}>
         {color.color} / {color.backgroundColor}

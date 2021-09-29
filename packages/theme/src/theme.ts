@@ -48,6 +48,10 @@ export interface Theme {
     transport_other: ContrastColor;
   };
 
+  content: {
+    subtle_primary: ContrastColor;
+  };
+
   status: {
     valid: StatusColor;
     info: StatusColor;

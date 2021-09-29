@@ -44,6 +44,11 @@ const themes: Themes = {
       transport_plane: contrastColor('#318181', 'light'),
       transport_other: contrastColor('#717171', 'light'),
     },
+
+    content: {
+      subtle_primary: contrastColor('#E7E8E9', 'dark'),
+    },
+
     status: {
       valid: {
         main: contrastColor('#7FDABB', 'dark'),
@@ -101,6 +106,9 @@ const themes: Themes = {
       transport_airport: contrastColor('#AD91D5'),
       transport_plane: contrastColor('#6FA7A7'),
       transport_other: contrastColor('#9C9C9C'),
+    },
+    content: {
+      subtle_primary: contrastColor('#1B1C1D', 'dark'),
     },
     status: {
       valid: {

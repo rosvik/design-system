@@ -1,0 +1,35 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+}
+.main {
+  margin: auto;
+  width: 90%;
+  max-width: 900px;
+
+  padding-top: calc(3 * var(--spacings-xLarge));
+}
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: var(--colors-background_accent-backgroundColor);
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.nav__link {
+  color: var(--colors-background_accent-color);
+  padding: var(--spacings-medium);
+  display: block;
+}
+.nav__link:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.nav__link--active {
+  background-color: rgba(255, 255, 255, 0.2);
+}

@@ -27,7 +27,13 @@
     "skipLibCheck": true,
     "noImplicitAny": true,
 
-    "noEmit": false
+    "noEmit": false,
+    "baseUrl": ".",
+
+    "paths": {
+      "@atb-as/*/lib": ["packages/*/src"],
+      "@atb-as/theme/lib/*": ["packages/profile/src/*"]
+    }
   },
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx"]

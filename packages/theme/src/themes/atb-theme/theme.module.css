@@ -1,61 +1,4 @@
 
-:root {
-
-/* Base color data */
-  --baseColor-white: #ffffff;
-  --baseColor-black: #000000;
-  --baseColor-primary-gray_50: #E7E8E9;
-  --baseColor-primary-gray_100: #F5F5F6;
-  --baseColor-primary-gray_200: #AFB3B7;
-  --baseColor-primary-gray_300: #878E92;
-  --baseColor-primary-gray_400: #5F686E;
-  --baseColor-primary-gray_500: #37424A;
-  --baseColor-primary-gray_600: #2C353B;
-  --baseColor-primary-gray_700: #21282C;
-  --baseColor-primary-gray_800: #161A1E;
-  --baseColor-primary-gray_900: #101416;
-  --baseColor-primary-gray_950: #1B1C1D;
-  --baseColor-primary-green_100: #E3E6B3;
-  --baseColor-primary-green_200: #DADE99;
-  --baseColor-primary-green_300: #C7CE66;
-  --baseColor-primary-green_400: #B5BD33;
-  --baseColor-primary-green_500: #A2AD00;
-  --baseColor-primary-green_600: #828A00;
-  --baseColor-primary-green_700: #616800;
-  --baseColor-primary-green_800: #414500;
-  --baseColor-primary-green_900: #313400;
-  --baseColor-secondary-cyan_100: #D4F3F6;
-  --baseColor-secondary-cyan_200: #C6EFF3;
-  --baseColor-secondary-cyan_300: #AAE6EC;
-  --baseColor-secondary-cyan_400: #8DDEE6;
-  --baseColor-secondary-cyan_500: #71D6E0;
-  --baseColor-secondary-cyan_600: #5AABB3;
-  --baseColor-secondary-cyan_700: #448086;
-  --baseColor-secondary-cyan_800: #2D565A;
-  --baseColor-secondary-cyan_900: #224043;
-  --baseColor-secondary-blue_100: #B3D8DE;
-  --baseColor-secondary-blue_200: #99CBD3;
-  --baseColor-secondary-blue_300: #66B0BE;
-  --baseColor-secondary-blue_400: #3396A8;
-  --baseColor-secondary-blue_500: #007C92;
-  --baseColor-secondary-blue_600: #006375;
-  --baseColor-secondary-blue_700: #004A58;
-  --baseColor-secondary-blue_800: #00323A;
-  --baseColor-secondary-blue_900: #00252C;
-  --baseColor-secondary-brown: #584528;
-  --baseColor-secondary-orange: #C75B12;
-  --baseColor-secondary-yellow_100: #F7F3B2;
-  --baseColor-secondary-yellow_500: #E4D700;
-  --baseColor-secondary-red_100: #E4B8C6;
-  --baseColor-secondary-red_400: #B74166;
-  --baseColor-secondary-red_500: #A51140;
-  --baseColor-text-light: #FFFFFF;
-  --baseColor-text-dark: #000000;
-  --baseColor-other-orange_500: #BE5604;
-  --baseColor-other-ekspressen_500: #ED6C05;
-  --baseColor-other-ekspressen_600: #C75B12;
-
-}
 
 /* Light theme data */
 .light {
@@ -125,20 +68,12 @@
 
   --status-valid-main-backgroundColor: #A2AD00;
   --status-valid-main-color: #000000;
-  --status-valid-bg-backgroundColor: rgba(162, 173, 0, 0.25);
-  --status-valid-bg-color: #000000;
   --status-info-main-backgroundColor: #71D6E0;
   --status-info-main-color: #000000;
-  --status-info-bg-backgroundColor: rgba(113, 214, 224, 0.25);
-  --status-info-bg-color: #000000;
   --status-warning-main-backgroundColor: #E4D700;
   --status-warning-main-color: #000000;
-  --status-warning-bg-backgroundColor: rgba(228, 215, 0, 0.25);
-  --status-warning-bg-color: #000000;
   --status-error-main-backgroundColor: #A51140;
   --status-error-main-color: #FFFFFF;
-  --status-error-bg-backgroundColor: rgba(165, 17, 64, 0.25);
-  --status-error-bg-color: #000000;
 }
 
 
@@ -210,20 +145,12 @@
 
   --status-valid-main-backgroundColor: #A2AD00;
   --status-valid-main-color: #000000;
-  --status-valid-bg-backgroundColor: rgba(162, 173, 0, 0.25);
-  --status-valid-bg-color: #FFFFFF;
   --status-info-main-backgroundColor: #71D6E0;
   --status-info-main-color: #000000;
-  --status-info-bg-backgroundColor: rgba(113, 214, 224, 0.25);
-  --status-info-bg-color: #FFFFFF;
   --status-warning-main-backgroundColor: #E4D700;
   --status-warning-main-color: #000000;
-  --status-warning-bg-backgroundColor: rgba(228, 215, 0, 0.25);
-  --status-warning-bg-color: #000000;
   --status-error-main-backgroundColor: #A51140;
   --status-error-main-color: #FFFFFF;
-  --status-error-bg-backgroundColor: rgba(165, 17, 64, 0.25);
-  --status-error-bg-color: #000000;
 }
 
 
@@ -295,20 +222,12 @@
 
   --status-valid-main-backgroundColor: #A2AD00;
   --status-valid-main-color: #000000;
-  --status-valid-bg-backgroundColor: rgba(162, 173, 0, 0.25);
-  --status-valid-bg-color: #FFFFFF;
   --status-info-main-backgroundColor: #71D6E0;
   --status-info-main-color: #000000;
-  --status-info-bg-backgroundColor: rgba(113, 214, 224, 0.25);
-  --status-info-bg-color: #FFFFFF;
   --status-warning-main-backgroundColor: #E4D700;
   --status-warning-main-color: #000000;
-  --status-warning-bg-backgroundColor: rgba(228, 215, 0, 0.25);
-  --status-warning-bg-color: #000000;
   --status-error-main-backgroundColor: #A51140;
   --status-error-main-color: #FFFFFF;
-  --status-error-bg-backgroundColor: rgba(165, 17, 64, 0.25);
-  --status-error-bg-color: #000000;
   }
 }
 
@@ -399,31 +318,15 @@
   background-color: var(--status-valid-main-backgroundColor);
   color: var(--status-valid-main-color);
 }
-.status-valid-bg {
-  background-color: var(--status-valid-bg-backgroundColor);
-  color: var(--status-valid-bg-color);
-}
 .status-info-main {
   background-color: var(--status-info-main-backgroundColor);
   color: var(--status-info-main-color);
-}
-.status-info-bg {
-  background-color: var(--status-info-bg-backgroundColor);
-  color: var(--status-info-bg-color);
 }
 .status-warning-main {
   background-color: var(--status-warning-main-backgroundColor);
   color: var(--status-warning-main-color);
 }
-.status-warning-bg {
-  background-color: var(--status-warning-bg-backgroundColor);
-  color: var(--status-warning-bg-color);
-}
 .status-error-main {
   background-color: var(--status-error-main-backgroundColor);
   color: var(--status-error-main-color);
-}
-.status-error-bg {
-  background-color: var(--status-error-bg-backgroundColor);
-  color: var(--status-error-bg-color);
 }

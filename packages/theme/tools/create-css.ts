@@ -1,9 +1,9 @@
 import outputThemes from './create-theme';
 import outputTypography from './create-typo';
-import {AtBThemes} from '../src/themes';
-import {colors as AtBColors} from '../src/themes/atb-theme/colors';
+import {AtBThemes, NfkThemes} from '../src/themes';
 
-Promise.all([outputThemes('atb-theme', AtBThemes,AtBColors), outputTypography()]).then(
-  () => console.log('Written CSS files'),
-  console.error,
-);
+Promise.all([
+  outputThemes('atb-theme', AtBThemes),
+  outputThemes('nfk-theme', NfkThemes),
+  outputTypography(),
+]).then(() => console.log('Written CSS files'), console.error);

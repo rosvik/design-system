@@ -3,6 +3,7 @@
 Monorepo for handling theming, colors, typography and more for different applications and solutions from AtB.
 
 - [`@atb-as/theme`](./packages/theme)
+- [`@atb-as/assets`](./packages/assets)
 
 Current flow for making changes:
 - Create a branch for the changes

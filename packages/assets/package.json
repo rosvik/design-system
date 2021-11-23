@@ -1,0 +1,24 @@
+{
+  "name": "@atb-as/generate-assets",
+  "version": "0.0.1",
+  "private": false,
+  "description": "OOS Design System generate-assets",
+  "license": "EUPL-1.2",
+  "bin": "./lib/bin.js",
+  "main": "./lib/generate.js",
+  "files": [
+    "lib",
+    "files"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.9",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
+}

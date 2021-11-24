@@ -4,7 +4,9 @@
   "private": false,
   "description": "OOS Design System generate-assets",
   "license": "EUPL-1.2",
-  "bin": "./lib/bin.js",
+  "bin": {
+    "generate-assets": "./lib/bin.js"
+  },
   "main": "./lib/generate.js",
   "files": [
     "lib",

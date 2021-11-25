@@ -15,12 +15,21 @@ generateAssets(orgId: string, destinationDirectory: string)
 
 Format:
 
-```ts
-npx @atb-as/assets orgId outputDirectory
+```sh
+npx @atb-as/generate-assets orgId outputDirectory
 ```
 
 Example:
 
-```ts
-npx @atb-as/assets atb static
+```sh
+npx @atb-as/generate-assets atb static
+```
+
+Or as a local dependency
+
+```
+npm install -D @atb-as/generate-assets
+
+# Run locally installed bin
+npx generate-assets
 ```

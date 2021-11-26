@@ -10,6 +10,10 @@ async function getFiles(entry: string): Promise<string[]> {
 
   let files: string[] = [];
   for (let foundEntry of originalEntries) {
+    // Ignore helper git structure files only relevant for package.
+    if (foundEntry.name.includes('.gitkeep')) {
+      continue;
+    }
     const res = path.resolve(entry, foundEntry.name);
     const result = foundEntry.isDirectory() ? await getFiles(res) : [res];
     files = files.concat(result);

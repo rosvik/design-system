@@ -13,7 +13,8 @@
     "files"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "pack": "yarn pack"
   },
   "devDependencies": {
     "@types/node": "^16.11.9",

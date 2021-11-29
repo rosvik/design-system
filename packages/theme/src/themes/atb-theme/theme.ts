@@ -74,6 +74,8 @@ export const colors = {
     red_400: '#C76B89',
     red_500: '#B74166',
     red_600: '#A51140',
+
+    burgundy_800: '#4B2942',
   },
   text: {
     light: '#FFFFFF',
@@ -111,13 +113,13 @@ const themes: Themes = {
       secondary_3: contrastColor(colors.primary.gray_400, 'light'),
       secondary_4: contrastColor(colors.primary.gray_50, 'dark'),
 
-      transport_city: contrastColor(colors.primary.green_600),
-      transport_region: contrastColor(colors.secondary.blue_500),
-      transport_boat: contrastColor(colors.secondary.cyan_700),
-      transport_train: contrastColor(colors.secondary.red_500),
-      transport_airport: contrastColor(colors.other.orange_500),
-      transport_plane: contrastColor(colors.other.orange_500),
-      transport_other: contrastColor(colors.primary.gray_400),
+      transport_city: contrastColor(colors.primary.green_300, 'dark'),
+      transport_region: contrastColor(colors.secondary.blue_500, 'light'),
+      transport_boat: contrastColor(colors.secondary.cyan_200, 'dark'),
+      transport_train: contrastColor(colors.secondary.burgundy_800, 'light'),
+      transport_airport: contrastColor(colors.other.orange_500, 'dark'),
+      transport_plane: contrastColor(colors.other.orange_500, 'dark'),
+      transport_other: contrastColor(colors.primary.gray_600, 'light'),
     },
 
     content: {
@@ -174,13 +176,13 @@ const themes: Themes = {
       secondary_3: contrastColor(colors.secondary.blue_600, 'light'),
       secondary_4: contrastColor(colors.primary.gray_600, 'light'),
 
-      transport_city: contrastColor(colors.primary.green_500),
-      transport_region: contrastColor(colors.secondary.blue_500),
-      transport_boat: contrastColor(colors.secondary.cyan_300),
-      transport_train: contrastColor(colors.secondary.red_400),
-      transport_airport: contrastColor(colors.other.orange_500),
-      transport_plane: contrastColor(colors.other.orange_500),
-      transport_other: contrastColor(colors.primary.gray_300),
+      transport_city: contrastColor(colors.primary.green_300, 'dark'),
+      transport_region: contrastColor(colors.secondary.blue_500, 'light'),
+      transport_boat: contrastColor(colors.secondary.cyan_200, 'dark'),
+      transport_train: contrastColor(colors.secondary.burgundy_800, 'light'),
+      transport_airport: contrastColor(colors.other.orange_500, 'dark'),
+      transport_plane: contrastColor(colors.other.orange_500, 'dark'),
+      transport_other: contrastColor(colors.primary.gray_200, 'dark'),
     },
     content: {
       subtle_primary: contrastColor(colors.primary.gray_950, 'dark'),

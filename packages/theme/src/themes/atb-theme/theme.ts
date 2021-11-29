@@ -104,7 +104,7 @@ const themes: Themes = {
       background_accent: contrastColor(colors.primary.gray_700, 'light'),
       primary_1: contrastColor(colors.primary.green_300, 'dark'),
       primary_2: contrastColor(colors.secondary.blue_500, 'light'),
-      primary_3: contrastColor(colors.secondary.cyan_500, 'dark'),
+      primary_3: contrastColor(colors.secondary.cyan_200, 'dark'),
       primary_destructive: contrastColor(colors.secondary.red_600, 'light'),
       secondary_1: contrastColor(colors.primary.gray_700, 'light'),
       secondary_2: contrastColor(colors.white, 'dark'),
@@ -135,7 +135,7 @@ const themes: Themes = {
         main: contrastColor(colors.secondary.yellow_200, 'dark'),
       },
       error: {
-        main: contrastColor(colors.secondary.red_500, 'light'),
+        main: contrastColor(colors.secondary.red_600, 'light'),
       },
     },
     text: {
@@ -187,16 +187,16 @@ const themes: Themes = {
     },
     status: {
       valid: {
-        main: contrastColor(colors.primary.green_500, 'dark'),
+        main: contrastColor(colors.primary.green_300, 'dark'),
       },
       info: {
-        main: contrastColor(colors.secondary.cyan_500, 'dark'),
+        main: contrastColor(colors.secondary.blue_500, 'light'),
       },
       warning: {
-        main: contrastColor(colors.secondary.yellow_500, 'dark'),
+        main: contrastColor(colors.secondary.yellow_200, 'dark'),
       },
       error: {
-        main: contrastColor(colors.secondary.red_500, 'light'),
+        main: contrastColor(colors.secondary.red_600, 'light'),
       },
     },
     text: {

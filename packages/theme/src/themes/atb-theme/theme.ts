@@ -131,7 +131,7 @@ const themes: Themes = {
         main: contrastColor(colors.primary.green_500, 'dark'),
       },
       info: {
-        main: contrastColor(colors.secondary.cyan_500, 'dark'),
+        main: contrastColor(colors.secondary.cyan_200, 'dark'),
       },
       warning: {
         main: contrastColor(colors.secondary.yellow_200, 'dark'),
@@ -182,7 +182,7 @@ const themes: Themes = {
       transport_train: contrastColor(colors.secondary.burgundy_800, 'light'),
       transport_airport: contrastColor(colors.other.orange_500, 'dark'),
       transport_plane: contrastColor(colors.other.orange_500, 'dark'),
-      transport_other: contrastColor(colors.primary.gray_200, 'dark'),
+      transport_other: contrastColor(colors.primary.gray_600, 'light'),
     },
     content: {
       subtle_primary: contrastColor(colors.primary.gray_950, 'dark'),
@@ -192,7 +192,7 @@ const themes: Themes = {
         main: contrastColor(colors.primary.green_300, 'dark'),
       },
       info: {
-        main: contrastColor(colors.secondary.blue_500, 'light'),
+        main: contrastColor(colors.secondary.cyan_200, 'dark'),
       },
       warning: {
         main: contrastColor(colors.secondary.yellow_200, 'dark'),

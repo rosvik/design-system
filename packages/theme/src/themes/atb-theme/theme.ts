@@ -41,7 +41,7 @@ export const colors = {
     green_500: '#757D00',
     green_600: '#5B6100',
     green_700: '#464A00',
-    green_800: '#32360',
+    green_800: '#323600',
     green_900: '#1F2100',
   },
   secondary: {

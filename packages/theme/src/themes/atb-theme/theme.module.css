@@ -2,7 +2,7 @@
 
 /* Light theme data */
 .light {
-  --border-primary: #E7E8E9;
+  --border-primary: #F1F2F2;
   --border-secondary: #000000;
   --border-focus: #007C92;
   --border-radius-circle: 1.25rem;
@@ -27,11 +27,11 @@
 
   --colors-background_0-backgroundColor: #FFFFFF;
   --colors-background_0-color: #000000;
-  --colors-background_1-backgroundColor: #E7E8E9;
+  --colors-background_1-backgroundColor: #F1F2F2;
   --colors-background_1-color: #000000;
-  --colors-background_2-backgroundColor: #DBDDDE;
+  --colors-background_2-backgroundColor: #E3E5E6;
   --colors-background_2-color: #000000;
-  --colors-background_3-backgroundColor: #CFD2D3;
+  --colors-background_3-backgroundColor: #D5D7D9;
   --colors-background_3-color: #000000;
   --colors-background_accent-backgroundColor: #37424A;
   --colors-background_accent-color: #FFFFFF;
@@ -45,28 +45,28 @@
   --colors-primary_destructive-color: #FFFFFF;
   --colors-secondary_1-backgroundColor: #37424A;
   --colors-secondary_1-color: #FFFFFF;
-  --colors-secondary_2-backgroundColor: #AFB3B7;
+  --colors-secondary_2-backgroundColor: #ffffff;
   --colors-secondary_2-color: #000000;
-  --colors-secondary_3-backgroundColor: #5F686E;
+  --colors-secondary_3-backgroundColor: #8D9398;
   --colors-secondary_3-color: #FFFFFF;
-  --colors-secondary_4-backgroundColor: #E7E8E9;
+  --colors-secondary_4-backgroundColor: #F1F2F2;
   --colors-secondary_4-color: #000000;
-  --colors-transport_city-backgroundColor: #828A00;
+  --colors-transport_city-backgroundColor: #A2AD00;
   --colors-transport_city-color: #000000;
   --colors-transport_region-backgroundColor: #007C92;
-  --colors-transport_region-color: #000000;
-  --colors-transport_boat-backgroundColor: #448086;
+  --colors-transport_region-color: #FFFFFF;
+  --colors-transport_boat-backgroundColor: #71D6E0;
   --colors-transport_boat-color: #000000;
-  --colors-transport_train-backgroundColor: #A51140;
-  --colors-transport_train-color: #000000;
+  --colors-transport_train-backgroundColor: #4B2942;
+  --colors-transport_train-color: #FFFFFF;
   --colors-transport_airport-backgroundColor: #C75B12;
   --colors-transport_airport-color: #000000;
-  --colors-transport_plane-backgroundColor: #BE5604;
+  --colors-transport_plane-backgroundColor: #C75B12;
   --colors-transport_plane-color: #000000;
-  --colors-transport_other-backgroundColor: #5F686E;
-  --colors-transport_other-color: #000000;
+  --colors-transport_other-backgroundColor: #555E65;
+  --colors-transport_other-color: #FFFFFF;
 
-  --status-valid-main-backgroundColor: #A2AD00;
+  --status-valid-main-backgroundColor: #757D00;
   --status-valid-main-color: #000000;
   --status-info-main-backgroundColor: #71D6E0;
   --status-info-main-color: #000000;
@@ -79,9 +79,9 @@
 
 /* Dark theme data */
 .dark {
-  --border-primary: #2C353B;
+  --border-primary: #555E65;
   --border-secondary: #FFFFFF;
-  --border-focus: #71D6E0;
+  --border-focus: #448086;
   --border-radius-circle: 1.25rem;
   --border-radius-regular: 0.5rem;
   --border-radius-small: 0.25rem;
@@ -116,32 +116,32 @@
   --colors-primary_1-color: #000000;
   --colors-primary_2-backgroundColor: #007C92;
   --colors-primary_2-color: #FFFFFF;
-  --colors-primary_3-backgroundColor: #71D6E0;
+  --colors-primary_3-backgroundColor: #448086;
   --colors-primary_3-color: #000000;
   --colors-primary_destructive-backgroundColor: #A51140;
   --colors-primary_destructive-color: #FFFFFF;
-  --colors-secondary_1-backgroundColor: #E7E8E9;
+  --colors-secondary_1-backgroundColor: #A9AEB1;
   --colors-secondary_1-color: #000000;
-  --colors-secondary_2-backgroundColor: #37424A;
+  --colors-secondary_2-backgroundColor: #000000;
   --colors-secondary_2-color: #FFFFFF;
-  --colors-secondary_3-backgroundColor: #006375;
+  --colors-secondary_3-backgroundColor: #006678;
   --colors-secondary_3-color: #FFFFFF;
-  --colors-secondary_4-backgroundColor: #2C353B;
+  --colors-secondary_4-backgroundColor: #555E65;
   --colors-secondary_4-color: #FFFFFF;
   --colors-transport_city-backgroundColor: #A2AD00;
   --colors-transport_city-color: #000000;
   --colors-transport_region-backgroundColor: #007C92;
-  --colors-transport_region-color: #000000;
-  --colors-transport_boat-backgroundColor: #AAE6EC;
+  --colors-transport_region-color: #FFFFFF;
+  --colors-transport_boat-backgroundColor: #71D6E0;
   --colors-transport_boat-color: #000000;
-  --colors-transport_train-backgroundColor: #B74166;
-  --colors-transport_train-color: #000000;
-  --colors-transport_airport-backgroundColor: #ED6C05;
+  --colors-transport_train-backgroundColor: #4B2942;
+  --colors-transport_train-color: #FFFFFF;
+  --colors-transport_airport-backgroundColor: #C75B12;
   --colors-transport_airport-color: #000000;
-  --colors-transport_plane-backgroundColor: #BE5604;
+  --colors-transport_plane-backgroundColor: #C75B12;
   --colors-transport_plane-color: #000000;
-  --colors-transport_other-backgroundColor: #878E92;
-  --colors-transport_other-color: #000000;
+  --colors-transport_other-backgroundColor: #555E65;
+  --colors-transport_other-color: #FFFFFF;
 
   --status-valid-main-backgroundColor: #A2AD00;
   --status-valid-main-color: #000000;
@@ -156,9 +156,9 @@
 
 @media (prefers-color-scheme: dark) {
   .light:not(.override-light) {
-  --border-primary: #2C353B;
+  --border-primary: #555E65;
   --border-secondary: #FFFFFF;
-  --border-focus: #71D6E0;
+  --border-focus: #448086;
   --border-radius-circle: 1.25rem;
   --border-radius-regular: 0.5rem;
   --border-radius-small: 0.25rem;
@@ -193,32 +193,32 @@
   --colors-primary_1-color: #000000;
   --colors-primary_2-backgroundColor: #007C92;
   --colors-primary_2-color: #FFFFFF;
-  --colors-primary_3-backgroundColor: #71D6E0;
+  --colors-primary_3-backgroundColor: #448086;
   --colors-primary_3-color: #000000;
   --colors-primary_destructive-backgroundColor: #A51140;
   --colors-primary_destructive-color: #FFFFFF;
-  --colors-secondary_1-backgroundColor: #E7E8E9;
+  --colors-secondary_1-backgroundColor: #A9AEB1;
   --colors-secondary_1-color: #000000;
-  --colors-secondary_2-backgroundColor: #37424A;
+  --colors-secondary_2-backgroundColor: #000000;
   --colors-secondary_2-color: #FFFFFF;
-  --colors-secondary_3-backgroundColor: #006375;
+  --colors-secondary_3-backgroundColor: #006678;
   --colors-secondary_3-color: #FFFFFF;
-  --colors-secondary_4-backgroundColor: #2C353B;
+  --colors-secondary_4-backgroundColor: #555E65;
   --colors-secondary_4-color: #FFFFFF;
   --colors-transport_city-backgroundColor: #A2AD00;
   --colors-transport_city-color: #000000;
   --colors-transport_region-backgroundColor: #007C92;
-  --colors-transport_region-color: #000000;
-  --colors-transport_boat-backgroundColor: #AAE6EC;
+  --colors-transport_region-color: #FFFFFF;
+  --colors-transport_boat-backgroundColor: #71D6E0;
   --colors-transport_boat-color: #000000;
-  --colors-transport_train-backgroundColor: #B74166;
-  --colors-transport_train-color: #000000;
-  --colors-transport_airport-backgroundColor: #ED6C05;
+  --colors-transport_train-backgroundColor: #4B2942;
+  --colors-transport_train-color: #FFFFFF;
+  --colors-transport_airport-backgroundColor: #C75B12;
   --colors-transport_airport-color: #000000;
-  --colors-transport_plane-backgroundColor: #BE5604;
+  --colors-transport_plane-backgroundColor: #C75B12;
   --colors-transport_plane-color: #000000;
-  --colors-transport_other-backgroundColor: #878E92;
-  --colors-transport_other-color: #000000;
+  --colors-transport_other-backgroundColor: #555E65;
+  --colors-transport_other-color: #FFFFFF;
 
   --status-valid-main-backgroundColor: #A2AD00;
   --status-valid-main-color: #000000;

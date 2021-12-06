@@ -128,7 +128,7 @@ const themes: Themes = {
 
     status: {
       valid: {
-        main: contrastColor(colors.primary.green_500, 'dark'),
+        main: contrastColor(colors.primary.green_300, 'dark'),
       },
       info: {
         main: contrastColor(colors.secondary.cyan_200, 'dark'),

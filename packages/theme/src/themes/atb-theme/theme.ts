@@ -31,6 +31,7 @@ export const colors = {
     gray_600: '#555E65',
     gray_700: '#37424A',
     gray_800: '#2B343A',
+    gray_850: '#242B30',
     gray_900: '#1A2024',
     gray_950: '#101315',
     // greens
@@ -148,7 +149,7 @@ const themes: Themes = {
       },
     },
     border: {
-      primary: colors.primary.gray_50,
+      primary: backgrounds.light.level1,
       secondary: colors.text.dark,
       focus: colors.secondary.blue_500,
       radius: borderRadius,
@@ -173,7 +174,7 @@ const themes: Themes = {
       primary_destructive: contrastColor(colors.secondary.red_600, 'light'),
       secondary_1: contrastColor(colors.primary.gray_300, 'dark'),
       secondary_2: contrastColor(colors.black, 'light'),
-      secondary_3: contrastColor(colors.secondary.blue_600, 'light'),
+      secondary_3: contrastColor(colors.primary.gray_600, 'light'),
       secondary_4: contrastColor(colors.primary.gray_600, 'light'),
 
       transport_city: contrastColor(colors.primary.green_300, 'dark'),
@@ -185,7 +186,7 @@ const themes: Themes = {
       transport_other: contrastColor(colors.primary.gray_600, 'light'),
     },
     content: {
-      subtle_primary: contrastColor(colors.primary.gray_950, 'dark'),
+      subtle_primary: contrastColor(colors.primary.gray_850, 'dark'),
     },
     status: {
       valid: {
@@ -209,7 +210,7 @@ const themes: Themes = {
       },
     },
     border: {
-      primary: colors.primary.gray_600,
+      primary: backgrounds.dark.level1,
       secondary: colors.text.light,
       focus: colors.secondary.cyan_500,
       radius: borderRadius,

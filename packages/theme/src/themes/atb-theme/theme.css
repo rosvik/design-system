@@ -47,7 +47,7 @@
   --colors-secondary_1-color: #FFFFFF;
   --colors-secondary_2-backgroundColor: #ffffff;
   --colors-secondary_2-color: #000000;
-  --colors-secondary_3-backgroundColor: #8D9398;
+  --colors-secondary_3-backgroundColor: #555E65;
   --colors-secondary_3-color: #FFFFFF;
   --colors-secondary_4-backgroundColor: #F1F2F2;
   --colors-secondary_4-color: #000000;
@@ -60,9 +60,9 @@
   --colors-transport_train-backgroundColor: #4B2942;
   --colors-transport_train-color: #FFFFFF;
   --colors-transport_airport-backgroundColor: #C75B12;
-  --colors-transport_airport-color: #000000;
+  --colors-transport_airport-color: #FFFFFF;
   --colors-transport_plane-backgroundColor: #C75B12;
-  --colors-transport_plane-color: #000000;
+  --colors-transport_plane-color: #FFFFFF;
   --colors-transport_other-backgroundColor: #555E65;
   --colors-transport_other-color: #FFFFFF;
 
@@ -137,9 +137,9 @@
   --colors-transport_train-backgroundColor: #4B2942;
   --colors-transport_train-color: #FFFFFF;
   --colors-transport_airport-backgroundColor: #C75B12;
-  --colors-transport_airport-color: #000000;
+  --colors-transport_airport-color: #FFFFFF;
   --colors-transport_plane-backgroundColor: #C75B12;
-  --colors-transport_plane-color: #000000;
+  --colors-transport_plane-color: #FFFFFF;
   --colors-transport_other-backgroundColor: #555E65;
   --colors-transport_other-color: #FFFFFF;
 
@@ -214,9 +214,9 @@
   --colors-transport_train-backgroundColor: #4B2942;
   --colors-transport_train-color: #FFFFFF;
   --colors-transport_airport-backgroundColor: #C75B12;
-  --colors-transport_airport-color: #000000;
+  --colors-transport_airport-color: #FFFFFF;
   --colors-transport_plane-backgroundColor: #C75B12;
-  --colors-transport_plane-color: #000000;
+  --colors-transport_plane-color: #FFFFFF;
   --colors-transport_other-backgroundColor: #555E65;
   --colors-transport_other-color: #FFFFFF;
 

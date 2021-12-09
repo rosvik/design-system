@@ -39,7 +39,7 @@
   --colors-primary_1-color: #000000;
   --colors-primary_2-backgroundColor: #007C92;
   --colors-primary_2-color: #FFFFFF;
-  --colors-primary_3-backgroundColor: #71D6E0;
+  --colors-primary_3-backgroundColor: #D4E9EC;
   --colors-primary_3-color: #000000;
   --colors-primary_destructive-backgroundColor: #A51140;
   --colors-primary_destructive-color: #FFFFFF;
@@ -47,7 +47,7 @@
   --colors-secondary_1-color: #FFFFFF;
   --colors-secondary_2-backgroundColor: #ffffff;
   --colors-secondary_2-color: #000000;
-  --colors-secondary_3-backgroundColor: #8D9398;
+  --colors-secondary_3-backgroundColor: #555E65;
   --colors-secondary_3-color: #FFFFFF;
   --colors-secondary_4-backgroundColor: #F1F2F2;
   --colors-secondary_4-color: #000000;
@@ -60,9 +60,9 @@
   --colors-transport_train-backgroundColor: #4B2942;
   --colors-transport_train-color: #FFFFFF;
   --colors-transport_airport-backgroundColor: #C75B12;
-  --colors-transport_airport-color: #000000;
+  --colors-transport_airport-color: #FFFFFF;
   --colors-transport_plane-backgroundColor: #C75B12;
-  --colors-transport_plane-color: #000000;
+  --colors-transport_plane-color: #FFFFFF;
   --colors-transport_other-backgroundColor: #555E65;
   --colors-transport_other-color: #FFFFFF;
 
@@ -79,7 +79,7 @@
 
 /* Dark theme data */
 .dark {
-  --border-primary: #555E65;
+  --border-primary: #242B30;
   --border-secondary: #FFFFFF;
   --border-focus: #448086;
   --border-radius-circle: 1.25rem;
@@ -116,7 +116,7 @@
   --colors-primary_1-color: #000000;
   --colors-primary_2-backgroundColor: #007C92;
   --colors-primary_2-color: #FFFFFF;
-  --colors-primary_3-backgroundColor: #448086;
+  --colors-primary_3-backgroundColor: #D4E9EC;
   --colors-primary_3-color: #000000;
   --colors-primary_destructive-backgroundColor: #A51140;
   --colors-primary_destructive-color: #FFFFFF;
@@ -124,7 +124,7 @@
   --colors-secondary_1-color: #000000;
   --colors-secondary_2-backgroundColor: #000000;
   --colors-secondary_2-color: #FFFFFF;
-  --colors-secondary_3-backgroundColor: #006678;
+  --colors-secondary_3-backgroundColor: #555E65;
   --colors-secondary_3-color: #FFFFFF;
   --colors-secondary_4-backgroundColor: #555E65;
   --colors-secondary_4-color: #FFFFFF;
@@ -137,9 +137,9 @@
   --colors-transport_train-backgroundColor: #4B2942;
   --colors-transport_train-color: #FFFFFF;
   --colors-transport_airport-backgroundColor: #C75B12;
-  --colors-transport_airport-color: #000000;
+  --colors-transport_airport-color: #FFFFFF;
   --colors-transport_plane-backgroundColor: #C75B12;
-  --colors-transport_plane-color: #000000;
+  --colors-transport_plane-color: #FFFFFF;
   --colors-transport_other-backgroundColor: #555E65;
   --colors-transport_other-color: #FFFFFF;
 
@@ -156,7 +156,7 @@
 
 @media (prefers-color-scheme: dark) {
   .light:not(.override-light) {
-  --border-primary: #555E65;
+  --border-primary: #242B30;
   --border-secondary: #FFFFFF;
   --border-focus: #448086;
   --border-radius-circle: 1.25rem;
@@ -193,7 +193,7 @@
   --colors-primary_1-color: #000000;
   --colors-primary_2-backgroundColor: #007C92;
   --colors-primary_2-color: #FFFFFF;
-  --colors-primary_3-backgroundColor: #448086;
+  --colors-primary_3-backgroundColor: #D4E9EC;
   --colors-primary_3-color: #000000;
   --colors-primary_destructive-backgroundColor: #A51140;
   --colors-primary_destructive-color: #FFFFFF;
@@ -201,7 +201,7 @@
   --colors-secondary_1-color: #000000;
   --colors-secondary_2-backgroundColor: #000000;
   --colors-secondary_2-color: #FFFFFF;
-  --colors-secondary_3-backgroundColor: #006678;
+  --colors-secondary_3-backgroundColor: #555E65;
   --colors-secondary_3-color: #FFFFFF;
   --colors-secondary_4-backgroundColor: #555E65;
   --colors-secondary_4-color: #FFFFFF;
@@ -214,9 +214,9 @@
   --colors-transport_train-backgroundColor: #4B2942;
   --colors-transport_train-color: #FFFFFF;
   --colors-transport_airport-backgroundColor: #C75B12;
-  --colors-transport_airport-color: #000000;
+  --colors-transport_airport-color: #FFFFFF;
   --colors-transport_plane-backgroundColor: #C75B12;
-  --colors-transport_plane-color: #000000;
+  --colors-transport_plane-color: #FFFFFF;
   --colors-transport_other-backgroundColor: #555E65;
   --colors-transport_other-color: #FFFFFF;
 

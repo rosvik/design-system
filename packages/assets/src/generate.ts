@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 
+import micromatch from 'micromatch';
+
 export const vaildOrgIds = ['atb', 'nfk'];
 
 async function getFiles(entry: string): Promise<string[]> {
@@ -24,6 +26,7 @@ async function getFiles(entry: string): Promise<string[]> {
 export const generateAssets = async (
   orgId: string,
   destinationDirectory: string,
+  patterns?: string | readonly string[],
 ) => {
   if (!vaildOrgIds.includes(orgId))
     throw new Error(`Invalid orgId provided, valid orgIds are ${vaildOrgIds}`);
@@ -36,7 +39,11 @@ export const generateAssets = async (
 
   const allFilesToBeCopied = commonFiles.concat(orgFiles);
 
-  const allPromises = allFilesToBeCopied.map(async (filepath) => {
+  const potentiallyFiltered = patterns
+    ? micromatch(allFilesToBeCopied, patterns)
+    : allFilesToBeCopied;
+
+  const allPromises = potentiallyFiltered.map(async (filepath) => {
     const splitPath =
       filepath.split(`/files/${orgId}`)[1] ??
       filepath.split(`/files/common`)[1];

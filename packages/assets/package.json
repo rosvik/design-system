@@ -17,10 +17,14 @@
     "pack": "yarn pack"
   },
   "devDependencies": {
+    "@types/micromatch": "^4.0.2",
     "@types/node": "^16.11.9",
     "typescript": "^4.5.2"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "micromatch": "^4.0.4"
   }
 }

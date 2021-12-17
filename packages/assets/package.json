@@ -25,6 +25,8 @@
     "access": "public"
   },
   "dependencies": {
-    "micromatch": "^4.0.4"
+    "fast-glob": "^3.2.7",
+    "micromatch": "^4.0.4",
+    "stream-editor": "^1.11.0"
   }
 }

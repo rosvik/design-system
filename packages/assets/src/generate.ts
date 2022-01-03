@@ -50,7 +50,7 @@ export async function generateAssets(
     return destinationPath;
   });
 
-  if (opts.ignoreGenerateMonoIcons) {
+  if (!opts.ignoreGenerateMonoIcons) {
     const allExtraMonoIcons = await generateMonoIconsInDestinationDirectory(
       orgId,
       destinationDirectory,

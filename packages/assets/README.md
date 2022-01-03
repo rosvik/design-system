@@ -17,7 +17,7 @@ Outputs assets for a specific organization in the specified output directory.
     -g | --glob           Pass in custom blob for matching files. Defaults to **/*.{svg,png,jpg,jpeg,ico}
     -i | --ignoreMono     Don't generate dark/light mono based on theme colors for orgId
 
-  Example: npx @atb-as/generate-assets atb ./static --glob "**.svg"
+  Example: npx @atb-as/generate-assets atb ./static --glob "**/*.svg"
 
 Valid orgIds are: atb,nfk
 ```

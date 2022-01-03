@@ -4,61 +4,67 @@ import {vaildOrgIds, generateAssets, searchGlob} from './generate';
 import pathlib from 'path';
 import {stringAsThemeVariant, themeVariantAsString} from './utils';
 
-const orgId = process.argv[2];
-const outputDirectory = process.argv[3];
+import {program, Argument} from 'commander';
 
-const verbose =
-  process.argv.includes('-v') || process.argv.includes('--verbose');
-const ignoreMono =
-  process.argv.includes('-i') || process.argv.includes('--ignoreMono');
+type AssetType = 'colors' | 'all' | 'mono';
+type InputOptions = {
+  debug: boolean;
+  ignoreMono: boolean;
+  glob?: string;
+  outDir: string;
+};
 
-if (process.argv.includes('-h')) {
-  showHelp();
-  process.exit(0);
-}
-
-if (!orgId || !outputDirectory) {
-  console.error('orgId and/or outputDirectory seems to be missing!');
-  showHelp();
-  process.exit(1);
-}
-
-function showHelp() {
-  console.log(
-    'usage: npx @atb-as/generate-assets <orgId> <output directory> [--glob <string>]',
+program
+  .name('npx @atb-as/generate-assets')
+  .addArgument(
+    new Argument('<type>', 'Type of assets to generate')
+      .choices(['colors', 'all', 'mono'])
+      .argRequired(),
+  )
+  .addArgument(
+    new Argument('<orgId>', 'Generate for specific organization')
+      .choices(vaildOrgIds.map(themeVariantAsString))
+      .argRequired(),
+  )
+  .requiredOption('-o, --out-dir <output>', 'Output directory')
+  .option('-d, --debug', 'Log all files generated', false)
+  .option(
+    '-im, --ignore-mono',
+    'Ignore generating mono-icons with theme colors.',
+    false,
+  )
+  .option(
+    '-g, --glob [glob]',
+    'Pass in custom blob for matching files.',
+    searchGlob,
   );
-  console.log(
-    `
-Outputs assets for a specific organization in the specified output directory.
 
-  Inputs:
-    -v | --verbose        Log all files generated
-    -h                    Show this help
-    -g | --glob           Pass in custom blob for matching files. Defaults to ${searchGlob}
-    -i | --ignoreMono     Don't generate dark/light mono based on theme colors for orgId
+program.showHelpAfterError();
+program.showSuggestionAfterError();
 
-  Example: npx @atb-as/generate-assets atb ./static --glob "**.svg"
-`,
-  );
-  console.log(`Valid orgIds are: ${vaildOrgIds.map(themeVariantAsString)}`);
-}
+program.parse();
 
-const outputFolder = pathlib.join(process.cwd(), outputDirectory);
+const opts = program.opts<InputOptions>();
+const assetType = program.args[0] as AssetType;
+const orgId = program.args[1];
 
 const main = async () => {
+  const outputFolder = pathlib.join(process.cwd(), opts.outDir);
+
   try {
     const potentialGlob = findPotentialGlobPattern(process.argv);
 
     console.log(`Writing assets for ${orgId} to ${outputFolder}`);
     const assets = await generateAssets(
+      assetType,
       stringAsThemeVariant(orgId),
       outputFolder,
       {
         patterns: potentialGlob,
-        ignoreGenerateMonoIcons: ignoreMono,
+        ignoreGenerateMonoIcons: opts.ignoreMono,
       },
     );
-    if (verbose) {
+    if (opts.debug) {
       console.log(`Written ${assets.length} assets for ${orgId}:\n`);
 
       console.log();
@@ -70,9 +76,7 @@ const main = async () => {
     }
   } catch (e) {
     console.error((e as Error)?.message);
-    console.log('---'); // new line
-    showHelp();
-    process.exit(1);
+    program.help({error: true});
   }
 };
 

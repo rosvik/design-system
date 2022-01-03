@@ -1,4 +1,4 @@
-# `@atb-as/assets`
+# `@atb-as/generate-assets`
 
 ## Usage
 
@@ -7,19 +7,19 @@
 Format:
 
 ````
-usage: npx @atb-as/generate-assets <orgId> <output directory> [--glob <string>]
+Usage: npx @atb-as/generate-assets [options] <type> <orgId>
 
-Outputs assets for a specific organization in the specified output directory.
+Arguments:
+  type                    Type of assets to generate (choices: "colors", "all", "mono")
+  orgId                   Generate for specific organization (choices: "atb", "nfk")
 
-  Inputs:
-    -v | --verbose        Log all files generated
-    -h                    Show this help
-    -g | --glob           Pass in custom blob for matching files. Defaults to **/*.{svg,png,jpg,jpeg,ico}
-    -i | --ignoreMono     Don't generate dark/light mono based on theme colors for orgId
+Options:
+  -o, --out-dir <output>  Output directory
+  -d, --debug             Log all files generated (default: false)
+  -im, --ignore-mono      Ignore generating mono-icons with theme colors. (default: false)
+  -g, --glob [glob]       Pass in custom blob for matching files. (default: "**/*.{svg,png,jpg,jpeg,ico}")
+  -h, --help              display help for command
 
-  Example: npx @atb-as/generate-assets atb ./static --glob "**/*.svg"
-
-Valid orgIds are: atb,nfk
 ```
 
 As a local dependency

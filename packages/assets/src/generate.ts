@@ -14,34 +14,42 @@ export const vaildOrgIds = [ThemeVariant.AtB, ThemeVariant.Nfk];
 export const searchGlob = '**/*.{svg,png,jpg,jpeg,ico}';
 export const searchGlobSvg = '**/*.svg';
 
-const fromBase = (...p: string[]) =>
-  fg(path.join(__dirname, '..', 'files', ...p, searchGlob));
+type AssetTypes = 'colors' | 'mono' | 'all';
 
 type Options = {
   ignoreGenerateMonoIcons?: boolean;
+  onlyOutputMono?: boolean;
   patterns?: string | readonly string[];
 };
-const defaultOpts: Options = {ignoreGenerateMonoIcons: false};
+const defaultOpts: Options = {
+  ignoreGenerateMonoIcons: false,
+  onlyOutputMono: false,
+};
 
 export async function generateAssets(
+  assetType: AssetTypes,
   orgId: ThemeVariant,
   destinationDirectory: string,
   opts: Options = defaultOpts,
 ) {
+  const assetDir = assetType == 'all' ? '{colors,mono}' : assetType;
+  const fromBase = (...p: string[]) =>
+    fg(path.join(__dirname, '..', 'files', ...p, assetDir, searchGlob));
+
   if (!vaildOrgIds.includes(orgId))
     throw new Error(`Invalid orgId provided, valid orgIds are ${vaildOrgIds}`);
 
   const commonFiles = await fromBase('common');
   const orgFiles = await fromBase(themeVariantAsString(orgId));
 
-  const allFilesToBeCopied = mergeFiles(commonFiles, orgFiles);
+  const allFilesToBeCopied = mergeFiles(assetType, commonFiles, orgFiles);
 
   const potentiallyFiltered = opts.patterns
     ? micromatch(allFilesToBeCopied, opts.patterns)
     : allFilesToBeCopied;
 
   let allFiles = potentiallyFiltered.map(async (absolutePath) => {
-    const relativePath = getGeneralNameWithoutFullPath(absolutePath);
+    const relativePath = getGeneralNameWithoutFullPath(assetType, absolutePath);
     const destinationPath = path.join(destinationDirectory, relativePath);
 
     await fs.mkdir(path.dirname(destinationPath), {recursive: true});
@@ -50,8 +58,9 @@ export async function generateAssets(
     return destinationPath;
   });
 
-  if (!opts.ignoreGenerateMonoIcons) {
+  if (!opts.ignoreGenerateMonoIcons && assetType !== 'colors') {
     const allExtraMonoIcons = await generateMonoIconsInDestinationDirectory(
+      assetType,
       orgId,
       destinationDirectory,
     );
@@ -62,13 +71,17 @@ export async function generateAssets(
 }
 
 export async function generateMonoIconsInDestinationDirectory(
+  assetType: AssetTypes,
   orgId: ThemeVariant,
   destinationDirectory: string,
 ) {
   const themes = createThemesFor(orgId);
 
   // Assume mono-icons is created directly on destination root.
-  const base = path.join(destinationDirectory, 'mono-icons');
+  const base = path.join(
+    destinationDirectory,
+    assetType === 'all' ? 'mono' : '',
+  );
   const folder = path.join(base, searchGlobSvg);
 
   await fs.mkdir(path.join(base, 'dark'), {recursive: true});
@@ -106,15 +119,27 @@ async function rewriteAndSave(
   return destination;
 }
 
-function mergeFiles(commonFiles: string[], orgFiles: string[]) {
-  const relativeOrgFiles = orgFiles.map(getGeneralNameWithoutFullPath);
+function mergeFiles(
+  assetType: AssetTypes,
+  commonFiles: string[],
+  orgFiles: string[],
+) {
+  const relativeOrgFiles = orgFiles.map((f) =>
+    getGeneralNameWithoutFullPath(assetType, f),
+  );
   const commonsWithoutOverrides = commonFiles.filter(function (filepath) {
-    return !relativeOrgFiles.includes(getGeneralNameWithoutFullPath(filepath));
+    return !relativeOrgFiles.includes(
+      getGeneralNameWithoutFullPath(assetType, filepath),
+    );
   });
 
   return commonsWithoutOverrides.concat(orgFiles);
 }
 
-function getGeneralNameWithoutFullPath(fullPath: string) {
-  return fullPath.replace(/^.*\/files\/[^\/]+/, '');
+function getGeneralNameWithoutFullPath(
+  assetType: AssetTypes,
+  fullPath: string,
+) {
+  const assetDir = assetType == 'all' ? '' : `\/${assetType}`;
+  return fullPath.replace(new RegExp(`^.*\/files\/[^\/]+${assetDir}`), '');
 }

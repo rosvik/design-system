@@ -6,7 +6,7 @@
 
 Format:
 
-````
+```
 Usage: npx @atb-as/generate-assets [options] <type> <orgId>
 
 Arguments:
@@ -24,7 +24,7 @@ Options:
 
 As a local dependency
 
-````
+```
 
 npm install -D @atb-as/generate-assets
 
@@ -32,7 +32,7 @@ npm install -D @atb-as/generate-assets
 
 npx generate-assets -h
 
-````
+```
 
 ### Import through `ts`/`js`:
 
@@ -41,4 +41,8 @@ import generateAssets from '@atb-as/assets';
 
 // This line will copy assets for selected orgId to selected destinationDirectory
 generateAssets(orgId: string, destinationDirectory: string)
-````
+```
+
+```
+
+```

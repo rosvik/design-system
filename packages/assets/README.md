@@ -40,9 +40,21 @@ npx generate-assets -h
 import generateAssets from '@atb-as/assets';
 
 // This line will copy assets for selected orgId to selected destinationDirectory
-generateAssets(orgId: string, destinationDirectory: string)
-```
+generateAssets(
+  assetType: AssetTypes,
+  orgId: ThemeVariant,
+  destinationDirectory: string,
+  opts: Options = defaultOpts,
+)
 
-```
-
+// Where options are:
+type Options = {
+  ignoreGenerateMonoIcons?: boolean;
+  onlyOutputMono?: boolean;
+  patterns?: string | readonly string[];
+};
+const defaultOpts: Options = {
+  ignoreGenerateMonoIcons: false,
+  onlyOutputMono: false,
+};
 ```

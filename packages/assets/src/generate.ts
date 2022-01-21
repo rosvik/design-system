@@ -17,12 +17,12 @@ export const searchGlobSvg = '**/*.svg';
 type AssetTypes = 'colors' | 'mono' | 'all';
 
 type Options = {
-  ignoreGenerateMonoIcons?: boolean;
+  generateMonoTheme?: boolean;
   onlyOutputMono?: boolean;
   patterns?: string | readonly string[];
 };
 const defaultOpts: Options = {
-  ignoreGenerateMonoIcons: false,
+  generateMonoTheme: true,
   onlyOutputMono: false,
 };
 
@@ -58,7 +58,7 @@ export async function generateAssets(
     return destinationPath;
   });
 
-  if (!opts.ignoreGenerateMonoIcons && assetType !== 'colors') {
+  if (opts.generateMonoTheme && assetType !== 'colors') {
     const allExtraMonoIcons = await generateMonoIconsInDestinationDirectory(
       assetType,
       orgId,

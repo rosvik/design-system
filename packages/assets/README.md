@@ -10,16 +10,15 @@ Format:
 Usage: npx @atb-as/generate-assets [options] <type> <orgId>
 
 Arguments:
-  type                    Type of assets to generate (choices: "colors", "all", "mono")
-  orgId                   Generate for specific organization (choices: "atb", "nfk")
+  type                           Type of assets to generate (choices: "colors", "all", "mono")
+  orgId                          Generate for specific organization (choices: "atb", "nfk")
 
 Options:
-  -o, --out-dir <output>  Output directory
-  -d, --debug             Log all files generated (default: false)
-  -im, --ignore-mono      Ignore generating mono-icons with theme colors. (default: false)
-  -g, --glob [glob]       Pass in custom blob for matching files. (default: "**/*.{svg,png,jpg,jpeg,ico}")
-  -h, --help              display help for command
-
+  -o, --out-dir <output>         Output directory
+  -d, --debug                    Log all files generated (default: false)
+  -nm, --no-generate-mono-theme  Ignore generating themed mono-icons, but keep general mono icons.
+  -g, --glob [glob]              Pass in custom blob for matching files. (default: "**/*.{svg,png,jpg,jpeg,ico}")
+  -h, --help                     display help for command
 ```
 
 As a local dependency
@@ -37,7 +36,7 @@ npx generate-assets -h
 ### Import through `ts`/`js`:
 
 ```ts
-import generateAssets from '@atb-as/assets';
+import generateAssets from '@atb-as/generate-assets';
 
 // This line will copy assets for selected orgId to selected destinationDirectory
 generateAssets(
@@ -49,12 +48,12 @@ generateAssets(
 
 // Where options are:
 type Options = {
-  ignoreGenerateMonoIcons?: boolean;
+  generateMonoTheme?: boolean;
   onlyOutputMono?: boolean;
   patterns?: string | readonly string[];
 };
 const defaultOpts: Options = {
-  ignoreGenerateMonoIcons: false,
+  generateMonoTheme: true,
   onlyOutputMono: false,
 };
 ```

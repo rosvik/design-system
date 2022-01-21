@@ -9,7 +9,7 @@ import {program, Argument} from 'commander';
 type AssetType = 'colors' | 'all' | 'mono';
 type InputOptions = {
   debug: boolean;
-  ignoreMono: boolean;
+  generateMonoTheme: boolean;
   glob?: string;
   outDir: string;
 };
@@ -29,8 +29,8 @@ program
   .requiredOption('-o, --out-dir <output>', 'Output directory')
   .option('-d, --debug', 'Log all files generated', false)
   .option(
-    '-im, --ignore-mono',
-    'Ignore generating mono-icons with theme colors.',
+    '-nm, --no-generate-mono-theme',
+    'Ignore generating themed mono-icons, but keep general mono icons.',
     false,
   )
   .option(
@@ -61,7 +61,7 @@ const main = async () => {
       outputFolder,
       {
         patterns: potentialGlob,
-        ignoreGenerateMonoIcons: opts.ignoreMono,
+        generateMonoTheme: opts.generateMonoTheme,
       },
     );
     if (opts.debug) {

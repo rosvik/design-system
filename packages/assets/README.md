@@ -17,7 +17,7 @@ Options:
   -o, --out-dir <output>         Output directory
   -d, --debug                    Log all files generated (default: false)
   -nm, --no-generate-mono-theme  Ignore generating themed mono-icons, but keep general mono icons.
-  -g, --glob [glob]              Pass in custom blob for matching files. (default: "**/*.{svg,png,jpg,jpeg,ico}")
+  -g, --glob [glob]              Pass in custom glob for matching files. (default: "**/*.{svg,png,jpg,jpeg,ico}")
   -h, --help                     display help for command
 ```
 

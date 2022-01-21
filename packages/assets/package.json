@@ -19,13 +19,13 @@
   "devDependencies": {
     "@types/micromatch": "^4.0.2",
     "@types/node": "^16.11.9",
-    "commander": "^8.3.0",
     "typescript": "^4.5.2"
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
+    "commander": "^8.3.0",
     "fast-glob": "^3.2.7",
     "micromatch": "^4.0.4",
     "stream-editor": "^1.11.0"

@@ -35,7 +35,7 @@ program
   )
   .option(
     '-g, --glob [glob]',
-    'Pass in custom blob for matching files.',
+    'Pass in custom glob for matching files.',
     searchGlob,
   );
 

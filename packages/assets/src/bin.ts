@@ -1,52 +1,82 @@
 #!/usr/bin/env node
 
-import {vaildOrgIds, generateAssets} from './generate';
+import {vaildOrgIds, generateAssets, searchGlob} from './generate';
 import pathlib from 'path';
+import {stringAsThemeVariant, themeVariantAsString} from './utils';
 
-const orgId = process.argv[2];
-const outputDirectory = process.argv[3];
+import {program, Argument} from 'commander';
 
-if (process.argv.includes('-h')) {
-  showHelp();
-  process.exit(0);
-}
+type AssetType = 'colors' | 'all' | 'mono';
+type InputOptions = {
+  debug: boolean;
+  generateMonoTheme: boolean;
+  glob?: string;
+  outDir: string;
+};
 
-if (!orgId || !outputDirectory) {
-  console.error('orgId and/or outputDirectory seems to be missing!');
-  showHelp();
-  process.exit(1);
-}
-
-function showHelp() {
-  console.log(
-    'usage: npx @atb-as/generate-assets <orgId> <output directory> [--glob <string>]',
+program
+  .name('npx @atb-as/generate-assets')
+  .addArgument(
+    new Argument('<type>', 'Type of assets to generate')
+      .choices(['colors', 'all', 'mono'])
+      .argRequired(),
+  )
+  .addArgument(
+    new Argument('<orgId>', 'Generate for specific organization')
+      .choices(vaildOrgIds.map(themeVariantAsString))
+      .argRequired(),
+  )
+  .requiredOption('-o, --out-dir <output>', 'Output directory')
+  .option('-d, --debug', 'Log all files generated', false)
+  .option(
+    '-nm, --no-generate-mono-theme',
+    'Ignore generating themed mono-icons, but keep general mono icons.',
+    false,
+  )
+  .option(
+    '-g, --glob [glob]',
+    'Pass in custom glob for matching files.',
+    searchGlob,
   );
-  console.log(
-    `
-Outputs assets for a specific organization in the specified output directory.
 
-  Example: npx @atb-as/generate-assets atb ./static --glob "**.svg"
-`,
-  );
-  console.log(`Valid orgIds are: ${vaildOrgIds}`);
-}
+program.showHelpAfterError();
+program.showSuggestionAfterError();
 
-const outputFolder = pathlib.join(process.cwd(), outputDirectory);
+program.parse();
+
+const opts = program.opts<InputOptions>();
+const assetType = program.args[0] as AssetType;
+const orgId = program.args[1];
 
 const main = async () => {
+  const outputFolder = pathlib.join(process.cwd(), opts.outDir);
+
   try {
     const potentialGlob = findPotentialGlobPattern(process.argv);
 
     console.log(`Writing assets for ${orgId} to ${outputFolder}`);
-    const assets = await generateAssets(orgId, outputFolder, potentialGlob);
-    console.log(
-      `Successfully written ${assets.length} assets for ${orgId} to ${outputFolder}`,
+    const assets = await generateAssets(
+      assetType,
+      stringAsThemeVariant(orgId),
+      outputFolder,
+      {
+        patterns: potentialGlob,
+        generateMonoTheme: opts.generateMonoTheme,
+      },
     );
+    if (opts.debug) {
+      console.log(`Written ${assets.length} assets for ${orgId}:\n`);
+
+      console.log();
+      assets.forEach((i) => console.log(i));
+    } else {
+      console.log(
+        `Successfully written ${assets.length} assets for ${orgId} to ${outputFolder}`,
+      );
+    }
   } catch (e) {
     console.error((e as Error)?.message);
-    console.log('---'); // new line
-    showHelp();
-    process.exit(1);
+    program.help({error: true});
   }
 };
 

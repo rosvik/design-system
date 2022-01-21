@@ -1,59 +1,145 @@
-import fs from 'fs';
+import fs from 'fs/promises';
 import path from 'path';
 
+import {createThemesFor, Themes, ThemeVariant} from '@atb-as/theme/lib/';
+
 import micromatch from 'micromatch';
+import fg from 'fast-glob';
+import {sed as updateFiles} from 'stream-editor';
 
-export const vaildOrgIds = ['atb', 'nfk'];
+import {themeVariantAsString} from './utils';
+import {createReadStream, createWriteStream} from 'fs';
 
-async function getFiles(entry: string): Promise<string[]> {
-  const originalEntries = await fs.promises.readdir(entry, {
-    withFileTypes: true,
+export const vaildOrgIds = [ThemeVariant.AtB, ThemeVariant.Nfk];
+export const searchGlob = '**/*.{svg,png,jpg,jpeg,ico}';
+export const searchGlobSvg = '**/*.svg';
+
+type AssetTypes = 'colors' | 'mono' | 'all';
+
+type Options = {
+  generateMonoTheme?: boolean;
+  onlyOutputMono?: boolean;
+  patterns?: string | readonly string[];
+};
+const defaultOpts: Options = {
+  generateMonoTheme: true,
+  onlyOutputMono: false,
+};
+
+export async function generateAssets(
+  assetType: AssetTypes,
+  orgId: ThemeVariant,
+  destinationDirectory: string,
+  opts: Options = defaultOpts,
+) {
+  const assetDir = assetType == 'all' ? '{colors,mono}' : assetType;
+  const fromBase = (...p: string[]) =>
+    fg(path.join(__dirname, '..', 'files', ...p, assetDir, searchGlob));
+
+  if (!vaildOrgIds.includes(orgId))
+    throw new Error(`Invalid orgId provided, valid orgIds are ${vaildOrgIds}`);
+
+  const commonFiles = await fromBase('common');
+  const orgFiles = await fromBase(themeVariantAsString(orgId));
+
+  const allFilesToBeCopied = mergeFiles(assetType, commonFiles, orgFiles);
+
+  const potentiallyFiltered = opts.patterns
+    ? micromatch(allFilesToBeCopied, opts.patterns)
+    : allFilesToBeCopied;
+
+  let allFiles = potentiallyFiltered.map(async (absolutePath) => {
+    const relativePath = getGeneralNameWithoutFullPath(assetType, absolutePath);
+    const destinationPath = path.join(destinationDirectory, relativePath);
+
+    await fs.mkdir(path.dirname(destinationPath), {recursive: true});
+    await fs.copyFile(absolutePath, destinationPath);
+
+    return destinationPath;
   });
 
-  let files: string[] = [];
-  for (let foundEntry of originalEntries) {
-    // Ignore helper git structure files only relevant for package.
-    if (foundEntry.name.includes('.gitkeep')) {
-      continue;
-    }
-    const res = path.resolve(entry, foundEntry.name);
-    const result = foundEntry.isDirectory() ? await getFiles(res) : [res];
-    files = files.concat(result);
+  if (opts.generateMonoTheme && assetType !== 'colors') {
+    const allExtraMonoIcons = await generateMonoIconsInDestinationDirectory(
+      assetType,
+      orgId,
+      destinationDirectory,
+    );
+    allFiles = allFiles.concat(allExtraMonoIcons);
+  }
+
+  return Promise.all(allFiles);
+}
+
+export async function generateMonoIconsInDestinationDirectory(
+  assetType: AssetTypes,
+  orgId: ThemeVariant,
+  destinationDirectory: string,
+) {
+  const themes = createThemesFor(orgId);
+
+  // Assume mono-icons is created directly on destination root.
+  const base = path.join(
+    destinationDirectory,
+    assetType === 'all' ? 'mono' : '',
+  );
+  const folder = path.join(base, searchGlobSvg);
+
+  await fs.mkdir(path.join(base, 'dark'), {recursive: true});
+  await fs.mkdir(path.join(base, 'light'), {recursive: true});
+
+  let files: Promise<string>[] = [];
+  for await (const entry of fg.stream(folder, {
+    // Avoid trying to convert what we have from before.
+    ignore: ['**/dark/**', '**/light/**'],
+  })) {
+    files = files.concat([
+      rewriteAndSave('dark', themes, entry.toString('utf-8'), base),
+      rewriteAndSave('light', themes, entry.toString('utf-8'), base),
+    ]);
   }
   return files;
 }
 
-export const generateAssets = async (
-  orgId: string,
-  destinationDirectory: string,
-  patterns?: string | readonly string[],
-) => {
-  if (!vaildOrgIds.includes(orgId))
-    throw new Error(`Invalid orgId provided, valid orgIds are ${vaildOrgIds}`);
+async function rewriteAndSave(
+  color: keyof Themes,
+  themes: Themes,
+  absoluteFile: string,
+  monoIconsBase: string,
+) {
+  const relativeFileName = path.relative(monoIconsBase, absoluteFile);
+  const destination = path.join(monoIconsBase, color, relativeFileName);
 
-  const commonFolder = path.join(__dirname, '..', 'files', 'common');
-  const orgFolder = path.join(__dirname, '..', 'files', orgId);
-
-  const commonFiles = await getFiles(commonFolder);
-  const orgFiles = await getFiles(orgFolder);
-
-  const allFilesToBeCopied = commonFiles.concat(orgFiles);
-
-  const potentiallyFiltered = patterns
-    ? micromatch(allFilesToBeCopied, patterns)
-    : allFilesToBeCopied;
-
-  const allPromises = potentiallyFiltered.map(async (filepath) => {
-    const splitPath =
-      filepath.split(`/files/${orgId}`)[1] ??
-      filepath.split(`/files/common`)[1];
-    const destinationPath = destinationDirectory + splitPath;
-
-    await fs.promises.mkdir(path.dirname(destinationPath), {recursive: true});
-    await fs.promises.copyFile(filepath, destinationPath);
+  await updateFiles({
+    from: createReadStream(absoluteFile),
+    to: createWriteStream(destination),
+    match: /((fill|stroke)\=\"(?:[^"]+)\")/,
+    replacement: `$2="${themes[color].text.colors.primary}"`,
   });
 
-  return Promise.all(allPromises);
-};
+  return destination;
+}
 
-export default generateAssets;
+function mergeFiles(
+  assetType: AssetTypes,
+  commonFiles: string[],
+  orgFiles: string[],
+) {
+  const relativeOrgFiles = orgFiles.map((f) =>
+    getGeneralNameWithoutFullPath(assetType, f),
+  );
+  const commonsWithoutOverrides = commonFiles.filter(function (filepath) {
+    return !relativeOrgFiles.includes(
+      getGeneralNameWithoutFullPath(assetType, filepath),
+    );
+  });
+
+  return commonsWithoutOverrides.concat(orgFiles);
+}
+
+function getGeneralNameWithoutFullPath(
+  assetType: AssetTypes,
+  fullPath: string,
+) {
+  const assetDir = assetType == 'all' ? '' : `\/${assetType}`;
+  return fullPath.replace(new RegExp(`^.*\/files\/[^\/]+${assetDir}`), '');
+}

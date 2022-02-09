@@ -64,6 +64,7 @@ export async function generateAssets(
       orgId,
       destinationDirectory,
     );
+    console.log(allExtraMonoIcons);
     allFiles = allFiles.concat(allExtraMonoIcons);
   }
 
@@ -107,7 +108,15 @@ async function rewriteAndSave(
   monoIconsBase: string,
 ) {
   const relativeFileName = path.relative(monoIconsBase, absoluteFile);
-  const destination = path.join(monoIconsBase, color, relativeFileName);
+  const filename = path.basename(relativeFileName);
+  const destinationDir = path.join(
+    monoIconsBase,
+    color,
+    path.dirname(relativeFileName),
+  );
+
+  await fs.mkdir(destinationDir, {recursive: true});
+  const destination = path.join(destinationDir, filename);
 
   await updateFiles({
     from: createReadStream(absoluteFile),

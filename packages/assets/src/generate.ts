@@ -64,7 +64,6 @@ export async function generateAssets(
       orgId,
       destinationDirectory,
     );
-    console.log(allExtraMonoIcons);
     allFiles = allFiles.concat(allExtraMonoIcons);
   }
 

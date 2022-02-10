@@ -58,16 +58,16 @@ export async function generateAssets(
     return destinationPath;
   });
 
+  let created = await Promise.all(allFiles);
   if (opts.generateMonoTheme && assetType !== 'colors') {
     const allExtraMonoIcons = await generateMonoIconsInDestinationDirectory(
       assetType,
       orgId,
       destinationDirectory,
     );
-    allFiles = allFiles.concat(allExtraMonoIcons);
+    created = created.concat(await Promise.all(allExtraMonoIcons));
   }
-
-  return Promise.all(allFiles);
+  return created;
 }
 
 export async function generateMonoIconsInDestinationDirectory(
@@ -84,17 +84,20 @@ export async function generateMonoIconsInDestinationDirectory(
   );
   const folder = path.join(base, searchGlobSvg);
 
-  await fs.mkdir(path.join(base, 'dark'), {recursive: true});
-  await fs.mkdir(path.join(base, 'light'), {recursive: true});
+  const darkBase = path.join(base, 'dark');
+  const lightBase = path.join(base, 'light');
+
+  await fs.mkdir(darkBase, {recursive: true});
+  await fs.mkdir(lightBase, {recursive: true});
 
   let files: Promise<string>[] = [];
-  for await (const entry of fg.stream(folder, {
+  for (const entry of await fg(folder, {
     // Avoid trying to convert what we have from before.
-    ignore: ['**/dark/**', '**/light/**'],
+    ignore: [darkBase, lightBase],
   })) {
     files = files.concat([
-      rewriteAndSave('dark', themes, entry.toString('utf-8'), base),
-      rewriteAndSave('light', themes, entry.toString('utf-8'), base),
+      rewriteAndSave('dark', themes, entry, base),
+      rewriteAndSave('light', themes, entry, base),
     ]);
   }
   return files;

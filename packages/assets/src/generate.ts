@@ -10,6 +10,7 @@ import {sed as updateFiles} from 'stream-editor';
 import {themeVariantAsString} from './utils';
 import {log} from './logger';
 import {createReadStream, createWriteStream} from 'fs';
+import normalize from 'normalize-path';
 
 export const vaildOrgIds = [ThemeVariant.AtB, ThemeVariant.Nfk];
 export const searchGlob = '**/*.{svg,png,jpg,jpeg,ico}';
@@ -43,8 +44,9 @@ export async function generateAssets(
       assetDir,
       searchGlob,
     );
+
     log('searching for files in', fullPath);
-    return fg(fullPath);
+    return fg(normalize(fullPath));
   };
 
   if (!vaildOrgIds.includes(orgId))
@@ -111,9 +113,9 @@ export async function generateMonoIconsInDestinationDirectory(
   await fs.mkdir(lightBase, {recursive: true});
 
   let files: Promise<string>[] = [];
-  for (const entry of await fg(folder, {
+  for (const entry of await fg(normalize(folder), {
     // Avoid trying to convert what we have from before.
-    ignore: [darkBase, lightBase],
+    ignore: [normalize(darkBase), normalize(lightBase)],
   })) {
     files = files.concat([
       rewriteAndSave('dark', themes, entry, base),

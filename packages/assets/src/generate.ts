@@ -67,11 +67,13 @@ export async function generateAssets(
     : allFilesToBeCopied;
 
   let allFiles = potentiallyFiltered.map(async (absolutePath) => {
-    const relativePath = getGeneralNameWithoutFullPath(assetType, absolutePath);
+    const relativePath = path.normalize(
+      getGeneralNameWithoutFullPath(assetType, absolutePath),
+    );
     const destinationPath = path.join(destinationDirectory, relativePath);
 
     await fs.mkdir(path.dirname(destinationPath), {recursive: true});
-    await fs.copyFile(absolutePath, destinationPath);
+    await fs.copyFile(path.normalize(absolutePath), destinationPath);
 
     return destinationPath;
   });
@@ -117,9 +119,10 @@ export async function generateMonoIconsInDestinationDirectory(
     // Avoid trying to convert what we have from before.
     ignore: [normalize(darkBase), normalize(lightBase)],
   })) {
+    const windowsNormalizedEntry = path.normalize(entry);
     files = files.concat([
-      rewriteAndSave('dark', themes, entry, base),
-      rewriteAndSave('light', themes, entry, base),
+      rewriteAndSave('dark', themes, windowsNormalizedEntry, base),
+      rewriteAndSave('light', themes, windowsNormalizedEntry, base),
     ]);
   }
   return files;

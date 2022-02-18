@@ -5,6 +5,6 @@ export function setDebug(active: boolean) {
 }
 
 export function log(...args: any[]) {
-  if (isDebug) return;
+  if (!isDebug) return;
   return console.log(...args);
 }

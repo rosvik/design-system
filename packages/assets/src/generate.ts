@@ -152,5 +152,12 @@ function getGeneralNameWithoutFullPath(
   fullPath: string,
 ) {
   const assetDir = assetType == 'all' ? '' : `\/${assetType}`;
-  return fullPath.replace(new RegExp(`^.*\/files\/[^\/]+${assetDir}`), '');
+  const separator = escapeRegex(path.sep);
+  return fullPath.replace(
+    new RegExp(`^.*${separator}files${separator}[^${separator}]+${assetDir}`),
+    '',
+  );
+}
+function escapeRegex(str: string) {
+  return str.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
 }

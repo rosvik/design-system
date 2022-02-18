@@ -8,6 +8,7 @@ import fg from 'fast-glob';
 import {sed as updateFiles} from 'stream-editor';
 
 import {themeVariantAsString} from './utils';
+import {log} from './logger';
 import {createReadStream, createWriteStream} from 'fs';
 
 export const vaildOrgIds = [ThemeVariant.AtB, ThemeVariant.Nfk];
@@ -33,8 +34,18 @@ export async function generateAssets(
   opts: Options = defaultOpts,
 ) {
   const assetDir = assetType == 'all' ? '{colors,mono}' : assetType;
-  const fromBase = (...p: string[]) =>
-    fg(path.join(__dirname, '..', 'files', ...p, assetDir, searchGlob));
+  const fromBase = (...p: string[]) => {
+    const fullPath = path.join(
+      __dirname,
+      '..',
+      'files',
+      ...p,
+      assetDir,
+      searchGlob,
+    );
+    log('searching for files in', fullPath);
+    return fg(fullPath);
+  };
 
   if (!vaildOrgIds.includes(orgId))
     throw new Error(`Invalid orgId provided, valid orgIds are ${vaildOrgIds}`);
@@ -42,7 +53,12 @@ export async function generateAssets(
   const commonFiles = await fromBase('common');
   const orgFiles = await fromBase(themeVariantAsString(orgId));
 
+  log('Found common files:', commonFiles.length);
+  log('Found org files for', orgId, ':', orgFiles.length);
+
+  log('Merging files for ', assetType);
   const allFilesToBeCopied = mergeFiles(assetType, commonFiles, orgFiles);
+  log('Found merged files:', allFilesToBeCopied.length);
 
   const potentiallyFiltered = opts.patterns
     ? micromatch(allFilesToBeCopied, opts.patterns)
@@ -58,6 +74,8 @@ export async function generateAssets(
     return destinationPath;
   });
 
+  log('Total files before generated mono icons:', allFiles.length);
+
   let created = await Promise.all(allFiles);
   if (opts.generateMonoTheme && assetType !== 'colors') {
     const allExtraMonoIcons = await generateMonoIconsInDestinationDirectory(
@@ -67,6 +85,8 @@ export async function generateAssets(
     );
     created = created.concat(await Promise.all(allExtraMonoIcons));
   }
+  log('Total files after generated mono icons:', created.length);
+
   return created;
 }
 

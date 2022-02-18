@@ -3,6 +3,7 @@
 import {vaildOrgIds, generateAssets, searchGlob} from './generate';
 import pathlib from 'path';
 import {stringAsThemeVariant, themeVariantAsString} from './utils';
+import {setDebug} from './logger';
 
 import {program, Argument} from 'commander';
 
@@ -47,6 +48,8 @@ program.parse();
 const opts = program.opts<InputOptions>();
 const assetType = program.args[0] as AssetType;
 const orgId = program.args[1];
+
+if (opts.debug) setDebug(true);
 
 const main = async () => {
   const outputFolder = pathlib.join(process.cwd(), opts.outDir);

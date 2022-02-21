@@ -10,7 +10,7 @@ import {sed as updateFiles} from 'stream-editor';
 import {themeVariantAsString} from './utils';
 import {log} from './logger';
 import {createReadStream, createWriteStream} from 'fs';
-import normalize from 'normalize-path';
+import normalizeToUnix from 'normalize-path';
 
 export const vaildOrgIds = [ThemeVariant.AtB, ThemeVariant.Nfk];
 export const searchGlob = '**/*.{svg,png,jpg,jpeg,ico}';
@@ -27,6 +27,7 @@ const defaultOpts: Options = {
   generateMonoTheme: true,
   onlyOutputMono: false,
 };
+
 
 export async function generateAssets(
   assetType: AssetTypes,
@@ -46,12 +47,13 @@ export async function generateAssets(
     );
 
     log('searching for files in', fullPath);
-    return fg(normalize(fullPath));
+    return fgNormalizedForUnix(fullPath);
   };
 
   if (!vaildOrgIds.includes(orgId))
     throw new Error(`Invalid orgId provided, valid orgIds are ${vaildOrgIds}`);
 
+  // File paths are returned as UNIX type separators.
   const commonFiles = await fromBase('common');
   const orgFiles = await fromBase(themeVariantAsString(orgId));
 
@@ -115,17 +117,27 @@ export async function generateMonoIconsInDestinationDirectory(
   await fs.mkdir(lightBase, {recursive: true});
 
   let files: Promise<string>[] = [];
-  for (const entry of await fg(normalize(folder), {
+  for (const entry of await fgNormalizedForUnix(folder, {
     // Avoid trying to convert what we have from before.
-    ignore: [normalize(darkBase), normalize(lightBase)],
+    ignore: [darkBase, lightBase],
   })) {
-    const windowsNormalizedEntry = path.normalize(entry);
     files = files.concat([
-      rewriteAndSave('dark', themes, windowsNormalizedEntry, base),
-      rewriteAndSave('light', themes, windowsNormalizedEntry, base),
+      rewriteAndSave('dark', themes, entry, base),
+      rewriteAndSave('light', themes, entry, base),
     ]);
   }
   return files;
+}
+
+// Due to globs nature forward UNIX type slashes should be used. Normalize paths.
+// All paths returned are also UNIX style. All node functions normalize self, no
+// need to do it manually.
+// (see https://github.com/mrmlnc/fast-glob#how-to-write-patterns-on-windows)
+function fgNormalizedForUnix (path: string, options?: { ignore: string[] }) {
+  const opts = options && options.ignore ? {
+    ignore: options.ignore.map(f => normalizeToUnix(f))
+  } : options;
+  return fg(normalizeToUnix(path), opts);
 }
 
 async function rewriteAndSave(
@@ -176,12 +188,12 @@ function getGeneralNameWithoutFullPath(
   assetType: AssetTypes,
   fullPath: string,
 ) {
-  const separator = escapeRegex(path.sep);
-  const assetDir = escapeRegex(
-    assetType == 'all' ? '' : `${path.sep}${assetType}`,
-  );
-  return fullPath.replace(
-    new RegExp(`^.*${separator}files${separator}[^${separator}]+${assetDir}`),
+  const assetDir = assetType == 'all' ? '' : escapeRegex(`/${assetType}`);
+  const regexString = `^.*\/files\/[^\/]+${assetDir}`;
+
+  // Normalize to unix style instead if handling separator manually
+  return normalizeToUnix(fullPath).replace(
+    new RegExp(regexString),
     '',
   );
 }

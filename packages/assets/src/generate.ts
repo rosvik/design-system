@@ -8,7 +8,9 @@ import fg from 'fast-glob';
 import {sed as updateFiles} from 'stream-editor';
 
 import {themeVariantAsString} from './utils';
+import {log} from './logger';
 import {createReadStream, createWriteStream} from 'fs';
+import normalizeToUnix from 'normalize-path';
 
 export const vaildOrgIds = [ThemeVariant.AtB, ThemeVariant.Nfk];
 export const searchGlob = '**/*.{svg,png,jpg,jpeg,ico}';
@@ -26,6 +28,7 @@ const defaultOpts: Options = {
   onlyOutputMono: false,
 };
 
+
 export async function generateAssets(
   assetType: AssetTypes,
   orgId: ThemeVariant,
@@ -33,30 +36,51 @@ export async function generateAssets(
   opts: Options = defaultOpts,
 ) {
   const assetDir = assetType == 'all' ? '{colors,mono}' : assetType;
-  const fromBase = (...p: string[]) =>
-    fg(path.join(__dirname, '..', 'files', ...p, assetDir, searchGlob));
+  const fromBase = (...p: string[]) => {
+    const fullPath = path.join(
+      __dirname,
+      '..',
+      'files',
+      ...p,
+      assetDir,
+      searchGlob,
+    );
+
+    log('searching for files in', fullPath);
+    return fgNormalizedForUnix(fullPath);
+  };
 
   if (!vaildOrgIds.includes(orgId))
     throw new Error(`Invalid orgId provided, valid orgIds are ${vaildOrgIds}`);
 
+  // File paths are returned as UNIX type separators.
   const commonFiles = await fromBase('common');
   const orgFiles = await fromBase(themeVariantAsString(orgId));
 
+  log('Found common files:', commonFiles.length);
+  log('Found org files for', orgId, ':', orgFiles.length);
+
+  log('Merging files for ', assetType);
   const allFilesToBeCopied = mergeFiles(assetType, commonFiles, orgFiles);
+  log('Found merged files:', allFilesToBeCopied.length);
 
   const potentiallyFiltered = opts.patterns
     ? micromatch(allFilesToBeCopied, opts.patterns)
     : allFilesToBeCopied;
 
   let allFiles = potentiallyFiltered.map(async (absolutePath) => {
-    const relativePath = getGeneralNameWithoutFullPath(assetType, absolutePath);
+    const relativePath = path.normalize(
+      getGeneralNameWithoutFullPath(assetType, absolutePath),
+    );
     const destinationPath = path.join(destinationDirectory, relativePath);
 
     await fs.mkdir(path.dirname(destinationPath), {recursive: true});
-    await fs.copyFile(absolutePath, destinationPath);
+    await fs.copyFile(path.normalize(absolutePath), destinationPath);
 
     return destinationPath;
   });
+
+  log('Total files before generated mono icons:', allFiles.length);
 
   let created = await Promise.all(allFiles);
   if (opts.generateMonoTheme && assetType !== 'colors') {
@@ -67,6 +91,8 @@ export async function generateAssets(
     );
     created = created.concat(await Promise.all(allExtraMonoIcons));
   }
+  log('Total files after generated mono icons:', created.length);
+
   return created;
 }
 
@@ -91,7 +117,7 @@ export async function generateMonoIconsInDestinationDirectory(
   await fs.mkdir(lightBase, {recursive: true});
 
   let files: Promise<string>[] = [];
-  for (const entry of await fg(folder, {
+  for (const entry of await fgNormalizedForUnix(folder, {
     // Avoid trying to convert what we have from before.
     ignore: [darkBase, lightBase],
   })) {
@@ -101,6 +127,17 @@ export async function generateMonoIconsInDestinationDirectory(
     ]);
   }
   return files;
+}
+
+// Due to globs nature forward UNIX type slashes should be used. Normalize paths.
+// All paths returned are also UNIX style. All node functions normalize self, no
+// need to do it manually.
+// (see https://github.com/mrmlnc/fast-glob#how-to-write-patterns-on-windows)
+function fgNormalizedForUnix (path: string, options?: { ignore: string[] }) {
+  const opts = options && options.ignore ? {
+    ignore: options.ignore.map(f => normalizeToUnix(f))
+  } : options;
+  return fg(normalizeToUnix(path), opts);
 }
 
 async function rewriteAndSave(
@@ -151,6 +188,15 @@ function getGeneralNameWithoutFullPath(
   assetType: AssetTypes,
   fullPath: string,
 ) {
-  const assetDir = assetType == 'all' ? '' : `\/${assetType}`;
-  return fullPath.replace(new RegExp(`^.*\/files\/[^\/]+${assetDir}`), '');
+  const assetDir = assetType == 'all' ? '' : escapeRegex(`/${assetType}`);
+  const regexString = `^.*\/files\/[^\/]+${assetDir}`;
+
+  // Normalize to unix style instead if handling separator manually
+  return normalizeToUnix(fullPath).replace(
+    new RegExp(regexString),
+    '',
+  );
+}
+function escapeRegex(str: string) {
+  return str.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
 }

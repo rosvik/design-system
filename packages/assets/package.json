@@ -10,10 +10,11 @@
   "main": "./lib/generate.js",
   "files": [
     "lib",
+    "!lib/tools",
     "files"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && node lib/tools/validate-files",
     "pack": "yarn pack"
   },
   "devDependencies": {

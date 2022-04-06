@@ -117,10 +117,6 @@ export const colors = {
     light: '#FFFFFF',
     dark: '#000000',
   },
-  other: {
-    ekspressen_500: '#ED6C05',
-    ekspressen_600: '#C75B12',
-  },
 };
 
 const contrastColor = (

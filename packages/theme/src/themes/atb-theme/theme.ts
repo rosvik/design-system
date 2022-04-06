@@ -20,10 +20,11 @@ export const backgrounds = {
 export const colors = {
   white: '#ffffff',
   black: '#000000',
-  primary: {
-    // grays
+  base: {
+    // gray
     gray_50: '#F1F2F2',
     gray_100: '#E3E5E6',
+    gray_150: '#D5D7D9',
     gray_200: '#C7CACC',
     gray_300: '#A9AEB1',
     gray_400: '#8D9398',
@@ -34,7 +35,8 @@ export const colors = {
     gray_850: '#242B30',
     gray_900: '#1A2024',
     gray_950: '#101315',
-    // greens
+
+    // green
     green_100: '#E5E8B8',
     green_200: '#C9CF6B',
     green_300: '#A2AD00',
@@ -44,8 +46,7 @@ export const colors = {
     green_700: '#464A00',
     green_800: '#323600',
     green_900: '#1F2100',
-  },
-  secondary: {
+
     // cyan
     cyan_100: '#BFEDF1',
     cyan_200: '#71D6E0',
@@ -56,7 +57,8 @@ export const colors = {
     cyan_700: '#294D51',
     cyan_800: '#1D383A',
     cyan_900: '#122224',
-    // i got the blues
+
+    // blue
     blue_100: '#D4E9EC',
     blue_200: '#A6D1D9',
     blue_300: '#75B8C4',
@@ -67,23 +69,55 @@ export const colors = {
     blue_800: '#003943',
     blue_900: '#002329',
 
+    // yellow
     yellow_100: '#F0E973',
     yellow_200: '#E4D700',
+    yellow_300: '#C6AE00',
+    yellow_400: '#AF9000',
     yellow_500: '#977000',
+    yellow_600: '#815200',
+    yellow_700: '#6F3A00',
+    yellow_800: '#5C2000',
+    yellow_900: '#460200',
 
+    // red
     red_100: '#EED2DB',
+    red_200: '#E4B8C6',
+    red_300: '#D691A7',
     red_400: '#C76B89',
     red_500: '#B74166',
     red_600: '#A51140',
+    red_700: '#7D0D31',
+    red_800: '#5C0A24',
+    red_900: '#380616',
 
+    // burgundy
+    burgundy_100: '#E8E3E6',
+    burgundy_200: '#D0C7CE',
+    burgundy_300: '#B7A9B3',
+    burgundy_400: '#A08E9B',
+    burgundy_500: '#867080',
+    burgundy_600: '#6F5468',
+    burgundy_700: '#5B3C53',
     burgundy_800: '#4B2942',
+    burgundy_900: '#2C1827',
+
+    // orange
+    orange_100: '#F5E1D4',
+    orange_200: '#EAC1A5',
+    orange_300: '#DEA076',
+    orange_400: '#D27C41',
+    orange_500: '#C75B12',
+    orange_600: '#97450E',
+    orange_700: '#73350A',
+    orange_800: '#542608',
+    orange_900: '#341805',
   },
   text: {
     light: '#FFFFFF',
     dark: '#000000',
   },
   other: {
-    orange_500: '#C75B12',
     ekspressen_500: '#ED6C05',
     ekspressen_600: '#C75B12',
   },
@@ -104,41 +138,41 @@ const themes: Themes = {
       background_1: contrastColor(backgrounds.light.level1, 'dark'),
       background_2: contrastColor(backgrounds.light.level2, 'dark'),
       background_3: contrastColor(backgrounds.light.level3, 'dark'),
-      background_accent: contrastColor(colors.primary.gray_700, 'light'),
-      primary_1: contrastColor(colors.primary.green_300, 'dark'),
-      primary_2: contrastColor(colors.secondary.blue_500, 'light'),
-      primary_3: contrastColor(colors.secondary.blue_100, 'dark'),
-      primary_destructive: contrastColor(colors.secondary.red_600, 'light'),
-      secondary_1: contrastColor(colors.primary.gray_700, 'light'),
+      background_accent: contrastColor(colors.base.gray_700, 'light'),
+      primary_1: contrastColor(colors.base.green_300, 'dark'),
+      primary_2: contrastColor(colors.base.blue_500, 'light'),
+      primary_3: contrastColor(colors.base.blue_100, 'dark'),
+      primary_destructive: contrastColor(colors.base.red_600, 'light'),
+      secondary_1: contrastColor(colors.base.gray_700, 'light'),
       secondary_2: contrastColor(colors.white, 'dark'),
-      secondary_3: contrastColor(colors.primary.gray_600, 'light'),
-      secondary_4: contrastColor(colors.primary.gray_50, 'dark'),
+      secondary_3: contrastColor(colors.base.gray_600, 'light'),
+      secondary_4: contrastColor(colors.base.gray_50, 'dark'),
 
-      transport_city: contrastColor(colors.primary.green_300, 'dark'),
-      transport_region: contrastColor(colors.secondary.blue_500, 'light'),
-      transport_boat: contrastColor(colors.secondary.cyan_200, 'dark'),
-      transport_train: contrastColor(colors.secondary.burgundy_800, 'light'),
-      transport_airport: contrastColor(colors.other.orange_500, 'light'),
-      transport_plane: contrastColor(colors.other.orange_500, 'light'),
-      transport_other: contrastColor(colors.primary.gray_600, 'light'),
+      transport_city: contrastColor(colors.base.green_300, 'dark'),
+      transport_region: contrastColor(colors.base.blue_500, 'light'),
+      transport_boat: contrastColor(colors.base.cyan_200, 'dark'),
+      transport_train: contrastColor(colors.base.burgundy_800, 'light'),
+      transport_airport: contrastColor(colors.base.orange_500, 'light'),
+      transport_plane: contrastColor(colors.base.orange_500, 'light'),
+      transport_other: contrastColor(colors.base.gray_600, 'light'),
     },
 
     content: {
-      subtle_primary: contrastColor(colors.primary.gray_50, 'dark'),
+      subtle_primary: contrastColor(colors.base.gray_50, 'dark'),
     },
 
     status: {
       valid: {
-        main: contrastColor(colors.primary.green_300, 'dark'),
+        main: contrastColor(colors.base.green_300, 'dark'),
       },
       info: {
-        main: contrastColor(colors.secondary.cyan_200, 'dark'),
+        main: contrastColor(colors.base.cyan_200, 'dark'),
       },
       warning: {
-        main: contrastColor(colors.secondary.yellow_200, 'dark'),
+        main: contrastColor(colors.base.yellow_200, 'dark'),
       },
       error: {
-        main: contrastColor(colors.secondary.red_600, 'light'),
+        main: contrastColor(colors.base.red_600, 'light'),
       },
     },
     text: {
@@ -151,7 +185,7 @@ const themes: Themes = {
     border: {
       primary: backgrounds.light.level1,
       secondary: colors.text.dark,
-      focus: colors.secondary.blue_500,
+      focus: colors.base.blue_500,
       radius: borderRadius,
       width: borderWidth,
     },
@@ -167,39 +201,39 @@ const themes: Themes = {
       background_1: contrastColor(backgrounds.dark.level1, 'light'),
       background_2: contrastColor(backgrounds.dark.level2, 'light'),
       background_3: contrastColor(backgrounds.dark.level3, 'light'),
-      background_accent: contrastColor(colors.primary.gray_700, 'light'),
-      primary_1: contrastColor(colors.primary.green_300, 'dark'),
-      primary_2: contrastColor(colors.secondary.blue_500, 'light'),
-      primary_3: contrastColor(colors.secondary.blue_100, 'dark'),
-      primary_destructive: contrastColor(colors.secondary.red_600, 'light'),
-      secondary_1: contrastColor(colors.primary.gray_300, 'dark'),
+      background_accent: contrastColor(colors.base.gray_700, 'light'),
+      primary_1: contrastColor(colors.base.green_300, 'dark'),
+      primary_2: contrastColor(colors.base.blue_500, 'light'),
+      primary_3: contrastColor(colors.base.blue_100, 'dark'),
+      primary_destructive: contrastColor(colors.base.red_600, 'light'),
+      secondary_1: contrastColor(colors.base.gray_300, 'dark'),
       secondary_2: contrastColor(colors.black, 'light'),
-      secondary_3: contrastColor(colors.primary.gray_600, 'light'),
-      secondary_4: contrastColor(colors.primary.gray_600, 'light'),
+      secondary_3: contrastColor(colors.base.gray_600, 'light'),
+      secondary_4: contrastColor(colors.base.gray_600, 'light'),
 
-      transport_city: contrastColor(colors.primary.green_300, 'dark'),
-      transport_region: contrastColor(colors.secondary.blue_500, 'light'),
-      transport_boat: contrastColor(colors.secondary.cyan_200, 'dark'),
-      transport_train: contrastColor(colors.secondary.burgundy_800, 'light'),
-      transport_airport: contrastColor(colors.other.orange_500, 'light'),
-      transport_plane: contrastColor(colors.other.orange_500, 'light'),
-      transport_other: contrastColor(colors.primary.gray_600, 'light'),
+      transport_city: contrastColor(colors.base.green_300, 'dark'),
+      transport_region: contrastColor(colors.base.blue_500, 'light'),
+      transport_boat: contrastColor(colors.base.cyan_200, 'dark'),
+      transport_train: contrastColor(colors.base.burgundy_800, 'light'),
+      transport_airport: contrastColor(colors.base.orange_500, 'light'),
+      transport_plane: contrastColor(colors.base.orange_500, 'light'),
+      transport_other: contrastColor(colors.base.gray_600, 'light'),
     },
     content: {
-      subtle_primary: contrastColor(colors.primary.gray_850, 'dark'),
+      subtle_primary: contrastColor(colors.base.gray_850, 'dark'),
     },
     status: {
       valid: {
-        main: contrastColor(colors.primary.green_300, 'dark'),
+        main: contrastColor(colors.base.green_300, 'dark'),
       },
       info: {
-        main: contrastColor(colors.secondary.cyan_200, 'dark'),
+        main: contrastColor(colors.base.cyan_200, 'dark'),
       },
       warning: {
-        main: contrastColor(colors.secondary.yellow_200, 'dark'),
+        main: contrastColor(colors.base.yellow_200, 'dark'),
       },
       error: {
-        main: contrastColor(colors.secondary.red_600, 'light'),
+        main: contrastColor(colors.base.red_600, 'light'),
       },
     },
     text: {
@@ -212,7 +246,7 @@ const themes: Themes = {
     border: {
       primary: backgrounds.dark.level1,
       secondary: colors.text.light,
-      focus: colors.secondary.cyan_500,
+      focus: colors.base.cyan_500,
       radius: borderRadius,
       width: borderWidth,
     },

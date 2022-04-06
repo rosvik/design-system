@@ -47,17 +47,6 @@ export const colors = {
     green_800: '#323600',
     green_900: '#1F2100',
 
-    // cyan
-    cyan_100: '#BFEDF1',
-    cyan_200: '#71D6E0',
-    cyan_300: '#62BAC3',
-    cyan_400: '#539CA4',
-    cyan_500: '#448086',
-    cyan_600: '#356569',
-    cyan_700: '#294D51',
-    cyan_800: '#1D383A',
-    cyan_900: '#122224',
-
     // blue
     blue_100: '#D4E9EC',
     blue_200: '#A6D1D9',
@@ -69,27 +58,16 @@ export const colors = {
     blue_800: '#003943',
     blue_900: '#002329',
 
-    // yellow
-    yellow_100: '#F0E973',
-    yellow_200: '#E4D700',
-    yellow_300: '#C6AE00',
-    yellow_400: '#AF9000',
-    yellow_500: '#977000',
-    yellow_600: '#815200',
-    yellow_700: '#6F3A00',
-    yellow_800: '#5C2000',
-    yellow_900: '#460200',
-
-    // red
-    red_100: '#EED2DB',
-    red_200: '#E4B8C6',
-    red_300: '#D691A7',
-    red_400: '#C76B89',
-    red_500: '#B74166',
-    red_600: '#A51140',
-    red_700: '#7D0D31',
-    red_800: '#5C0A24',
-    red_900: '#380616',
+    // cyan
+    cyan_100: '#BFEDF1',
+    cyan_200: '#71D6E0',
+    cyan_300: '#62BAC3',
+    cyan_400: '#539CA4',
+    cyan_500: '#448086',
+    cyan_600: '#356569',
+    cyan_700: '#294D51',
+    cyan_800: '#1D383A',
+    cyan_900: '#122224',
 
     // burgundy
     burgundy_100: '#E8E3E6',
@@ -112,6 +90,28 @@ export const colors = {
     orange_700: '#73350A',
     orange_800: '#542608',
     orange_900: '#341805',
+
+    // yellow
+    yellow_100: '#F0E973',
+    yellow_200: '#E4D700',
+    yellow_300: '#C6AE00',
+    yellow_400: '#AF9000',
+    yellow_500: '#977000',
+    yellow_600: '#815200',
+    yellow_700: '#6F3A00',
+    yellow_800: '#5C2000',
+    yellow_900: '#460200',
+
+    // red
+    red_100: '#EED2DB',
+    red_200: '#E4B8C6',
+    red_300: '#D691A7',
+    red_400: '#C76B89',
+    red_500: '#B74166',
+    red_600: '#A51140',
+    red_700: '#7D0D31',
+    red_800: '#5C0A24',
+    red_900: '#380616',
   },
   text: {
     light: '#FFFFFF',

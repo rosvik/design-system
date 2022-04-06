@@ -18,6 +18,14 @@ export type ContrastColor = {
   textColorType: TextColorType;
 };
 
+export type InteractiveColor = {
+  color: ContrastColor;
+  hover: ContrastColor;
+  active: ContrastColor;
+  disabled: ContrastColor;
+  outline: ContrastColor;
+};
+
 type StatusColor = {
   main: ContrastColor;
 };

@@ -1,4 +1,9 @@
-import {ContrastColor, TextColorType, Themes} from '../../theme';
+import {
+  ContrastColor,
+  InteractiveColor,
+  TextColorType,
+  Themes,
+} from '../../theme';
 import {borderRadius, borderWidth, iconSizes, spacings} from '../../sizes';
 import hexToRgba from 'hex-to-rgba';
 

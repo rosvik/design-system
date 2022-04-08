@@ -4,13 +4,15 @@ import path from 'path';
 import {createThemesFor, Themes, ThemeVariant} from '@atb-as/theme/lib/';
 
 import micromatch from 'micromatch';
-import fg from 'fast-glob';
 import {sed as updateFiles} from 'stream-editor';
 
-import {themeVariantAsString} from './utils';
+import {
+  fgNormalizedForUnix,
+  normalizeToUnix,
+  themeVariantAsString,
+} from './utils';
 import {log} from './logger';
 import {createReadStream, createWriteStream} from 'fs';
-import normalizeToUnix from 'normalize-path';
 
 export const vaildOrgIds = [ThemeVariant.AtB, ThemeVariant.Nfk];
 export const searchGlob = '**/*.{svg,png,jpg,jpeg,ico}';
@@ -27,7 +29,6 @@ const defaultOpts: Options = {
   generateMonoTheme: true,
   onlyOutputMono: false,
 };
-
 
 export async function generateAssets(
   assetType: AssetTypes,
@@ -129,17 +130,6 @@ export async function generateMonoIconsInDestinationDirectory(
   return files;
 }
 
-// Due to globs nature forward UNIX type slashes should be used. Normalize paths.
-// All paths returned are also UNIX style. All node functions normalize self, no
-// need to do it manually.
-// (see https://github.com/mrmlnc/fast-glob#how-to-write-patterns-on-windows)
-function fgNormalizedForUnix (path: string, options?: { ignore: string[] }) {
-  const opts = options && options.ignore ? {
-    ignore: options.ignore.map(f => normalizeToUnix(f))
-  } : options;
-  return fg(normalizeToUnix(path), opts);
-}
-
 async function rewriteAndSave(
   color: keyof Themes,
   themes: Themes,
@@ -192,10 +182,7 @@ function getGeneralNameWithoutFullPath(
   const regexString = `^.*\/files\/[^\/]+${assetDir}`;
 
   // Normalize to unix style instead if handling separator manually
-  return normalizeToUnix(fullPath).replace(
-    new RegExp(regexString),
-    '',
-  );
+  return normalizeToUnix(fullPath).replace(new RegExp(regexString), '');
 }
 function escapeRegex(str: string) {
   return str.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');

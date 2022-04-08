@@ -25,6 +25,16 @@
   --text-colors-secondary: rgba(0, 52, 65, 0.7);
   --text-colors-disabled: rgba(0, 52, 65, 0.52);
 
+  --colors-primary_accent-default-backgroundColor: #FFFFFF;
+  --colors-primary_accent-default-color: #003441;
+  --colors-primary_accent-hover-backgroundColor: #FFFFFF;
+  --colors-primary_accent-hover-color: #003441;
+  --colors-primary_accent-active-backgroundColor: #FFFFFF;
+  --colors-primary_accent-active-color: #003441;
+  --colors-primary_accent-disabled-backgroundColor: #FFFFFF;
+  --colors-primary_accent-disabled-color: #003441;
+  --colors-primary_accent-outline-backgroundColor: #FFFFFF;
+  --colors-primary_accent-outline-color: #003441;
   --colors-background_0-backgroundColor: #FFFFFF;
   --colors-background_0-color: #003441;
   --colors-background_1-backgroundColor: #E6F2F6;
@@ -102,6 +112,16 @@
   --text-colors-secondary: rgba(255, 255, 255, 0.6);
   --text-colors-disabled: rgba(255, 255, 255, 0.2);
 
+  --colors-primary_accent-default-backgroundColor: #FFFFFF;
+  --colors-primary_accent-default-color: #003441;
+  --colors-primary_accent-hover-backgroundColor: #FFFFFF;
+  --colors-primary_accent-hover-color: #003441;
+  --colors-primary_accent-active-backgroundColor: #FFFFFF;
+  --colors-primary_accent-active-color: #003441;
+  --colors-primary_accent-disabled-backgroundColor: #FFFFFF;
+  --colors-primary_accent-disabled-color: #003441;
+  --colors-primary_accent-outline-backgroundColor: #FFFFFF;
+  --colors-primary_accent-outline-color: #003441;
   --colors-background_0-backgroundColor: #046073;
   --colors-background_0-color: #FFFFFF;
   --colors-background_1-backgroundColor: #00303D;
@@ -179,6 +199,16 @@
   --text-colors-secondary: rgba(255, 255, 255, 0.6);
   --text-colors-disabled: rgba(255, 255, 255, 0.2);
 
+  --colors-primary_accent-default-backgroundColor: #FFFFFF;
+  --colors-primary_accent-default-color: #003441;
+  --colors-primary_accent-hover-backgroundColor: #FFFFFF;
+  --colors-primary_accent-hover-color: #003441;
+  --colors-primary_accent-active-backgroundColor: #FFFFFF;
+  --colors-primary_accent-active-color: #003441;
+  --colors-primary_accent-disabled-backgroundColor: #FFFFFF;
+  --colors-primary_accent-disabled-color: #003441;
+  --colors-primary_accent-outline-backgroundColor: #FFFFFF;
+  --colors-primary_accent-outline-color: #003441;
   --colors-background_0-backgroundColor: #046073;
   --colors-background_0-color: #FFFFFF;
   --colors-background_1-backgroundColor: #00303D;
@@ -233,6 +263,26 @@
 
 
 /* Theme color pairs */
+.colors-primary_accent-default {
+  background-color: var(--colors-primary_accent-default-backgroundColor);
+  color: var(--colors-primary_accent-default-color);
+}
+.colors-primary_accent-hover {
+  background-color: var(--colors-primary_accent-hover-backgroundColor);
+  color: var(--colors-primary_accent-hover-color);
+}
+.colors-primary_accent-active {
+  background-color: var(--colors-primary_accent-active-backgroundColor);
+  color: var(--colors-primary_accent-active-color);
+}
+.colors-primary_accent-disabled {
+  background-color: var(--colors-primary_accent-disabled-backgroundColor);
+  color: var(--colors-primary_accent-disabled-color);
+}
+.colors-primary_accent-outline {
+  background-color: var(--colors-primary_accent-outline-backgroundColor);
+  color: var(--colors-primary_accent-outline-color);
+}
 .colors-background_0 {
   background-color: var(--colors-background_0-backgroundColor);
   color: var(--colors-background_0-color);

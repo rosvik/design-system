@@ -25,6 +25,16 @@
   --text-colors-secondary: rgba(0, 0, 0, 0.6);
   --text-colors-disabled: rgba(0, 0, 0, 0.2);
 
+  --colors-primary_accent-default-backgroundColor: #007C92;
+  --colors-primary_accent-default-color: #FFFFFF;
+  --colors-primary_accent-hover-backgroundColor: #007C92;
+  --colors-primary_accent-hover-color: #FFFFFF;
+  --colors-primary_accent-active-backgroundColor: #007C92;
+  --colors-primary_accent-active-color: #FFFFFF;
+  --colors-primary_accent-disabled-backgroundColor: #007C92;
+  --colors-primary_accent-disabled-color: #FFFFFF;
+  --colors-primary_accent-outline-backgroundColor: #71D6E0;
+  --colors-primary_accent-outline-color: #000000;
   --colors-background_0-backgroundColor: #FFFFFF;
   --colors-background_0-color: #000000;
   --colors-background_1-backgroundColor: #F1F2F2;
@@ -45,7 +55,7 @@
   --colors-primary_destructive-color: #FFFFFF;
   --colors-secondary_1-backgroundColor: #37424A;
   --colors-secondary_1-color: #FFFFFF;
-  --colors-secondary_2-backgroundColor: #ffffff;
+  --colors-secondary_2-backgroundColor: #FFFFFF;
   --colors-secondary_2-color: #000000;
   --colors-secondary_3-backgroundColor: #555E65;
   --colors-secondary_3-color: #FFFFFF;
@@ -60,9 +70,9 @@
   --colors-transport_train-backgroundColor: #4B2942;
   --colors-transport_train-color: #FFFFFF;
   --colors-transport_airport-backgroundColor: #C75B12;
-  --colors-transport_airport-color: #FFFFFF;
+  --colors-transport_airport-color: #000000;
   --colors-transport_plane-backgroundColor: #C75B12;
-  --colors-transport_plane-color: #FFFFFF;
+  --colors-transport_plane-color: #000000;
   --colors-transport_other-backgroundColor: #555E65;
   --colors-transport_other-color: #FFFFFF;
 
@@ -102,6 +112,16 @@
   --text-colors-secondary: rgba(255, 255, 255, 0.6);
   --text-colors-disabled: rgba(255, 255, 255, 0.2);
 
+  --colors-primary_accent-default-backgroundColor: #007C92;
+  --colors-primary_accent-default-color: #FFFFFF;
+  --colors-primary_accent-hover-backgroundColor: #007C92;
+  --colors-primary_accent-hover-color: #FFFFFF;
+  --colors-primary_accent-active-backgroundColor: #007C92;
+  --colors-primary_accent-active-color: #FFFFFF;
+  --colors-primary_accent-disabled-backgroundColor: #007C92;
+  --colors-primary_accent-disabled-color: #FFFFFF;
+  --colors-primary_accent-outline-backgroundColor: #71D6E0;
+  --colors-primary_accent-outline-color: #000000;
   --colors-background_0-backgroundColor: #000000;
   --colors-background_0-color: #FFFFFF;
   --colors-background_1-backgroundColor: #242B30;
@@ -137,9 +157,9 @@
   --colors-transport_train-backgroundColor: #4B2942;
   --colors-transport_train-color: #FFFFFF;
   --colors-transport_airport-backgroundColor: #C75B12;
-  --colors-transport_airport-color: #FFFFFF;
+  --colors-transport_airport-color: #000000;
   --colors-transport_plane-backgroundColor: #C75B12;
-  --colors-transport_plane-color: #FFFFFF;
+  --colors-transport_plane-color: #000000;
   --colors-transport_other-backgroundColor: #555E65;
   --colors-transport_other-color: #FFFFFF;
 
@@ -179,6 +199,16 @@
   --text-colors-secondary: rgba(255, 255, 255, 0.6);
   --text-colors-disabled: rgba(255, 255, 255, 0.2);
 
+  --colors-primary_accent-default-backgroundColor: #007C92;
+  --colors-primary_accent-default-color: #FFFFFF;
+  --colors-primary_accent-hover-backgroundColor: #007C92;
+  --colors-primary_accent-hover-color: #FFFFFF;
+  --colors-primary_accent-active-backgroundColor: #007C92;
+  --colors-primary_accent-active-color: #FFFFFF;
+  --colors-primary_accent-disabled-backgroundColor: #007C92;
+  --colors-primary_accent-disabled-color: #FFFFFF;
+  --colors-primary_accent-outline-backgroundColor: #71D6E0;
+  --colors-primary_accent-outline-color: #000000;
   --colors-background_0-backgroundColor: #000000;
   --colors-background_0-color: #FFFFFF;
   --colors-background_1-backgroundColor: #242B30;
@@ -214,9 +244,9 @@
   --colors-transport_train-backgroundColor: #4B2942;
   --colors-transport_train-color: #FFFFFF;
   --colors-transport_airport-backgroundColor: #C75B12;
-  --colors-transport_airport-color: #FFFFFF;
+  --colors-transport_airport-color: #000000;
   --colors-transport_plane-backgroundColor: #C75B12;
-  --colors-transport_plane-color: #FFFFFF;
+  --colors-transport_plane-color: #000000;
   --colors-transport_other-backgroundColor: #555E65;
   --colors-transport_other-color: #FFFFFF;
 
@@ -233,6 +263,26 @@
 
 
 /* Theme color pairs */
+.colors-primary_accent-default {
+  background-color: var(--colors-primary_accent-default-backgroundColor);
+  color: var(--colors-primary_accent-default-color);
+}
+.colors-primary_accent-hover {
+  background-color: var(--colors-primary_accent-hover-backgroundColor);
+  color: var(--colors-primary_accent-hover-color);
+}
+.colors-primary_accent-active {
+  background-color: var(--colors-primary_accent-active-backgroundColor);
+  color: var(--colors-primary_accent-active-color);
+}
+.colors-primary_accent-disabled {
+  background-color: var(--colors-primary_accent-disabled-backgroundColor);
+  color: var(--colors-primary_accent-disabled-color);
+}
+.colors-primary_accent-outline {
+  background-color: var(--colors-primary_accent-outline-backgroundColor);
+  color: var(--colors-primary_accent-outline-color);
+}
 .colors-background_0 {
   background-color: var(--colors-background_0-backgroundColor);
   color: var(--colors-background_0-color);

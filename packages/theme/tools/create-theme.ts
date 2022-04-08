@@ -1,7 +1,7 @@
 import {Themes} from './../src/theme';
 import {writeFile} from 'fs/promises';
 import {join} from 'path';
-import {ContrastColor, Mode, Theme} from '../src';
+import {ContrastColor, Mode, Theme, InteractiveColor} from '../src';
 import {indentJoin, maybeConvertToRem} from './utils';
 
 export default async function outputThemes(
@@ -33,6 +33,8 @@ ${darkTheme(themes)}
 ${printContrastColors('colors', themes.light.colors)}
 
 ${printContrastColors('status', themes.light.status)}
+
+${printInteractiveColors('interactive', themes.light.interactive)}
 `;
 }
 
@@ -116,10 +118,19 @@ function printContrastColors(
   let data: string[] = [];
   for (let key in obj) {
     const val = obj[key];
+    let selector = `-${key}`;
+    if (['hover', 'active', 'disabled'].includes(key)) {
+      selector = `:${key}`;
+    }
+    if (['default'].includes(key)) {
+      selector = '';
+    }
+    if (['outline'].includes(key)) break;
     if (isContrastColor(val)) {
-      data.push(`.${name}${prefix}-${key} {
-  background-color: var(--${name}${prefix}-${key}-backgroundColor);
-  color: var(--${name}${prefix}-${key}-color);
+      data.push(`.${name}${prefix}${selector} {
+  background-color: var(--${name}${prefix}-${key}-background);
+  color: var(--${name}${prefix}-${key}-text);
+  opacity: var(--${name}${prefix}-${key}-opacity);
 }`);
     } else {
       data = data.concat(printContrastColors(name, val, `-${key}`));
@@ -128,8 +139,34 @@ function printContrastColors(
   return data.join('\n');
 }
 
+function printInteractiveColors(
+  name: string,
+  obj: ObjColors,
+  prefix: string = '',
+) {
+  let data: string[] = [];
+  for (let key in obj) {
+    const val = obj[key];
+    if (isInteractive(val)) {
+      return printContrastColors(name, obj, prefix);
+    }
+  }
+  return data.join('\n');
+}
+
 function isContrastColor(a: any): a is ContrastColor {
   return (
     typeof a === 'object' && 'background' in a && 'text' in a && 'opacity' in a
+  );
+}
+
+function isInteractive(a: any): a is InteractiveColor {
+  return (
+    typeof a === 'object' &&
+    'default' in a &&
+    'hover' in a &&
+    'active' in a &&
+    'disabled' in a &&
+    'outline' in a
   );
 }

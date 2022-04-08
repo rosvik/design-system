@@ -215,13 +215,13 @@ function InteractiveSwatch({mode, name, color}: InteractiveSwatchProps) {
   } catch (e) {}
 
   return (
-    <section
+    <button
       style={{
-        backgroundColor: color.default.background,
-        color: color.default.text,
+        width: '100%',
+        textAlign: 'left',
         border: '3px solid' + color.outline.background,
       }}
-      className={styles.swatch}
+      className={styles.swatch + ' interactive-' + name}
     >
       <div className={styles.swatch__header}>
         <h3 className={styles.swatch__title}>
@@ -232,7 +232,7 @@ function InteractiveSwatch({mode, name, color}: InteractiveSwatchProps) {
       <div className={styles.swatch__colors}>
         {color.default.text} / {color.default.background}
       </div>
-    </section>
+    </button>
   );
 }
 type FontTypeProps = {

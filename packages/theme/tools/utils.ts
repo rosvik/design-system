@@ -6,8 +6,8 @@ export function indentJoin(list: string[]) {
   return list.map(indentLine).join('\n');
 }
 
-export function maybeConvertToRem(val: any) {
-  if (typeof val !== 'number') {
+export function maybeConvertToRem(val: any, name?: string) {
+  if (typeof val !== 'number' || name === 'opacity') {
     return val;
   }
 

@@ -140,7 +140,6 @@ export const backgrounds = {
     level3: baseColors.gray_600,
   },
 };
-};
 
 const themes: Themes = {
   light: {

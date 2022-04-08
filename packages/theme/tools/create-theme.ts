@@ -54,6 +54,8 @@ ${extract('text')}
 ${extract('colors')}
 
 ${extract('status')}
+
+${extract('interactive')}
 }
 `;
 }
@@ -80,7 +82,7 @@ ${extract('status')}
 `;
 }
 
-type Converter = (v: any) => any;
+type Converter = (v: any, name: string) => any;
 function printWithPrefix<T>(
   prefix: string,
   obj: T,
@@ -89,7 +91,7 @@ function printWithPrefix<T>(
   let data: string[] = [];
   for (let [name, colorValue] of Object.entries(obj)) {
     if (isContrastColor(colorValue)) {
-      const {textColorType: _, ...withoutText} = colorValue;
+      const {...withoutText} = colorValue;
       data = data.concat(
         printWithPrefix(`${prefix}-${name}`, withoutText, valueConvert),
       );
@@ -98,7 +100,7 @@ function printWithPrefix<T>(
         printWithPrefix(`${prefix}-${name}`, colorValue, valueConvert),
       );
     } else {
-      data.push(`--${prefix}-${name}: ${valueConvert(colorValue)};`);
+      data.push(`--${prefix}-${name}: ${valueConvert(colorValue, name)};`);
     }
   }
   return data;
@@ -127,5 +129,7 @@ function printContrastColors(
 }
 
 function isContrastColor(a: any): a is ContrastColor {
-  return typeof a === 'object' && 'backgroundColor' in a && 'color' in a;
+  return (
+    typeof a === 'object' && 'background' in a && 'text' in a && 'opacity' in a
+  );
 }

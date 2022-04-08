@@ -12,15 +12,36 @@ const colors = {
 };
 
 const contrastColor = (
-  backgroundColor: string = colors.white,
+  background: string = colors.white,
   textColorType: TextColorType = 'dark',
+  opacity: number = 1.0,
 ): ContrastColor => {
-  return {backgroundColor, color: colors.text[textColorType], textColorType};
+  return {
+    background,
+    text: colors.text[textColorType],
+    opacity,
+  };
 };
 
 const themes: Themes = {
   light: {
     spacings: spacings,
+    interactive: {
+      primary_accent: {
+        default: contrastColor('#FFFFFF', 'dark'),
+        hover: contrastColor('#FFFFFF', 'dark'),
+        active: contrastColor('#FFFFFF', 'dark'),
+        disabled: contrastColor('#FFFFFF', 'dark'),
+        outline: contrastColor('#FFFFFF', 'dark'),
+      },
+      primary_neutral: {
+        default: contrastColor('#FFFFFF', 'dark'),
+        hover: contrastColor('#FFFFFF', 'dark'),
+        active: contrastColor('#FFFFFF', 'dark'),
+        disabled: contrastColor('#FFFFFF', 'dark'),
+        outline: contrastColor('#FFFFFF', 'dark'),
+      },
+    },
     colors: {
       background_0: contrastColor('#FFFFFF', 'dark'),
       background_1: contrastColor('#E6F2F6', 'dark'),
@@ -83,7 +104,22 @@ const themes: Themes = {
   },
   dark: {
     spacings: spacings,
-
+    interactive: {
+      primary_accent: {
+        default: contrastColor('#FFFFFF', 'dark'),
+        hover: contrastColor('#FFFFFF', 'dark'),
+        active: contrastColor('#FFFFFF', 'dark'),
+        disabled: contrastColor('#FFFFFF', 'dark'),
+        outline: contrastColor('#FFFFFF', 'dark'),
+      },
+      primary_neutral: {
+        default: contrastColor('#FFFFFF', 'dark'),
+        hover: contrastColor('#FFFFFF', 'dark'),
+        active: contrastColor('#FFFFFF', 'dark'),
+        disabled: contrastColor('#FFFFFF', 'dark'),
+        outline: contrastColor('#FFFFFF', 'dark'),
+      },
+    },
     colors: {
       background_0: contrastColor('#046073', 'light'),
       background_1: contrastColor('#00303D', 'light'),

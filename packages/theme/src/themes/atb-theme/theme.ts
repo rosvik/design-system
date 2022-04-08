@@ -1,9 +1,4 @@
-import {
-  ContrastColor,
-  InteractiveColor,
-  TextColorType,
-  Themes,
-} from '../../theme';
+import {ContrastColor, TextColorType, Themes} from '../../theme';
 import {borderRadius, borderWidth, iconSizes, spacings} from '../../sizes';
 import hexToRgba from 'hex-to-rgba';
 
@@ -15,10 +10,15 @@ export const textColors = {
 };
 
 const contrastColor = (
-  backgroundColor: string,
+  background: string,
   textColorType: TextColorType = 'dark',
+  opacity: number = 1.0,
 ): ContrastColor => {
-  return {backgroundColor, color: textColors[textColorType], textColorType};
+  return {
+    background,
+    text: textColors[textColorType],
+    opacity,
+  };
 };
 
 export const baseColors = {
@@ -118,11 +118,11 @@ export const baseColors = {
 };
 
 export const colors = {
-  white: baseColors.gray_0.backgroundColor,
-  black: baseColors.gray_1000.backgroundColor,
+  white: baseColors.gray_0.background,
+  black: baseColors.gray_1000.background,
   text: {
-    light: baseColors.gray_0.backgroundColor,
-    dark: baseColors.gray_1000.backgroundColor,
+    light: baseColors.gray_0.background,
+    dark: baseColors.gray_1000.background,
   },
 };
 
@@ -145,6 +145,22 @@ export const backgrounds = {
 const themes: Themes = {
   light: {
     spacings: spacings,
+    interactive: {
+      primary_accent: {
+        default: baseColors.blue_500,
+        hover: baseColors.blue_500,
+        active: baseColors.blue_500,
+        disabled: baseColors.blue_500,
+        outline: baseColors.cyan_200,
+      },
+      primary_neutral: {
+        default: baseColors.gray_0,
+        hover: contrastColor('#FFFFFF', 'dark'),
+        active: contrastColor('#FFFFFF', 'dark'),
+        disabled: contrastColor('#FFFFFF', 'dark'),
+        outline: baseColors.blue_500,
+      },
+    },
     colors: {
       background_0: backgrounds.light.level0,
       background_1: backgrounds.light.level1,
@@ -195,9 +211,9 @@ const themes: Themes = {
       },
     },
     border: {
-      primary: backgrounds.light.level1.backgroundColor,
+      primary: backgrounds.light.level1.background,
       secondary: colors.text.dark,
-      focus: baseColors.blue_500.backgroundColor,
+      focus: baseColors.blue_500.background,
       radius: borderRadius,
       width: borderWidth,
     },
@@ -208,6 +224,22 @@ const themes: Themes = {
   dark: {
     spacings: spacings,
 
+    interactive: {
+      primary_accent: {
+        default: baseColors.blue_500,
+        hover: baseColors.blue_500,
+        active: baseColors.blue_500,
+        disabled: baseColors.blue_500,
+        outline: baseColors.cyan_200,
+      },
+      primary_neutral: {
+        default: contrastColor('#FFFFFF', 'dark'),
+        hover: contrastColor('#FFFFFF', 'dark'),
+        active: contrastColor('#FFFFFF', 'dark'),
+        disabled: contrastColor('#FFFFFF', 'dark'),
+        outline: contrastColor('#FFFFFF', 'dark'),
+      },
+    },
     colors: {
       background_0: backgrounds.dark.level0,
       background_1: backgrounds.dark.level1,
@@ -256,9 +288,9 @@ const themes: Themes = {
       },
     },
     border: {
-      primary: backgrounds.dark.level1.backgroundColor,
+      primary: backgrounds.dark.level1.background,
       secondary: colors.text.light,
-      focus: baseColors.cyan_500.backgroundColor,
+      focus: baseColors.cyan_500.background,
       radius: borderRadius,
       width: borderWidth,
     },

@@ -13,13 +13,13 @@ export type TextColor = 'primary' | 'secondary' | 'disabled';
 export type TextColorType = 'dark' | 'light';
 
 export type ContrastColor = {
-  backgroundColor: string;
-  color: string;
-  textColorType: TextColorType;
+  background: string;
+  text: string;
+  opacity: number;
 };
 
 export type InteractiveColor = {
-  color: ContrastColor;
+  default: ContrastColor;
   hover: ContrastColor;
   active: ContrastColor;
   disabled: ContrastColor;
@@ -33,6 +33,10 @@ type StatusColor = {
 export interface Theme {
   spacings: typeof spacings;
 
+  interactive: {
+    primary_accent: InteractiveColor;
+    primary_neutral: InteractiveColor;
+  };
   colors: {
     background_0: ContrastColor;
     background_1: ContrastColor;

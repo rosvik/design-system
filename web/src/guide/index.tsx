@@ -12,6 +12,7 @@ import {
   createTextTypeStyles,
   TextStyle,
   Themes,
+  InteractiveColor,
 } from '@atb-as/theme/lib/index';
 import {CSSProperties, useEffect} from 'react';
 import {queryToSettings} from '../utils/query';
@@ -21,6 +22,7 @@ const fontData = createTextTypeStyles('web');
 type StatusTheme = Themes['light']['status'];
 type Status = Themes['light']['status']['valid'];
 type Colors = Themes['light']['colors'];
+type Interactives = Themes['light']['interactive'];
 
 type GuideProps = {
   theme: ThemeVariant;
@@ -39,6 +41,8 @@ export default function Guide({theme}: GuideProps) {
     convertStatusesToFlatList(themeObj[settings.mode].status),
   );
   const fontPairs = Object.entries(fontData);
+
+  const interactives = interaciveObjects(themeObj[settings.mode].interactive);
 
   return (
     <Layout theme={theme}>
@@ -60,6 +64,18 @@ export default function Guide({theme}: GuideProps) {
 
         <input type="submit" value="Select" />
       </form>
+
+      <section className={styles.section}>
+        <h2>Interactive</h2>
+        {interactives.map(([name, color]) => (
+          <InteractiveSwatch
+            key={name}
+            mode={settings.mode}
+            name={name}
+            color={color as InteractiveColor}
+          />
+        ))}
+      </section>
 
       <section className={styles.section}>
         <h2>Colors</h2>
@@ -119,6 +135,17 @@ function splitColorsOnTransport(colors: Colors): [ColorPair[], ColorPair[]] {
   return data;
 }
 
+type InteractivePair = [string, InteractiveColor];
+function interaciveObjects(interactives: Interactives): InteractivePair[] {
+  let data: InteractivePair[] = [];
+
+  for (let [name, color] of Object.entries(interactives)) {
+    data.push([name, color]);
+  }
+
+  return data;
+}
+
 function convertStatusesToFlatList(statuses: StatusTheme) {
   let data: {[key: string]: ContrastColor} = {};
 
@@ -147,25 +174,63 @@ function Swatch({mode, name, color}: SwatchProps) {
   let contrast = '';
 
   try {
-    contrast = getContrastRatio(color.color, color.backgroundColor).toFixed(2);
+    contrast = getContrastRatio(color.text, color.background).toFixed(2);
   } catch (e) {}
 
   return (
     <section
       style={{
-        backgroundColor: color.backgroundColor,
-        color: color.color,
+        backgroundColor: color.background,
+        color: color.text,
       }}
       className={styles.swatch}
     >
       <div className={styles.swatch__header}>
         <h3 className={styles.swatch__title}>
-          {mode} / {name} + Text / {color.textColorType}
+          {mode} / {name} + Text / {color.text}
         </h3>
         <div className={styles.swatch__number}>{contrast}</div>
       </div>
       <div className={styles.swatch__colors}>
-        {color.color} / {color.backgroundColor}
+        {color.text} / {color.background}
+      </div>
+    </section>
+  );
+}
+
+type InteractiveSwatchProps = {
+  name: string;
+  mode: Mode;
+
+  color: InteractiveColor;
+};
+function InteractiveSwatch({mode, name, color}: InteractiveSwatchProps) {
+  let contrast = '';
+
+  try {
+    contrast = getContrastRatio(
+      color.default.text,
+      color.default.background,
+    ).toFixed(2);
+  } catch (e) {}
+
+  return (
+    <section
+      style={{
+        backgroundColor: color.default.background,
+        color: color.default.text,
+        border: '3px solid' + color.outline.background,
+      }}
+      className={styles.swatch}
+    >
+      <div className={styles.swatch__header}>
+        <h3 className={styles.swatch__title}>
+          {mode} / {name} + Text / {color.default.text}
+        </h3>
+        <div className={styles.swatch__number}>{contrast}</div>
+      </div>
+      <div className={styles.swatch__colors}>
+        {color.default.text} / {color.default.background}
       </div>
     </section>
   );

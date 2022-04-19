@@ -19,10 +19,12 @@ import {queryToSettings} from '../utils/query';
 
 const fontData = createTextTypeStyles('web');
 
-type StatusTheme = Themes['light']['status'];
-type Status = Themes['light']['status']['valid'];
-type Colors = Themes['light']['colors'];
-type Interactives = Themes['light']['interactive'];
+type StaticColors = Themes['light']['static'];
+type StaticColorTypes = keyof Themes['light']['static'];
+type StaticColorNames<Key extends keyof StaticColors> =
+  keyof Themes['light']['static'][Key];
+
+type InteractiveColors = Themes['light']['interactive'];
 
 type GuideProps = {
   theme: ThemeVariant;
@@ -34,15 +36,12 @@ export default function Guide({theme}: GuideProps) {
   useBodyClass([settings.mode, `override-${settings.mode}`]);
 
   const themeObj = createThemesFor(theme);
-  const [colorPairs, transportPairs] = splitColorsOnTransport(
-    themeObj[settings.mode].colors,
-  );
-  const stausPairs = Object.entries(
-    convertStatusesToFlatList(themeObj[settings.mode].status),
-  );
   const fontPairs = Object.entries(fontData);
 
-  const interactives = interaciveObjects(themeObj[settings.mode].interactive);
+  const staticColors = themeObj[settings.mode].static;
+  const interactiveColors = interaciveObjects(
+    themeObj[settings.mode].interactive,
+  );
 
   return (
     <Layout theme={theme}>
@@ -66,8 +65,8 @@ export default function Guide({theme}: GuideProps) {
       </form>
 
       <section className={styles.section}>
-        <h2>Interactive</h2>
-        {interactives.map(([name, color]) => (
+        <h2>Interactive colors</h2>
+        {interactiveColors.map(([name, color]) => (
           <InteractiveSwatch
             key={name}
             mode={settings.mode}
@@ -78,39 +77,26 @@ export default function Guide({theme}: GuideProps) {
       </section>
 
       <section className={styles.section}>
-        <h2>Colors</h2>
-        {colorPairs.map(([name, color]) => (
-          <Swatch
-            key={name}
-            mode={settings.mode}
-            name={name}
-            color={color as ContrastColor}
-          />
-        ))}
-      </section>
-
-      <section className={styles.section}>
-        <h2>Transportation</h2>
-        {transportPairs.map(([name, color]) => (
-          <Swatch
-            key={name}
-            mode={settings.mode}
-            name={name}
-            color={color as ContrastColor}
-          />
-        ))}
-      </section>
-
-      <section className={styles.section}>
-        <h2>Status</h2>
-        {stausPairs.map(([name, color]) => (
-          <Swatch
-            key={name}
-            mode={settings.mode}
-            name={name}
-            color={color as ContrastColor}
-          />
-        ))}
+        <h2>Static colors</h2>
+        {Object.keys(staticColors).map((val) => {
+          const colorKey = val as StaticColorTypes;
+          return (
+            <div key={colorKey}>
+              <h3>{colorKey}</h3>
+              {Object.keys(staticColors[colorKey]).map((name: string) => {
+                const colorName = name as StaticColorNames<typeof colorKey>;
+                return (
+                  <Swatch
+                    key={colorName}
+                    mode={settings.mode}
+                    name={colorName}
+                    color={staticColors[colorKey][colorName]}
+                  />
+                );
+              })}
+            </div>
+          );
+        })}
       </section>
 
       <section className={styles.section}>
@@ -123,20 +109,8 @@ export default function Guide({theme}: GuideProps) {
   );
 }
 
-type ColorPair = [string, ContrastColor];
-function splitColorsOnTransport(colors: Colors): [ColorPair[], ColorPair[]] {
-  let data: [ColorPair[], ColorPair[]] = [[], []];
-
-  for (let [name, color] of Object.entries(colors)) {
-    const index = name.startsWith('transport') ? 1 : 0;
-    data[index].push([name, color]);
-  }
-
-  return data;
-}
-
 type InteractivePair = [string, InteractiveColor];
-function interaciveObjects(interactives: Interactives): InteractivePair[] {
+function interaciveObjects(interactives: InteractiveColors): InteractivePair[] {
   let data: InteractivePair[] = [];
 
   for (let [name, color] of Object.entries(interactives)) {
@@ -144,24 +118,6 @@ function interaciveObjects(interactives: Interactives): InteractivePair[] {
   }
 
   return data;
-}
-
-function convertStatusesToFlatList(statuses: StatusTheme) {
-  let data: {[key: string]: ContrastColor} = {};
-
-  for (let [name, status] of Object.entries(statuses)) {
-    data = {
-      ...data,
-      ...flattenStatus(name, status),
-    };
-  }
-
-  return data;
-}
-function flattenStatus(name: string, status: Status) {
-  return {
-    [`${name}__main`]: status.main,
-  };
 }
 
 type SwatchProps = {

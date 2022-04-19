@@ -30,9 +30,7 @@ ${theme(themes, 'dark')}
 ${darkTheme(themes)}
 
 /* Theme color pairs */
-${printContrastColors('colors', themes.light.colors)}
-
-${printContrastColors('status', themes.light.status)}
+${printContrastColors('colors', themes.light.static.background)}
 
 ${printInteractiveColors('interactive', themes.light.interactive)}
 `;
@@ -53,9 +51,7 @@ ${extract('icon')}
 
 ${extract('text')}
 
-${extract('colors')}
-
-${extract('status')}
+${extract('static')}
 
 ${extract('interactive')}
 }
@@ -76,9 +72,7 @@ ${extract('icon')}
 
 ${extract('text')}
 
-${extract('colors')}
-
-${extract('status')}
+${extract('static')}
   }
 }
 `;
@@ -130,7 +124,6 @@ function printContrastColors(
       data.push(`.${name}${prefix}${selector} {
   background-color: var(--${name}${prefix}-${key}-background);
   color: var(--${name}${prefix}-${key}-text);
-  opacity: var(--${name}${prefix}-${key}-opacity);
 }`);
     } else {
       data = data.concat(printContrastColors(name, val, `-${key}`));
@@ -155,9 +148,7 @@ function printInteractiveColors(
 }
 
 function isContrastColor(a: any): a is ContrastColor {
-  return (
-    typeof a === 'object' && 'background' in a && 'text' in a && 'opacity' in a
-  );
+  return typeof a === 'object' && 'background' in a && 'text' in a;
 }
 
 function isInteractive(a: any): a is InteractiveColor {

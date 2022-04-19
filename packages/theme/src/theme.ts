@@ -15,7 +15,6 @@ export type TextColorType = 'dark' | 'light';
 export type ContrastColor = {
   background: string;
   text: string;
-  opacity: number;
 };
 
 export type InteractiveColor = {
@@ -26,49 +25,44 @@ export type InteractiveColor = {
   outline: ContrastColor;
 };
 
-type StatusColor = {
-  main: ContrastColor;
-};
-
 export interface Theme {
   spacings: typeof spacings;
 
   interactive: {
-    primary_accent: InteractiveColor;
-    primary_neutral: InteractiveColor;
-  };
-  colors: {
-    background_0: ContrastColor;
-    background_1: ContrastColor;
-    background_2: ContrastColor;
-    background_3: ContrastColor;
-    background_accent: ContrastColor;
-    primary_1: ContrastColor;
-    primary_2: ContrastColor;
-    primary_3: ContrastColor;
-    primary_destructive: ContrastColor;
-    secondary_1: ContrastColor;
-    secondary_2: ContrastColor;
-    secondary_3: ContrastColor;
-    secondary_4: ContrastColor;
-    transport_city: ContrastColor;
-    transport_region: ContrastColor;
-    transport_boat: ContrastColor;
-    transport_train: ContrastColor;
-    transport_airport: ContrastColor;
-    transport_plane: ContrastColor;
-    transport_other: ContrastColor;
+    interactive_0: InteractiveColor;
+    interactive_1: InteractiveColor;
+    interactive_2: InteractiveColor;
+    interactive_3: InteractiveColor;
+    interactive_destructive: InteractiveColor;
   };
 
-  content: {
-    subtle_primary: ContrastColor;
-  };
+  static: {
+    background: {
+      background_0: ContrastColor;
+      background_1: ContrastColor;
+      background_2: ContrastColor;
+      background_3: ContrastColor;
+      background_accent_0: ContrastColor;
+      background_accent_1: ContrastColor;
+      background_accent_2: ContrastColor;
+    };
 
-  status: {
-    valid: StatusColor;
-    info: StatusColor;
-    warning: StatusColor;
-    error: StatusColor;
+    transport: {
+      transport_city: ContrastColor;
+      transport_region: ContrastColor;
+      transport_boat: ContrastColor;
+      transport_train: ContrastColor;
+      transport_airport: ContrastColor;
+      transport_plane: ContrastColor;
+      transport_other: ContrastColor;
+    };
+
+    status: {
+      valid: ContrastColor;
+      info: ContrastColor;
+      warning: ContrastColor;
+      error: ContrastColor;
+    };
   };
 
   text: {
@@ -87,7 +81,7 @@ export interface Theme {
   };
 }
 
-export type Statuses = keyof Theme['status'];
+export type Statuses = keyof Theme['static']['status'];
 
 export enum ThemeVariant {
   AtB,

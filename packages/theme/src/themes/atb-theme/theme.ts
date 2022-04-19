@@ -12,12 +12,10 @@ export const textColors = {
 const contrastColor = (
   background: string,
   textColorType: TextColorType = 'dark',
-  opacity: number = 1.0,
 ): ContrastColor => {
   return {
     background,
     text: textColors[textColorType],
-    opacity,
   };
 };
 
@@ -145,63 +143,69 @@ const themes: Themes = {
   light: {
     spacings: spacings,
     interactive: {
-      primary_accent: {
+      interactive_0: {
         default: baseColors.blue_500,
-        hover: baseColors.blue_500,
-        active: baseColors.blue_500,
-        disabled: baseColors.blue_500,
+        hover: baseColors.blue_400,
+        active: baseColors.blue_600,
+        disabled: baseColors.blue_100,
         outline: baseColors.cyan_200,
       },
-      primary_neutral: {
+      interactive_1: {
+        default: baseColors.gray_700,
+        hover: baseColors.gray_600,
+        active: baseColors.gray_800,
+        disabled: baseColors.gray_200,
+        outline: baseColors.blue_500,
+      },
+      interactive_2: {
         default: baseColors.gray_0,
-        hover: contrastColor('#FFFFFF', 'dark'),
-        active: contrastColor('#FFFFFF', 'dark'),
-        disabled: contrastColor('#FFFFFF', 'dark'),
+        hover: baseColors.blue_100,
+        active: baseColors.blue_200,
+        disabled: baseColors.gray_0,
+        outline: baseColors.blue_500,
+      },
+      interactive_3: {
+        default: baseColors.green_300,
+        hover: baseColors.green_200,
+        active: baseColors.green_400,
+        disabled: baseColors.green_100,
+        outline: baseColors.blue_500,
+      },
+      interactive_destructive: {
+        default: baseColors.red_600,
+        hover: baseColors.red_500,
+        active: baseColors.red_700,
+        disabled: baseColors.red_100,
         outline: baseColors.blue_500,
       },
     },
-    colors: {
-      background_0: backgrounds.light.level0,
-      background_1: backgrounds.light.level1,
-      background_2: backgrounds.light.level2,
-      background_3: backgrounds.light.level3,
-      background_accent: baseColors.gray_700,
-      primary_1: baseColors.green_300,
-      primary_2: baseColors.blue_500,
-      primary_3: baseColors.blue_100,
-      primary_destructive: baseColors.red_600,
-      secondary_1: baseColors.gray_700,
-      secondary_2: baseColors.gray_0,
-      secondary_3: baseColors.gray_600,
-      secondary_4: baseColors.gray_50,
-
-      transport_city: baseColors.green_300,
-      transport_region: baseColors.blue_500,
-      transport_boat: baseColors.cyan_200,
-      transport_train: baseColors.burgundy_800,
-      transport_airport: baseColors.orange_500,
-      transport_plane: baseColors.orange_500,
-      transport_other: baseColors.gray_600,
-    },
-
-    content: {
-      subtle_primary: baseColors.gray_50,
-    },
-
-    status: {
-      valid: {
-        main: baseColors.green_300,
+    static: {
+      background: {
+        background_0: baseColors.gray_0,
+        background_1: baseColors.gray_50,
+        background_2: baseColors.gray_100,
+        background_3: baseColors.gray_150,
+        background_accent_0: baseColors.gray_700,
+        background_accent_1: baseColors.gray_600,
+        background_accent_2: baseColors.blue_100,
       },
-      info: {
-        main: baseColors.cyan_200,
+      transport: {
+        transport_city: baseColors.green_300,
+        transport_region: baseColors.blue_500,
+        transport_boat: baseColors.cyan_200,
+        transport_train: baseColors.burgundy_800,
+        transport_airport: baseColors.orange_500,
+        transport_plane: baseColors.orange_500,
+        transport_other: baseColors.gray_600,
       },
-      warning: {
-        main: baseColors.yellow_200,
-      },
-      error: {
-        main: baseColors.red_600,
+      status: {
+        valid: baseColors.green_300,
+        info: baseColors.cyan_200,
+        warning: baseColors.yellow_200,
+        error: baseColors.red_600,
       },
     },
+
     text: {
       colors: {
         primary: colors.text.dark,
@@ -210,7 +214,7 @@ const themes: Themes = {
       },
     },
     border: {
-      primary: backgrounds.light.level1.background,
+      primary: baseColors.gray_50.background,
       secondary: colors.text.dark,
       focus: baseColors.blue_500.background,
       radius: borderRadius,
@@ -224,71 +228,79 @@ const themes: Themes = {
     spacings: spacings,
 
     interactive: {
-      primary_accent: {
+      interactive_0: {
         default: baseColors.blue_500,
-        hover: baseColors.blue_500,
-        active: baseColors.blue_500,
-        disabled: baseColors.blue_500,
+        hover: baseColors.blue_400,
+        active: baseColors.blue_600,
+        disabled: baseColors.blue_100,
         outline: baseColors.cyan_200,
       },
-      primary_neutral: {
-        default: contrastColor('#FFFFFF', 'dark'),
-        hover: contrastColor('#FFFFFF', 'dark'),
-        active: contrastColor('#FFFFFF', 'dark'),
-        disabled: contrastColor('#FFFFFF', 'dark'),
-        outline: contrastColor('#FFFFFF', 'dark'),
+      interactive_1: {
+        default: baseColors.gray_600,
+        hover: baseColors.gray_500,
+        active: baseColors.gray_700,
+        disabled: baseColors.gray_200,
+        outline: baseColors.blue_500,
+      },
+      interactive_2: {
+        default: baseColors.gray_1000,
+        hover: baseColors.blue_900,
+        active: baseColors.blue_800,
+        disabled: baseColors.gray_1000,
+        outline: baseColors.blue_500,
+      },
+      interactive_3: {
+        default: baseColors.green_300,
+        hover: baseColors.green_200,
+        active: baseColors.green_400,
+        disabled: baseColors.green_100,
+        outline: baseColors.blue_500,
+      },
+      interactive_destructive: {
+        default: baseColors.red_600,
+        hover: baseColors.red_500,
+        active: baseColors.red_700,
+        disabled: baseColors.red_100,
+        outline: baseColors.blue_500,
       },
     },
-    colors: {
-      background_0: backgrounds.dark.level0,
-      background_1: backgrounds.dark.level1,
-      background_2: backgrounds.dark.level2,
-      background_3: backgrounds.dark.level3,
-      background_accent: baseColors.gray_700,
-      primary_1: baseColors.green_300,
-      primary_2: baseColors.blue_500,
-      primary_3: baseColors.blue_100,
-      primary_destructive: baseColors.red_600,
-      secondary_1: baseColors.gray_300,
-      secondary_2: baseColors.gray_1000,
-      secondary_3: baseColors.gray_600,
-      secondary_4: baseColors.gray_600,
+    static: {
+      background: {
+        background_0: baseColors.gray_1000,
+        background_1: baseColors.gray_850,
+        background_2: baseColors.gray_700,
+        background_3: baseColors.gray_600,
+        background_accent_0: baseColors.gray_700,
+        background_accent_1: baseColors.gray_600,
+        background_accent_2: baseColors.blue_100,
+      },
 
-      transport_city: baseColors.green_300,
-      transport_region: baseColors.blue_500,
-      transport_boat: baseColors.cyan_200,
-      transport_train: baseColors.burgundy_800,
-      transport_airport: baseColors.orange_500,
-      transport_plane: baseColors.orange_500,
-      transport_other: baseColors.gray_600,
-    },
-    content: {
-      subtle_primary: baseColors.gray_850,
-    },
-    status: {
-      valid: {
-        main: baseColors.green_300,
+      transport: {
+        transport_city: baseColors.green_300,
+        transport_region: baseColors.blue_500,
+        transport_boat: baseColors.cyan_200,
+        transport_train: baseColors.burgundy_800,
+        transport_airport: baseColors.orange_500,
+        transport_plane: baseColors.orange_500,
+        transport_other: baseColors.gray_600,
       },
-      info: {
-        main: baseColors.cyan_200,
-      },
-      warning: {
-        main: baseColors.yellow_200,
-      },
-      error: {
-        main: baseColors.red_600,
+      status: {
+        valid: baseColors.green_300,
+        info: baseColors.cyan_200,
+        warning: baseColors.yellow_200,
+        error: baseColors.red_600,
       },
     },
     text: {
       colors: {
-        primary: colors.text.light,
-        secondary: hexToRgba(colors.text.light, 0.6),
-        disabled: hexToRgba(colors.text.light, 0.2),
+        primary: baseColors.gray_0.background,
+        secondary: hexToRgba(baseColors.gray_0.background, 0.6),
+        disabled: hexToRgba(baseColors.gray_0.background, 0.2),
       },
     },
     border: {
-      primary: backgrounds.dark.level1.background,
-      secondary: colors.text.light,
+      primary: baseColors.gray_850.background,
+      secondary: baseColors.gray_0.background,
       focus: baseColors.cyan_500.background,
       radius: borderRadius,
       width: borderWidth,

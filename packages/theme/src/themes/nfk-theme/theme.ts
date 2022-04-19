@@ -14,12 +14,10 @@ const colors = {
 const contrastColor = (
   background: string = colors.white,
   textColorType: TextColorType = 'dark',
-  opacity: number = 1.0,
 ): ContrastColor => {
   return {
     background,
     text: colors.text[textColorType],
-    opacity,
   };
 };
 
@@ -27,14 +25,35 @@ const themes: Themes = {
   light: {
     spacings: spacings,
     interactive: {
-      primary_accent: {
+      interactive_0: {
         default: contrastColor('#FFFFFF', 'dark'),
         hover: contrastColor('#FFFFFF', 'dark'),
         active: contrastColor('#FFFFFF', 'dark'),
         disabled: contrastColor('#FFFFFF', 'dark'),
         outline: contrastColor('#FFFFFF', 'dark'),
       },
-      primary_neutral: {
+      interactive_1: {
+        default: contrastColor('#FFFFFF', 'dark'),
+        hover: contrastColor('#FFFFFF', 'dark'),
+        active: contrastColor('#FFFFFF', 'dark'),
+        disabled: contrastColor('#FFFFFF', 'dark'),
+        outline: contrastColor('#FFFFFF', 'dark'),
+      },
+      interactive_2: {
+        default: contrastColor('#FFFFFF', 'dark'),
+        hover: contrastColor('#FFFFFF', 'dark'),
+        active: contrastColor('#FFFFFF', 'dark'),
+        disabled: contrastColor('#FFFFFF', 'dark'),
+        outline: contrastColor('#FFFFFF', 'dark'),
+      },
+      interactive_3: {
+        default: contrastColor('#FFFFFF', 'dark'),
+        hover: contrastColor('#FFFFFF', 'dark'),
+        active: contrastColor('#FFFFFF', 'dark'),
+        disabled: contrastColor('#FFFFFF', 'dark'),
+        outline: contrastColor('#FFFFFF', 'dark'),
+      },
+      interactive_destructive: {
         default: contrastColor('#FFFFFF', 'dark'),
         hover: contrastColor('#FFFFFF', 'dark'),
         active: contrastColor('#FFFFFF', 'dark'),
@@ -42,48 +61,33 @@ const themes: Themes = {
         outline: contrastColor('#FFFFFF', 'dark'),
       },
     },
-    colors: {
-      background_0: contrastColor('#FFFFFF', 'dark'),
-      background_1: contrastColor('#E6F2F6', 'dark'),
-      background_2: contrastColor('#EAEAEA', 'dark'),
-      background_3: contrastColor('#E4E4E4', 'dark'),
-      background_accent: contrastColor('#0181A2', 'light'),
-      primary_1: contrastColor('#80C0D1', 'dark'),
-      primary_2: contrastColor('#046073', 'light'),
-      primary_3: contrastColor('#99CDDA', 'dark'),
-      primary_destructive: contrastColor('#A61419', 'light'),
-      secondary_1: contrastColor('#003441', 'light'),
-      secondary_2: contrastColor('#BCCBCF', 'dark'),
-      secondary_3: contrastColor('#566569', 'light'),
-      secondary_4: contrastColor('#DDE5E7', 'dark'),
-
-      transport_city: contrastColor('#014D61', 'light'),
-      transport_region: contrastColor('#6C7E2F', 'light'),
-      transport_boat: contrastColor('#1777D7', 'light'),
-      transport_train: contrastColor('#A5608A', 'light'),
-      transport_airport: contrastColor('#8A62C3', 'light'),
-      transport_plane: contrastColor('#318181', 'light'),
-      transport_other: contrastColor('#717171', 'light'),
-    },
-
-    content: {
-      subtle_primary: contrastColor('#E7E8E9', 'dark'),
-    },
-
-    status: {
-      valid: {
-        main: contrastColor('#7FDABB', 'dark'),
+    static: {
+      background: {
+        background_0: contrastColor('#FFFFFF', 'dark'),
+        background_1: contrastColor('#E6F2F6', 'dark'),
+        background_2: contrastColor('#EAEAEA', 'dark'),
+        background_3: contrastColor('#E4E4E4', 'dark'),
+        background_accent_0: contrastColor('#0181A2', 'light'),
+        background_accent_1: contrastColor('#FFFFFF', 'light'),
+        background_accent_2: contrastColor('#FFFFFF', 'light'),
       },
-      info: {
-        main: contrastColor('#99CDDA', 'dark'),
+      transport: {
+        transport_city: contrastColor('#014D61', 'light'),
+        transport_region: contrastColor('#6C7E2F', 'light'),
+        transport_boat: contrastColor('#1777D7', 'light'),
+        transport_train: contrastColor('#A5608A', 'light'),
+        transport_airport: contrastColor('#8A62C3', 'light'),
+        transport_plane: contrastColor('#318181', 'light'),
+        transport_other: contrastColor('#717171', 'light'),
       },
-      warning: {
-        main: contrastColor('#FCBA63', 'dark'),
-      },
-      error: {
-        main: contrastColor('#A61419', 'light'),
+      status: {
+        valid: contrastColor('#7FDABB', 'dark'),
+        info: contrastColor('#99CDDA', 'dark'),
+        warning: contrastColor('#FCBA63', 'dark'),
+        error: contrastColor('#A61419', 'light'),
       },
     },
+
     text: {
       colors: {
         primary: colors.text.dark,
@@ -105,14 +109,35 @@ const themes: Themes = {
   dark: {
     spacings: spacings,
     interactive: {
-      primary_accent: {
+      interactive_0: {
         default: contrastColor('#FFFFFF', 'dark'),
         hover: contrastColor('#FFFFFF', 'dark'),
         active: contrastColor('#FFFFFF', 'dark'),
         disabled: contrastColor('#FFFFFF', 'dark'),
         outline: contrastColor('#FFFFFF', 'dark'),
       },
-      primary_neutral: {
+      interactive_1: {
+        default: contrastColor('#FFFFFF', 'dark'),
+        hover: contrastColor('#FFFFFF', 'dark'),
+        active: contrastColor('#FFFFFF', 'dark'),
+        disabled: contrastColor('#FFFFFF', 'dark'),
+        outline: contrastColor('#FFFFFF', 'dark'),
+      },
+      interactive_2: {
+        default: contrastColor('#FFFFFF', 'dark'),
+        hover: contrastColor('#FFFFFF', 'dark'),
+        active: contrastColor('#FFFFFF', 'dark'),
+        disabled: contrastColor('#FFFFFF', 'dark'),
+        outline: contrastColor('#FFFFFF', 'dark'),
+      },
+      interactive_3: {
+        default: contrastColor('#FFFFFF', 'dark'),
+        hover: contrastColor('#FFFFFF', 'dark'),
+        active: contrastColor('#FFFFFF', 'dark'),
+        disabled: contrastColor('#FFFFFF', 'dark'),
+        outline: contrastColor('#FFFFFF', 'dark'),
+      },
+      interactive_destructive: {
         default: contrastColor('#FFFFFF', 'dark'),
         hover: contrastColor('#FFFFFF', 'dark'),
         active: contrastColor('#FFFFFF', 'dark'),
@@ -120,44 +145,30 @@ const themes: Themes = {
         outline: contrastColor('#FFFFFF', 'dark'),
       },
     },
-    colors: {
-      background_0: contrastColor('#046073', 'light'),
-      background_1: contrastColor('#00303D', 'light'),
-      background_2: contrastColor('#00232C', 'light'),
-      background_3: contrastColor('#002B38', 'light'),
-      background_accent: contrastColor('#00232C', 'light'),
-      primary_1: contrastColor('#80C0D1', 'dark'),
-      primary_2: contrastColor('#0181A2', 'light'),
-      primary_3: contrastColor('#99CDDA', 'dark'),
-      primary_destructive: contrastColor('#D51920', 'light'),
-      secondary_1: contrastColor('#D2DDDF', 'dark'),
-      secondary_2: contrastColor('#386169', 'light'),
-      secondary_3: contrastColor('#436B73', 'light'),
-      secondary_4: contrastColor('#264B54', 'light'),
-
-      transport_city: contrastColor('#80C0D1'),
-      transport_region: contrastColor('#98A56D'),
-      transport_boat: contrastColor('#5DA0E3'),
-      transport_train: contrastColor('#C090AD'),
-      transport_airport: contrastColor('#AD91D5'),
-      transport_plane: contrastColor('#6FA7A7'),
-      transport_other: contrastColor('#9C9C9C'),
-    },
-    content: {
-      subtle_primary: contrastColor('#1B1C1D', 'dark'),
-    },
-    status: {
-      valid: {
-        main: contrastColor('#7FDABB', 'dark'),
+    static: {
+      background: {
+        background_0: contrastColor('#046073', 'light'),
+        background_1: contrastColor('#00303D', 'light'),
+        background_2: contrastColor('#00232C', 'light'),
+        background_3: contrastColor('#002B38', 'light'),
+        background_accent_0: contrastColor('#00232C', 'light'),
+        background_accent_1: contrastColor('#00232C', 'light'),
+        background_accent_2: contrastColor('#00232C', 'light'),
       },
-      info: {
-        main: contrastColor('#99CDDA', 'dark'),
+      transport: {
+        transport_city: contrastColor('#80C0D1'),
+        transport_region: contrastColor('#98A56D'),
+        transport_boat: contrastColor('#5DA0E3'),
+        transport_train: contrastColor('#C090AD'),
+        transport_airport: contrastColor('#AD91D5'),
+        transport_plane: contrastColor('#6FA7A7'),
+        transport_other: contrastColor('#9C9C9C'),
       },
-      warning: {
-        main: contrastColor('#FCBA63', 'dark'),
-      },
-      error: {
-        main: contrastColor('#BE161D', 'light'),
+      status: {
+        valid: contrastColor('#7FDABB', 'dark'),
+        info: contrastColor('#99CDDA', 'dark'),
+        warning: contrastColor('#FCBA63', 'dark'),
+        error: contrastColor('#BE161D', 'light'),
       },
     },
     text: {

@@ -11,6 +11,7 @@ export const textNames = [
   'heading__title',
   'heading__component',
   'heading__paragraph',
+  'label__uppercase',
 ] as const;
 
 export type FontMetadata = {
@@ -45,6 +46,7 @@ export type TextStyle = {
     | '700'
     | '800'
     | '900';
+  textTransform?: 'uppercase' | 'lowercase' | 'capitalize' | 'none';
 };
 
 export type TextTypeStyles = {[key in TextNames]: TextStyle};

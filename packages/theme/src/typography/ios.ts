@@ -15,6 +15,11 @@ const tertiaryBase: TextStyle = {
   lineHeight: 16,
   letterSpacing: 0,
 };
+const labelBase: TextStyle = {
+  fontSize: 8,
+  lineHeight: 16,
+  letterSpacing: 0,
+};
 
 export const iosFontData: FontBook = {
   main: {
@@ -64,5 +69,9 @@ export const iosTextTypeStyles: TextTypeStyles = {
   heading__paragraph: {
     ...primaryBase,
     fontWeight: '600',
+  },
+  label__uppercase: {
+    ...labelBase,
+    textTransform: 'uppercase',
   },
 };

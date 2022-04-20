@@ -117,6 +117,8 @@ function textStyleMapper(styleProp: ValidStyleProps) {
       return 'letter-spacing';
     case 'textDecorationLine':
       return 'text-decoration';
+    case 'textTransform':
+      return 'text-transform';
   }
 }
 function printTextStyleClasses(obj: TextTypeStyles) {

@@ -15,6 +15,11 @@ const tertiaryBase: TextStyle = {
   lineHeight: 16,
   letterSpacing: 0.4,
 };
+const labelBase: TextStyle = {
+  fontSize: 8,
+  lineHeight: 16,
+  letterSpacing: 0,
+};
 
 export const androidFontData: FontBook = {
   main: {
@@ -66,5 +71,9 @@ export const androidTextTypeStyles: TextTypeStyles = {
   heading__paragraph: {
     ...primaryBase,
     fontWeight: '500',
+  },
+  label__uppercase: {
+    ...labelBase,
+    textTransform: 'uppercase',
   },
 };

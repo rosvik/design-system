@@ -73,6 +73,11 @@
   --baseTypo-heading__paragraph-letterSpacing: 0.03125rem;
   --baseTypo-heading__paragraph-fontWeight: 500;
 
+  /* Definitions for label__uppercase */
+  --baseTypo-label__uppercase-fontSize: 0.5rem;
+  --baseTypo-label__uppercase-lineHeight: 1rem;
+  --baseTypo-label__uppercase-textTransform: uppercase;
+
 
   /* Included font types */
   --font-main: 'Roboto', sans-serif;
@@ -153,4 +158,9 @@ html {
   line-height: var(--baseTypo-heading__paragraph-lineHeight, 1.25rem);
   letter-spacing: var(--baseTypo-heading__paragraph-letterSpacing, 0.03125rem);
   font-weight: var(--baseTypo-heading__paragraph-fontWeight, 500);
+}
+.typo-label__uppercase {
+  font-size: var(--baseTypo-label__uppercase-fontSize, 0.5rem);
+  line-height: var(--baseTypo-label__uppercase-lineHeight, 1rem);
+  text-transform: var(--baseTypo-label__uppercase-textTransform, uppercase);
 }

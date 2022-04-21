@@ -200,6 +200,7 @@ function asCSSProperties(fontStyle: TextStyle): CSSProperties | undefined {
     lineHeight: `${fontStyle.lineHeight}px`,
     letterSpacing: `${fontStyle.letterSpacing}px`,
     textDecorationLine: fontStyle.textDecorationLine,
+    textTransform: fontStyle.textTransform,
     fontWeight: fontStyle.fontWeight as any,
   };
 }

@@ -37,6 +37,7 @@ export default function Guide({theme}: GuideProps) {
 
   const themeObj = createThemesFor(theme);
   const fontPairs = Object.entries(fontData);
+  const textColors = themeObj[settings.mode].text.colors;
 
   const staticColors = themeObj[settings.mode].static;
   const interactiveColors = interaciveObjects(
@@ -65,7 +66,7 @@ export default function Guide({theme}: GuideProps) {
       </form>
 
       <section className={styles.section}>
-        <h2>Interactive colors</h2>
+        <h1>Interactive colors</h1>
         {interactiveColors.map(([name, color]) => (
           <InteractiveSwatch
             key={name}
@@ -77,12 +78,12 @@ export default function Guide({theme}: GuideProps) {
       </section>
 
       <section className={styles.section}>
-        <h2>Static colors</h2>
+        <h1>Static colors</h1>
         {Object.keys(staticColors).map((val) => {
           const colorKey = val as StaticColorTypes;
           return (
             <div key={colorKey}>
-              <h3>{colorKey}</h3>
+              <h2>{colorKey}</h2>
               {Object.keys(staticColors[colorKey]).map((name: string) => {
                 const colorName = name as StaticColorNames<typeof colorKey>;
                 return (
@@ -100,7 +101,20 @@ export default function Guide({theme}: GuideProps) {
       </section>
 
       <section className={styles.section}>
-        <h2>Typography</h2>
+        <h1>Typography</h1>
+        <h2>Colors</h2>
+        {Object.keys(textColors).map((color) => (
+          <p
+            key={color}
+            style={{
+              color: textColors[color as keyof typeof textColors],
+            }}
+          >
+            {color} / {textColors[color as keyof typeof textColors]}
+          </p>
+        ))}
+
+        <h2>Styles</h2>
         {fontPairs.map(([name, fontStyle]) => (
           <FontType key={name} name={name} fontStyle={fontStyle} />
         ))}

@@ -23,6 +23,11 @@ body {
   letter-spacing: var(--baseTypo-body__primary-letterSpacing);
 }
 
-h2 {
+h1 {
+  font-size: 2rem;
   margin: calc(2 * var(--spacings-xLarge)) 0 var(--spacings-xLarge);
+}
+
+h2 {
+  margin: calc(2 * var(--spacings-large)) 0 var(--spacings-large);
 }

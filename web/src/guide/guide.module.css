@@ -16,6 +16,8 @@
 .swatch {
   padding: 1rem;
   margin-bottom: var(--spacings-small);
+  width: 100%;
+  text-align: left;
 }
 .swatch__header {
   display: flex;

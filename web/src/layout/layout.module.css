@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   top: 0;
-  background: var(--colors-background_accent-backgroundColor);
+  background: var(--static-background-background_accent_0-background);
 }
 
 .nav ul {
@@ -23,7 +23,7 @@
   justify-content: center;
 }
 .nav__link {
-  color: var(--colors-background_accent-color);
+  color: var(--static-background-background_accent_0-text);
   padding: var(--spacings-medium);
   display: block;
 }

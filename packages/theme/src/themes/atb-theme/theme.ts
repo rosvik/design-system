@@ -1,6 +1,5 @@
 import {ContrastColor, TextColorType, Themes} from '../../theme';
 import {borderRadius, borderWidth, iconSizes, spacings} from '../../sizes';
-import hexToRgba from 'hex-to-rgba';
 
 export const textColors = {
   light: '#FFFFFF',
@@ -210,9 +209,9 @@ const themes: Themes = {
 
     text: {
       colors: {
-        primary: colors.text.dark,
-        secondary: hexToRgba(colors.text.dark, 0.6),
-        disabled: hexToRgba(colors.text.dark, 0.2),
+        primary: baseColors.gray_1000.background,
+        secondary: baseColors.gray_600.background,
+        disabled: baseColors.gray_300.background,
       },
     },
     border: {
@@ -298,8 +297,8 @@ const themes: Themes = {
     text: {
       colors: {
         primary: baseColors.gray_0.background,
-        secondary: hexToRgba(baseColors.gray_0.background, 0.6),
-        disabled: hexToRgba(baseColors.gray_0.background, 0.2),
+        secondary: baseColors.gray_50.background,
+        disabled: baseColors.gray_300.background,
       },
     },
     border: {

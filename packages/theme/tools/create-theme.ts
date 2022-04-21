@@ -30,7 +30,7 @@ ${theme(themes, 'dark')}
 ${darkTheme(themes)}
 
 /* Theme color pairs */
-${printContrastColors('colors', themes.light.static.background)}
+${printContrastColors('static', themes.light.static)}
 
 ${printInteractiveColors('interactive', themes.light.interactive)}
 `;
@@ -73,7 +73,9 @@ ${extract('icon')}
 ${extract('text')}
 
 ${extract('static')}
-  }
+
+${extract('interactive')}
+}
 }
 `;
 }

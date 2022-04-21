@@ -36,9 +36,13 @@
   --static-background-background_accent_0-background: #0181A2;
   --static-background-background_accent_0-text: #FFFFFF;
   --static-background-background_accent_1-background: #FFFFFF;
-  --static-background-background_accent_1-text: #FFFFFF;
+  --static-background-background_accent_1-text: #003441;
   --static-background-background_accent_2-background: #FFFFFF;
-  --static-background-background_accent_2-text: #FFFFFF;
+  --static-background-background_accent_2-text: #003441;
+  --static-background-background_accent_3-background: #FFFFFF;
+  --static-background-background_accent_3-text: #003441;
+  --static-background-background_accent_4-background: #FFFFFF;
+  --static-background-background_accent_4-text: #003441;
   --static-transport-transport_city-background: #014D61;
   --static-transport-transport_city-text: #FFFFFF;
   --static-transport-transport_region-background: #6C7E2F;
@@ -150,10 +154,14 @@
   --static-background-background_3-text: #FFFFFF;
   --static-background-background_accent_0-background: #00232C;
   --static-background-background_accent_0-text: #FFFFFF;
-  --static-background-background_accent_1-background: #00232C;
+  --static-background-background_accent_1-background: #000000;
   --static-background-background_accent_1-text: #FFFFFF;
-  --static-background-background_accent_2-background: #00232C;
+  --static-background-background_accent_2-background: #000000;
   --static-background-background_accent_2-text: #FFFFFF;
+  --static-background-background_accent_3-background: #000000;
+  --static-background-background_accent_3-text: #FFFFFF;
+  --static-background-background_accent_4-background: #000000;
+  --static-background-background_accent_4-text: #FFFFFF;
   --static-transport-transport_city-background: #80C0D1;
   --static-transport-transport_city-text: #003441;
   --static-transport-transport_region-background: #98A56D;
@@ -265,10 +273,14 @@
   --static-background-background_3-text: #FFFFFF;
   --static-background-background_accent_0-background: #00232C;
   --static-background-background_accent_0-text: #FFFFFF;
-  --static-background-background_accent_1-background: #00232C;
+  --static-background-background_accent_1-background: #000000;
   --static-background-background_accent_1-text: #FFFFFF;
-  --static-background-background_accent_2-background: #00232C;
+  --static-background-background_accent_2-background: #000000;
   --static-background-background_accent_2-text: #FFFFFF;
+  --static-background-background_accent_3-background: #000000;
+  --static-background-background_accent_3-text: #FFFFFF;
+  --static-background-background_accent_4-background: #000000;
+  --static-background-background_accent_4-text: #FFFFFF;
   --static-transport-transport_city-background: #80C0D1;
   --static-transport-transport_city-text: #003441;
   --static-transport-transport_region-background: #98A56D;
@@ -291,38 +303,141 @@
   --static-status-warning-text: #003441;
   --static-status-error-background: #BE161D;
   --static-status-error-text: #FFFFFF;
-  }
+
+  --interactive-interactive_0-default-background: #FFFFFF;
+  --interactive-interactive_0-default-text: #003441;
+  --interactive-interactive_0-hover-background: #FFFFFF;
+  --interactive-interactive_0-hover-text: #003441;
+  --interactive-interactive_0-active-background: #FFFFFF;
+  --interactive-interactive_0-active-text: #003441;
+  --interactive-interactive_0-disabled-background: #FFFFFF;
+  --interactive-interactive_0-disabled-text: #003441;
+  --interactive-interactive_0-outline-background: #FFFFFF;
+  --interactive-interactive_0-outline-text: #003441;
+  --interactive-interactive_1-default-background: #FFFFFF;
+  --interactive-interactive_1-default-text: #003441;
+  --interactive-interactive_1-hover-background: #FFFFFF;
+  --interactive-interactive_1-hover-text: #003441;
+  --interactive-interactive_1-active-background: #FFFFFF;
+  --interactive-interactive_1-active-text: #003441;
+  --interactive-interactive_1-disabled-background: #FFFFFF;
+  --interactive-interactive_1-disabled-text: #003441;
+  --interactive-interactive_1-outline-background: #FFFFFF;
+  --interactive-interactive_1-outline-text: #003441;
+  --interactive-interactive_2-default-background: #FFFFFF;
+  --interactive-interactive_2-default-text: #003441;
+  --interactive-interactive_2-hover-background: #FFFFFF;
+  --interactive-interactive_2-hover-text: #003441;
+  --interactive-interactive_2-active-background: #FFFFFF;
+  --interactive-interactive_2-active-text: #003441;
+  --interactive-interactive_2-disabled-background: #FFFFFF;
+  --interactive-interactive_2-disabled-text: #003441;
+  --interactive-interactive_2-outline-background: #FFFFFF;
+  --interactive-interactive_2-outline-text: #003441;
+  --interactive-interactive_3-default-background: #FFFFFF;
+  --interactive-interactive_3-default-text: #003441;
+  --interactive-interactive_3-hover-background: #FFFFFF;
+  --interactive-interactive_3-hover-text: #003441;
+  --interactive-interactive_3-active-background: #FFFFFF;
+  --interactive-interactive_3-active-text: #003441;
+  --interactive-interactive_3-disabled-background: #FFFFFF;
+  --interactive-interactive_3-disabled-text: #003441;
+  --interactive-interactive_3-outline-background: #FFFFFF;
+  --interactive-interactive_3-outline-text: #003441;
+  --interactive-interactive_destructive-default-background: #FFFFFF;
+  --interactive-interactive_destructive-default-text: #003441;
+  --interactive-interactive_destructive-hover-background: #FFFFFF;
+  --interactive-interactive_destructive-hover-text: #003441;
+  --interactive-interactive_destructive-active-background: #FFFFFF;
+  --interactive-interactive_destructive-active-text: #003441;
+  --interactive-interactive_destructive-disabled-background: #FFFFFF;
+  --interactive-interactive_destructive-disabled-text: #003441;
+  --interactive-interactive_destructive-outline-background: #FFFFFF;
+  --interactive-interactive_destructive-outline-text: #003441;
+}
 }
 
 
 /* Theme color pairs */
-.colors-background_0 {
-  background-color: var(--colors-background_0-background);
-  color: var(--colors-background_0-text);
+.static-background-background_0 {
+  background-color: var(--static-background-background_0-background);
+  color: var(--static-background-background_0-text);
 }
-.colors-background_1 {
-  background-color: var(--colors-background_1-background);
-  color: var(--colors-background_1-text);
+.static-background-background_1 {
+  background-color: var(--static-background-background_1-background);
+  color: var(--static-background-background_1-text);
 }
-.colors-background_2 {
-  background-color: var(--colors-background_2-background);
-  color: var(--colors-background_2-text);
+.static-background-background_2 {
+  background-color: var(--static-background-background_2-background);
+  color: var(--static-background-background_2-text);
 }
-.colors-background_3 {
-  background-color: var(--colors-background_3-background);
-  color: var(--colors-background_3-text);
+.static-background-background_3 {
+  background-color: var(--static-background-background_3-background);
+  color: var(--static-background-background_3-text);
 }
-.colors-background_accent_0 {
-  background-color: var(--colors-background_accent_0-background);
-  color: var(--colors-background_accent_0-text);
+.static-background-background_accent_0 {
+  background-color: var(--static-background-background_accent_0-background);
+  color: var(--static-background-background_accent_0-text);
 }
-.colors-background_accent_1 {
-  background-color: var(--colors-background_accent_1-background);
-  color: var(--colors-background_accent_1-text);
+.static-background-background_accent_1 {
+  background-color: var(--static-background-background_accent_1-background);
+  color: var(--static-background-background_accent_1-text);
 }
-.colors-background_accent_2 {
-  background-color: var(--colors-background_accent_2-background);
-  color: var(--colors-background_accent_2-text);
+.static-background-background_accent_2 {
+  background-color: var(--static-background-background_accent_2-background);
+  color: var(--static-background-background_accent_2-text);
+}
+.static-background-background_accent_3 {
+  background-color: var(--static-background-background_accent_3-background);
+  color: var(--static-background-background_accent_3-text);
+}
+.static-background-background_accent_4 {
+  background-color: var(--static-background-background_accent_4-background);
+  color: var(--static-background-background_accent_4-text);
+}
+.static-transport-transport_city {
+  background-color: var(--static-transport-transport_city-background);
+  color: var(--static-transport-transport_city-text);
+}
+.static-transport-transport_region {
+  background-color: var(--static-transport-transport_region-background);
+  color: var(--static-transport-transport_region-text);
+}
+.static-transport-transport_boat {
+  background-color: var(--static-transport-transport_boat-background);
+  color: var(--static-transport-transport_boat-text);
+}
+.static-transport-transport_train {
+  background-color: var(--static-transport-transport_train-background);
+  color: var(--static-transport-transport_train-text);
+}
+.static-transport-transport_airport {
+  background-color: var(--static-transport-transport_airport-background);
+  color: var(--static-transport-transport_airport-text);
+}
+.static-transport-transport_plane {
+  background-color: var(--static-transport-transport_plane-background);
+  color: var(--static-transport-transport_plane-text);
+}
+.static-transport-transport_other {
+  background-color: var(--static-transport-transport_other-background);
+  color: var(--static-transport-transport_other-text);
+}
+.static-status-valid {
+  background-color: var(--static-status-valid-background);
+  color: var(--static-status-valid-text);
+}
+.static-status-info {
+  background-color: var(--static-status-info-background);
+  color: var(--static-status-info-text);
+}
+.static-status-warning {
+  background-color: var(--static-status-warning-background);
+  color: var(--static-status-warning-text);
+}
+.static-status-error {
+  background-color: var(--static-status-error-background);
+  color: var(--static-status-error-text);
 }
 
 .interactive-interactive_0 {

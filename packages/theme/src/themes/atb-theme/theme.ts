@@ -188,6 +188,8 @@ const themes: Themes = {
         background_accent_0: baseColors.gray_700,
         background_accent_1: baseColors.gray_600,
         background_accent_2: baseColors.blue_100,
+        background_accent_3: baseColors.blue_500,
+        background_accent_4: baseColors.green_100,
       },
       transport: {
         transport_city: baseColors.green_300,
@@ -273,6 +275,8 @@ const themes: Themes = {
         background_accent_0: baseColors.gray_700,
         background_accent_1: baseColors.gray_600,
         background_accent_2: baseColors.blue_100,
+        background_accent_3: baseColors.blue_500,
+        background_accent_4: baseColors.green_100,
       },
 
       transport: {

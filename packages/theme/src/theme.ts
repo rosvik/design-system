@@ -45,6 +45,8 @@ export interface Theme {
       background_accent_0: ContrastColor;
       background_accent_1: ContrastColor;
       background_accent_2: ContrastColor;
+      background_accent_3: ContrastColor;
+      background_accent_4: ContrastColor;
     };
 
     transport: {

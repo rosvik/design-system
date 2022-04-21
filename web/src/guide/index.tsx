@@ -143,12 +143,12 @@ function Swatch({mode, name, color}: SwatchProps) {
     >
       <div className={styles.swatch__header}>
         <h3 className={styles.swatch__title}>
-          {mode} / {name} + Text / {color.text}
+          {mode} / {name}
         </h3>
         <div className={styles.swatch__number}>{contrast}</div>
       </div>
       <div className={styles.swatch__colors}>
-        {color.text} / {color.background}
+        text: {color.text} / background: {color.background}
       </div>
     </section>
   );
@@ -181,13 +181,16 @@ function InteractiveSwatch({mode, name, color}: InteractiveSwatchProps) {
     >
       <div className={styles.swatch__header}>
         <h3 className={styles.swatch__title}>
-          {mode} / {name} + Text / {color.default.text}
+          {mode} / {name}
         </h3>
         <div className={styles.swatch__number}>{contrast}</div>
       </div>
-      <div className={styles.swatch__colors}>
-        {color.default.text} / {color.default.background}
-      </div>
+      {Object.keys(color).map((value) => (
+        <div className={styles.swatch__colors} key={value}>
+          {value}: {color[value as keyof InteractiveColor].text} /{' '}
+          {color[value as keyof InteractiveColor].background}
+        </div>
+      ))}
     </button>
   );
 }

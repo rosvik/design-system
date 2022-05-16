@@ -72,6 +72,7 @@ const themes: Themes = {
         background_accent_2: contrastColor('#FFFFFF', 'dark'),
         background_accent_3: contrastColor('#E6F2F6', 'dark'),
         background_accent_4: contrastColor('#FFFFFF', 'dark'),
+        background_accent_5: contrastColor('#FFFFFF', 'dark'),
       },
       transport: {
         transport_city: contrastColor('#014D61', 'light'),
@@ -158,6 +159,7 @@ const themes: Themes = {
         background_accent_2: contrastColor('#000000', 'light'),
         background_accent_3: contrastColor('#0181A2', 'light'),
         background_accent_4: contrastColor('#000000', 'light'),
+        background_accent_5: contrastColor('#000000', 'light'),
       },
       transport: {
         transport_city: contrastColor('#80C0D1'),

@@ -74,7 +74,7 @@
   --baseTypo-heading__paragraph-fontWeight: 500;
 
   /* Definitions for label__uppercase */
-  --baseTypo-label__uppercase-fontSize: 0.5rem;
+  --baseTypo-label__uppercase-fontSize: 0.625rem;
   --baseTypo-label__uppercase-lineHeight: 1rem;
   --baseTypo-label__uppercase-textTransform: uppercase;
 
@@ -160,7 +160,7 @@ html {
   font-weight: var(--baseTypo-heading__paragraph-fontWeight, 500);
 }
 .typo-label__uppercase {
-  font-size: var(--baseTypo-label__uppercase-fontSize, 0.5rem);
+  font-size: var(--baseTypo-label__uppercase-fontSize, 0.625rem);
   line-height: var(--baseTypo-label__uppercase-lineHeight, 1rem);
   text-transform: var(--baseTypo-label__uppercase-textTransform, uppercase);
 }

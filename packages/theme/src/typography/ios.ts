@@ -16,7 +16,7 @@ const tertiaryBase: TextStyle = {
   letterSpacing: 0,
 };
 const labelBase: TextStyle = {
-  fontSize: 8,
+  fontSize: 10,
   lineHeight: 16,
   letterSpacing: 0,
 };

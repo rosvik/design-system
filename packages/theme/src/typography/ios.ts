@@ -70,6 +70,12 @@ export const iosTextTypeStyles: TextTypeStyles = {
     ...primaryBase,
     fontWeight: '600',
   },
+  'heading--jumbo': {
+    fontSize: 32,
+    lineHeight: 38,
+    letterSpacing: -0.31,
+    fontWeight: 'bold',
+  },
   label__uppercase: {
     ...labelBase,
     textTransform: 'uppercase',

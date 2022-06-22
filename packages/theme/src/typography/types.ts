@@ -11,6 +11,7 @@ export const textNames = [
   'heading__title',
   'heading__component',
   'heading__paragraph',
+  'heading--jumbo',
   'label__uppercase',
 ] as const;
 

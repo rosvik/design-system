@@ -73,6 +73,12 @@
   --baseTypo-heading__paragraph-letterSpacing: 0.03125rem;
   --baseTypo-heading__paragraph-fontWeight: 500;
 
+  /* Definitions for heading--jumbo */
+  --baseTypo-heading--jumbo-fontSize: 2rem;
+  --baseTypo-heading--jumbo-lineHeight: 2.375rem;
+  --baseTypo-heading--jumbo-letterSpacing: -0.019375rem;
+  --baseTypo-heading--jumbo-fontWeight: bold;
+
   /* Definitions for label__uppercase */
   --baseTypo-label__uppercase-fontSize: 0.625rem;
   --baseTypo-label__uppercase-lineHeight: 1rem;
@@ -158,6 +164,12 @@ html {
   line-height: var(--baseTypo-heading__paragraph-lineHeight, 1.25rem);
   letter-spacing: var(--baseTypo-heading__paragraph-letterSpacing, 0.03125rem);
   font-weight: var(--baseTypo-heading__paragraph-fontWeight, 500);
+}
+.typo-heading--jumbo {
+  font-size: var(--baseTypo-heading--jumbo-fontSize, 2rem);
+  line-height: var(--baseTypo-heading--jumbo-lineHeight, 2.375rem);
+  letter-spacing: var(--baseTypo-heading--jumbo-letterSpacing, -0.019375rem);
+  font-weight: var(--baseTypo-heading--jumbo-fontWeight, bold);
 }
 .typo-label__uppercase {
   font-size: var(--baseTypo-label__uppercase-fontSize, 0.625rem);

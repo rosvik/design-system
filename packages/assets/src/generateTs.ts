@@ -3,9 +3,9 @@ import path from 'path';
 import {AssetType} from './utils';
 
 type Data = Partial<{
-  mono: Record<string, MonoTypeConstruct>;
-  images: Record<string, ColorsTypeConstruct>;
-  illustration: Record<string, ColorsTypeConstruct>;
+  mono: Record<string, MonoType>;
+  images: Record<string, ColorType>;
+  illustration: Record<string, ColorType>;
 }>;
 export async function generateTs(
   allFiles: string[],
@@ -30,6 +30,25 @@ function template(data: Data) {
 export const icons = ${JSON.stringify(data, null, 2)};
 export type Icons = typeof icons;
 
+export type ColorType = {
+  relative: string;
+  absolute: string;
+  assetType: 'colors';
+  colorType: 'illustrations' | 'images';
+  darkable: boolean;
+  id: string;
+};
+
+export type MonoType = {
+  relative: string;
+  absolute: string;
+  assetType: 'mono';
+  id: string;
+};
+
+export type IconType = ColorType | MonoType;
+
+
 ${data.mono ? `export type MonoIcons = keyof Icons['mono'];` : ''}
 ${data.images ? `export type Images = keyof Icons['images'];` : ''}
 ${
@@ -40,7 +59,7 @@ ${
 `;
 }
 
-function toUniqueObject<T extends TypeConstruct>(list: T[]) {
+function toUniqueObject<T extends IconType>(list: T[]) {
   return pickBy(list, (i) => i.id);
 }
 
@@ -51,12 +70,12 @@ function generateData(
 ) {
   const constructs = allFiles
     .map((f) => toTypeCoonstruct(f, assetTypeInput, outputDir))
-    .filter(Boolean) as TypeConstruct[];
+    .filter(Boolean) as IconType[];
 
   const groupedByMode = groupBy(constructs, (i) => i.assetType);
-  const mono = groupedByMode.mono as MonoTypeConstruct[];
+  const mono = groupedByMode.mono as MonoType[];
   const colors = groupedByMode.colors
-    ? groupBy(groupedByMode.colors as ColorsTypeConstruct[], (i) => i.colorType)
+    ? groupBy(groupedByMode.colors as ColorType[], (i) => i.colorType)
     : undefined;
 
   return {
@@ -68,7 +87,7 @@ function generateData(
   };
 }
 
-type ColorsTypeConstruct = {
+type ColorType = {
   relative: string;
   absolute: string;
   assetType: 'colors';
@@ -77,19 +96,19 @@ type ColorsTypeConstruct = {
   id: string;
 };
 
-type MonoTypeConstruct = {
+type MonoType = {
   relative: string;
   absolute: string;
   assetType: 'mono';
   id: string;
 };
 
-type TypeConstruct = ColorsTypeConstruct | MonoTypeConstruct;
+type IconType = ColorType | MonoType;
 function toTypeCoonstruct(
   absolute: string,
   assetTypeInput: AssetType,
   outputDir: string,
-): TypeConstruct | undefined {
+): IconType | undefined {
   const relative = absolute.replace(outputDir, '');
 
   let assetType =

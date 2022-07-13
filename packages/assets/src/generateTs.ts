@@ -4,6 +4,7 @@ import {AssetType} from './utils';
 
 type Data = Partial<{
   mono: Record<string, MonoType>;
+  colorIcons: Record<string, ColorType>;
   images: Record<string, ColorType>;
   illustration: Record<string, ColorType>;
 }>;
@@ -51,6 +52,7 @@ export type IconType = ColorType | MonoType;
 
 ${data.mono ? `export type MonoIcons = keyof Icons['mono'];` : ''}
 ${data.images ? `export type Images = keyof Icons['images'];` : ''}
+${data.colorIcons ? `export type ColorIcons = keyof Icons['colorIcons'];` : ''}
 ${
   data.illustration
     ? `export type Illustrations = keyof Icons['illustration'];`
@@ -81,6 +83,7 @@ function generateData(
   return {
     mono: mono ? toUniqueObject(mono) : undefined,
     images: colors?.images ? toUniqueObject(colors.images) : undefined,
+    colorIcons: colors?.icons ? toUniqueObject(colors.icons) : undefined,
     illustration: colors?.illustrations
       ? toUniqueObject(colors.illustrations)
       : undefined,
@@ -91,7 +94,7 @@ type ColorType = {
   relative: string;
   absolute: string;
   assetType: 'colors';
-  colorType: 'illustrations' | 'images';
+  colorType: 'illustrations' | 'images' | 'icons';
   darkable: boolean;
   id: string;
 };
@@ -127,7 +130,7 @@ function toTypeCoonstruct(
       relative,
       absolute,
       assetType: 'colors',
-      colorType: isIllustration(relative) ? 'illustrations' : 'images',
+      colorType: getColorType(relative),
       darkable: isDarkable(relative),
       id: toIDPath(relative),
     };
@@ -146,15 +149,26 @@ function toIDPath(relative: string) {
   return relative
     .replace(darkOrLight, '/')
     .replace(
-      /^\/?(?:(?:mono|colors)\/)?(?:(?:illustrations|images)\/)?(.*)\..{3}$/,
+      /^\/?(?:(?:mono|colors)\/)?(?:(?:illustrations|images|icons)\/)?(.*)\..{3}$/,
       '$1',
     );
 }
 function isDarkable(relative: string) {
   return relative.match(darkOrLight) !== null;
 }
-function isIllustration(relative: string) {
-  return relative.match(/^\/?(?:(?:mono|colors)\/)?illustrations\//) !== null;
+function getColorType(relative: string): ColorType['colorType'] {
+  const colorType = relative.match(
+    /^\/?(?:(?:mono|colors)\/)?(illustrations|images|icons)\//,
+  )?.[1];
+
+  switch (colorType) {
+    case 'illustrations':
+      return 'illustrations';
+    case 'icons':
+      return 'icons';
+    default:
+      return 'images';
+  }
 }
 
 const groupBy = <T, K extends keyof any>(list: T[], getKey: (item: T) => K) =>

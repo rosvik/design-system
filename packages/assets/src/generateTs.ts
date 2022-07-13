@@ -127,7 +127,7 @@ function toIDPath(relative: string) {
   return relative
     .replace(darkOrLight, '/')
     .replace(
-      /^\/(?:(?:mono|colors)\/)?(?:(?:illustrations|images)\/)?(.*)\..{3}$/,
+      /^\/?(?:(?:mono|colors)\/)?(?:(?:illustrations|images)\/)?(.*)\..{3}$/,
       '$1',
     );
 }
@@ -135,7 +135,7 @@ function isDarkable(relative: string) {
   return relative.match(darkOrLight) !== null;
 }
 function isIllustration(relative: string) {
-  return relative.match(/^\/(?:(?:mono|colors)\/)?illustrations\//) !== null;
+  return relative.match(/^\/?(?:(?:mono|colors)\/)?illustrations\//) !== null;
 }
 
 const groupBy = <T, K extends keyof any>(list: T[], getKey: (item: T) => K) =>

@@ -2,17 +2,19 @@
 
 import {vaildOrgIds, generateAssets, searchGlob} from './generate';
 import pathlib from 'path';
-import {stringAsThemeVariant, themeVariantAsString} from './utils';
+import {AssetType, stringAsThemeVariant, themeVariantAsString} from './utils';
 import {setDebug} from './logger';
 
 import {program, Argument} from 'commander';
+import {generateTs} from './generateTs';
 
-type AssetType = 'colors' | 'all' | 'mono';
 type InputOptions = {
   debug: boolean;
   generateMonoTheme: boolean;
   glob?: string;
   outDir: string;
+  generateTs: boolean;
+  tsOutDir: string | undefined;
 };
 
 program
@@ -28,12 +30,17 @@ program
       .argRequired(),
   )
   .requiredOption('-o, --out-dir <output>', 'Output directory')
+  .option(
+    '-ts-o, --ts-out-dir <output>',
+    'Output directory for generated typescript',
+  )
   .option('-d, --debug', 'Log all files generated', false)
   .option(
     '-nm, --no-generate-mono-theme',
     'Ignore generating themed mono-icons, but keep general mono icons.',
     false,
   )
+  .option('-ts, --generate-ts', 'Generates typescript resolution file.', false)
   .option(
     '-g, --glob [glob]',
     'Pass in custom glob for matching files.',
@@ -76,6 +83,16 @@ const main = async () => {
       console.log(
         `Successfully written ${assets.length} assets for ${orgId} to ${outputFolder}`,
       );
+    }
+
+    if (opts.generateTs) {
+      const generatedTsFile = await generateTs(
+        assets,
+        assetType,
+        outputFolder,
+        opts.tsOutDir,
+      );
+      console.log(`Generated typescript file:  ${generatedTsFile}`);
     }
   } catch (e) {
     console.error((e as Error)?.message);

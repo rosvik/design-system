@@ -4,6 +4,8 @@ export {ThemeVariant};
 import fg from 'fast-glob';
 import normalizeToUnix from 'normalize-path';
 
+export type AssetType = 'colors' | 'all' | 'mono';
+
 export function themeVariantAsString(org: ThemeVariant): string {
   switch (org) {
     case ThemeVariant.Nfk:

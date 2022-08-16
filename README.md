@@ -12,3 +12,5 @@ Current flow for making changes:
 - Build with `yarn build-all` to apply the changes to the .css-files
 - Create PR for review and merge to master after approval
 - Publish from master with `yarn pub`
+
+for pre-releases use `yarn pub --pre-dist-tag next` which will make the package available as `@next`

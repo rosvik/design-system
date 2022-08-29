@@ -28,9 +28,9 @@
   },
   "dependencies": {
     "@atb-as/theme": "^6.0.0-alpha.7",
-    "commander": "^8.3.0",
-    "fast-glob": "^3.2.7",
-    "micromatch": "^4.0.4",
+    "commander": "^9.4.0",
+    "fast-glob": "^3.2.11",
+    "micromatch": "^4.0.5",
     "normalize-path": "^3.0.0",
     "stream-editor": "^1.11.0"
   },

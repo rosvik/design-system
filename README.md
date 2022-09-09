@@ -11,6 +11,7 @@ Current flow for making changes:
 - Apply the changes in the .ts-files
 - Build with `yarn build-all` to apply the changes to the .css-files
 - Create PR for review and merge to master after approval
+- Make sure you are authenticated trough npm by running `npm whoami`
 - Publish from master with `yarn pub`
 
 for pre-releases use `yarn pub --pre-dist-tag next` which will make the package available as `@next`

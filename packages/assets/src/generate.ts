@@ -1,4 +1,5 @@
 import fs from 'fs/promises';
+import {createReadStream, createWriteStream} from 'fs';
 import path from 'path';
 
 import {createThemesFor, Themes, ThemeVariant} from '@atb-as/theme/lib/';
@@ -12,7 +13,6 @@ import {
   themeVariantAsString,
 } from './utils';
 import {log} from './logger';
-import {createReadStream, createWriteStream} from 'fs';
 
 export const vaildOrgIds = [ThemeVariant.AtB, ThemeVariant.Nfk];
 export const searchGlob = '**/*.{svg,png,jpg,jpeg,ico}';

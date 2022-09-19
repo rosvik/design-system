@@ -14,7 +14,11 @@ import {
 } from './utils';
 import {log} from './logger';
 
-export const vaildOrgIds = [ThemeVariant.AtB, ThemeVariant.Nfk];
+export const vaildOrgIds = [
+  ThemeVariant.AtB,
+  ThemeVariant.Nfk,
+  ThemeVariant.FRAM,
+];
 export const searchGlob = '**/*.{svg,png,jpg,jpeg,ico}';
 export const searchGlobSvg = '**/*.svg';
 

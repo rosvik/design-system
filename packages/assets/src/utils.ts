@@ -12,6 +12,8 @@ export function themeVariantAsString(org: ThemeVariant): string {
       return 'nfk';
     case ThemeVariant.AtB:
       return 'atb';
+    case ThemeVariant.FRAM:
+      return 'fram';
   }
 }
 
@@ -21,6 +23,8 @@ export function stringAsThemeVariant(org: string): ThemeVariant {
       return ThemeVariant.Nfk;
     case 'atb':
       return ThemeVariant.AtB;
+    case 'fram':
+      return ThemeVariant.FRAM;
   }
 
   throw new Error('Invalid org');

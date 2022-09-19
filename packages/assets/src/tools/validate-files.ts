@@ -47,7 +47,7 @@ ${diff.join('\n')}
 }
 
 function cleanFilenames(filename: string) {
-  return filename.split(/\/files\/.{3}\//)[1];
+  return filename.split(/\/files\/(.*?)\//)[2];
 }
 
 function difference(correct: string[], potential: string[]) {

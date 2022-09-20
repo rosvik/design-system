@@ -189,10 +189,10 @@
   --static-status-error-background: #F15629;
   --static-status-error-text: #FFFFFF;
 
-  --interactive-interactive_0-default-background: #005685;
-  --interactive-interactive_0-default-text: #FFFFFF;
-  --interactive-interactive_0-hover-background: #007FBA;
-  --interactive-interactive_0-hover-text: #FFFFFF;
+  --interactive-interactive_0-default-background: #76A4C0;
+  --interactive-interactive_0-default-text: #000000;
+  --interactive-interactive_0-hover-background: #AAC6D8;
+  --interactive-interactive_0-hover-text: #000000;
   --interactive-interactive_0-active-background: #CDE9E3;
   --interactive-interactive_0-active-text: #000000;
   --interactive-interactive_0-disabled-background: #C7CACC;
@@ -211,10 +211,10 @@
   --interactive-interactive_1-outline-text: #FFFFFF;
   --interactive-interactive_2-default-background: #000000;
   --interactive-interactive_2-default-text: #FFFFFF;
-  --interactive-interactive_2-hover-background: #002329;
+  --interactive-interactive_2-hover-background: #0D6569;
   --interactive-interactive_2-hover-text: #FFFFFF;
-  --interactive-interactive_2-active-background: #0D6569;
-  --interactive-interactive_2-active-text: #FFFFFF;
+  --interactive-interactive_2-active-background: #679C9F;
+  --interactive-interactive_2-active-text: #000000;
   --interactive-interactive_2-disabled-background: #C7CACC;
   --interactive-interactive_2-disabled-text: #000000;
   --interactive-interactive_2-outline-background: #005685;
@@ -310,10 +310,10 @@
   --static-status-error-background: #F15629;
   --static-status-error-text: #FFFFFF;
 
-  --interactive-interactive_0-default-background: #005685;
-  --interactive-interactive_0-default-text: #FFFFFF;
-  --interactive-interactive_0-hover-background: #007FBA;
-  --interactive-interactive_0-hover-text: #FFFFFF;
+  --interactive-interactive_0-default-background: #76A4C0;
+  --interactive-interactive_0-default-text: #000000;
+  --interactive-interactive_0-hover-background: #AAC6D8;
+  --interactive-interactive_0-hover-text: #000000;
   --interactive-interactive_0-active-background: #CDE9E3;
   --interactive-interactive_0-active-text: #000000;
   --interactive-interactive_0-disabled-background: #C7CACC;
@@ -332,10 +332,10 @@
   --interactive-interactive_1-outline-text: #FFFFFF;
   --interactive-interactive_2-default-background: #000000;
   --interactive-interactive_2-default-text: #FFFFFF;
-  --interactive-interactive_2-hover-background: #002329;
+  --interactive-interactive_2-hover-background: #0D6569;
   --interactive-interactive_2-hover-text: #FFFFFF;
-  --interactive-interactive_2-active-background: #0D6569;
-  --interactive-interactive_2-active-text: #FFFFFF;
+  --interactive-interactive_2-active-background: #679C9F;
+  --interactive-interactive_2-active-text: #000000;
   --interactive-interactive_2-disabled-background: #C7CACC;
   --interactive-interactive_2-disabled-text: #000000;
   --interactive-interactive_2-outline-background: #005685;

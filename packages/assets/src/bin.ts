@@ -38,7 +38,6 @@ program
   .option(
     '-nm, --no-generate-mono-theme',
     'Ignore generating themed mono-icons, but keep general mono icons.',
-    false,
   )
   .option('-ts, --generate-ts', 'Generates typescript resolution file.', false)
   .option(

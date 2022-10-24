@@ -41,7 +41,7 @@ const themes: Themes = {
       },
       interactive_2: {
         default: contrastColor('#FFFFFF', 'dark'),
-        hover: contrastColor('#0181A2', 'dark'),
+        hover: contrastColor('#99CDDA', 'dark'),
         active: contrastColor('#99CDDA', 'dark'),
         disabled: contrastColor('#E6F2F6', 'dark'),
         outline: contrastColor('#00232C', 'light'),

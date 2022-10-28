@@ -41,10 +41,10 @@ const themes: Themes = {
       },
       interactive_2: {
         default: contrastColor('#FFFFFF', 'dark'),
-        hover: contrastColor('#99CDDA', 'dark'),
+        hover: contrastColor('#C5DFE6', 'dark'),
         active: contrastColor('#99CDDA', 'dark'),
         disabled: contrastColor('#E6F2F6', 'dark'),
-        outline: contrastColor('#00232C', 'light'),
+        outline: contrastColor('#046073', 'light'),
       },
       interactive_3: {
         default: contrastColor('#FFFFFF', 'dark'),
@@ -68,8 +68,8 @@ const themes: Themes = {
         background_2: contrastColor('#EAEAEA', 'dark'),
         background_3: contrastColor('#E4E4E4', 'dark'),
         background_accent_0: contrastColor('#0181A2', 'light'),
-        background_accent_1: contrastColor('#FFFFFF', 'dark'),
-        background_accent_2: contrastColor('#FFFFFF', 'dark'),
+        background_accent_1: contrastColor('#046073', 'light'),
+        background_accent_2: contrastColor('#C5DFE6', 'dark'),
         background_accent_3: contrastColor('#0181A2', 'light'),
         background_accent_4: contrastColor('#FFFFFF', 'dark'),
         background_accent_5: contrastColor('#FFFFFF', 'dark'),

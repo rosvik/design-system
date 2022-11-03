@@ -2,7 +2,7 @@
 
 /* Light theme data */
 .light {
-  --border-primary: #F1F2F2;
+  --border-primary: #E7E8E9;
   --border-secondary: #000000;
   --border-focus: #005685;
   --border-radius-circle: 1.25rem;
@@ -53,9 +53,9 @@
   --static-transport-transport_boat-text: #FFFFFF;
   --static-transport-transport_train-background: #551125;
   --static-transport-transport_train-text: #FFFFFF;
-  --static-transport-transport_airport-background: #F15629;
+  --static-transport-transport_airport-background: #F15659;
   --static-transport-transport_airport-text: #FFFFFF;
-  --static-transport-transport_plane-background: #F15629;
+  --static-transport-transport_plane-background: #F15659;
   --static-transport-transport_plane-text: #FFFFFF;
   --static-transport-transport_other-background: #555E65;
   --static-transport-transport_other-text: #FFFFFF;
@@ -78,11 +78,11 @@
   --interactive-interactive_0-disabled-text: #000000;
   --interactive-interactive_0-outline-background: #0D6569;
   --interactive-interactive_0-outline-text: #FFFFFF;
-  --interactive-interactive_1-default-background: #555E65;
+  --interactive-interactive_1-default-background: 555E65;
   --interactive-interactive_1-default-text: #FFFFFF;
-  --interactive-interactive_1-hover-background: #6F777D;
-  --interactive-interactive_1-hover-text: #000000;
-  --interactive-interactive_1-active-background: #1A2024;
+  --interactive-interactive_1-hover-background: 6F777D;
+  --interactive-interactive_1-hover-text: #FFFFFF;
+  --interactive-interactive_1-active-background: 1A2024;
   --interactive-interactive_1-active-text: #FFFFFF;
   --interactive-interactive_1-disabled-background: #C7CACC;
   --interactive-interactive_1-disabled-text: #000000;
@@ -100,7 +100,7 @@
   --interactive-interactive_2-outline-text: #FFFFFF;
   --interactive-interactive_3-default-background: #82B962;
   --interactive-interactive_3-default-text: #000000;
-  --interactive-interactive_3-hover-background: #B8D4A2;
+  --interactive-interactive_3-hover-background: #B8D4A8;
   --interactive-interactive_3-hover-text: #000000;
   --interactive-interactive_3-active-background: #284320;
   --interactive-interactive_3-active-text: #FFFFFF;
@@ -125,7 +125,7 @@
 .dark {
   --border-primary: #242B30;
   --border-secondary: #FFFFFF;
-  --border-focus: #CDE9E3;
+  --border-focus: #005685;
   --border-radius-circle: 1.25rem;
   --border-radius-regular: 0.5rem;
   --border-radius-small: 0.25rem;
@@ -164,7 +164,7 @@
   --static-background-background_accent_3-text: #FFFFFF;
   --static-background-background_accent_4-background: #F0E991;
   --static-background-background_accent_4-text: #000000;
-  --static-background-background_accent_5-background: #2B343A;
+  --static-background-background_accent_5-background: #242B30;
   --static-background-background_accent_5-text: #FFFFFF;
   --static-transport-transport_city-background: #82B962;
   --static-transport-transport_city-text: #000000;
@@ -174,9 +174,9 @@
   --static-transport-transport_boat-text: #FFFFFF;
   --static-transport-transport_train-background: #551125;
   --static-transport-transport_train-text: #FFFFFF;
-  --static-transport-transport_airport-background: #F15629;
+  --static-transport-transport_airport-background: #F15659;
   --static-transport-transport_airport-text: #FFFFFF;
-  --static-transport-transport_plane-background: #F15629;
+  --static-transport-transport_plane-background: #F15659;
   --static-transport-transport_plane-text: #FFFFFF;
   --static-transport-transport_other-background: #555E65;
   --static-transport-transport_other-text: #FFFFFF;
@@ -199,11 +199,11 @@
   --interactive-interactive_0-disabled-text: #000000;
   --interactive-interactive_0-outline-background: #0D6569;
   --interactive-interactive_0-outline-text: #FFFFFF;
-  --interactive-interactive_1-default-background: #555E65;
+  --interactive-interactive_1-default-background: 555E65;
   --interactive-interactive_1-default-text: #FFFFFF;
-  --interactive-interactive_1-hover-background: #6F777D;
-  --interactive-interactive_1-hover-text: #000000;
-  --interactive-interactive_1-active-background: #1A2024;
+  --interactive-interactive_1-hover-background: 6F777D;
+  --interactive-interactive_1-hover-text: #FFFFFF;
+  --interactive-interactive_1-active-background: 1A2024;
   --interactive-interactive_1-active-text: #FFFFFF;
   --interactive-interactive_1-disabled-background: #C7CACC;
   --interactive-interactive_1-disabled-text: #000000;
@@ -214,14 +214,14 @@
   --interactive-interactive_2-hover-background: #0D6569;
   --interactive-interactive_2-hover-text: #FFFFFF;
   --interactive-interactive_2-active-background: #679C9F;
-  --interactive-interactive_2-active-text: #000000;
+  --interactive-interactive_2-active-text: #FFFFFF;
   --interactive-interactive_2-disabled-background: #C7CACC;
   --interactive-interactive_2-disabled-text: #000000;
   --interactive-interactive_2-outline-background: #005685;
   --interactive-interactive_2-outline-text: #FFFFFF;
   --interactive-interactive_3-default-background: #82B962;
   --interactive-interactive_3-default-text: #000000;
-  --interactive-interactive_3-hover-background: #B8D4A2;
+  --interactive-interactive_3-hover-background: #B8D4A8;
   --interactive-interactive_3-hover-text: #000000;
   --interactive-interactive_3-active-background: #284320;
   --interactive-interactive_3-active-text: #FFFFFF;
@@ -246,7 +246,7 @@
   .light:not(.override-light) {
   --border-primary: #242B30;
   --border-secondary: #FFFFFF;
-  --border-focus: #CDE9E3;
+  --border-focus: #005685;
   --border-radius-circle: 1.25rem;
   --border-radius-regular: 0.5rem;
   --border-radius-small: 0.25rem;
@@ -285,7 +285,7 @@
   --static-background-background_accent_3-text: #FFFFFF;
   --static-background-background_accent_4-background: #F0E991;
   --static-background-background_accent_4-text: #000000;
-  --static-background-background_accent_5-background: #2B343A;
+  --static-background-background_accent_5-background: #242B30;
   --static-background-background_accent_5-text: #FFFFFF;
   --static-transport-transport_city-background: #82B962;
   --static-transport-transport_city-text: #000000;
@@ -295,9 +295,9 @@
   --static-transport-transport_boat-text: #FFFFFF;
   --static-transport-transport_train-background: #551125;
   --static-transport-transport_train-text: #FFFFFF;
-  --static-transport-transport_airport-background: #F15629;
+  --static-transport-transport_airport-background: #F15659;
   --static-transport-transport_airport-text: #FFFFFF;
-  --static-transport-transport_plane-background: #F15629;
+  --static-transport-transport_plane-background: #F15659;
   --static-transport-transport_plane-text: #FFFFFF;
   --static-transport-transport_other-background: #555E65;
   --static-transport-transport_other-text: #FFFFFF;
@@ -320,11 +320,11 @@
   --interactive-interactive_0-disabled-text: #000000;
   --interactive-interactive_0-outline-background: #0D6569;
   --interactive-interactive_0-outline-text: #FFFFFF;
-  --interactive-interactive_1-default-background: #555E65;
+  --interactive-interactive_1-default-background: 555E65;
   --interactive-interactive_1-default-text: #FFFFFF;
-  --interactive-interactive_1-hover-background: #6F777D;
-  --interactive-interactive_1-hover-text: #000000;
-  --interactive-interactive_1-active-background: #1A2024;
+  --interactive-interactive_1-hover-background: 6F777D;
+  --interactive-interactive_1-hover-text: #FFFFFF;
+  --interactive-interactive_1-active-background: 1A2024;
   --interactive-interactive_1-active-text: #FFFFFF;
   --interactive-interactive_1-disabled-background: #C7CACC;
   --interactive-interactive_1-disabled-text: #000000;
@@ -335,14 +335,14 @@
   --interactive-interactive_2-hover-background: #0D6569;
   --interactive-interactive_2-hover-text: #FFFFFF;
   --interactive-interactive_2-active-background: #679C9F;
-  --interactive-interactive_2-active-text: #000000;
+  --interactive-interactive_2-active-text: #FFFFFF;
   --interactive-interactive_2-disabled-background: #C7CACC;
   --interactive-interactive_2-disabled-text: #000000;
   --interactive-interactive_2-outline-background: #005685;
   --interactive-interactive_2-outline-text: #FFFFFF;
   --interactive-interactive_3-default-background: #82B962;
   --interactive-interactive_3-default-text: #000000;
-  --interactive-interactive_3-hover-background: #B8D4A2;
+  --interactive-interactive_3-hover-background: #B8D4A8;
   --interactive-interactive_3-hover-text: #000000;
   --interactive-interactive_3-active-background: #284320;
   --interactive-interactive_3-active-text: #FFFFFF;

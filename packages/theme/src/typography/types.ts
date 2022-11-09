@@ -2,6 +2,8 @@ export const textNames = [
   'body__primary',
   'body__primary--bold',
   'body__primary--underline',
+  'body__primary--big',
+  'body__primary--big--bold',
   'body__primary--jumbo',
   'body__primary--jumbo--bold',
   'body__secondary',
@@ -11,6 +13,7 @@ export const textNames = [
   'heading__title',
   'heading__component',
   'heading__paragraph',
+  'heading--big',
   'heading--jumbo',
   'label__uppercase',
 ] as const;

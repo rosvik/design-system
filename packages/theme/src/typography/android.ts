@@ -39,6 +39,17 @@ export const androidTextTypeStyles: TextTypeStyles = {
     ...primaryBase,
     textDecorationLine: 'underline',
   },
+  'body__primary--big': {
+    fontSize: 24,
+    lineHeight: 28,
+    letterSpacing: 0.25,
+  },
+  'body__primary--big--bold': {
+    fontSize: 24,
+    lineHeight: 28,
+    letterSpacing: 0.25,
+    fontWeight: 'bold'
+  },
   'body__primary--jumbo': {
     fontSize: 36,
     lineHeight: 40,
@@ -71,6 +82,12 @@ export const androidTextTypeStyles: TextTypeStyles = {
   heading__paragraph: {
     ...primaryBase,
     fontWeight: '500',
+  },
+  'heading--big': {
+    fontSize: 24,
+    lineHeight: 28,
+    letterSpacing: -0.31,
+    fontWeight: 'bold',
   },
   'heading--jumbo': {
     fontSize: 32,

@@ -37,6 +37,17 @@ export const iosTextTypeStyles: TextTypeStyles = {
     ...primaryBase,
     textDecorationLine: 'underline',
   },
+  'body__primary--big': {
+    fontSize: 24,
+    lineHeight: 28,
+    letterSpacing: 0.41,
+  },
+  'body__primary--big--bold': {
+    fontSize: 24,
+    lineHeight: 28,
+    letterSpacing: 0.41,
+    fontWeight: 'bold'
+  },
   'body__primary--jumbo': {
     fontSize: 36,
     lineHeight: 40,
@@ -68,6 +79,12 @@ export const iosTextTypeStyles: TextTypeStyles = {
   },
   heading__paragraph: {
     ...primaryBase,
+    fontWeight: '600',
+  },
+  'heading--big': {
+    fontSize: 24,
+    lineHeight: 28,
+    letterSpacing: -0.31,
     fontWeight: '600',
   },
   'heading--jumbo': {

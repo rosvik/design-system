@@ -108,16 +108,16 @@
   --interactive-interactive_3-disabled-text: #003441;
   --interactive-interactive_3-outline-background: #FFFFFF;
   --interactive-interactive_3-outline-text: #003441;
-  --interactive-interactive_destructive-default-background: #FFFFFF;
-  --interactive-interactive_destructive-default-text: #003441;
-  --interactive-interactive_destructive-hover-background: #FFFFFF;
-  --interactive-interactive_destructive-hover-text: #003441;
-  --interactive-interactive_destructive-active-background: #FFFFFF;
-  --interactive-interactive_destructive-active-text: #003441;
-  --interactive-interactive_destructive-disabled-background: #FFFFFF;
-  --interactive-interactive_destructive-disabled-text: #003441;
-  --interactive-interactive_destructive-outline-background: #FFFFFF;
-  --interactive-interactive_destructive-outline-text: #003441;
+  --interactive-interactive_destructive-default-background: #A61419;
+  --interactive-interactive_destructive-default-text: #FFFFFF;
+  --interactive-interactive_destructive-hover-background: #CA7275;
+  --interactive-interactive_destructive-hover-text: #FFFFFF;
+  --interactive-interactive_destructive-active-background: #531B22;
+  --interactive-interactive_destructive-active-text: #FFFFFF;
+  --interactive-interactive_destructive-disabled-background: #EDD0D1;
+  --interactive-interactive_destructive-disabled-text: #FFFFFF;
+  --interactive-interactive_destructive-outline-background: #021F28;
+  --interactive-interactive_destructive-outline-text: #FFFFFF;
 }
 
 
@@ -229,14 +229,14 @@
   --interactive-interactive_3-disabled-text: #003441;
   --interactive-interactive_3-outline-background: #FFFFFF;
   --interactive-interactive_3-outline-text: #003441;
-  --interactive-interactive_destructive-default-background: #FFFFFF;
-  --interactive-interactive_destructive-default-text: #003441;
-  --interactive-interactive_destructive-hover-background: #FFFFFF;
-  --interactive-interactive_destructive-hover-text: #003441;
-  --interactive-interactive_destructive-active-background: #FFFFFF;
-  --interactive-interactive_destructive-active-text: #003441;
-  --interactive-interactive_destructive-disabled-background: #FFFFFF;
-  --interactive-interactive_destructive-disabled-text: #003441;
+  --interactive-interactive_destructive-default-background: #A61419;
+  --interactive-interactive_destructive-default-text: #FFFFFF;
+  --interactive-interactive_destructive-hover-background: #CA7275;
+  --interactive-interactive_destructive-hover-text: #FFFFFF;
+  --interactive-interactive_destructive-active-background: #531B22;
+  --interactive-interactive_destructive-active-text: #FFFFFF;
+  --interactive-interactive_destructive-disabled-background: #EDD0D1;
+  --interactive-interactive_destructive-disabled-text: #FFFFFF;
   --interactive-interactive_destructive-outline-background: #FFFFFF;
   --interactive-interactive_destructive-outline-text: #003441;
 }
@@ -350,14 +350,14 @@
   --interactive-interactive_3-disabled-text: #003441;
   --interactive-interactive_3-outline-background: #FFFFFF;
   --interactive-interactive_3-outline-text: #003441;
-  --interactive-interactive_destructive-default-background: #FFFFFF;
-  --interactive-interactive_destructive-default-text: #003441;
-  --interactive-interactive_destructive-hover-background: #FFFFFF;
-  --interactive-interactive_destructive-hover-text: #003441;
-  --interactive-interactive_destructive-active-background: #FFFFFF;
-  --interactive-interactive_destructive-active-text: #003441;
-  --interactive-interactive_destructive-disabled-background: #FFFFFF;
-  --interactive-interactive_destructive-disabled-text: #003441;
+  --interactive-interactive_destructive-default-background: #A61419;
+  --interactive-interactive_destructive-default-text: #FFFFFF;
+  --interactive-interactive_destructive-hover-background: #CA7275;
+  --interactive-interactive_destructive-hover-text: #FFFFFF;
+  --interactive-interactive_destructive-active-background: #531B22;
+  --interactive-interactive_destructive-active-text: #FFFFFF;
+  --interactive-interactive_destructive-disabled-background: #EDD0D1;
+  --interactive-interactive_destructive-disabled-text: #FFFFFF;
   --interactive-interactive_destructive-outline-background: #FFFFFF;
   --interactive-interactive_destructive-outline-text: #003441;
 }

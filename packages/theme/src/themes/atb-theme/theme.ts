@@ -148,6 +148,7 @@ const themes: Themes = {
         active: baseColors.blue_200,
         disabled: baseColors.blue_100,
         outline: baseColors.cyan_200,
+        destructive: baseColors.red_600,
       },
       interactive_1: {
         default: baseColors.gray_600,
@@ -155,6 +156,7 @@ const themes: Themes = {
         active: baseColors.gray_900,
         disabled: baseColors.gray_200,
         outline: baseColors.blue_500,
+        destructive: baseColors.red_600,
       },
       interactive_2: {
         default: baseColors.gray_0,
@@ -162,6 +164,7 @@ const themes: Themes = {
         active: baseColors.blue_200,
         disabled: baseColors.gray_0,
         outline: baseColors.blue_500,
+        destructive: baseColors.red_600,
       },
       interactive_3: {
         default: baseColors.green_300,
@@ -169,6 +172,7 @@ const themes: Themes = {
         active: baseColors.green_700,
         disabled: baseColors.green_100,
         outline: baseColors.blue_500,
+        destructive: baseColors.red_600,
       },
       interactive_destructive: {
         default: baseColors.red_600,
@@ -176,6 +180,7 @@ const themes: Themes = {
         active: baseColors.red_900,
         disabled: baseColors.red_100,
         outline: baseColors.blue_500,
+        destructive: baseColors.red_600,
       },
     },
     static: {
@@ -236,6 +241,7 @@ const themes: Themes = {
         active: baseColors.blue_200,
         disabled: baseColors.blue_100,
         outline: baseColors.cyan_200,
+        destructive: baseColors.red_300,
       },
       interactive_1: {
         default: baseColors.gray_600,
@@ -243,6 +249,7 @@ const themes: Themes = {
         active: baseColors.gray_900,
         disabled: baseColors.gray_200,
         outline: baseColors.blue_500,
+        destructive: baseColors.red_300,
       },
       interactive_2: {
         default: baseColors.gray_1000,
@@ -250,6 +257,7 @@ const themes: Themes = {
         active: baseColors.blue_700,
         disabled: baseColors.gray_1000,
         outline: baseColors.blue_500,
+        destructive: baseColors.red_300,
       },
       interactive_3: {
         default: baseColors.green_300,
@@ -257,6 +265,7 @@ const themes: Themes = {
         active: baseColors.green_700,
         disabled: baseColors.green_100,
         outline: baseColors.blue_500,
+        destructive: baseColors.red_300,
       },
       interactive_destructive: {
         default: baseColors.red_600,
@@ -264,6 +273,7 @@ const themes: Themes = {
         active: baseColors.red_900,
         disabled: baseColors.red_100,
         outline: baseColors.blue_500,
+        destructive: baseColors.red_300,
       },
     },
     static: {

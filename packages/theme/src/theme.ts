@@ -23,6 +23,7 @@ export type InteractiveColor = {
   active: ContrastColor;
   disabled: ContrastColor;
   outline: ContrastColor;
+  destructive: ContrastColor;
 };
 
 export interface Theme {

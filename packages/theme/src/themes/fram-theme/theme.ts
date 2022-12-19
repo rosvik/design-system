@@ -26,6 +26,7 @@ const themes: Themes = {
         active: contrastColor('#CDE9E3', 'dark'),
         disabled: contrastColor('#C7CACC', 'dark'),
         outline: contrastColor('#0D6569', 'light'),
+        destructive: contrastColor('#A51140', 'light'),
       },
       interactive_1: {
         default: contrastColor('555E65', 'light'),
@@ -33,6 +34,7 @@ const themes: Themes = {
         active: contrastColor('1A2024', 'light'),
         disabled: contrastColor('#C7CACC', 'dark'),
         outline: contrastColor('#005685', 'light'),
+        destructive: contrastColor('#A51140', 'light'),
       },
       interactive_2: {
         default: contrastColor('#FFFFFF', 'dark'),
@@ -40,6 +42,7 @@ const themes: Themes = {
         active: contrastColor('#A6D1D9', 'dark'),
         disabled: contrastColor('#FFFFFF', 'dark'),
         outline: contrastColor('#005685', 'light'),
+        destructive: contrastColor('#A51140', 'light'),
       },
       interactive_3: {
         default: contrastColor('#82B962', 'dark'),
@@ -47,6 +50,7 @@ const themes: Themes = {
         active: contrastColor('#284320', 'light'),
         disabled: contrastColor('#D8E4D3', 'dark'),
         outline: contrastColor('#005685', 'light'),
+        destructive: contrastColor('#A51140', 'light'),
       },
       interactive_destructive: {
         default: contrastColor('#F18176', 'dark'),
@@ -54,6 +58,7 @@ const themes: Themes = {
         active: contrastColor('#551125', 'light'),
         disabled: contrastColor('#FFFFFF', 'dark'),
         outline: contrastColor('#005685', 'light'),
+        destructive: contrastColor('#A51140', 'light'),
       },
     },
     static: {
@@ -113,6 +118,7 @@ const themes: Themes = {
         active: contrastColor('#CDE9E3', 'dark'),
         disabled: contrastColor('#C7CACC', 'dark'),
         outline: contrastColor('#0D6569', 'light'),
+        destructive: contrastColor('#D692A7', 'dark'),
       },
       interactive_1: {
         default: contrastColor('555E65', 'light'),
@@ -120,6 +126,7 @@ const themes: Themes = {
         active: contrastColor('1A2024', 'light'),
         disabled: contrastColor('#C7CACC', 'dark'),
         outline: contrastColor('#005685', 'light'),
+        destructive: contrastColor('#D692A7', 'dark'),
       },
       interactive_2: {
         default: contrastColor('#000000', 'light'),
@@ -127,6 +134,7 @@ const themes: Themes = {
         active: contrastColor('#679C9F', 'light'),
         disabled: contrastColor('#C7CACC', 'dark'),
         outline: contrastColor('#005685', 'light'),
+        destructive: contrastColor('#D692A7', 'dark'),
       },
       interactive_3: {
         default: contrastColor('#82B962', 'dark'),
@@ -134,6 +142,7 @@ const themes: Themes = {
         active: contrastColor('#284320', 'light'),
         disabled: contrastColor('#D8E4D3', 'dark'),
         outline: contrastColor('#005685', 'light'),
+        destructive: contrastColor('#D692A7', 'dark'),
       },
       interactive_destructive: {
         default: contrastColor('#F18176', 'dark'),
@@ -141,6 +150,7 @@ const themes: Themes = {
         active: contrastColor('#551125', 'light'),
         disabled: contrastColor('#FFFFFF', 'dark'),
         outline: contrastColor('#005685', 'light'),
+        destructive: contrastColor('#D692A7', 'dark'),
       },
     },
     static: {

@@ -309,7 +309,7 @@ const themes: Themes = {
     text: {
       colors: {
         primary: baseColors.gray_0.background,
-        secondary: baseColors.gray_50.background,
+        secondary: baseColors.gray_100.background,
         disabled: baseColors.gray_300.background,
       },
     },

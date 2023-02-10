@@ -1,6 +1,6 @@
 {
   "name": "@atb-as/generate-assets",
-  "version": "5.10.2",
+  "version": "5.10.3",
   "private": false,
   "description": "OOS Design System generate-assets",
   "license": "EUPL-1.2",
@@ -27,7 +27,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@atb-as/theme": "^6.2.1",
+    "@atb-as/theme": "^6.2.2",
     "commander": "^9.4.0",
     "fast-glob": "^3.2.11",
     "micromatch": "^4.0.5",

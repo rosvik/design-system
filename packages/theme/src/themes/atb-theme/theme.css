@@ -67,6 +67,10 @@
   --static-status-warning-text: #000000;
   --static-status-error-background: #A51140;
   --static-status-error-text: #FFFFFF;
+  --static-zone_selection-from-background: #A2AD00;
+  --static-zone_selection-from-text: #000000;
+  --static-zone_selection-to-background: #71D6E0;
+  --static-zone_selection-to-text: #000000;
 
   --interactive-interactive_0-default-background: #007C92;
   --interactive-interactive_0-default-text: #FFFFFF;
@@ -198,6 +202,10 @@
   --static-status-warning-text: #000000;
   --static-status-error-background: #A51140;
   --static-status-error-text: #FFFFFF;
+  --static-zone_selection-from-background: #A2AD00;
+  --static-zone_selection-from-text: #000000;
+  --static-zone_selection-to-background: #71D6E0;
+  --static-zone_selection-to-text: #000000;
 
   --interactive-interactive_0-default-background: #007C92;
   --interactive-interactive_0-default-text: #FFFFFF;
@@ -329,6 +337,10 @@
   --static-status-warning-text: #000000;
   --static-status-error-background: #A51140;
   --static-status-error-text: #FFFFFF;
+  --static-zone_selection-from-background: #A2AD00;
+  --static-zone_selection-from-text: #000000;
+  --static-zone_selection-to-background: #71D6E0;
+  --static-zone_selection-to-text: #000000;
 
   --interactive-interactive_0-default-background: #007C92;
   --interactive-interactive_0-default-text: #FFFFFF;
@@ -478,6 +490,14 @@
 .static-status-error {
   background-color: var(--static-status-error-background);
   color: var(--static-status-error-text);
+}
+.static-zone_selection-from {
+  background-color: var(--static-zone_selection-from-background);
+  color: var(--static-zone_selection-from-text);
+}
+.static-zone_selection-to {
+  background-color: var(--static-zone_selection-to-background);
+  color: var(--static-zone_selection-to-text);
 }
 
 .interactive-interactive_0 {

@@ -211,6 +211,10 @@ const themes: Themes = {
         warning: baseColors.yellow_200,
         error: baseColors.red_600,
       },
+      zone_selection: {
+        from: baseColors.green_300,
+        to: baseColors.cyan_200
+      }
     },
 
     text: {
@@ -305,6 +309,10 @@ const themes: Themes = {
         warning: baseColors.yellow_200,
         error: baseColors.red_600,
       },
+      zone_selection: {
+        from: baseColors.green_300,
+        to: baseColors.cyan_200
+      }
     },
     text: {
       colors: {

@@ -89,6 +89,10 @@ const themes: Themes = {
         warning: contrastColor('#FBDC00', 'dark'),
         error: contrastColor('#F15629', 'light'),
       },
+      zone_selection: {
+        from: contrastColor('#82B962', 'dark'),
+        to: contrastColor('#005685', 'light')
+      }
     },
 
     text: {
@@ -182,6 +186,10 @@ const themes: Themes = {
         warning: contrastColor('#FBDC00', 'dark'),
         error: contrastColor('#F15629', 'light'),
       },
+      zone_selection: {
+        from: contrastColor('#82B962', 'dark'),
+        to: contrastColor('#005685', 'light')
+      }
     },
     text: {
       colors: {

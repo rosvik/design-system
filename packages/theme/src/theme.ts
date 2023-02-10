@@ -67,6 +67,11 @@ export interface Theme {
       warning: ContrastColor;
       error: ContrastColor;
     };
+
+    zone_selection: {
+      from: ContrastColor;
+      to: ContrastColor
+    }
   };
 
   text: {

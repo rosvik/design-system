@@ -86,6 +86,7 @@ const themes: Themes = {
         transport_train: contrastColor('#A5608A', 'light'),
         transport_airport: contrastColor('#8A62C3', 'light'),
         transport_plane: contrastColor('#318181', 'light'),
+        transport_flexible: contrastColor('#717171', 'light'),
         transport_other: contrastColor('#717171', 'light'),
       },
       status: {
@@ -182,6 +183,7 @@ const themes: Themes = {
         transport_train: contrastColor('#C090AD'),
         transport_airport: contrastColor('#AD91D5'),
         transport_plane: contrastColor('#6FA7A7'),
+        transport_flexible: contrastColor('#6FA7A7'),
         transport_other: contrastColor('#9C9C9C'),
       },
       status: {

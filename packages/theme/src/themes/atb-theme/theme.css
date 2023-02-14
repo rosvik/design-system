@@ -55,8 +55,10 @@
   --static-transport-transport_train-text: #FFFFFF;
   --static-transport-transport_airport-background: #C75B12;
   --static-transport-transport_airport-text: #000000;
-  --static-transport-transport_plane-background: #C75B12;
-  --static-transport-transport_plane-text: #000000;
+  --static-transport-transport_plane-background: #2B343A;
+  --static-transport-transport_plane-text: #FFFFFF;
+  --static-transport-transport_flexible-background: #C75B12;
+  --static-transport-transport_flexible-text: #000000;
   --static-transport-transport_other-background: #555E65;
   --static-transport-transport_other-text: #FFFFFF;
   --static-status-valid-background: #A2AD00;
@@ -190,8 +192,10 @@
   --static-transport-transport_train-text: #FFFFFF;
   --static-transport-transport_airport-background: #C75B12;
   --static-transport-transport_airport-text: #000000;
-  --static-transport-transport_plane-background: #C75B12;
-  --static-transport-transport_plane-text: #000000;
+  --static-transport-transport_plane-background: #2B343A;
+  --static-transport-transport_plane-text: #FFFFFF;
+  --static-transport-transport_flexible-background: #C75B12;
+  --static-transport-transport_flexible-text: #000000;
   --static-transport-transport_other-background: #555E65;
   --static-transport-transport_other-text: #FFFFFF;
   --static-status-valid-background: #A2AD00;
@@ -325,8 +329,10 @@
   --static-transport-transport_train-text: #FFFFFF;
   --static-transport-transport_airport-background: #C75B12;
   --static-transport-transport_airport-text: #000000;
-  --static-transport-transport_plane-background: #C75B12;
-  --static-transport-transport_plane-text: #000000;
+  --static-transport-transport_plane-background: #2B343A;
+  --static-transport-transport_plane-text: #FFFFFF;
+  --static-transport-transport_flexible-background: #C75B12;
+  --static-transport-transport_flexible-text: #000000;
   --static-transport-transport_other-background: #555E65;
   --static-transport-transport_other-text: #FFFFFF;
   --static-status-valid-background: #A2AD00;
@@ -470,6 +476,10 @@
 .static-transport-transport_plane {
   background-color: var(--static-transport-transport_plane-background);
   color: var(--static-transport-transport_plane-text);
+}
+.static-transport-transport_flexible {
+  background-color: var(--static-transport-transport_flexible-background);
+  color: var(--static-transport-transport_flexible-text);
 }
 .static-transport-transport_other {
   background-color: var(--static-transport-transport_other-background);

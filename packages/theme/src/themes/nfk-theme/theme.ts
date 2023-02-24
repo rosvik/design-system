@@ -82,6 +82,7 @@ const themes: Themes = {
       transport: {
         transport_city: contrastColor('#014D61', 'light'),
         transport_region: contrastColor('#6C7E2F', 'light'),
+        transport_airport_express: contrastColor('#014D61', 'light'),
         transport_boat: contrastColor('#1777D7', 'light'),
         transport_train: contrastColor('#A5608A', 'light'),
         transport_airport: contrastColor('#8A62C3', 'light'),
@@ -178,6 +179,7 @@ const themes: Themes = {
       transport: {
         transport_city: contrastColor('#80C0D1'),
         transport_region: contrastColor('#98A56D'),
+        transport_airport_express: contrastColor('#80C0D1'),
         transport_boat: contrastColor('#5DA0E3'),
         transport_train: contrastColor('#C090AD'),
         transport_airport: contrastColor('#AD91D5'),

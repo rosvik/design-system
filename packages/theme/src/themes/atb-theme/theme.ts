@@ -199,6 +199,7 @@ const themes: Themes = {
       transport: {
         transport_city: baseColors.green_300,
         transport_region: baseColors.blue_500,
+        transport_airport_express: baseColors.red_600,
         transport_boat: baseColors.cyan_200,
         transport_train: baseColors.burgundy_800,
         transport_airport: baseColors.orange_500,
@@ -297,6 +298,7 @@ const themes: Themes = {
       transport: {
         transport_city: baseColors.green_300,
         transport_region: baseColors.blue_500,
+        transport_airport_express: baseColors.red_600,
         transport_boat: baseColors.cyan_200,
         transport_train: baseColors.burgundy_800,
         transport_airport: baseColors.orange_500,

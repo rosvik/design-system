@@ -49,6 +49,8 @@
   --static-transport-transport_city-text: #FFFFFF;
   --static-transport-transport_region-background: #6C7E2F;
   --static-transport-transport_region-text: #FFFFFF;
+  --static-transport-transport_airport_express-background: #014D61;
+  --static-transport-transport_airport_express-text: #FFFFFF;
   --static-transport-transport_boat-background: #1777D7;
   --static-transport-transport_boat-text: #FFFFFF;
   --static-transport-transport_train-background: #A5608A;
@@ -184,6 +186,8 @@
   --static-transport-transport_city-text: #003441;
   --static-transport-transport_region-background: #98A56D;
   --static-transport-transport_region-text: #003441;
+  --static-transport-transport_airport_express-background: #80C0D1;
+  --static-transport-transport_airport_express-text: #003441;
   --static-transport-transport_boat-background: #5DA0E3;
   --static-transport-transport_boat-text: #003441;
   --static-transport-transport_train-background: #C090AD;
@@ -319,6 +323,8 @@
   --static-transport-transport_city-text: #003441;
   --static-transport-transport_region-background: #98A56D;
   --static-transport-transport_region-text: #003441;
+  --static-transport-transport_airport_express-background: #80C0D1;
+  --static-transport-transport_airport_express-text: #003441;
   --static-transport-transport_boat-background: #5DA0E3;
   --static-transport-transport_boat-text: #003441;
   --static-transport-transport_train-background: #C090AD;
@@ -454,6 +460,10 @@
 .static-transport-transport_region {
   background-color: var(--static-transport-transport_region-background);
   color: var(--static-transport-transport_region-text);
+}
+.static-transport-transport_airport_express {
+  background-color: var(--static-transport-transport_airport_express-background);
+  color: var(--static-transport-transport_airport_express-text);
 }
 .static-transport-transport_boat {
   background-color: var(--static-transport-transport_boat-background);

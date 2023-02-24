@@ -54,6 +54,7 @@ export interface Theme {
     transport: {
       transport_city: ContrastColor;
       transport_region: ContrastColor;
+      transport_airport_express: ContrastColor;
       transport_boat: ContrastColor;
       transport_train: ContrastColor;
       transport_airport: ContrastColor;
@@ -70,8 +71,8 @@ export interface Theme {
 
     zone_selection: {
       from: ContrastColor;
-      to: ContrastColor
-    }
+      to: ContrastColor;
+    };
   };
 
   text: {

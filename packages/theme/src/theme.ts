@@ -71,8 +71,8 @@ export interface Theme {
 
     zone_selection: {
       from: ContrastColor;
-      to: ContrastColor
-    }
+      to: ContrastColor;
+    };
   };
 
   text: {

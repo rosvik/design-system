@@ -97,8 +97,8 @@ const themes: Themes = {
       },
       zone_selection: {
         from: contrastColor('#FF7E81', 'dark'),
-        to: contrastColor('#FF282E', 'light')
-      }
+        to: contrastColor('#FF282E', 'light'),
+      },
     },
 
     text: {
@@ -194,8 +194,8 @@ const themes: Themes = {
       },
       zone_selection: {
         from: contrastColor('#FF7E81', 'dark'),
-        to: contrastColor('#FF282E', 'light')
-      }
+        to: contrastColor('#FF282E', 'light'),
+      },
     },
     text: {
       colors: {

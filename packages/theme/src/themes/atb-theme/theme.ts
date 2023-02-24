@@ -214,8 +214,8 @@ const themes: Themes = {
       },
       zone_selection: {
         from: baseColors.green_300,
-        to: baseColors.cyan_200
-      }
+        to: baseColors.cyan_200,
+      },
     },
 
     text: {
@@ -313,8 +313,8 @@ const themes: Themes = {
       },
       zone_selection: {
         from: baseColors.green_300,
-        to: baseColors.cyan_200
-      }
+        to: baseColors.cyan_200,
+      },
     },
     text: {
       colors: {

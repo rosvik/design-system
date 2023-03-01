@@ -49,6 +49,8 @@
   --static-transport-transport_city-text: #000000;
   --static-transport-transport_region-background: #007C92;
   --static-transport-transport_region-text: #FFFFFF;
+  --static-transport-transport_airport_express-background: #A51140;
+  --static-transport-transport_airport_express-text: #FFFFFF;
   --static-transport-transport_boat-background: #71D6E0;
   --static-transport-transport_boat-text: #000000;
   --static-transport-transport_train-background: #4B2942;
@@ -186,6 +188,8 @@
   --static-transport-transport_city-text: #000000;
   --static-transport-transport_region-background: #007C92;
   --static-transport-transport_region-text: #FFFFFF;
+  --static-transport-transport_airport_express-background: #A51140;
+  --static-transport-transport_airport_express-text: #FFFFFF;
   --static-transport-transport_boat-background: #71D6E0;
   --static-transport-transport_boat-text: #000000;
   --static-transport-transport_train-background: #4B2942;
@@ -323,6 +327,8 @@
   --static-transport-transport_city-text: #000000;
   --static-transport-transport_region-background: #007C92;
   --static-transport-transport_region-text: #FFFFFF;
+  --static-transport-transport_airport_express-background: #A51140;
+  --static-transport-transport_airport_express-text: #FFFFFF;
   --static-transport-transport_boat-background: #71D6E0;
   --static-transport-transport_boat-text: #000000;
   --static-transport-transport_train-background: #4B2942;
@@ -460,6 +466,10 @@
 .static-transport-transport_region {
   background-color: var(--static-transport-transport_region-background);
   color: var(--static-transport-transport_region-text);
+}
+.static-transport-transport_airport_express {
+  background-color: var(--static-transport-transport_airport_express-background);
+  color: var(--static-transport-transport_airport_express-text);
 }
 .static-transport-transport_boat {
   background-color: var(--static-transport-transport_boat-background);

@@ -161,7 +161,7 @@ const themes: Themes = {
     static: {
       background: {
         background_0: contrastColor('#000000', 'light'),
-        background_1: contrastColor('#242B30', 'light'),
+        background_1: contrastColor('#2B343A', 'light'),
         background_2: contrastColor('#37424A', 'light'),
         background_3: contrastColor('#555E65', 'light'),
         background_accent_0: contrastColor('#37424A', 'light'),
@@ -201,7 +201,7 @@ const themes: Themes = {
       },
     },
     border: {
-      primary: '#242B30',
+      primary: '#2B343A',
       secondary: '#FFFFFF',
       focus: '#005685',
       radius: borderRadius,

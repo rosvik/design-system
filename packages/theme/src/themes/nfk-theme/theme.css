@@ -59,6 +59,8 @@
   --static-transport-transport_airport-text: #FFFFFF;
   --static-transport-transport_plane-background: #318181;
   --static-transport-transport_plane-text: #FFFFFF;
+  --static-transport-transport_flexible-background: #717171;
+  --static-transport-transport_flexible-text: #FFFFFF;
   --static-transport-transport_other-background: #717171;
   --static-transport-transport_other-text: #FFFFFF;
   --static-status-valid-background: #7FDABB;
@@ -196,6 +198,8 @@
   --static-transport-transport_airport-text: #003441;
   --static-transport-transport_plane-background: #6FA7A7;
   --static-transport-transport_plane-text: #003441;
+  --static-transport-transport_flexible-background: #6FA7A7;
+  --static-transport-transport_flexible-text: #003441;
   --static-transport-transport_other-background: #9C9C9C;
   --static-transport-transport_other-text: #003441;
   --static-status-valid-background: #7FDABB;
@@ -333,6 +337,8 @@
   --static-transport-transport_airport-text: #003441;
   --static-transport-transport_plane-background: #6FA7A7;
   --static-transport-transport_plane-text: #003441;
+  --static-transport-transport_flexible-background: #6FA7A7;
+  --static-transport-transport_flexible-text: #003441;
   --static-transport-transport_other-background: #9C9C9C;
   --static-transport-transport_other-text: #003441;
   --static-status-valid-background: #7FDABB;
@@ -480,6 +486,10 @@
 .static-transport-transport_plane {
   background-color: var(--static-transport-transport_plane-background);
   color: var(--static-transport-transport_plane-text);
+}
+.static-transport-transport_flexible {
+  background-color: var(--static-transport-transport_flexible-background);
+  color: var(--static-transport-transport_flexible-text);
 }
 .static-transport-transport_other {
   background-color: var(--static-transport-transport_other-background);

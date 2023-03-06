@@ -141,7 +141,7 @@
 
 /* Dark theme data */
 .dark {
-  --border-primary: #242B30;
+  --border-primary: #2B343A;
   --border-secondary: #FFFFFF;
   --border-focus: #005685;
   --border-radius-circle: 1.25rem;
@@ -166,7 +166,7 @@
 
   --static-background-background_0-background: #000000;
   --static-background-background_0-text: #FFFFFF;
-  --static-background-background_1-background: #242B30;
+  --static-background-background_1-background: #2B343A;
   --static-background-background_1-text: #FFFFFF;
   --static-background-background_2-background: #37424A;
   --static-background-background_2-text: #FFFFFF;
@@ -280,7 +280,7 @@
 
 @media (prefers-color-scheme: dark) {
   .light:not(.override-light) {
-  --border-primary: #242B30;
+  --border-primary: #2B343A;
   --border-secondary: #FFFFFF;
   --border-focus: #005685;
   --border-radius-circle: 1.25rem;
@@ -305,7 +305,7 @@
 
   --static-background-background_0-background: #000000;
   --static-background-background_0-text: #FFFFFF;
-  --static-background-background_1-background: #242B30;
+  --static-background-background_1-background: #2B343A;
   --static-background-background_1-text: #FFFFFF;
   --static-background-background_2-background: #37424A;
   --static-background-background_2-text: #FFFFFF;

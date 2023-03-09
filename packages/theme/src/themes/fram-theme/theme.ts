@@ -119,8 +119,8 @@ const themes: Themes = {
     spacings: spacings,
     interactive: {
       interactive_0: {
-        default: contrastColor('#76A4C0', 'dark'),
-        hover: contrastColor('#AAC6D8', 'dark'),
+        default: contrastColor('#005685', 'light'),
+        hover: contrastColor('#007FBA', 'light'),
         active: contrastColor('#CDE9E3', 'dark'),
         disabled: contrastColor('#C7CACC', 'dark'),
         outline: contrastColor('#0D6569', 'light'),

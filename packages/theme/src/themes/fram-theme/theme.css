@@ -22,8 +22,8 @@
   --icon-size-small: 0.625rem;
 
   --text-colors-primary: #000000;
-  --text-colors-secondary: #555E65;
-  --text-colors-disabled: #A9AEB1;
+  --text-colors-secondary: #e5e5e5;
+  --text-colors-disabled: #cccccc;
 
   --static-background-background_0-background: #FFFFFF;
   --static-background-background_0-text: #000000;
@@ -33,9 +33,9 @@
   --static-background-background_2-text: #000000;
   --static-background-background_3-background: #D5D7D9;
   --static-background-background_3-text: #000000;
-  --static-background-background_accent_0-background: #37424A;
+  --static-background-background_accent_0-background: #007FBA;
   --static-background-background_accent_0-text: #FFFFFF;
-  --static-background-background_accent_1-background: #555E65;
+  --static-background-background_accent_1-background: #006594;
   --static-background-background_accent_1-text: #FFFFFF;
   --static-background-background_accent_2-background: #CDE9E3;
   --static-background-background_accent_2-text: #000000;
@@ -43,8 +43,8 @@
   --static-background-background_accent_3-text: #FFFFFF;
   --static-background-background_accent_4-background: #F0E991;
   --static-background-background_accent_4-text: #000000;
-  --static-background-background_accent_5-background: #A6D1D9;
-  --static-background-background_accent_5-text: #000000;
+  --static-background-background_accent_5-background: #007FBA;
+  --static-background-background_accent_5-text: #FFFFFF;
   --static-transport-transport_city-background: #82B962;
   --static-transport-transport_city-text: #000000;
   --static-transport-transport_region-background: #005685;
@@ -76,9 +76,9 @@
   --static-zone_selection-to-background: #005685;
   --static-zone_selection-to-text: #FFFFFF;
 
-  --interactive-interactive_0-default-background: #005685;
+  --interactive-interactive_0-default-background: #007FBA;
   --interactive-interactive_0-default-text: #FFFFFF;
-  --interactive-interactive_0-hover-background: #007FBA;
+  --interactive-interactive_0-hover-background: #005685;
   --interactive-interactive_0-hover-text: #FFFFFF;
   --interactive-interactive_0-active-background: #CDE9E3;
   --interactive-interactive_0-active-text: #000000;
@@ -141,8 +141,8 @@
 
 /* Dark theme data */
 .dark {
-  --border-primary: #2B343A;
-  --border-secondary: #FFFFFF;
+  --border-primary: #E7E8E9;
+  --border-secondary: #000000;
   --border-focus: #005685;
   --border-radius-circle: 1.25rem;
   --border-radius-regular: 0.5rem;
@@ -161,8 +161,8 @@
   --icon-size-small: 0.625rem;
 
   --text-colors-primary: #FFFFFF;
-  --text-colors-secondary: #F1F2F2;
-  --text-colors-disabled: #A9AEB1;
+  --text-colors-secondary: #E5E5E5;
+  --text-colors-disabled: #CCCCCC;
 
   --static-background-background_0-background: #000000;
   --static-background-background_0-text: #FFFFFF;
@@ -172,9 +172,9 @@
   --static-background-background_2-text: #FFFFFF;
   --static-background-background_3-background: #555E65;
   --static-background-background_3-text: #FFFFFF;
-  --static-background-background_accent_0-background: #37424A;
+  --static-background-background_accent_0-background: #007FBA;
   --static-background-background_accent_0-text: #FFFFFF;
-  --static-background-background_accent_1-background: #555E65;
+  --static-background-background_accent_1-background: #006594;
   --static-background-background_accent_1-text: #FFFFFF;
   --static-background-background_accent_2-background: #CDE9E3;
   --static-background-background_accent_2-text: #000000;
@@ -182,7 +182,7 @@
   --static-background-background_accent_3-text: #FFFFFF;
   --static-background-background_accent_4-background: #F0E991;
   --static-background-background_accent_4-text: #000000;
-  --static-background-background_accent_5-background: #242B30;
+  --static-background-background_accent_5-background: #007FBA;
   --static-background-background_accent_5-text: #FFFFFF;
   --static-transport-transport_city-background: #82B962;
   --static-transport-transport_city-text: #000000;
@@ -215,9 +215,9 @@
   --static-zone_selection-to-background: #005685;
   --static-zone_selection-to-text: #FFFFFF;
 
-  --interactive-interactive_0-default-background: #005685;
+  --interactive-interactive_0-default-background: #007FBA;
   --interactive-interactive_0-default-text: #FFFFFF;
-  --interactive-interactive_0-hover-background: #007FBA;
+  --interactive-interactive_0-hover-background: #005685;
   --interactive-interactive_0-hover-text: #FFFFFF;
   --interactive-interactive_0-active-background: #CDE9E3;
   --interactive-interactive_0-active-text: #000000;
@@ -280,8 +280,8 @@
 
 @media (prefers-color-scheme: dark) {
   .light:not(.override-light) {
-  --border-primary: #2B343A;
-  --border-secondary: #FFFFFF;
+  --border-primary: #E7E8E9;
+  --border-secondary: #000000;
   --border-focus: #005685;
   --border-radius-circle: 1.25rem;
   --border-radius-regular: 0.5rem;
@@ -300,8 +300,8 @@
   --icon-size-small: 0.625rem;
 
   --text-colors-primary: #FFFFFF;
-  --text-colors-secondary: #F1F2F2;
-  --text-colors-disabled: #A9AEB1;
+  --text-colors-secondary: #E5E5E5;
+  --text-colors-disabled: #CCCCCC;
 
   --static-background-background_0-background: #000000;
   --static-background-background_0-text: #FFFFFF;
@@ -311,9 +311,9 @@
   --static-background-background_2-text: #FFFFFF;
   --static-background-background_3-background: #555E65;
   --static-background-background_3-text: #FFFFFF;
-  --static-background-background_accent_0-background: #37424A;
+  --static-background-background_accent_0-background: #007FBA;
   --static-background-background_accent_0-text: #FFFFFF;
-  --static-background-background_accent_1-background: #555E65;
+  --static-background-background_accent_1-background: #006594;
   --static-background-background_accent_1-text: #FFFFFF;
   --static-background-background_accent_2-background: #CDE9E3;
   --static-background-background_accent_2-text: #000000;
@@ -321,7 +321,7 @@
   --static-background-background_accent_3-text: #FFFFFF;
   --static-background-background_accent_4-background: #F0E991;
   --static-background-background_accent_4-text: #000000;
-  --static-background-background_accent_5-background: #242B30;
+  --static-background-background_accent_5-background: #007FBA;
   --static-background-background_accent_5-text: #FFFFFF;
   --static-transport-transport_city-background: #82B962;
   --static-transport-transport_city-text: #000000;
@@ -354,9 +354,9 @@
   --static-zone_selection-to-background: #005685;
   --static-zone_selection-to-text: #FFFFFF;
 
-  --interactive-interactive_0-default-background: #005685;
+  --interactive-interactive_0-default-background: #007FBA;
   --interactive-interactive_0-default-text: #FFFFFF;
-  --interactive-interactive_0-hover-background: #007FBA;
+  --interactive-interactive_0-hover-background: #005685;
   --interactive-interactive_0-hover-text: #FFFFFF;
   --interactive-interactive_0-active-background: #CDE9E3;
   --interactive-interactive_0-active-text: #000000;

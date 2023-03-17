@@ -21,8 +21,8 @@ const themes: Themes = {
     spacings: spacings,
     interactive: {
       interactive_0: {
-        default: contrastColor('#007FBA', 'light'),
-        hover: contrastColor('#005685', 'light'),
+        default: contrastColor('#005685', 'light'),
+        hover: contrastColor('#027FAF', 'light'),
         active: contrastColor('#CDE9E3', 'dark'),
         disabled: contrastColor('#C7CACC', 'dark'),
         outline: contrastColor('#0D6569', 'light'),
@@ -67,12 +67,12 @@ const themes: Themes = {
         background_1: contrastColor('#F1F2F2', 'dark'),
         background_2: contrastColor('#E3E5E6', 'dark'),
         background_3: contrastColor('#D5D7D9', 'dark'),
-        background_accent_0: contrastColor('#007FBA', 'light'),
+        background_accent_0: contrastColor('#027FAF', 'light'),
         background_accent_1: contrastColor('#006594', 'light'),
         background_accent_2: contrastColor('#CDE9E3', 'dark'),
         background_accent_3: contrastColor('#0D6569', 'light'),
         background_accent_4: contrastColor('#F0E991', 'dark'),
-        background_accent_5: contrastColor('#007FBA', 'light'),
+        background_accent_5: contrastColor('#027FAF', 'light'),
       },
       transport: {
         transport_city: contrastColor('#82B962', 'dark'),
@@ -100,8 +100,8 @@ const themes: Themes = {
     text: {
       colors: {
         primary: textColors.dark,
-        secondary: '#e5e5e5',
-        disabled: '#cccccc',
+        secondary: '#555E65',
+        disabled: '#A9AEB1',
       },
     },
     border: {
@@ -119,8 +119,8 @@ const themes: Themes = {
     spacings: spacings,
     interactive: {
       interactive_0: {
-        default: contrastColor('#007FBA', 'light'),
-        hover: contrastColor('#005685', 'light'),
+        default: contrastColor('#005685', 'light'),
+        hover: contrastColor('#027FAF', 'light'),
         active: contrastColor('#CDE9E3', 'dark'),
         disabled: contrastColor('#C7CACC', 'dark'),
         outline: contrastColor('#0D6569', 'light'),
@@ -165,12 +165,12 @@ const themes: Themes = {
         background_1: contrastColor('#2B343A', 'light'),
         background_2: contrastColor('#37424A', 'light'),
         background_3: contrastColor('#555E65', 'light'),
-        background_accent_0: contrastColor('#007FBA', 'light'),
+        background_accent_0: contrastColor('#027FAF', 'light'),
         background_accent_1: contrastColor('#006594', 'light'),
         background_accent_2: contrastColor('#CDE9E3', 'dark'),
         background_accent_3: contrastColor('#0D6569', 'light'),
         background_accent_4: contrastColor('#F0E991', 'dark'),
-        background_accent_5: contrastColor('#007FBA', 'light'),
+        background_accent_5: contrastColor('#027FAF', 'light'),
       },
 
       transport: {
@@ -198,8 +198,8 @@ const themes: Themes = {
     text: {
       colors: {
         primary: textColors.light,
-        secondary: '#E5E5E5',
-        disabled: '#CCCCCC',
+        secondary: '#E3E5E6',
+        disabled: '#A9AEB1',
       },
     },
     border: {

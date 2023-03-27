@@ -87,7 +87,7 @@ const themes: Themes = {
       },
       status: {
         valid: contrastColor('#82B962', 'dark'),
-        info: contrastColor('#005685', 'light'),
+        info: contrastColor('#A6D1D9', 'dark'),
         warning: contrastColor('#FBDC00', 'dark'),
         error: contrastColor('#F15629', 'light'),
       },
@@ -186,7 +186,7 @@ const themes: Themes = {
       },
       status: {
         valid: contrastColor('#82B962', 'dark'),
-        info: contrastColor('#005685', 'light'),
+        info: contrastColor('#A6D1D9', 'dark'),
         warning: contrastColor('#FBDC00', 'dark'),
         error: contrastColor('#F15629', 'light'),
       },

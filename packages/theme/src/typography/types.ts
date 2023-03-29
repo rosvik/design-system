@@ -13,6 +13,7 @@ export const textNames = [
   'heading__title',
   'heading__component',
   'heading__paragraph',
+  'heading--medium',
   'heading--big',
   'heading--jumbo',
   'label__uppercase',

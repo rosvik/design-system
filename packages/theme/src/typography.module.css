@@ -84,6 +84,12 @@
   --baseTypo-heading__paragraph-letterSpacing: 0.03125rem;
   --baseTypo-heading__paragraph-fontWeight: 500;
 
+  /* Definitions for heading--medium */
+  --baseTypo-heading--medium-fontSize: 1.25rem;
+  --baseTypo-heading--medium-lineHeight: 1.5rem;
+  --baseTypo-heading--medium-letterSpacing: 0.03125rem;
+  --baseTypo-heading--medium-fontWeight: bold;
+
   /* Definitions for heading--big */
   --baseTypo-heading--big-fontSize: 1.5rem;
   --baseTypo-heading--big-lineHeight: 1.75rem;
@@ -192,6 +198,12 @@
   line-height: var(--baseTypo-heading__paragraph-lineHeight, 1.25rem);
   letter-spacing: var(--baseTypo-heading__paragraph-letterSpacing, 0.03125rem);
   font-weight: var(--baseTypo-heading__paragraph-fontWeight, 500);
+}
+.typo-heading--medium {
+  font-size: var(--baseTypo-heading--medium-fontSize, 1.25rem);
+  line-height: var(--baseTypo-heading--medium-lineHeight, 1.5rem);
+  letter-spacing: var(--baseTypo-heading--medium-letterSpacing, 0.03125rem);
+  font-weight: var(--baseTypo-heading--medium-fontWeight, bold);
 }
 .typo-heading--big {
   font-size: var(--baseTypo-heading--big-fontSize, 1.5rem);

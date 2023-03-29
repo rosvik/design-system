@@ -48,7 +48,7 @@ export const androidTextTypeStyles: TextTypeStyles = {
     fontSize: 24,
     lineHeight: 28,
     letterSpacing: 0.25,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   'body__primary--jumbo': {
     fontSize: 36,
@@ -59,7 +59,7 @@ export const androidTextTypeStyles: TextTypeStyles = {
     fontSize: 36,
     lineHeight: 40,
     letterSpacing: 0.25,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   body__secondary: secondaryBase,
   'body__secondary--bold': {
@@ -82,6 +82,12 @@ export const androidTextTypeStyles: TextTypeStyles = {
   heading__paragraph: {
     ...primaryBase,
     fontWeight: '500',
+  },
+  'heading--medium': {
+    fontSize: 20,
+    lineHeight: 24,
+    letterSpacing: 0.5,
+    fontWeight: 'bold',
   },
   'heading--big': {
     fontSize: 24,

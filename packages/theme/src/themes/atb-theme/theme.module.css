@@ -61,6 +61,10 @@
   --static-transport-transport_plane-text: #FFFFFF;
   --static-transport-transport_flexible-background: #C75B12;
   --static-transport-transport_flexible-text: #000000;
+  --static-transport-transport_bike-background: #A51140;
+  --static-transport-transport_bike-text: #FFFFFF;
+  --static-transport-transport_scooter-background: #5B6100;
+  --static-transport-transport_scooter-text: #FFFFFF;
   --static-transport-transport_other-background: #555E65;
   --static-transport-transport_other-text: #FFFFFF;
   --static-status-valid-background: #A2AD00;
@@ -200,6 +204,10 @@
   --static-transport-transport_plane-text: #FFFFFF;
   --static-transport-transport_flexible-background: #C75B12;
   --static-transport-transport_flexible-text: #000000;
+  --static-transport-transport_scooter-background: #5B6100;
+  --static-transport-transport_scooter-text: #FFFFFF;
+  --static-transport-transport_bike-background: #A51140;
+  --static-transport-transport_bike-text: #FFFFFF;
   --static-transport-transport_other-background: #555E65;
   --static-transport-transport_other-text: #FFFFFF;
   --static-status-valid-background: #A2AD00;
@@ -339,6 +347,10 @@
   --static-transport-transport_plane-text: #FFFFFF;
   --static-transport-transport_flexible-background: #C75B12;
   --static-transport-transport_flexible-text: #000000;
+  --static-transport-transport_scooter-background: #5B6100;
+  --static-transport-transport_scooter-text: #FFFFFF;
+  --static-transport-transport_bike-background: #A51140;
+  --static-transport-transport_bike-text: #FFFFFF;
   --static-transport-transport_other-background: #555E65;
   --static-transport-transport_other-text: #FFFFFF;
   --static-status-valid-background: #A2AD00;
@@ -490,6 +502,14 @@
 .static-transport-transport_flexible {
   background-color: var(--static-transport-transport_flexible-background);
   color: var(--static-transport-transport_flexible-text);
+}
+.static-transport-transport_bike {
+  background-color: var(--static-transport-transport_bike-background);
+  color: var(--static-transport-transport_bike-text);
+}
+.static-transport-transport_scooter {
+  background-color: var(--static-transport-transport_scooter-background);
+  color: var(--static-transport-transport_scooter-text);
 }
 .static-transport-transport_other {
   background-color: var(--static-transport-transport_other-background);

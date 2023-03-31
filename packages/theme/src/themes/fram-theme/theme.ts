@@ -83,6 +83,8 @@ const themes: Themes = {
         transport_airport: contrastColor('#F15659', 'light'),
         transport_plane: contrastColor('#F15659', 'light'),
         transport_flexible: contrastColor('#F15659', 'light'),
+        transport_bike: contrastColor('#A51140', 'light'),
+        transport_scooter: contrastColor('#5B6100', 'light'),
         transport_other: contrastColor('#555E65', 'light'),
       },
       status: {
@@ -182,6 +184,8 @@ const themes: Themes = {
         transport_airport: contrastColor('#F15659', 'light'),
         transport_plane: contrastColor('#F15659', 'light'),
         transport_flexible: contrastColor('#F15659', 'light'),
+        transport_bike: contrastColor('#A51140', 'light'),
+        transport_scooter: contrastColor('#5B6100', 'light'),
         transport_other: contrastColor('#555E65', 'light'),
       },
       status: {

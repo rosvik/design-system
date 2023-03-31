@@ -60,6 +60,8 @@ export interface Theme {
       transport_airport: ContrastColor;
       transport_plane: ContrastColor;
       transport_flexible: ContrastColor;
+      transport_scooter: ContrastColor;
+      transport_bike: ContrastColor;
       transport_other: ContrastColor;
     };
 

@@ -88,8 +88,8 @@ const themes: Themes = {
         transport_airport: contrastColor('#8A62C3', 'light'),
         transport_plane: contrastColor('#318181', 'light'),
         transport_flexible: contrastColor('#717171', 'light'),
-        transport_bike: contrastColor('#A51140', 'light'),
-        transport_scooter: contrastColor('#5B6100', 'light'),
+        transport_bike: contrastColor('#7D0D31', 'light'),
+        transport_scooter: contrastColor('#464A00', 'light'),
         transport_other: contrastColor('#717171', 'light'),
       },
       status: {

@@ -205,8 +205,8 @@ const themes: Themes = {
         transport_airport: baseColors.orange_500,
         transport_plane: baseColors.gray_800,
         transport_flexible: baseColors.orange_500,
-        transport_bike: baseColors.red_600,
-        transport_scooter: baseColors.green_600,
+        transport_bike: baseColors.red_700,
+        transport_scooter: baseColors.green_700,
         transport_other: baseColors.gray_600,
       },
       status: {

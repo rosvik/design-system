@@ -66,6 +66,7 @@ export interface Theme {
     };
 
     status: {
+      default: ContrastColor;
       valid: ContrastColor;
       info: ContrastColor;
       warning: ContrastColor;

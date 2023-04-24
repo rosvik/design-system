@@ -67,6 +67,8 @@
   --static-transport-transport_scooter-text: #FFFFFF;
   --static-transport-transport_other-background: #555E65;
   --static-transport-transport_other-text: #FFFFFF;
+  --static-status-default-background: #FFFFFF;
+  --static-status-default-text: #000000;
   --static-status-valid-background: #82B962;
   --static-status-valid-text: #000000;
   --static-status-info-background: #A6D1D9;
@@ -210,6 +212,8 @@
   --static-transport-transport_scooter-text: #FFFFFF;
   --static-transport-transport_other-background: #555E65;
   --static-transport-transport_other-text: #FFFFFF;
+  --static-status-default-background: #000000;
+  --static-status-default-text: #FFFFFF;
   --static-status-valid-background: #82B962;
   --static-status-valid-text: #000000;
   --static-status-info-background: #A6D1D9;
@@ -353,6 +357,8 @@
   --static-transport-transport_scooter-text: #FFFFFF;
   --static-transport-transport_other-background: #555E65;
   --static-transport-transport_other-text: #FFFFFF;
+  --static-status-default-background: #000000;
+  --static-status-default-text: #FFFFFF;
   --static-status-valid-background: #82B962;
   --static-status-valid-text: #000000;
   --static-status-info-background: #A6D1D9;
@@ -514,6 +520,10 @@
 .static-transport-transport_other {
   background-color: var(--static-transport-transport_other-background);
   color: var(--static-transport-transport_other-text);
+}
+.static-status {
+  background-color: var(--static-status-default-background);
+  color: var(--static-status-default-text);
 }
 .static-status-valid {
   background-color: var(--static-status-valid-background);

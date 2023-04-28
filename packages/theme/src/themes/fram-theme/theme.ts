@@ -88,7 +88,6 @@ const themes: Themes = {
         transport_other: contrastColor('#555E65', 'light'),
       },
       status: {
-        default: contrastColor('#FFFFFF', 'dark'),
         valid: contrastColor('#82B962', 'dark'),
         info: contrastColor('#A6D1D9', 'dark'),
         warning: contrastColor('#FBDC00', 'dark'),
@@ -190,7 +189,6 @@ const themes: Themes = {
         transport_other: contrastColor('#555E65', 'light'),
       },
       status: {
-        default: contrastColor('#000000', 'light'),
         valid: contrastColor('#82B962', 'dark'),
         info: contrastColor('#A6D1D9', 'dark'),
         warning: contrastColor('#FBDC00', 'dark'),

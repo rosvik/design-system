@@ -210,7 +210,6 @@ const themes: Themes = {
         transport_other: baseColors.gray_600,
       },
       status: {
-        default: baseColors.gray_0,
         valid: baseColors.green_300,
         info: baseColors.cyan_200,
         warning: baseColors.yellow_200,
@@ -313,7 +312,6 @@ const themes: Themes = {
         transport_other: baseColors.gray_600,
       },
       status: {
-        default: baseColors.gray_1000,
         valid: baseColors.green_300,
         info: baseColors.cyan_200,
         warning: baseColors.yellow_200,

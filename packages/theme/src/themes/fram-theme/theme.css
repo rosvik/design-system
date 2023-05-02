@@ -65,6 +65,8 @@
   --static-transport-transport_bike-text: #FFFFFF;
   --static-transport-transport_scooter-background: #464A00;
   --static-transport-transport_scooter-text: #FFFFFF;
+  --static-transport-transport_car-background: #6F5468;
+  --static-transport-transport_car-text: #FFFFFF;
   --static-transport-transport_other-background: #555E65;
   --static-transport-transport_other-text: #FFFFFF;
   --static-status-valid-background: #82B962;
@@ -208,6 +210,8 @@
   --static-transport-transport_bike-text: #FFFFFF;
   --static-transport-transport_scooter-background: #5B6100;
   --static-transport-transport_scooter-text: #FFFFFF;
+  --static-transport-transport_car-background: #6F5468;
+  --static-transport-transport_car-text: #FFFFFF;
   --static-transport-transport_other-background: #555E65;
   --static-transport-transport_other-text: #FFFFFF;
   --static-status-valid-background: #82B962;
@@ -351,6 +355,8 @@
   --static-transport-transport_bike-text: #FFFFFF;
   --static-transport-transport_scooter-background: #5B6100;
   --static-transport-transport_scooter-text: #FFFFFF;
+  --static-transport-transport_car-background: #6F5468;
+  --static-transport-transport_car-text: #FFFFFF;
   --static-transport-transport_other-background: #555E65;
   --static-transport-transport_other-text: #FFFFFF;
   --static-status-valid-background: #82B962;
@@ -510,6 +516,10 @@
 .static-transport-transport_scooter {
   background-color: var(--static-transport-transport_scooter-background);
   color: var(--static-transport-transport_scooter-text);
+}
+.static-transport-transport_car {
+  background-color: var(--static-transport-transport_car-background);
+  color: var(--static-transport-transport_car-text);
 }
 .static-transport-transport_other {
   background-color: var(--static-transport-transport_other-background);

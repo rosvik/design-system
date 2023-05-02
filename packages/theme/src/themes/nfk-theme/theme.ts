@@ -90,6 +90,7 @@ const themes: Themes = {
         transport_flexible: contrastColor('#717171', 'light'),
         transport_bike: contrastColor('#7D0D31', 'light'),
         transport_scooter: contrastColor('#464A00', 'light'),
+        transport_car: contrastColor('#6F5468', 'light'),
         transport_other: contrastColor('#717171', 'light'),
       },
       status: {
@@ -190,6 +191,7 @@ const themes: Themes = {
         transport_flexible: contrastColor('#6FA7A7'),
         transport_bike: contrastColor('#A51140'),
         transport_scooter: contrastColor('#5B6100'),
+        transport_car: contrastColor('#6F5468', 'light'),
         transport_other: contrastColor('#9C9C9C'),
       },
       status: {

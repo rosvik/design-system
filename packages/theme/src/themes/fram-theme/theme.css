@@ -45,30 +45,6 @@
   --static-background-background_accent_4-text: #000000;
   --static-background-background_accent_5-background: #007AB5;
   --static-background-background_accent_5-text: #FFFFFF;
-  --static-transport-transport_city-background: #82B962;
-  --static-transport-transport_city-text: #000000;
-  --static-transport-transport_region-background: #005685;
-  --static-transport-transport_region-text: #FFFFFF;
-  --static-transport-transport_airport_express-background: #005685;
-  --static-transport-transport_airport_express-text: #FFFFFF;
-  --static-transport-transport_boat-background: #007FBA;
-  --static-transport-transport_boat-text: #FFFFFF;
-  --static-transport-transport_train-background: #551125;
-  --static-transport-transport_train-text: #FFFFFF;
-  --static-transport-transport_airport-background: #F15659;
-  --static-transport-transport_airport-text: #FFFFFF;
-  --static-transport-transport_plane-background: #F15659;
-  --static-transport-transport_plane-text: #FFFFFF;
-  --static-transport-transport_flexible-background: #F15659;
-  --static-transport-transport_flexible-text: #FFFFFF;
-  --static-transport-transport_bike-background: #7D0D31;
-  --static-transport-transport_bike-text: #FFFFFF;
-  --static-transport-transport_scooter-background: #464A00;
-  --static-transport-transport_scooter-text: #FFFFFF;
-  --static-transport-transport_car-background: #6F5468;
-  --static-transport-transport_car-text: #FFFFFF;
-  --static-transport-transport_other-background: #555E65;
-  --static-transport-transport_other-text: #FFFFFF;
   --static-status-valid-background: #82B962;
   --static-status-valid-text: #000000;
   --static-status-info-background: #A6D1D9;
@@ -142,6 +118,55 @@
   --interactive-interactive_destructive-outline-text: #FFFFFF;
   --interactive-interactive_destructive-destructive-background: #A51140;
   --interactive-interactive_destructive-destructive-text: #FFFFFF;
+
+  --transport-transport_city-primary-background: #82B962;
+  --transport-transport_city-primary-text: #000000;
+  --transport-transport_city-secondary-background: #82B962;
+  --transport-transport_city-secondary-text: #000000;
+  --transport-transport_region-primary-background: #005685;
+  --transport-transport_region-primary-text: #FFFFFF;
+  --transport-transport_region-secondary-background: #005685;
+  --transport-transport_region-secondary-text: #FFFFFF;
+  --transport-transport_airport_express-primary-background: #005685;
+  --transport-transport_airport_express-primary-text: #FFFFFF;
+  --transport-transport_airport_express-secondary-background: #005685;
+  --transport-transport_airport_express-secondary-text: #FFFFFF;
+  --transport-transport_boat-primary-background: #007FBA;
+  --transport-transport_boat-primary-text: #FFFFFF;
+  --transport-transport_boat-secondary-background: #007FBA;
+  --transport-transport_boat-secondary-text: #FFFFFF;
+  --transport-transport_train-primary-background: #551125;
+  --transport-transport_train-primary-text: #FFFFFF;
+  --transport-transport_train-secondary-background: #551125;
+  --transport-transport_train-secondary-text: #FFFFFF;
+  --transport-transport_airport-primary-background: #F15659;
+  --transport-transport_airport-primary-text: #FFFFFF;
+  --transport-transport_airport-secondary-background: #F15659;
+  --transport-transport_airport-secondary-text: #FFFFFF;
+  --transport-transport_plane-primary-background: #F15659;
+  --transport-transport_plane-primary-text: #FFFFFF;
+  --transport-transport_plane-secondary-background: #F15659;
+  --transport-transport_plane-secondary-text: #FFFFFF;
+  --transport-transport_flexible-primary-background: #F15659;
+  --transport-transport_flexible-primary-text: #FFFFFF;
+  --transport-transport_flexible-secondary-background: #F15659;
+  --transport-transport_flexible-secondary-text: #FFFFFF;
+  --transport-transport_bike-primary-background: #7D0D31;
+  --transport-transport_bike-primary-text: #FFFFFF;
+  --transport-transport_bike-secondary-background: #7D0D31;
+  --transport-transport_bike-secondary-text: #FFFFFF;
+  --transport-transport_scooter-primary-background: #464A00;
+  --transport-transport_scooter-primary-text: #FFFFFF;
+  --transport-transport_scooter-secondary-background: #464A00;
+  --transport-transport_scooter-secondary-text: #FFFFFF;
+  --transport-transport_car-primary-background: #6F5468;
+  --transport-transport_car-primary-text: #FFFFFF;
+  --transport-transport_car-secondary-background: #6F5468;
+  --transport-transport_car-secondary-text: #FFFFFF;
+  --transport-transport_other-primary-background: #555E65;
+  --transport-transport_other-primary-text: #FFFFFF;
+  --transport-transport_other-secondary-background: #555E65;
+  --transport-transport_other-secondary-text: #FFFFFF;
 }
 
 
@@ -190,30 +215,6 @@
   --static-background-background_accent_4-text: #000000;
   --static-background-background_accent_5-background: #007AB5;
   --static-background-background_accent_5-text: #FFFFFF;
-  --static-transport-transport_city-background: #82B962;
-  --static-transport-transport_city-text: #000000;
-  --static-transport-transport_region-background: #005685;
-  --static-transport-transport_region-text: #FFFFFF;
-  --static-transport-transport_airport_express-background: #005685;
-  --static-transport-transport_airport_express-text: #FFFFFF;
-  --static-transport-transport_boat-background: #007FBA;
-  --static-transport-transport_boat-text: #FFFFFF;
-  --static-transport-transport_train-background: #551125;
-  --static-transport-transport_train-text: #FFFFFF;
-  --static-transport-transport_airport-background: #F15659;
-  --static-transport-transport_airport-text: #FFFFFF;
-  --static-transport-transport_plane-background: #F15659;
-  --static-transport-transport_plane-text: #FFFFFF;
-  --static-transport-transport_flexible-background: #F15659;
-  --static-transport-transport_flexible-text: #FFFFFF;
-  --static-transport-transport_bike-background: #A51140;
-  --static-transport-transport_bike-text: #FFFFFF;
-  --static-transport-transport_scooter-background: #5B6100;
-  --static-transport-transport_scooter-text: #FFFFFF;
-  --static-transport-transport_car-background: #6F5468;
-  --static-transport-transport_car-text: #FFFFFF;
-  --static-transport-transport_other-background: #555E65;
-  --static-transport-transport_other-text: #FFFFFF;
   --static-status-valid-background: #82B962;
   --static-status-valid-text: #000000;
   --static-status-info-background: #A6D1D9;
@@ -287,6 +288,55 @@
   --interactive-interactive_destructive-outline-text: #FFFFFF;
   --interactive-interactive_destructive-destructive-background: #D692A7;
   --interactive-interactive_destructive-destructive-text: #000000;
+
+  --transport-transport_city-primary-background: #82B962;
+  --transport-transport_city-primary-text: #000000;
+  --transport-transport_city-secondary-background: #82B962;
+  --transport-transport_city-secondary-text: #000000;
+  --transport-transport_region-primary-background: #005685;
+  --transport-transport_region-primary-text: #FFFFFF;
+  --transport-transport_region-secondary-background: #005685;
+  --transport-transport_region-secondary-text: #FFFFFF;
+  --transport-transport_airport_express-primary-background: #005685;
+  --transport-transport_airport_express-primary-text: #FFFFFF;
+  --transport-transport_airport_express-secondary-background: #005685;
+  --transport-transport_airport_express-secondary-text: #FFFFFF;
+  --transport-transport_boat-primary-background: #007FBA;
+  --transport-transport_boat-primary-text: #FFFFFF;
+  --transport-transport_boat-secondary-background: #007FBA;
+  --transport-transport_boat-secondary-text: #FFFFFF;
+  --transport-transport_train-primary-background: #551125;
+  --transport-transport_train-primary-text: #FFFFFF;
+  --transport-transport_train-secondary-background: #551125;
+  --transport-transport_train-secondary-text: #FFFFFF;
+  --transport-transport_airport-primary-background: #F15659;
+  --transport-transport_airport-primary-text: #FFFFFF;
+  --transport-transport_airport-secondary-background: #F15659;
+  --transport-transport_airport-secondary-text: #FFFFFF;
+  --transport-transport_plane-primary-background: #F15659;
+  --transport-transport_plane-primary-text: #FFFFFF;
+  --transport-transport_plane-secondary-background: #F15659;
+  --transport-transport_plane-secondary-text: #FFFFFF;
+  --transport-transport_flexible-primary-background: #F15659;
+  --transport-transport_flexible-primary-text: #FFFFFF;
+  --transport-transport_flexible-secondary-background: #F15659;
+  --transport-transport_flexible-secondary-text: #FFFFFF;
+  --transport-transport_bike-primary-background: #A51140;
+  --transport-transport_bike-primary-text: #FFFFFF;
+  --transport-transport_bike-secondary-background: #A51140;
+  --transport-transport_bike-secondary-text: #FFFFFF;
+  --transport-transport_scooter-primary-background: #5B6100;
+  --transport-transport_scooter-primary-text: #FFFFFF;
+  --transport-transport_scooter-secondary-background: #5B6100;
+  --transport-transport_scooter-secondary-text: #FFFFFF;
+  --transport-transport_car-primary-background: #6F5468;
+  --transport-transport_car-primary-text: #FFFFFF;
+  --transport-transport_car-secondary-background: #6F5468;
+  --transport-transport_car-secondary-text: #FFFFFF;
+  --transport-transport_other-primary-background: #555E65;
+  --transport-transport_other-primary-text: #FFFFFF;
+  --transport-transport_other-secondary-background: #555E65;
+  --transport-transport_other-secondary-text: #FFFFFF;
 }
 
 
@@ -335,30 +385,6 @@
   --static-background-background_accent_4-text: #000000;
   --static-background-background_accent_5-background: #007AB5;
   --static-background-background_accent_5-text: #FFFFFF;
-  --static-transport-transport_city-background: #82B962;
-  --static-transport-transport_city-text: #000000;
-  --static-transport-transport_region-background: #005685;
-  --static-transport-transport_region-text: #FFFFFF;
-  --static-transport-transport_airport_express-background: #005685;
-  --static-transport-transport_airport_express-text: #FFFFFF;
-  --static-transport-transport_boat-background: #007FBA;
-  --static-transport-transport_boat-text: #FFFFFF;
-  --static-transport-transport_train-background: #551125;
-  --static-transport-transport_train-text: #FFFFFF;
-  --static-transport-transport_airport-background: #F15659;
-  --static-transport-transport_airport-text: #FFFFFF;
-  --static-transport-transport_plane-background: #F15659;
-  --static-transport-transport_plane-text: #FFFFFF;
-  --static-transport-transport_flexible-background: #F15659;
-  --static-transport-transport_flexible-text: #FFFFFF;
-  --static-transport-transport_bike-background: #A51140;
-  --static-transport-transport_bike-text: #FFFFFF;
-  --static-transport-transport_scooter-background: #5B6100;
-  --static-transport-transport_scooter-text: #FFFFFF;
-  --static-transport-transport_car-background: #6F5468;
-  --static-transport-transport_car-text: #FFFFFF;
-  --static-transport-transport_other-background: #555E65;
-  --static-transport-transport_other-text: #FFFFFF;
   --static-status-valid-background: #82B962;
   --static-status-valid-text: #000000;
   --static-status-info-background: #A6D1D9;
@@ -432,6 +458,55 @@
   --interactive-interactive_destructive-outline-text: #FFFFFF;
   --interactive-interactive_destructive-destructive-background: #D692A7;
   --interactive-interactive_destructive-destructive-text: #000000;
+
+  --transport-transport_city-primary-background: #82B962;
+  --transport-transport_city-primary-text: #000000;
+  --transport-transport_city-secondary-background: #82B962;
+  --transport-transport_city-secondary-text: #000000;
+  --transport-transport_region-primary-background: #005685;
+  --transport-transport_region-primary-text: #FFFFFF;
+  --transport-transport_region-secondary-background: #005685;
+  --transport-transport_region-secondary-text: #FFFFFF;
+  --transport-transport_airport_express-primary-background: #005685;
+  --transport-transport_airport_express-primary-text: #FFFFFF;
+  --transport-transport_airport_express-secondary-background: #005685;
+  --transport-transport_airport_express-secondary-text: #FFFFFF;
+  --transport-transport_boat-primary-background: #007FBA;
+  --transport-transport_boat-primary-text: #FFFFFF;
+  --transport-transport_boat-secondary-background: #007FBA;
+  --transport-transport_boat-secondary-text: #FFFFFF;
+  --transport-transport_train-primary-background: #551125;
+  --transport-transport_train-primary-text: #FFFFFF;
+  --transport-transport_train-secondary-background: #551125;
+  --transport-transport_train-secondary-text: #FFFFFF;
+  --transport-transport_airport-primary-background: #F15659;
+  --transport-transport_airport-primary-text: #FFFFFF;
+  --transport-transport_airport-secondary-background: #F15659;
+  --transport-transport_airport-secondary-text: #FFFFFF;
+  --transport-transport_plane-primary-background: #F15659;
+  --transport-transport_plane-primary-text: #FFFFFF;
+  --transport-transport_plane-secondary-background: #F15659;
+  --transport-transport_plane-secondary-text: #FFFFFF;
+  --transport-transport_flexible-primary-background: #F15659;
+  --transport-transport_flexible-primary-text: #FFFFFF;
+  --transport-transport_flexible-secondary-background: #F15659;
+  --transport-transport_flexible-secondary-text: #FFFFFF;
+  --transport-transport_bike-primary-background: #A51140;
+  --transport-transport_bike-primary-text: #FFFFFF;
+  --transport-transport_bike-secondary-background: #A51140;
+  --transport-transport_bike-secondary-text: #FFFFFF;
+  --transport-transport_scooter-primary-background: #5B6100;
+  --transport-transport_scooter-primary-text: #FFFFFF;
+  --transport-transport_scooter-secondary-background: #5B6100;
+  --transport-transport_scooter-secondary-text: #FFFFFF;
+  --transport-transport_car-primary-background: #6F5468;
+  --transport-transport_car-primary-text: #FFFFFF;
+  --transport-transport_car-secondary-background: #6F5468;
+  --transport-transport_car-secondary-text: #FFFFFF;
+  --transport-transport_other-primary-background: #555E65;
+  --transport-transport_other-primary-text: #FFFFFF;
+  --transport-transport_other-secondary-background: #555E65;
+  --transport-transport_other-secondary-text: #FFFFFF;
 }
 }
 
@@ -477,54 +552,6 @@
   background-color: var(--static-background-background_accent_5-background);
   color: var(--static-background-background_accent_5-text);
 }
-.static-transport-transport_city {
-  background-color: var(--static-transport-transport_city-background);
-  color: var(--static-transport-transport_city-text);
-}
-.static-transport-transport_region {
-  background-color: var(--static-transport-transport_region-background);
-  color: var(--static-transport-transport_region-text);
-}
-.static-transport-transport_airport_express {
-  background-color: var(--static-transport-transport_airport_express-background);
-  color: var(--static-transport-transport_airport_express-text);
-}
-.static-transport-transport_boat {
-  background-color: var(--static-transport-transport_boat-background);
-  color: var(--static-transport-transport_boat-text);
-}
-.static-transport-transport_train {
-  background-color: var(--static-transport-transport_train-background);
-  color: var(--static-transport-transport_train-text);
-}
-.static-transport-transport_airport {
-  background-color: var(--static-transport-transport_airport-background);
-  color: var(--static-transport-transport_airport-text);
-}
-.static-transport-transport_plane {
-  background-color: var(--static-transport-transport_plane-background);
-  color: var(--static-transport-transport_plane-text);
-}
-.static-transport-transport_flexible {
-  background-color: var(--static-transport-transport_flexible-background);
-  color: var(--static-transport-transport_flexible-text);
-}
-.static-transport-transport_bike {
-  background-color: var(--static-transport-transport_bike-background);
-  color: var(--static-transport-transport_bike-text);
-}
-.static-transport-transport_scooter {
-  background-color: var(--static-transport-transport_scooter-background);
-  color: var(--static-transport-transport_scooter-text);
-}
-.static-transport-transport_car {
-  background-color: var(--static-transport-transport_car-background);
-  color: var(--static-transport-transport_car-text);
-}
-.static-transport-transport_other {
-  background-color: var(--static-transport-transport_other-background);
-  color: var(--static-transport-transport_other-text);
-}
 .static-status-valid {
   background-color: var(--static-status-valid-background);
   color: var(--static-status-valid-text);
@@ -548,6 +575,103 @@
 .static-zone_selection-to {
   background-color: var(--static-zone_selection-to-background);
   color: var(--static-zone_selection-to-text);
+}
+
+.transport-transport_city-primary {
+  background-color: var(--transport-transport_city-primary-background);
+  color: var(--transport-transport_city-primary-text);
+}
+.transport-transport_city-secondary {
+  background-color: var(--transport-transport_city-secondary-background);
+  color: var(--transport-transport_city-secondary-text);
+}
+.transport-transport_region-primary {
+  background-color: var(--transport-transport_region-primary-background);
+  color: var(--transport-transport_region-primary-text);
+}
+.transport-transport_region-secondary {
+  background-color: var(--transport-transport_region-secondary-background);
+  color: var(--transport-transport_region-secondary-text);
+}
+.transport-transport_airport_express-primary {
+  background-color: var(--transport-transport_airport_express-primary-background);
+  color: var(--transport-transport_airport_express-primary-text);
+}
+.transport-transport_airport_express-secondary {
+  background-color: var(--transport-transport_airport_express-secondary-background);
+  color: var(--transport-transport_airport_express-secondary-text);
+}
+.transport-transport_boat-primary {
+  background-color: var(--transport-transport_boat-primary-background);
+  color: var(--transport-transport_boat-primary-text);
+}
+.transport-transport_boat-secondary {
+  background-color: var(--transport-transport_boat-secondary-background);
+  color: var(--transport-transport_boat-secondary-text);
+}
+.transport-transport_train-primary {
+  background-color: var(--transport-transport_train-primary-background);
+  color: var(--transport-transport_train-primary-text);
+}
+.transport-transport_train-secondary {
+  background-color: var(--transport-transport_train-secondary-background);
+  color: var(--transport-transport_train-secondary-text);
+}
+.transport-transport_airport-primary {
+  background-color: var(--transport-transport_airport-primary-background);
+  color: var(--transport-transport_airport-primary-text);
+}
+.transport-transport_airport-secondary {
+  background-color: var(--transport-transport_airport-secondary-background);
+  color: var(--transport-transport_airport-secondary-text);
+}
+.transport-transport_plane-primary {
+  background-color: var(--transport-transport_plane-primary-background);
+  color: var(--transport-transport_plane-primary-text);
+}
+.transport-transport_plane-secondary {
+  background-color: var(--transport-transport_plane-secondary-background);
+  color: var(--transport-transport_plane-secondary-text);
+}
+.transport-transport_flexible-primary {
+  background-color: var(--transport-transport_flexible-primary-background);
+  color: var(--transport-transport_flexible-primary-text);
+}
+.transport-transport_flexible-secondary {
+  background-color: var(--transport-transport_flexible-secondary-background);
+  color: var(--transport-transport_flexible-secondary-text);
+}
+.transport-transport_bike-primary {
+  background-color: var(--transport-transport_bike-primary-background);
+  color: var(--transport-transport_bike-primary-text);
+}
+.transport-transport_bike-secondary {
+  background-color: var(--transport-transport_bike-secondary-background);
+  color: var(--transport-transport_bike-secondary-text);
+}
+.transport-transport_scooter-primary {
+  background-color: var(--transport-transport_scooter-primary-background);
+  color: var(--transport-transport_scooter-primary-text);
+}
+.transport-transport_scooter-secondary {
+  background-color: var(--transport-transport_scooter-secondary-background);
+  color: var(--transport-transport_scooter-secondary-text);
+}
+.transport-transport_car-primary {
+  background-color: var(--transport-transport_car-primary-background);
+  color: var(--transport-transport_car-primary-text);
+}
+.transport-transport_car-secondary {
+  background-color: var(--transport-transport_car-secondary-background);
+  color: var(--transport-transport_car-secondary-text);
+}
+.transport-transport_other-primary {
+  background-color: var(--transport-transport_other-primary-background);
+  color: var(--transport-transport_other-primary-text);
+}
+.transport-transport_other-secondary {
+  background-color: var(--transport-transport_other-secondary-background);
+  color: var(--transport-transport_other-secondary-text);
 }
 
 .interactive-interactive_0 {

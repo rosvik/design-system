@@ -16,6 +16,10 @@ export type ContrastColor = {
   background: string;
   text: string;
 };
+export type TransportColor = {
+  primary: ContrastColor;
+  secondary: ContrastColor;
+};
 
 export type InteractiveColor = {
   default: ContrastColor;
@@ -36,6 +40,20 @@ export interface Theme {
     interactive_3: InteractiveColor;
     interactive_destructive: InteractiveColor;
   };
+  transport: {
+    transport_city: TransportColor;
+    transport_region: TransportColor;
+    transport_airport_express: TransportColor;
+    transport_boat: TransportColor;
+    transport_train: TransportColor;
+    transport_airport: TransportColor;
+    transport_plane: TransportColor;
+    transport_flexible: TransportColor;
+    transport_scooter: TransportColor;
+    transport_bike: TransportColor;
+    transport_car: TransportColor;
+    transport_other: TransportColor;
+  };
 
   static: {
     background: {
@@ -49,21 +67,6 @@ export interface Theme {
       background_accent_3: ContrastColor;
       background_accent_4: ContrastColor;
       background_accent_5: ContrastColor;
-    };
-
-    transport: {
-      transport_city: ContrastColor;
-      transport_region: ContrastColor;
-      transport_airport_express: ContrastColor;
-      transport_boat: ContrastColor;
-      transport_train: ContrastColor;
-      transport_airport: ContrastColor;
-      transport_plane: ContrastColor;
-      transport_flexible: ContrastColor;
-      transport_scooter: ContrastColor;
-      transport_bike: ContrastColor;
-      transport_car: ContrastColor;
-      transport_other: ContrastColor;
     };
 
     status: {

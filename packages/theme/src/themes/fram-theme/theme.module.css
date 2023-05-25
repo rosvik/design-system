@@ -41,10 +41,10 @@
   --static-background-background_accent_2-text: #000000;
   --static-background-background_accent_3-background: #0D6569;
   --static-background-background_accent_3-text: #FFFFFF;
-  --static-background-background_accent_4-background: #F0E991;
+  --static-background-background_accent_4-background: #ECE58D;
   --static-background-background_accent_4-text: #000000;
-  --static-background-background_accent_5-background: #007AB5;
-  --static-background-background_accent_5-text: #FFFFFF;
+  --static-background-background_accent_5-background: #AAC6D8;
+  --static-background-background_accent_5-text: #000000;
   --static-status-valid-background: #82B962;
   --static-status-valid-text: #000000;
   --static-status-info-background: #AAC6D8;
@@ -139,9 +139,9 @@
   --transport-transport_train-primary-text: #FFFFFF;
   --transport-transport_train-secondary-background: #551125;
   --transport-transport_train-secondary-text: #FFFFFF;
-  --transport-transport_airport-primary-background: #F15659;
+  --transport-transport_airport-primary-background: #F15629;
   --transport-transport_airport-primary-text: #FFFFFF;
-  --transport-transport_airport-secondary-background: #F15659;
+  --transport-transport_airport-secondary-background: #F15629;
   --transport-transport_airport-secondary-text: #FFFFFF;
   --transport-transport_plane-primary-background: #F15659;
   --transport-transport_plane-primary-text: #FFFFFF;

@@ -61,6 +61,56 @@ const themes: Themes = {
         destructive: contrastColor('#A40F21', 'light'),
       },
     },
+    transport: {
+      transport_city: {
+        primary: contrastColor('#82B962', 'dark'),
+        secondary: contrastColor('#82B962', 'dark'),
+      },
+      transport_region: {
+        primary: contrastColor('#005685', 'light'),
+        secondary: contrastColor('#005685', 'light'),
+      },
+      transport_airport_express: {
+        primary: contrastColor('#005685', 'light'),
+        secondary: contrastColor('#005685', 'light'),
+      },
+      transport_boat: {
+        primary: contrastColor('#007FBA', 'light'),
+        secondary: contrastColor('#007FBA', 'light'),
+      },
+      transport_train: {
+        primary: contrastColor('#551125', 'light'),
+        secondary: contrastColor('#551125', 'light'),
+      },
+      transport_airport: {
+        primary: contrastColor('#F15629', 'light'),
+        secondary: contrastColor('#F15629', 'light'),
+      },
+      transport_plane: {
+        primary: contrastColor('#F15659', 'light'),
+        secondary: contrastColor('#F15659', 'light'),
+      },
+      transport_flexible: {
+        primary: contrastColor('#F15659', 'light'),
+        secondary: contrastColor('#F15659', 'light'),
+      },
+      transport_bike: {
+        primary: contrastColor('#7D0D31', 'light'),
+        secondary: contrastColor('#7D0D31', 'light'),
+      },
+      transport_scooter: {
+        primary: contrastColor('#464A00', 'light'),
+        secondary: contrastColor('#464A00', 'light'),
+      },
+      transport_car: {
+        primary: contrastColor('#6F5468', 'light'),
+        secondary: contrastColor('#6F5468', 'light'),
+      },
+      transport_other: {
+        primary: contrastColor('#555E65', 'light'),
+        secondary: contrastColor('#555E65', 'light'),
+      },
+    },
     static: {
       background: {
         background_0: contrastColor('#FFFFFF', 'dark'),
@@ -73,20 +123,6 @@ const themes: Themes = {
         background_accent_3: contrastColor('#0D6569', 'light'),
         background_accent_4: contrastColor('#ECE58D', 'dark'),
         background_accent_5: contrastColor('#AAC6D8', 'dark'),
-      },
-      transport: {
-        transport_city: contrastColor('#82B962', 'dark'),
-        transport_region: contrastColor('#005685', 'light'),
-        transport_airport_express: contrastColor('#005685', 'light'),
-        transport_boat: contrastColor('#007FBA', 'light'),
-        transport_train: contrastColor('#551125', 'light'),
-        transport_airport: contrastColor('#F15629', 'light'),
-        transport_plane: contrastColor('#F15659', 'light'),
-        transport_flexible: contrastColor('#F15659', 'light'),
-        transport_bike: contrastColor('#7D0D31', 'light'),
-        transport_scooter: contrastColor('#464A00', 'light'),
-        transport_car: contrastColor('#6F5468', 'light'),
-        transport_other: contrastColor('#555E65', 'light'),
       },
       status: {
         valid: contrastColor('#82B962', 'dark'),
@@ -162,6 +198,56 @@ const themes: Themes = {
         destructive: contrastColor('#EF7684', 'dark'),
       },
     },
+    transport: {
+      transport_city: {
+        primary: contrastColor('#82B962', 'dark'),
+        secondary: contrastColor('#82B962', 'dark'),
+      },
+      transport_region: {
+        primary: contrastColor('#005685', 'light'),
+        secondary: contrastColor('#005685', 'light'),
+      },
+      transport_airport_express: {
+        primary: contrastColor('#005685', 'light'),
+        secondary: contrastColor('#005685', 'light'),
+      },
+      transport_boat: {
+        primary: contrastColor('#007FBA', 'light'),
+        secondary: contrastColor('#007FBA', 'light'),
+      },
+      transport_train: {
+        primary: contrastColor('#551125', 'light'),
+        secondary: contrastColor('#551125', 'light'),
+      },
+      transport_airport: {
+        primary: contrastColor('#F15659', 'light'),
+        secondary: contrastColor('#F15659', 'light'),
+      },
+      transport_plane: {
+        primary: contrastColor('#F15659', 'light'),
+        secondary: contrastColor('#F15659', 'light'),
+      },
+      transport_flexible: {
+        primary: contrastColor('#F15659', 'light'),
+        secondary: contrastColor('#F15659', 'light'),
+      },
+      transport_bike: {
+        primary: contrastColor('#A51140', 'light'),
+        secondary: contrastColor('#A51140', 'light'),
+      },
+      transport_scooter: {
+        primary: contrastColor('#5B6100', 'light'),
+        secondary: contrastColor('#5B6100', 'light'),
+      },
+      transport_car: {
+        primary: contrastColor('#6F5468', 'light'),
+        secondary: contrastColor('#6F5468', 'light'),
+      },
+      transport_other: {
+        primary: contrastColor('#555E65', 'light'),
+        secondary: contrastColor('#555E65', 'light'),
+      },
+    },
     static: {
       background: {
         background_0: contrastColor('#014C77', 'light'),
@@ -176,20 +262,6 @@ const themes: Themes = {
         background_accent_5: contrastColor('#0D6569', 'light'),
       },
 
-      transport: {
-        transport_city: contrastColor('#82B962', 'dark'),
-        transport_region: contrastColor('#005685', 'light'),
-        transport_airport_express: contrastColor('#005685', 'light'),
-        transport_boat: contrastColor('#007FBA', 'light'),
-        transport_train: contrastColor('#551125', 'light'),
-        transport_airport: contrastColor('#F15659', 'light'),
-        transport_plane: contrastColor('#F15659', 'light'),
-        transport_flexible: contrastColor('#F15659', 'light'),
-        transport_bike: contrastColor('#A51140', 'light'),
-        transport_scooter: contrastColor('#5B6100', 'light'),
-        transport_car: contrastColor('#6F5468', 'light'),
-        transport_other: contrastColor('#555E65', 'light'),
-      },
       status: {
         valid: contrastColor('#82B962', 'dark'),
         info: contrastColor('#AAC6D8', 'dark'),

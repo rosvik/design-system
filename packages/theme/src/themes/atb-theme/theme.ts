@@ -183,6 +183,56 @@ const themes: Themes = {
         destructive: baseColors.red_600,
       },
     },
+    transport: {
+      transport_city: {
+        primary: baseColors.green_300,
+        secondary: baseColors.green_400,
+      },
+      transport_region: {
+        primary: baseColors.blue_500,
+        secondary: baseColors.blue_600,
+      },
+      transport_airport_express: {
+        primary: baseColors.red_600,
+        secondary: baseColors.red_700,
+      },
+      transport_boat: {
+        primary: baseColors.cyan_200,
+        secondary: baseColors.cyan_400,
+      },
+      transport_train: {
+        primary: baseColors.burgundy_800,
+        secondary: baseColors.burgundy_900,
+      },
+      transport_airport: {
+        primary: baseColors.orange_500,
+        secondary: baseColors.orange_600,
+      },
+      transport_plane: {
+        primary: baseColors.gray_800,
+        secondary: baseColors.gray_900,
+      },
+      transport_flexible: {
+        primary: baseColors.orange_500,
+        secondary: baseColors.orange_600,
+      },
+      transport_bike: {
+        primary: baseColors.red_700,
+        secondary: baseColors.red_800,
+      },
+      transport_scooter: {
+        primary: baseColors.green_700,
+        secondary: baseColors.green_800,
+      },
+      transport_car: {
+        primary: baseColors.burgundy_700,
+        secondary: baseColors.burgundy_800,
+      },
+      transport_other: {
+        primary: baseColors.gray_600,
+        secondary: baseColors.gray_800,
+      },
+    },
     static: {
       background: {
         background_0: baseColors.gray_0,
@@ -195,20 +245,6 @@ const themes: Themes = {
         background_accent_3: baseColors.blue_500,
         background_accent_4: baseColors.green_100,
         background_accent_5: baseColors.blue_200,
-      },
-      transport: {
-        transport_city: baseColors.green_300,
-        transport_region: baseColors.blue_500,
-        transport_airport_express: baseColors.red_600,
-        transport_boat: baseColors.cyan_200,
-        transport_train: baseColors.burgundy_800,
-        transport_airport: baseColors.orange_500,
-        transport_plane: baseColors.gray_800,
-        transport_flexible: baseColors.orange_500,
-        transport_bike: baseColors.red_700,
-        transport_scooter: baseColors.green_700,
-        transport_car: baseColors.burgundy_700,
-        transport_other: baseColors.gray_600,
       },
       status: {
         valid: baseColors.green_300,
@@ -285,6 +321,56 @@ const themes: Themes = {
         destructive: baseColors.red_300,
       },
     },
+    transport: {
+      transport_city: {
+        primary: baseColors.green_300,
+        secondary: baseColors.green_400,
+      },
+      transport_region: {
+        primary: baseColors.blue_500,
+        secondary: baseColors.blue_600,
+      },
+      transport_airport_express: {
+        primary: baseColors.red_600,
+        secondary: baseColors.red_700,
+      },
+      transport_boat: {
+        primary: baseColors.cyan_200,
+        secondary: baseColors.cyan_400,
+      },
+      transport_train: {
+        primary: baseColors.burgundy_800,
+        secondary: baseColors.burgundy_900,
+      },
+      transport_airport: {
+        primary: baseColors.orange_500,
+        secondary: baseColors.orange_600,
+      },
+      transport_plane: {
+        primary: baseColors.gray_800,
+        secondary: baseColors.gray_900,
+      },
+      transport_flexible: {
+        primary: baseColors.orange_500,
+        secondary: baseColors.orange_600,
+      },
+      transport_bike: {
+        primary: baseColors.red_600,
+        secondary: baseColors.red_800,
+      },
+      transport_scooter: {
+        primary: baseColors.green_600,
+        secondary: baseColors.green_800,
+      },
+      transport_car: {
+        primary: baseColors.burgundy_600,
+        secondary: baseColors.burgundy_800,
+      },
+      transport_other: {
+        primary: baseColors.gray_600,
+        secondary: baseColors.gray_800,
+      },
+    },
     static: {
       background: {
         background_0: baseColors.gray_1000,
@@ -299,20 +385,6 @@ const themes: Themes = {
         background_accent_5: baseColors.gray_800,
       },
 
-      transport: {
-        transport_city: baseColors.green_300,
-        transport_region: baseColors.blue_500,
-        transport_airport_express: baseColors.red_600,
-        transport_boat: baseColors.cyan_200,
-        transport_train: baseColors.burgundy_800,
-        transport_airport: baseColors.orange_500,
-        transport_plane: baseColors.gray_800,
-        transport_flexible: baseColors.orange_500,
-        transport_scooter: baseColors.green_600,
-        transport_bike: baseColors.red_600,
-        transport_car: baseColors.burgundy_600,
-        transport_other: baseColors.gray_600,
-      },
       status: {
         valid: baseColors.green_300,
         info: baseColors.cyan_200,

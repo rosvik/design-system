@@ -32,6 +32,8 @@ ${darkTheme(themes)}
 /* Theme color pairs */
 ${printContrastColors('static', themes.light.static)}
 
+${printContrastColors('transport', themes.light.transport)}
+
 ${printInteractiveColors('interactive', themes.light.interactive)}
 `;
 }
@@ -54,6 +56,8 @@ ${extract('text')}
 ${extract('static')}
 
 ${extract('interactive')}
+
+${extract('transport')}
 }
 `;
 }
@@ -75,6 +79,8 @@ ${extract('text')}
 ${extract('static')}
 
 ${extract('interactive')}
+
+${extract('transport')}
 }
 }
 `;

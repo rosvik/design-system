@@ -176,7 +176,7 @@ const themes: Themes = {
       interactive_2: {
         default: contrastColor('#012C44', 'light'),
         hover: contrastColor('#0D6569', 'light'),
-        active: contrastColor('#679C9F', 'dark'),
+        active: contrastColor('#015959', 'light'),
         disabled: contrastColor('#D6D7DB', 'dark'),
         outline: contrastColor('#CDE9E3', 'dark'),
         destructive: contrastColor('#EF7684', 'dark'),

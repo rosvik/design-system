@@ -333,10 +333,10 @@
   --transport-transport_car-primary-text: #FFFFFF;
   --transport-transport_car-secondary-background: #4B2942;
   --transport-transport_car-secondary-text: #FFFFFF;
-  --transport-transport_other-primary-background: #555E65;
-  --transport-transport_other-primary-text: #FFFFFF;
-  --transport-transport_other-secondary-background: #2B343A;
-  --transport-transport_other-secondary-text: #FFFFFF;
+  --transport-transport_other-primary-background: #C7CACC;
+  --transport-transport_other-primary-text: #000000;
+  --transport-transport_other-secondary-background: #8D9398;
+  --transport-transport_other-secondary-text: #000000;
 }
 
 
@@ -503,10 +503,10 @@
   --transport-transport_car-primary-text: #FFFFFF;
   --transport-transport_car-secondary-background: #4B2942;
   --transport-transport_car-secondary-text: #FFFFFF;
-  --transport-transport_other-primary-background: #555E65;
-  --transport-transport_other-primary-text: #FFFFFF;
-  --transport-transport_other-secondary-background: #2B343A;
-  --transport-transport_other-secondary-text: #FFFFFF;
+  --transport-transport_other-primary-background: #C7CACC;
+  --transport-transport_other-primary-text: #000000;
+  --transport-transport_other-secondary-background: #8D9398;
+  --transport-transport_other-secondary-text: #000000;
 }
 }
 

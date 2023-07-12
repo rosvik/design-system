@@ -367,8 +367,8 @@ const themes: Themes = {
         secondary: baseColors.burgundy_800,
       },
       transport_other: {
-        primary: baseColors.gray_600,
-        secondary: baseColors.gray_800,
+        primary: baseColors.gray_200,
+        secondary: baseColors.gray_400,
       },
     },
     static: {

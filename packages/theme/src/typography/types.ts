@@ -1,5 +1,6 @@
 export const textNames = [
   'body__primary',
+  'body__primary--strike',
   'body__primary--bold',
   'body__primary--underline',
   'body__primary--big',
@@ -9,6 +10,7 @@ export const textNames = [
   'body__secondary',
   'body__secondary--bold',
   'body__tertiary',
+  'body__tertiary--uppercase',
   'body__tertiary--strike',
   'heading__title',
   'heading__component',

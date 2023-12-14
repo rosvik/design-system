@@ -35,6 +35,10 @@ export const androidTextTypeStyles: TextTypeStyles = {
     ...primaryBase,
     fontWeight: '500',
   },
+  'body__primary--strike': {
+    ...primaryBase,
+    textDecorationLine: 'line-through'
+  },
   'body__primary--underline': {
     ...primaryBase,
     textDecorationLine: 'underline',
@@ -70,6 +74,10 @@ export const androidTextTypeStyles: TextTypeStyles = {
   'body__tertiary--strike': {
     ...tertiaryBase,
     textDecorationLine: 'line-through',
+  },
+  'body__tertiary--uppercase': {
+    ...primaryBase,
+    textTransform: 'uppercase'
   },
   heading__title: {
     ...primaryBase,

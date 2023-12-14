@@ -73,6 +73,10 @@ export const iosTextTypeStyles: TextTypeStyles = {
     ...tertiaryBase,
     textDecorationLine: 'line-through',
   },
+  'body__tertiary--uppercase': {
+    ...primaryBase,
+    textTransform: 'uppercase'
+  },
   heading__title: {
     ...primaryBase,
     fontWeight: 'bold',

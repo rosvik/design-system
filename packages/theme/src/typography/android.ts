@@ -75,6 +75,10 @@ export const androidTextTypeStyles: TextTypeStyles = {
     ...tertiaryBase,
     textDecorationLine: 'line-through',
   },
+  'body__tertiary--uppercase': {
+    ...primaryBase,
+    textTransform: 'uppercase'
+  },
   heading__title: {
     ...primaryBase,
     fontWeight: 'bold',

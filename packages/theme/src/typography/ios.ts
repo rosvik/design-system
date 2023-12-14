@@ -33,6 +33,10 @@ export const iosTextTypeStyles: TextTypeStyles = {
     ...primaryBase,
     fontWeight: '600',
   },
+  'body__primary--strike': {
+    ...primaryBase,
+    textDecorationLine: 'line-through'
+  },
   'body__primary--underline': {
     ...primaryBase,
     textDecorationLine: 'underline',

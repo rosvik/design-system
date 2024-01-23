@@ -66,6 +66,12 @@
   --baseTypo-body__tertiary-lineHeight: 1rem;
   --baseTypo-body__tertiary-letterSpacing: 0.025rem;
 
+  /* Definitions for body__tertiary--bold */
+  --baseTypo-body__tertiary--bold-fontSize: 0.75rem;
+  --baseTypo-body__tertiary--bold-lineHeight: 1rem;
+  --baseTypo-body__tertiary--bold-letterSpacing: 0.025rem;
+  --baseTypo-body__tertiary--bold-fontWeight: 500;
+
   /* Definitions for body__tertiary--strike */
   --baseTypo-body__tertiary--strike-fontSize: 0.75rem;
   --baseTypo-body__tertiary--strike-lineHeight: 1rem;
@@ -192,6 +198,12 @@ html {
   font-size: var(--baseTypo-body__tertiary-fontSize, 0.75rem);
   line-height: var(--baseTypo-body__tertiary-lineHeight, 1rem);
   letter-spacing: var(--baseTypo-body__tertiary-letterSpacing, 0.025rem);
+}
+.typo-body__tertiary--bold {
+  font-size: var(--baseTypo-body__tertiary--bold-fontSize, 0.75rem);
+  line-height: var(--baseTypo-body__tertiary--bold-lineHeight, 1rem);
+  letter-spacing: var(--baseTypo-body__tertiary--bold-letterSpacing, 0.025rem);
+  font-weight: var(--baseTypo-body__tertiary--bold-fontWeight, 500);
 }
 .typo-body__tertiary--strike {
   font-size: var(--baseTypo-body__tertiary--strike-fontSize, 0.75rem);

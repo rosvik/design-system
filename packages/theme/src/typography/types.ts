@@ -10,6 +10,7 @@ export const textNames = [
   'body__secondary',
   'body__secondary--bold',
   'body__tertiary',
+  'body__tertiary--bold',
   'body__tertiary--uppercase',
   'body__tertiary--strike',
   'heading__title',
@@ -30,7 +31,7 @@ export type FontBook = {
   [fontName: string]: FontMetadata;
 };
 
-export type TextNames = typeof textNames[number];
+export type TextNames = (typeof textNames)[number];
 
 export type TextStyle = {
   fontSize: number;

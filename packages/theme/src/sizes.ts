@@ -9,7 +9,8 @@ export const spacings = {
 export const iconSizes = {
   large: 28,
   normal: 20,
-  small: 10,
+  small: 16,
+  xSmall: 12,
 };
 
 export const borderRadius = {

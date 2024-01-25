@@ -19,7 +19,8 @@
 
   --icon-size-large: 1.75rem;
   --icon-size-normal: 1.25rem;
-  --icon-size-small: 0.625rem;
+  --icon-size-small: 1rem;
+  --icon-size-xSmall: 0.75rem;
 
   --text-colors-primary: #000000;
   --text-colors-secondary: #555E65;
@@ -189,7 +190,8 @@
 
   --icon-size-large: 1.75rem;
   --icon-size-normal: 1.25rem;
-  --icon-size-small: 0.625rem;
+  --icon-size-small: 1rem;
+  --icon-size-xSmall: 0.75rem;
 
   --text-colors-primary: #FFFFFF;
   --text-colors-secondary: #E3E5E6;
@@ -359,7 +361,8 @@
 
   --icon-size-large: 1.75rem;
   --icon-size-normal: 1.25rem;
-  --icon-size-small: 0.625rem;
+  --icon-size-small: 1rem;
+  --icon-size-xSmall: 0.75rem;
 
   --text-colors-primary: #FFFFFF;
   --text-colors-secondary: #E3E5E6;

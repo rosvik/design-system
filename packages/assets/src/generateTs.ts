@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 import path from 'path';
-import {AssetType} from './utils';
+import {AssetType, normalizeToUnix} from './utils';
 
 type Data = Partial<{
   mono: Record<string, MonoType>;
@@ -121,7 +121,8 @@ function toTypeCoonstruct(
         : 'mono'
       : assetTypeInput;
 
-  if (assetType === 'mono' && relative.match(/(\/dark\/|\/light\/)/)) {
+  // If is mono and has dark/light in the path, skip the asset.
+  if (assetType === 'mono' && relative.match(/(dark|light)/)) {
     return undefined;
   }
 
@@ -146,7 +147,7 @@ function toTypeCoonstruct(
 const darkOrLight = /\/(?:dark|light)\//;
 
 function toIDPath(relative: string) {
-  return relative
+  return normalizeToUnix(relative)
     .replace(darkOrLight, '/')
     .replace(
       /^\/?(?:(?:mono|colors)\/)?(?:(?:illustrations|images|icons)\/)?(.*)\..{3}$/,
@@ -157,9 +158,9 @@ function isDarkable(relative: string) {
   return relative.match(darkOrLight) !== null;
 }
 function getColorType(relative: string): ColorType['colorType'] {
-  const colorType = relative.match(
-    /^\/?(?:(?:mono|colors)\/)?(illustrations|images|icons)\//,
-  )?.[1];
+  const colorType = normalizeToUnix(relative)
+    // Extract the color type
+    .match(/^\/?(?:(?:mono|colors)\/)?(illustrations|images|icons)\//)?.[1];
 
   switch (colorType) {
     case 'illustrations':

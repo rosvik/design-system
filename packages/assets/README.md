@@ -11,7 +11,7 @@ Usage: npx @atb-as/generate-assets [options] <type> <orgId>
 
 Arguments:
   type                           Type of assets to generate (choices: "colors", "all", "mono")
-  orgId                          Generate for specific organization (choices: "atb", "nfk", "fram", "troms")
+  orgId                          Generate for specific organization (choices: "atb", "nfk", "fram", "troms", "innlandet")
 
 Options:
   -o, --out-dir <output>         Output directory

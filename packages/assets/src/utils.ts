@@ -16,6 +16,8 @@ export function themeVariantAsString(org: ThemeVariant): string {
       return 'fram';
     case ThemeVariant.Troms:
       return 'troms';
+    case ThemeVariant.Innlandet:
+      return 'innlandet';
   }
 }
 
@@ -29,6 +31,8 @@ export function stringAsThemeVariant(org: string): ThemeVariant {
       return ThemeVariant.FRAM;
     case 'troms':
       return ThemeVariant.Troms;
+    case 'innlandet':
+      return ThemeVariant.Innlandet;
   }
 
   throw new Error('Invalid org');

@@ -1,7 +1,13 @@
 import merge from 'ts-deepmerge';
 import {borderRadius, borderWidth, iconSizes, spacings} from './sizes';
 import {ConfigurationOverride, overrideConfig} from './utils/override-config';
-import {AtBThemes, NfkThemes, FRAMThemes, TromsThemes} from './themes';
+import {
+  AtBThemes,
+  NfkThemes,
+  FRAMThemes,
+  TromsThemes,
+  InnlandetThemes,
+} from './themes';
 export type Themes = {
   light: Theme;
   dark: Theme;
@@ -105,6 +111,7 @@ export enum ThemeVariant {
   Nfk,
   FRAM,
   Troms,
+  Innlandet,
 }
 
 export function createThemesFor(themeVariant: ThemeVariant) {
@@ -117,6 +124,8 @@ export function createThemesFor(themeVariant: ThemeVariant) {
       return FRAMThemes;
     case ThemeVariant.Troms:
       return TromsThemes;
+    case ThemeVariant.Innlandet:
+      return InnlandetThemes;
     default:
       throw Error('A valid ThemeVariant must be provided');
   }

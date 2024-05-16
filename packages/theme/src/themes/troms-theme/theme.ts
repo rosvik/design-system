@@ -296,7 +296,7 @@ const themes: Themes = {
         destructive: baseColors.red_300,
       },
       interactive_1: {
-        default: baseColors.gray_600,
+        default: baseColors.orange_950,
         hover: baseColors.gray_500,
         active: baseColors.gray_900,
         disabled: baseColors.gray_200,

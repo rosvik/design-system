@@ -247,10 +247,22 @@ const themes: Themes = {
         background_accent_5: baseColors.blue_200,
       },
       status: {
-        valid: baseColors.green_300,
-        info: baseColors.cyan_200,
-        warning: baseColors.yellow_200,
-        error: baseColors.red_600,
+        valid: {
+          primary: baseColors.green_300,
+          secondary: baseColors.green_300,
+        },
+        info: {
+          primary: baseColors.cyan_200,
+          secondary: baseColors.cyan_200,
+        },
+        warning: {
+          primary: baseColors.yellow_200,
+          secondary: baseColors.yellow_200,
+        },
+        error: {
+          primary: baseColors.red_600,
+          secondary: baseColors.red_600,
+        },
       },
       zone_selection: {
         from: baseColors.green_300,
@@ -386,10 +398,22 @@ const themes: Themes = {
       },
 
       status: {
-        valid: baseColors.green_300,
-        info: baseColors.cyan_200,
-        warning: baseColors.yellow_200,
-        error: baseColors.red_600,
+        valid: {
+          primary: baseColors.green_300,
+          secondary: baseColors.green_300,
+        },
+        info: {
+          primary: baseColors.cyan_200,
+          secondary: baseColors.cyan_200,
+        },
+        warning: {
+          primary: baseColors.yellow_200,
+          secondary: baseColors.yellow_200,
+        },
+        error: {
+          primary: baseColors.red_600,
+          secondary: baseColors.red_600,
+        },
       },
       zone_selection: {
         from: baseColors.green_300,

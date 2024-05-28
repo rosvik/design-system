@@ -125,10 +125,22 @@ const themes: Themes = {
         background_accent_5: contrastColor('#007AB5', 'light'),
       },
       status: {
-        valid: contrastColor('#82B962', 'dark'),
-        info: contrastColor('#8DD4CD', 'dark'),
-        warning: contrastColor('#F8DA00', 'dark'),
-        error: contrastColor('#F15629', 'light'),
+        valid: {
+          primary: contrastColor('#82B962', 'dark'),
+          secondary: contrastColor('#82B962', 'dark'),
+        },
+        info: {
+          primary: contrastColor('#8DD4CD', 'dark'),
+          secondary: contrastColor('#8DD4CD', 'dark'),
+        },
+        warning: {
+          primary: contrastColor('#F8DA00', 'dark'),
+          secondary: contrastColor('#F8DA00', 'dark'),
+        },
+        error: {
+          primary: contrastColor('#F15629', 'light'),
+          secondary: contrastColor('#F15629', 'light'),
+        },
       },
       zone_selection: {
         from: contrastColor('#82B962', 'dark'),
@@ -263,10 +275,22 @@ const themes: Themes = {
       },
 
       status: {
-        valid: contrastColor('#82B962', 'dark'),
-        info: contrastColor('#8DD4CD', 'dark'),
-        warning: contrastColor('#F8DA00', 'dark'),
-        error: contrastColor('#F15629', 'light'),
+        valid: {
+          primary: contrastColor('#82B962', 'dark'),
+          secondary: contrastColor('#82B962', 'dark'),
+        },
+        info: {
+          primary: contrastColor('#8DD4CD', 'dark'),
+          secondary: contrastColor('#8DD4CD', 'dark'),
+        },
+        warning: {
+          primary: contrastColor('#F8DA00', 'dark'),
+          secondary: contrastColor('#F8DA00', 'dark'),
+        },
+        error: {
+          primary: contrastColor('#F15629', 'light'),
+          secondary: contrastColor('#F15629', 'light'),
+        },
       },
       zone_selection: {
         from: contrastColor('#82B962', 'dark'),

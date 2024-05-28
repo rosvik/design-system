@@ -27,6 +27,11 @@ export type TransportColor = {
   secondary: ContrastColor;
 };
 
+export type StatusColor = {
+  primary: ContrastColor;
+  secondary: ContrastColor;
+};
+
 export type InteractiveColor = {
   default: ContrastColor;
   hover: ContrastColor;
@@ -76,10 +81,10 @@ export interface Theme {
     };
 
     status: {
-      valid: ContrastColor;
-      info: ContrastColor;
-      warning: ContrastColor;
-      error: ContrastColor;
+      valid: StatusColor;
+      info: StatusColor;
+      warning: StatusColor;
+      error: StatusColor;
     };
 
     zone_selection: {

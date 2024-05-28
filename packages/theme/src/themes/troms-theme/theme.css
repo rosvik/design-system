@@ -46,14 +46,22 @@
   --static-background-background_accent_4-text: #000000;
   --static-background-background_accent_5-background: #F09060;
   --static-background-background_accent_5-text: #000000;
-  --static-status-valid-background: #6B9956;
-  --static-status-valid-text: #000000;
-  --static-status-info-background: #546AD6;
-  --static-status-info-text: #FFFFFF;
-  --static-status-warning-background: #E6D220;
-  --static-status-warning-text: #000000;
-  --static-status-error-background: #DB6364;
-  --static-status-error-text: #000000;
+  --static-status-valid-primary-background: #6B9956;
+  --static-status-valid-primary-text: #000000;
+  --static-status-valid-secondary-background: #6B9956;
+  --static-status-valid-secondary-text: #000000;
+  --static-status-info-primary-background: #546AD6;
+  --static-status-info-primary-text: #FFFFFF;
+  --static-status-info-secondary-background: #546AD6;
+  --static-status-info-secondary-text: #FFFFFF;
+  --static-status-warning-primary-background: #E6D220;
+  --static-status-warning-primary-text: #000000;
+  --static-status-warning-secondary-background: #E6D220;
+  --static-status-warning-secondary-text: #000000;
+  --static-status-error-primary-background: #DB6364;
+  --static-status-error-primary-text: #000000;
+  --static-status-error-secondary-background: #DB6364;
+  --static-status-error-secondary-text: #000000;
   --static-zone_selection-from-background: #E7FFDD;
   --static-zone_selection-from-text: #000000;
   --static-zone_selection-to-background: #D7FDFF;
@@ -217,14 +225,22 @@
   --static-background-background_accent_4-text: #000000;
   --static-background-background_accent_5-background: #F09060;
   --static-background-background_accent_5-text: #000000;
-  --static-status-valid-background: #6B9956;
-  --static-status-valid-text: #000000;
-  --static-status-info-background: #546AD6;
-  --static-status-info-text: #FFFFFF;
-  --static-status-warning-background: #E6D220;
-  --static-status-warning-text: #000000;
-  --static-status-error-background: #DB6364;
-  --static-status-error-text: #000000;
+  --static-status-valid-primary-background: #6B9956;
+  --static-status-valid-primary-text: #000000;
+  --static-status-valid-secondary-background: #6B9956;
+  --static-status-valid-secondary-text: #000000;
+  --static-status-info-primary-background: #546AD6;
+  --static-status-info-primary-text: #FFFFFF;
+  --static-status-info-secondary-background: #546AD6;
+  --static-status-info-secondary-text: #FFFFFF;
+  --static-status-warning-primary-background: #E6D220;
+  --static-status-warning-primary-text: #000000;
+  --static-status-warning-secondary-background: #E6D220;
+  --static-status-warning-secondary-text: #000000;
+  --static-status-error-primary-background: #DB6364;
+  --static-status-error-primary-text: #000000;
+  --static-status-error-secondary-background: #DB6364;
+  --static-status-error-secondary-text: #000000;
   --static-zone_selection-from-background: #E7FFDD;
   --static-zone_selection-from-text: #000000;
   --static-zone_selection-to-background: #D7FDFF;
@@ -388,14 +404,22 @@
   --static-background-background_accent_4-text: #000000;
   --static-background-background_accent_5-background: #F09060;
   --static-background-background_accent_5-text: #000000;
-  --static-status-valid-background: #6B9956;
-  --static-status-valid-text: #000000;
-  --static-status-info-background: #546AD6;
-  --static-status-info-text: #FFFFFF;
-  --static-status-warning-background: #E6D220;
-  --static-status-warning-text: #000000;
-  --static-status-error-background: #DB6364;
-  --static-status-error-text: #000000;
+  --static-status-valid-primary-background: #6B9956;
+  --static-status-valid-primary-text: #000000;
+  --static-status-valid-secondary-background: #6B9956;
+  --static-status-valid-secondary-text: #000000;
+  --static-status-info-primary-background: #546AD6;
+  --static-status-info-primary-text: #FFFFFF;
+  --static-status-info-secondary-background: #546AD6;
+  --static-status-info-secondary-text: #FFFFFF;
+  --static-status-warning-primary-background: #E6D220;
+  --static-status-warning-primary-text: #000000;
+  --static-status-warning-secondary-background: #E6D220;
+  --static-status-warning-secondary-text: #000000;
+  --static-status-error-primary-background: #DB6364;
+  --static-status-error-primary-text: #000000;
+  --static-status-error-secondary-background: #DB6364;
+  --static-status-error-secondary-text: #000000;
   --static-zone_selection-from-background: #E7FFDD;
   --static-zone_selection-from-text: #000000;
   --static-zone_selection-to-background: #D7FDFF;
@@ -555,21 +579,37 @@
   background-color: var(--static-background-background_accent_5-background);
   color: var(--static-background-background_accent_5-text);
 }
-.static-status-valid {
-  background-color: var(--static-status-valid-background);
-  color: var(--static-status-valid-text);
+.static-valid-primary {
+  background-color: var(--static-valid-primary-background);
+  color: var(--static-valid-primary-text);
 }
-.static-status-info {
-  background-color: var(--static-status-info-background);
-  color: var(--static-status-info-text);
+.static-valid-secondary {
+  background-color: var(--static-valid-secondary-background);
+  color: var(--static-valid-secondary-text);
 }
-.static-status-warning {
-  background-color: var(--static-status-warning-background);
-  color: var(--static-status-warning-text);
+.static-info-primary {
+  background-color: var(--static-info-primary-background);
+  color: var(--static-info-primary-text);
 }
-.static-status-error {
-  background-color: var(--static-status-error-background);
-  color: var(--static-status-error-text);
+.static-info-secondary {
+  background-color: var(--static-info-secondary-background);
+  color: var(--static-info-secondary-text);
+}
+.static-warning-primary {
+  background-color: var(--static-warning-primary-background);
+  color: var(--static-warning-primary-text);
+}
+.static-warning-secondary {
+  background-color: var(--static-warning-secondary-background);
+  color: var(--static-warning-secondary-text);
+}
+.static-error-primary {
+  background-color: var(--static-error-primary-background);
+  color: var(--static-error-primary-text);
+}
+.static-error-secondary {
+  background-color: var(--static-error-secondary-background);
+  color: var(--static-error-secondary-text);
 }
 .static-zone_selection-from {
   background-color: var(--static-zone_selection-from-background);

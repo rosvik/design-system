@@ -66,6 +66,13 @@ export interface Theme {
     transport_other: TransportColor;
   };
 
+  status: {
+    valid: StatusColor;
+    info: StatusColor;
+    warning: StatusColor;
+    error: StatusColor;
+  };
+
   static: {
     background: {
       background_0: ContrastColor;
@@ -78,13 +85,6 @@ export interface Theme {
       background_accent_3: ContrastColor;
       background_accent_4: ContrastColor;
       background_accent_5: ContrastColor;
-    };
-
-    status: {
-      valid: StatusColor;
-      info: StatusColor;
-      warning: StatusColor;
-      error: StatusColor;
     };
 
     zone_selection: {
@@ -109,7 +109,7 @@ export interface Theme {
   };
 }
 
-export type Statuses = keyof Theme['static']['status'];
+export type Statuses = keyof Theme['status'];
 
 export enum ThemeVariant {
   AtB,

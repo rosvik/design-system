@@ -129,30 +129,29 @@ const themes: Themes = {
         background_accent_4: contrastColor('#FFFFFF', 'dark'),
         background_accent_5: contrastColor('#FFFFFF', 'dark'),
       },
-      status: {
-        valid: {
-          primary: contrastColor('#7FDABB', 'dark'),
-          secondary: contrastColor('#7FDABB', 'dark'),
-        },
-        info: {
-          primary: contrastColor('#99CDDA', 'dark'),
-          secondary: contrastColor('#99CDDA', 'dark'),
-        },
-        warning: {
-          primary: contrastColor('#FCBA63', 'dark'),
-          secondary: contrastColor('#FCBA63', 'dark'),
-        },
-        error: {
-          primary: contrastColor('#A61419', 'light'),
-          secondary: contrastColor('#A61419', 'light'),
-        },
-      },
       zone_selection: {
         from: contrastColor('#FF7E81', 'dark'),
         to: contrastColor('#FF282E', 'light'),
       },
     },
-
+    status: {
+      valid: {
+        primary: contrastColor('#7FDABB', 'dark'),
+        secondary: contrastColor('#7FDABB', 'dark'),
+      },
+      info: {
+        primary: contrastColor('#99CDDA', 'dark'),
+        secondary: contrastColor('#99CDDA', 'dark'),
+      },
+      warning: {
+        primary: contrastColor('#FCBA63', 'dark'),
+        secondary: contrastColor('#FCBA63', 'dark'),
+      },
+      error: {
+        primary: contrastColor('#A61419', 'light'),
+        secondary: contrastColor('#A61419', 'light'),
+      },
+    },
     text: {
       colors: {
         primary: colors.text.dark,
@@ -278,27 +277,27 @@ const themes: Themes = {
         background_accent_4: contrastColor('#000000', 'light'),
         background_accent_5: contrastColor('#000000', 'light'),
       },
-      status: {
-        valid: {
-          primary: contrastColor('#7FDABB', 'dark'),
-          secondary: contrastColor('#7FDABB', 'dark'),
-        },
-        info: {
-          primary: contrastColor('#99CDDA', 'dark'),
-          secondary: contrastColor('#99CDDA', 'dark'),
-        },
-        warning: {
-          primary: contrastColor('#FCBA63', 'dark'),
-          secondary: contrastColor('#FCBA63', 'dark'),
-        },
-        error: {
-          primary: contrastColor('#BE161D', 'light'),
-          secondary: contrastColor('#BE161D', 'light'),
-        },
-      },
       zone_selection: {
         from: contrastColor('#FF7E81', 'dark'),
         to: contrastColor('#FF282E', 'light'),
+      },
+    },
+    status: {
+      valid: {
+        primary: contrastColor('#7FDABB', 'dark'),
+        secondary: contrastColor('#7FDABB', 'dark'),
+      },
+      info: {
+        primary: contrastColor('#99CDDA', 'dark'),
+        secondary: contrastColor('#99CDDA', 'dark'),
+      },
+      warning: {
+        primary: contrastColor('#FCBA63', 'dark'),
+        secondary: contrastColor('#FCBA63', 'dark'),
+      },
+      error: {
+        primary: contrastColor('#BE161D', 'light'),
+        secondary: contrastColor('#BE161D', 'light'),
       },
     },
     text: {

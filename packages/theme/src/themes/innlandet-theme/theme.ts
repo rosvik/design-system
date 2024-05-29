@@ -246,30 +246,29 @@ const themes: Themes = {
         background_accent_4: baseColors.green_100,
         background_accent_5: baseColors.blue_200,
       },
-      status: {
-        valid: {
-          primary: baseColors.green_300,
-          secondary: baseColors.green_300,
-        },
-        info: {
-          primary: baseColors.cyan_200,
-          secondary: baseColors.cyan_200,
-        },
-        warning: {
-          primary: baseColors.yellow_200,
-          secondary: baseColors.yellow_200,
-        },
-        error: {
-          primary: baseColors.red_600,
-          secondary: baseColors.red_600,
-        },
-      },
       zone_selection: {
         from: baseColors.green_300,
         to: baseColors.cyan_200,
       },
     },
-
+    status: {
+      valid: {
+        primary: baseColors.green_300,
+        secondary: baseColors.green_300,
+      },
+      info: {
+        primary: baseColors.cyan_200,
+        secondary: baseColors.cyan_200,
+      },
+      warning: {
+        primary: baseColors.yellow_200,
+        secondary: baseColors.yellow_200,
+      },
+      error: {
+        primary: baseColors.red_600,
+        secondary: baseColors.red_600,
+      },
+    },
     text: {
       colors: {
         primary: baseColors.gray_1000.background,
@@ -396,28 +395,27 @@ const themes: Themes = {
         background_accent_4: baseColors.green_100,
         background_accent_5: baseColors.gray_800,
       },
-
-      status: {
-        valid: {
-          primary: baseColors.green_300,
-          secondary: baseColors.green_300,
-        },
-        info: {
-          primary: baseColors.cyan_200,
-          secondary: baseColors.cyan_200,
-        },
-        warning: {
-          primary: baseColors.yellow_200,
-          secondary: baseColors.yellow_200,
-        },
-        error: {
-          primary: baseColors.red_600,
-          secondary: baseColors.red_600,
-        },
-      },
       zone_selection: {
         from: baseColors.green_300,
         to: baseColors.cyan_200,
+      },
+    },
+    status: {
+      valid: {
+        primary: baseColors.green_300,
+        secondary: baseColors.green_300,
+      },
+      info: {
+        primary: baseColors.cyan_200,
+        secondary: baseColors.cyan_200,
+      },
+      warning: {
+        primary: baseColors.yellow_200,
+        secondary: baseColors.yellow_200,
+      },
+      error: {
+        primary: baseColors.red_600,
+        secondary: baseColors.red_600,
       },
     },
     text: {

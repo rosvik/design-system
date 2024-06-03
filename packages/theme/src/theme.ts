@@ -41,6 +41,26 @@ export type InteractiveColor = {
   destructive: ContrastColor;
 };
 
+export enum GeofencingZoneCodes {
+  Allowed = 'Allowed',
+  Slow = 'Slow',
+  NoParking = 'NoParking',
+  NoEntry = 'NoEntry',
+}
+
+export type GeofencingZoneKeys = keyof typeof GeofencingZoneCodes;
+
+export type GeofencingZonePaintProps = {
+  color: ContrastColor;
+  fillOpacity: number;
+  strokeOpacity: number;
+  layerIndexWeight: number;
+};
+
+export type GeofencingZonesPaintProps = {
+  [GZKey in GeofencingZoneKeys]: GeofencingZonePaintProps;
+};
+
 export interface Theme {
   spacings: typeof spacings;
 
@@ -107,6 +127,7 @@ export interface Theme {
   icon: {
     size: typeof iconSizes;
   };
+  geofencingZones: GeofencingZonesPaintProps;
 }
 
 export type Statuses = keyof Theme['status'];

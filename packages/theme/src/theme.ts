@@ -58,7 +58,7 @@ export type GeofencingZoneStyle = {
   layerIndexWeight: number;
 };
 
-export type GeofencingZonesStyle = {
+export type GeofencingZoneStyles = {
   [GZKey in GeofencingZoneKeys]: GeofencingZoneStyle;
 };
 
@@ -128,7 +128,7 @@ export interface Theme {
   icon: {
     size: typeof iconSizes;
   };
-  geofencingZones: GeofencingZonesStyle;
+  geofencingZones: GeofencingZoneStyles;
 }
 
 export type Statuses = keyof Theme['status'];

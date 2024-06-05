@@ -21,13 +21,6 @@ const contrastColor = (
   };
 };
 
-// Currently exactly the same as in the AtB theme.
-// The colors can be changed, but should follow standard practice:
-// no entry - dark/black
-// no parking - red
-// slow zone - yellow
-// allowed - blue
-
 export const geofencingZoneBaseColors = {
   blue_500: contrastColor('#007C92', 'light'),
   yellow_100: contrastColor('#F0E973', 'dark'),

@@ -41,11 +41,12 @@ export type InteractiveColor = {
   destructive: ContrastColor;
 };
 
+// The colors can be changed, but should follow standard practice as commented:
 export enum GeofencingZoneCodes {
-  Allowed = 'Allowed',
-  Slow = 'Slow',
-  NoParking = 'NoParking',
-  NoEntry = 'NoEntry',
+  Allowed = 'Allowed', // blue
+  Slow = 'Slow', // yellow
+  NoParking = 'NoParking', // red
+  NoEntry = 'NoEntry', // dark/black
 }
 
 export type GeofencingZoneKeys = keyof typeof GeofencingZoneCodes;

@@ -51,15 +51,15 @@ export enum GeofencingZoneCodes {
 
 export type GeofencingZoneKeys = keyof typeof GeofencingZoneCodes;
 
-export type GeofencingZonePaintProps = {
+export type GeofencingZoneStyle = {
   color: ContrastColor;
   fillOpacity: number;
   strokeOpacity: number;
   layerIndexWeight: number;
 };
 
-export type GeofencingZonesPaintProps = {
-  [GZKey in GeofencingZoneKeys]: GeofencingZonePaintProps;
+export type GeofencingZonesStyle = {
+  [GZKey in GeofencingZoneKeys]: GeofencingZoneStyle;
 };
 
 export interface Theme {
@@ -128,7 +128,7 @@ export interface Theme {
   icon: {
     size: typeof iconSizes;
   };
-  geofencingZones: GeofencingZonesPaintProps;
+  geofencingZones: GeofencingZonesStyle;
 }
 
 export type Statuses = keyof Theme['status'];

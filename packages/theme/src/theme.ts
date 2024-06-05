@@ -41,6 +41,27 @@ export type InteractiveColor = {
   destructive: ContrastColor;
 };
 
+// The colors can be changed, but should follow standard practice as commented:
+export enum GeofencingZoneCodes {
+  Allowed = 'Allowed', // blue
+  Slow = 'Slow', // yellow
+  NoParking = 'NoParking', // red
+  NoEntry = 'NoEntry', // dark/black
+}
+
+export type GeofencingZoneKeys = keyof typeof GeofencingZoneCodes;
+
+export type GeofencingZoneStyle = {
+  color: ContrastColor;
+  fillOpacity: number;
+  strokeOpacity: number;
+  layerIndexWeight: number;
+};
+
+export type GeofencingZoneStyles = {
+  [GZKey in GeofencingZoneKeys]: GeofencingZoneStyle;
+};
+
 export interface Theme {
   spacings: typeof spacings;
 
@@ -107,6 +128,7 @@ export interface Theme {
   icon: {
     size: typeof iconSizes;
   };
+  geofencingZones: GeofencingZoneStyles;
 }
 
 export type Statuses = keyof Theme['status'];

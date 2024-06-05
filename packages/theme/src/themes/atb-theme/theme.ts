@@ -105,7 +105,7 @@ export const baseColors = {
   yellow_900: contrastColor('#460200', 'light'),
 
   // red
-  red_50: contrastColor('#F4E1E7','dark'),
+  red_50: contrastColor('#F4E1E7', 'dark'),
   red_100: contrastColor('#EED2DB', 'dark'),
   red_200: contrastColor('#E4B8C6', 'dark'),
   red_300: contrastColor('#D691A7', 'dark'),
@@ -289,6 +289,32 @@ const themes: Themes = {
     icon: {
       size: iconSizes,
     },
+    geofencingZones: {
+      Allowed: {
+        color: baseColors.blue_500,
+        fillOpacity: 0.075,
+        strokeOpacity: 0.5,
+        layerIndexWeight: 1,
+      },
+      Slow: {
+        color: baseColors.yellow_100,
+        fillOpacity: 0.6,
+        strokeOpacity: 0.8,
+        layerIndexWeight: 2,
+      },
+      NoParking: {
+        color: baseColors.red_400,
+        fillOpacity: 0.5,
+        strokeOpacity: 0.7,
+        layerIndexWeight: 3,
+      },
+      NoEntry: {
+        color: baseColors.red_900,
+        fillOpacity: 0.55,
+        strokeOpacity: 0.75,
+        layerIndexWeight: 5,
+      },
+    },
   },
   dark: {
     spacings: spacings,
@@ -437,6 +463,32 @@ const themes: Themes = {
     },
     icon: {
       size: iconSizes,
+    },
+    geofencingZones: {
+      Allowed: {
+        color: baseColors.blue_500,
+        fillOpacity: 0.075,
+        strokeOpacity: 0.5,
+        layerIndexWeight: 1,
+      },
+      Slow: {
+        color: baseColors.yellow_100,
+        fillOpacity: 0.6,
+        strokeOpacity: 0.8,
+        layerIndexWeight: 2,
+      },
+      NoParking: {
+        color: baseColors.red_400,
+        fillOpacity: 0.5,
+        strokeOpacity: 0.7,
+        layerIndexWeight: 3,
+      },
+      NoEntry: {
+        color: baseColors.red_900,
+        fillOpacity: 0.55,
+        strokeOpacity: 0.75,
+        layerIndexWeight: 5,
+      },
     },
   },
 };

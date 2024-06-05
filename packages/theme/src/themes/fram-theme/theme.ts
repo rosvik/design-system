@@ -16,6 +16,13 @@ const contrastColor = (
   };
 };
 
+export const geofencingZoneBaseColors = {
+  blue_500: contrastColor('#007C92', 'light'),
+  yellow_100: contrastColor('#F0E973', 'dark'),
+  red_400: contrastColor('#C76B89', 'dark'),
+  red_900: contrastColor('#380616', 'light'),
+};
+
 const themes: Themes = {
   light: {
     spacings: spacings,
@@ -164,6 +171,32 @@ const themes: Themes = {
     icon: {
       size: iconSizes,
     },
+    geofencingZones: {
+      Allowed: {
+        color: geofencingZoneBaseColors.blue_500,
+        fillOpacity: 0.075,
+        strokeOpacity: 0.5,
+        layerIndexWeight: 1,
+      },
+      Slow: {
+        color: geofencingZoneBaseColors.yellow_100,
+        fillOpacity: 0.6,
+        strokeOpacity: 0.8,
+        layerIndexWeight: 2,
+      },
+      NoParking: {
+        color: geofencingZoneBaseColors.red_400,
+        fillOpacity: 0.5,
+        strokeOpacity: 0.7,
+        layerIndexWeight: 3,
+      },
+      NoEntry: {
+        color: geofencingZoneBaseColors.red_900,
+        fillOpacity: 0.55,
+        strokeOpacity: 0.75,
+        layerIndexWeight: 5,
+      },
+    },
   },
   dark: {
     spacings: spacings,
@@ -311,6 +344,32 @@ const themes: Themes = {
     },
     icon: {
       size: iconSizes,
+    },
+    geofencingZones: {
+      Allowed: {
+        color: geofencingZoneBaseColors.blue_500,
+        fillOpacity: 0.075,
+        strokeOpacity: 0.5,
+        layerIndexWeight: 1,
+      },
+      Slow: {
+        color: geofencingZoneBaseColors.yellow_100,
+        fillOpacity: 0.6,
+        strokeOpacity: 0.8,
+        layerIndexWeight: 2,
+      },
+      NoParking: {
+        color: geofencingZoneBaseColors.red_400,
+        fillOpacity: 0.5,
+        strokeOpacity: 0.7,
+        layerIndexWeight: 3,
+      },
+      NoEntry: {
+        color: geofencingZoneBaseColors.red_900,
+        fillOpacity: 0.55,
+        strokeOpacity: 0.75,
+        layerIndexWeight: 5,
+      },
     },
   },
 };

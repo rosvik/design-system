@@ -23,8 +23,8 @@
   --icon-size-xSmall: 0.75rem;
 
   --text-colors-primary: #000000;
-  --text-colors-secondary: #000000E8;
-  --text-colors-disabled: #00000033;
+  --text-colors-secondary: rgba(255, 255, 255, 0.91);
+  --text-colors-disabled: rgba(255, 255, 255, 0.2);
 
   --static-background-background_0-background: #FFFFFF;
   --static-background-background_0-text: #000000;
@@ -57,8 +57,8 @@
   --interactive-interactive_0-hover-text: #FFFFFF;
   --interactive-interactive_0-active-background: #80ABC3;
   --interactive-interactive_0-active-text: #000000;
-  --interactive-interactive_0-disabled-background: #00568633;
-  --interactive-interactive_0-disabled-text: #000000;
+  --interactive-interactive_0-disabled-background: rgba(0, 86, 134, 0.2);
+  --interactive-interactive_0-disabled-text: #FFFFFF;
   --interactive-interactive_0-outline-background: #0D6569;
   --interactive-interactive_0-outline-text: #FFFFFF;
   --interactive-interactive_0-destructive-background: #B6161C;
@@ -69,8 +69,8 @@
   --interactive-interactive_1-hover-text: #FFFFFF;
   --interactive-interactive_1-active-background: #011622;
   --interactive-interactive_1-active-text: #FFFFFF;
-  --interactive-interactive_1-disabled-background: #00568633;
-  --interactive-interactive_1-disabled-text: #000000;
+  --interactive-interactive_1-disabled-background: rgba(0, 86, 134, 0.2);
+  --interactive-interactive_1-disabled-text: #FFFFFF;
   --interactive-interactive_1-outline-background: #0D6569;
   --interactive-interactive_1-outline-text: #FFFFFF;
   --interactive-interactive_1-destructive-background: #B6161C;
@@ -81,7 +81,7 @@
   --interactive-interactive_2-hover-text: #000000;
   --interactive-interactive_2-active-background: #AAC7D7;
   --interactive-interactive_2-active-text: #000000;
-  --interactive-interactive_2-disabled-background: #FFFFFF33;
+  --interactive-interactive_2-disabled-background: rgba(255, 255, 255, 0.2);
   --interactive-interactive_2-disabled-text: #000000;
   --interactive-interactive_2-outline-background: #0D6569;
   --interactive-interactive_2-outline-text: #FFFFFF;
@@ -93,7 +93,7 @@
   --interactive-interactive_3-hover-text: #000000;
   --interactive-interactive_3-active-background: #ACD097;
   --interactive-interactive_3-active-text: #000000;
-  --interactive-interactive_3-disabled-background: #82B96233;
+  --interactive-interactive_3-disabled-background: rgba(130, 185, 98, 0.2);
   --interactive-interactive_3-disabled-text: #000000;
   --interactive-interactive_3-outline-background: #0D6569;
   --interactive-interactive_3-outline-text: #FFFFFF;
@@ -105,7 +105,7 @@
   --interactive-interactive_destructive-hover-text: #FFFFFF;
   --interactive-interactive_destructive-active-background: #F4A4A7;
   --interactive-interactive_destructive-active-text: #000000;
-  --interactive-interactive_destructive-disabled-background: #E31B2233;
+  --interactive-interactive_destructive-disabled-background: rgba(227, 27, 34, 0.2);
   --interactive-interactive_destructive-disabled-text: #FFFFFF;
   --interactive-interactive_destructive-outline-background: #0D6569;
   --interactive-interactive_destructive-outline-text: #FFFFFF;
@@ -186,8 +186,8 @@
   --icon-size-xSmall: 0.75rem;
 
   --text-colors-primary: #FFFFFF;
-  --text-colors-secondary: #000000C4;
-  --text-colors-disabled: #00000033;
+  --text-colors-secondary: rgba(0, 0, 0, 0.77);
+  --text-colors-disabled: rgba(0, 0, 0, 0.2);
 
   --static-background-background_0-background: #011622;
   --static-background-background_0-text: #FFFFFF;
@@ -220,7 +220,7 @@
   --interactive-interactive_0-hover-text: #FFFFFF;
   --interactive-interactive_0-active-background: #99CAE2;
   --interactive-interactive_0-active-text: #000000;
-  --interactive-interactive_0-disabled-background: #007AB533;
+  --interactive-interactive_0-disabled-background: rgba(0, 122, 181, 0.2);
   --interactive-interactive_0-disabled-text: #FFFFFF;
   --interactive-interactive_0-outline-background: #CDE9E3;
   --interactive-interactive_0-outline-text: #000000;
@@ -232,7 +232,7 @@
   --interactive-interactive_1-hover-text: #FFFFFF;
   --interactive-interactive_1-active-background: #011925;
   --interactive-interactive_1-active-text: #FFFFFF;
-  --interactive-interactive_1-disabled-background: #007AB533;
+  --interactive-interactive_1-disabled-background: rgba(0, 122, 181, 0.2);
   --interactive-interactive_1-disabled-text: #FFFFFF;
   --interactive-interactive_1-outline-background: #CDE9E3;
   --interactive-interactive_1-outline-text: #000000;
@@ -244,7 +244,7 @@
   --interactive-interactive_2-hover-text: #FFFFFF;
   --interactive-interactive_2-active-background: #014165;
   --interactive-interactive_2-active-text: #FFFFFF;
-  --interactive-interactive_2-disabled-background: #01162233;
+  --interactive-interactive_2-disabled-background: rgba(1, 22, 34, 0.2);
   --interactive-interactive_2-disabled-text: #FFFFFF;
   --interactive-interactive_2-outline-background: #CDE9E3;
   --interactive-interactive_2-outline-text: #000000;
@@ -256,7 +256,7 @@
   --interactive-interactive_3-hover-text: #FFFFFF;
   --interactive-interactive_3-active-background: #475E40;
   --interactive-interactive_3-active-text: #FFFFFF;
-  --interactive-interactive_3-disabled-background: #28432033;
+  --interactive-interactive_3-disabled-background: rgba(40, 67, 32, 0.2);
   --interactive-interactive_3-disabled-text: #FFFFFF;
   --interactive-interactive_3-outline-background: #CDE9E3;
   --interactive-interactive_3-outline-text: #000000;
@@ -268,7 +268,7 @@
   --interactive-interactive_destructive-hover-text: #FFFFFF;
   --interactive-interactive_destructive-active-background: #F4A4A7;
   --interactive-interactive_destructive-active-text: #000000;
-  --interactive-interactive_destructive-disabled-background: #E31B2233;
+  --interactive-interactive_destructive-disabled-background: rgba(227, 27, 34, 0.2);
   --interactive-interactive_destructive-disabled-text: #FFFFFF;
   --interactive-interactive_destructive-outline-background: #CDE9E3;
   --interactive-interactive_destructive-outline-text: #000000;
@@ -349,8 +349,8 @@
   --icon-size-xSmall: 0.75rem;
 
   --text-colors-primary: #FFFFFF;
-  --text-colors-secondary: #000000C4;
-  --text-colors-disabled: #00000033;
+  --text-colors-secondary: rgba(0, 0, 0, 0.77);
+  --text-colors-disabled: rgba(0, 0, 0, 0.2);
 
   --static-background-background_0-background: #011622;
   --static-background-background_0-text: #FFFFFF;
@@ -383,7 +383,7 @@
   --interactive-interactive_0-hover-text: #FFFFFF;
   --interactive-interactive_0-active-background: #99CAE2;
   --interactive-interactive_0-active-text: #000000;
-  --interactive-interactive_0-disabled-background: #007AB533;
+  --interactive-interactive_0-disabled-background: rgba(0, 122, 181, 0.2);
   --interactive-interactive_0-disabled-text: #FFFFFF;
   --interactive-interactive_0-outline-background: #CDE9E3;
   --interactive-interactive_0-outline-text: #000000;
@@ -395,7 +395,7 @@
   --interactive-interactive_1-hover-text: #FFFFFF;
   --interactive-interactive_1-active-background: #011925;
   --interactive-interactive_1-active-text: #FFFFFF;
-  --interactive-interactive_1-disabled-background: #007AB533;
+  --interactive-interactive_1-disabled-background: rgba(0, 122, 181, 0.2);
   --interactive-interactive_1-disabled-text: #FFFFFF;
   --interactive-interactive_1-outline-background: #CDE9E3;
   --interactive-interactive_1-outline-text: #000000;
@@ -407,7 +407,7 @@
   --interactive-interactive_2-hover-text: #FFFFFF;
   --interactive-interactive_2-active-background: #014165;
   --interactive-interactive_2-active-text: #FFFFFF;
-  --interactive-interactive_2-disabled-background: #01162233;
+  --interactive-interactive_2-disabled-background: rgba(1, 22, 34, 0.2);
   --interactive-interactive_2-disabled-text: #FFFFFF;
   --interactive-interactive_2-outline-background: #CDE9E3;
   --interactive-interactive_2-outline-text: #000000;
@@ -419,7 +419,7 @@
   --interactive-interactive_3-hover-text: #FFFFFF;
   --interactive-interactive_3-active-background: #475E40;
   --interactive-interactive_3-active-text: #FFFFFF;
-  --interactive-interactive_3-disabled-background: #28432033;
+  --interactive-interactive_3-disabled-background: rgba(40, 67, 32, 0.2);
   --interactive-interactive_3-disabled-text: #FFFFFF;
   --interactive-interactive_3-outline-background: #CDE9E3;
   --interactive-interactive_3-outline-text: #000000;
@@ -431,7 +431,7 @@
   --interactive-interactive_destructive-hover-text: #FFFFFF;
   --interactive-interactive_destructive-active-background: #F4A4A7;
   --interactive-interactive_destructive-active-text: #000000;
-  --interactive-interactive_destructive-disabled-background: #E31B2233;
+  --interactive-interactive_destructive-disabled-background: rgba(227, 27, 34, 0.2);
   --interactive-interactive_destructive-disabled-text: #FFFFFF;
   --interactive-interactive_destructive-outline-background: #CDE9E3;
   --interactive-interactive_destructive-outline-text: #000000;

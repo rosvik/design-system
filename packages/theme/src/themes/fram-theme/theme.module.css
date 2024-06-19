@@ -165,7 +165,7 @@
 
 /* Dark theme data */
 .dark {
-  --border-primary: #E6E6E6;
+  --border-primary: #012C44;
   --border-secondary: #000000;
   --border-focus: #005686;
   --border-radius-circle: 1.25rem;
@@ -328,7 +328,7 @@
 
 @media (prefers-color-scheme: dark) {
   .light:not(.override-light) {
-  --border-primary: #E6E6E6;
+  --border-primary: #012C44;
   --border-secondary: #000000;
   --border-focus: #005686;
   --border-radius-circle: 1.25rem;

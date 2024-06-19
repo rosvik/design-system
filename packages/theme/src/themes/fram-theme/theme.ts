@@ -579,7 +579,7 @@ const themes: Themes = {
       },
     },
     border: {
-      primary: baseColors.gray_100.background,
+      primary: baseColors.blue_dark_800.background,
       secondary: baseColors.gray_1000.background,
       focus: baseColors.blue_dark_600.background,
       radius: borderRadius,

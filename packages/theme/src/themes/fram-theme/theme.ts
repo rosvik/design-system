@@ -1,5 +1,6 @@
 import {ContrastColor, TextColorType, Themes} from '../../theme';
 import {borderRadius, borderWidth, iconSizes, spacings} from '../../sizes';
+import hexToRgba from "hex-to-rgba";
 
 const textColors = {
   light: '#FFFFFF',
@@ -16,10 +17,16 @@ const contrastColor = (
   };
 };
 
+const contrastColorWithAlpha = (contrastColor: ContrastColor, alpha: number): ContrastColor => {
+  return {
+    background: hexToRgba(contrastColor.background, alpha),
+    text: contrastColor.text
+  }
+}
+
 export const baseColors = {
   // gray
   gray_0: contrastColor('#FFFFFF', 'dark'),
-  gray_0_20: contrastColor('#FFFFFF33', 'dark'),
   gray_50: contrastColor('#F3F3F3', 'dark'),
   gray_100: contrastColor('#E6E6E6', 'dark'),
   gray_150: contrastColor('#D9D9D9', 'dark'),
@@ -34,9 +41,6 @@ export const baseColors = {
   gray_900: contrastColor('#1A1A1A', 'light'),
   gray_950: contrastColor('#0D0D0D', 'light'),
   gray_1000: contrastColor('#000000', 'light'),
-  gray_1000_20: contrastColor('#00000033', 'light'),
-  gray_1000_77: contrastColor('#000000C4', 'light'),
-  gray_1000_91: contrastColor('#000000E8', 'light'),
 
   // blue dark
   blue_dark_0: contrastColor('#FFFFFF', 'dark'),
@@ -48,12 +52,10 @@ export const baseColors = {
   blue_dark_400: contrastColor('#558FAE', 'dark'),
   blue_dark_500: contrastColor('#2B729A', 'light'),
   blue_dark_600: contrastColor('#005686', 'light'),
-  blue_dark_600_20: contrastColor('#00568633', 'dark'),
   blue_dark_700: contrastColor('#014165', 'light'),
   blue_dark_800: contrastColor('#012C44', 'light'),
   blue_dark_850: contrastColor('#012133', 'light'),
   blue_dark_900: contrastColor('#011622', 'light'),
-  blue_dark_900_20: contrastColor('#01162233', 'light'),
   blue_dark_950: contrastColor('#010B11', 'light'),
   blue_dark_1000: contrastColor('#000000', 'light'),
 
@@ -66,7 +68,6 @@ export const baseColors = {
   blue_logo_300: contrastColor('#66AFD3', 'dark'),
   blue_logo_400: contrastColor('#3395C4', 'dark'),
   blue_logo_500: contrastColor('#007AB5', 'light'),
-  blue_logo_500_20: contrastColor('#007AB533', 'light'),
   blue_logo_600: contrastColor('#016291', 'light'),
   blue_logo_700: contrastColor('#014A6D', 'light'),
   blue_logo_800: contrastColor('#013149', 'light'),
@@ -154,7 +155,6 @@ export const baseColors = {
   green_dark_500: contrastColor('#667960', 'light'),
   green_dark_600: contrastColor('#475E40', 'light'),
   green_dark_700: contrastColor('#284320', 'light'),
-  green_dark_700_20: contrastColor('#28432033', 'light'),
   green_dark_800: contrastColor('#1B2D16', 'light'),
   green_dark_850: contrastColor('#152211', 'light'),
   green_dark_900: contrastColor('#0E170C', 'light'),
@@ -168,7 +168,6 @@ export const baseColors = {
   green_light_150: contrastColor('#C1DCB1', 'dark'),
   green_light_200: contrastColor('#ACD097', 'dark'),
   green_light_300: contrastColor('#82B962', 'dark'),
-  green_light_300_20: contrastColor('#82B96233', 'dark'),
   green_light_400: contrastColor('#709F55', 'dark'),
   green_light_500: contrastColor('#5D8547', 'light'),
   green_light_600: contrastColor('#4B6A39', 'light'),
@@ -239,7 +238,6 @@ export const baseColors = {
   red_300: contrastColor('#EE777B', 'dark'),
   red_400: contrastColor('#E9494E', 'dark'),
   red_500: contrastColor('#E31B22', 'light'),
-  red_500_20: contrastColor('#E31B2233', 'light'),
   red_600: contrastColor('#B6161C', 'light'),
   red_700: contrastColor('#891115', 'light'),
   red_800: contrastColor('#5B0C0E', 'light'),
@@ -276,7 +274,7 @@ const themes: Themes = {
         default: baseColors.blue_dark_600,
         hover: baseColors.blue_dark_700,
         active: baseColors.blue_dark_300,
-        disabled: baseColors.blue_dark_600_20,
+        disabled: contrastColorWithAlpha(baseColors.blue_dark_600, 0.20),
         outline: baseColors.marine_dark_600,
         destructive: baseColors.red_600,
       },
@@ -284,7 +282,7 @@ const themes: Themes = {
         default: baseColors.blue_dark_600,
         hover: baseColors.blue_dark_700,
         active: baseColors.blue_dark_900,
-        disabled: baseColors.blue_dark_600_20,
+        disabled: contrastColorWithAlpha(baseColors.blue_dark_600, 0.20),
         outline: baseColors.marine_dark_600,
         destructive: baseColors.red_600,
       },
@@ -292,7 +290,7 @@ const themes: Themes = {
         default: baseColors.gray_0,
         hover: baseColors.blue_dark_100,
         active: baseColors.blue_dark_200,
-        disabled: baseColors.gray_0_20,
+        disabled: contrastColorWithAlpha(baseColors.gray_0, 0.20),
         outline: baseColors.marine_dark_600,
         destructive: baseColors.red_600,
       },
@@ -300,7 +298,7 @@ const themes: Themes = {
         default: baseColors.green_light_300,
         hover: baseColors.green_light_400,
         active: baseColors.green_light_200,
-        disabled: baseColors.green_light_300_20,
+        disabled: contrastColorWithAlpha(baseColors.green_light_300, 0.20),
         outline: baseColors.marine_dark_600,
         destructive: baseColors.red_600,
       },
@@ -308,7 +306,7 @@ const themes: Themes = {
         default: baseColors.red_500,
         hover: baseColors.red_600,
         active: baseColors.red_200,
-        disabled: baseColors.red_500_20,
+        disabled: contrastColorWithAlpha(baseColors.red_500, 0.20),
         outline: baseColors.marine_dark_600,
         destructive: baseColors.red_600,
       },
@@ -402,8 +400,8 @@ const themes: Themes = {
     text: {
       colors: {
         primary: textColors.dark,
-        secondary: baseColors.gray_1000_91.background,
-        disabled: baseColors.gray_1000_20.background,
+        secondary: hexToRgba(baseColors.gray_0.background, 0.91),
+        disabled: hexToRgba(baseColors.gray_0.background, 0.20)
       },
     },
     border: {
@@ -450,7 +448,7 @@ const themes: Themes = {
         default: baseColors.blue_logo_500,
         hover: baseColors.blue_logo_600,
         active: baseColors.blue_logo_200,
-        disabled: baseColors.blue_logo_500_20,
+        disabled: contrastColorWithAlpha(baseColors.blue_logo_500, 0.20),
         outline: baseColors.marine_light_200,
         destructive: baseColors.red_300,
       },
@@ -458,7 +456,7 @@ const themes: Themes = {
         default: baseColors.blue_logo_500,
         hover: baseColors.blue_logo_600,
         active: baseColors.blue_logo_900,
-        disabled: baseColors.blue_logo_500_20,
+        disabled: contrastColorWithAlpha(baseColors.blue_logo_500, 0.20),
         outline: baseColors.marine_light_200,
         destructive: baseColors.red_300,
       },
@@ -466,7 +464,7 @@ const themes: Themes = {
         default: baseColors.blue_dark_900,
         hover: baseColors.blue_dark_800,
         active: baseColors.blue_dark_700,
-        disabled: baseColors.blue_dark_900_20,
+        disabled: contrastColorWithAlpha(baseColors.blue_dark_900, 0.20),
         outline: baseColors.marine_light_200,
         destructive: baseColors.red_300,
       },
@@ -474,7 +472,7 @@ const themes: Themes = {
         default: baseColors.green_dark_700,
         hover: baseColors.green_dark_800,
         active: baseColors.green_dark_600,
-        disabled: baseColors.green_dark_700_20,
+        disabled: contrastColorWithAlpha(baseColors.green_dark_700, 0.20),
         outline: baseColors.marine_light_200,
         destructive: baseColors.red_300,
       },
@@ -482,7 +480,7 @@ const themes: Themes = {
         default: baseColors.red_500,
         hover: baseColors.red_600,
         active: baseColors.red_200,
-        disabled: baseColors.red_500_20,
+        disabled: contrastColorWithAlpha(baseColors.red_500, 0.20),
         outline: baseColors.marine_light_200,
         destructive: baseColors.red_300,
       },
@@ -576,8 +574,8 @@ const themes: Themes = {
     text: {
       colors: {
         primary: textColors.light,
-        secondary: baseColors.gray_1000_77.background,
-        disabled: baseColors.gray_1000_20.background,
+        secondary: hexToRgba(baseColors.gray_1000.background, 0.77),
+        disabled: hexToRgba(baseColors.gray_1000.background, 0.20),
       },
     },
     border: {

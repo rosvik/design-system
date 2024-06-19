@@ -400,8 +400,8 @@ const themes: Themes = {
     text: {
       colors: {
         primary: textColors.dark,
-        secondary: hexToRgba(baseColors.gray_0.background, 0.91),
-        disabled: hexToRgba(baseColors.gray_0.background, 0.20)
+        secondary: hexToRgba(baseColors.gray_1000.background, 0.91),
+        disabled: hexToRgba(baseColors.gray_1000.background, 0.20)
       },
     },
     border: {
@@ -574,8 +574,8 @@ const themes: Themes = {
     text: {
       colors: {
         primary: textColors.light,
-        secondary: hexToRgba(baseColors.gray_1000.background, 0.77),
-        disabled: hexToRgba(baseColors.gray_1000.background, 0.20),
+        secondary: hexToRgba(baseColors.gray_0.background, 0.77),
+        disabled: hexToRgba(baseColors.gray_0.background, 0.20),
       },
     },
     border: {

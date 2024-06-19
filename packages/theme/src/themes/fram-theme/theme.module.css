@@ -23,8 +23,8 @@
   --icon-size-xSmall: 0.75rem;
 
   --text-colors-primary: #000000;
-  --text-colors-secondary: rgba(255, 255, 255, 0.91);
-  --text-colors-disabled: rgba(255, 255, 255, 0.2);
+  --text-colors-secondary: rgba(0, 0, 0, 0.91);
+  --text-colors-disabled: rgba(0, 0, 0, 0.2);
 
   --static-background-background_0-background: #FFFFFF;
   --static-background-background_0-text: #000000;
@@ -186,8 +186,8 @@
   --icon-size-xSmall: 0.75rem;
 
   --text-colors-primary: #FFFFFF;
-  --text-colors-secondary: rgba(0, 0, 0, 0.77);
-  --text-colors-disabled: rgba(0, 0, 0, 0.2);
+  --text-colors-secondary: rgba(255, 255, 255, 0.77);
+  --text-colors-disabled: rgba(255, 255, 255, 0.2);
 
   --static-background-background_0-background: #011622;
   --static-background-background_0-text: #FFFFFF;
@@ -349,8 +349,8 @@
   --icon-size-xSmall: 0.75rem;
 
   --text-colors-primary: #FFFFFF;
-  --text-colors-secondary: rgba(0, 0, 0, 0.77);
-  --text-colors-disabled: rgba(0, 0, 0, 0.2);
+  --text-colors-secondary: rgba(255, 255, 255, 0.77);
+  --text-colors-disabled: rgba(255, 255, 255, 0.2);
 
   --static-background-background_0-background: #011622;
   --static-background-background_0-text: #FFFFFF;

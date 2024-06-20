@@ -275,7 +275,7 @@ const themes: Themes = {
         hover: baseColors.blue_dark_700,
         active: baseColors.blue_dark_300,
         disabled: contrastColorWithAlpha(baseColors.blue_dark_600, 0.20),
-        outline: baseColors.marine_dark_600,
+        outline: baseColors.blue_logo_400,
         destructive: baseColors.red_600,
       },
       interactive_1: {
@@ -283,7 +283,7 @@ const themes: Themes = {
         hover: baseColors.blue_dark_700,
         active: baseColors.blue_dark_900,
         disabled: contrastColorWithAlpha(baseColors.blue_dark_600, 0.20),
-        outline: baseColors.marine_dark_600,
+        outline: baseColors.blue_logo_400,
         destructive: baseColors.red_600,
       },
       interactive_2: {
@@ -291,7 +291,7 @@ const themes: Themes = {
         hover: baseColors.blue_dark_100,
         active: baseColors.blue_dark_200,
         disabled: contrastColorWithAlpha(baseColors.gray_0, 0.20),
-        outline: baseColors.marine_dark_600,
+        outline: baseColors.blue_logo_400,
         destructive: baseColors.red_600,
       },
       interactive_3: {
@@ -299,7 +299,7 @@ const themes: Themes = {
         hover: baseColors.green_light_400,
         active: baseColors.green_light_200,
         disabled: contrastColorWithAlpha(baseColors.green_light_300, 0.20),
-        outline: baseColors.marine_dark_600,
+        outline: baseColors.blue_logo_400,
         destructive: baseColors.red_600,
       },
       interactive_destructive: {
@@ -307,7 +307,7 @@ const themes: Themes = {
         hover: baseColors.red_600,
         active: baseColors.red_200,
         disabled: contrastColorWithAlpha(baseColors.red_500, 0.20),
-        outline: baseColors.marine_dark_600,
+        outline: baseColors.blue_logo_400,
         destructive: baseColors.red_600,
       },
     },
@@ -449,7 +449,7 @@ const themes: Themes = {
         hover: baseColors.blue_logo_600,
         active: baseColors.blue_logo_200,
         disabled: contrastColorWithAlpha(baseColors.blue_logo_500, 0.20),
-        outline: baseColors.marine_light_200,
+        outline: baseColors.yellow_logo_200,
         destructive: baseColors.red_300,
       },
       interactive_1: {
@@ -457,7 +457,7 @@ const themes: Themes = {
         hover: baseColors.blue_logo_600,
         active: baseColors.blue_logo_900,
         disabled: contrastColorWithAlpha(baseColors.blue_logo_500, 0.20),
-        outline: baseColors.marine_light_200,
+        outline: baseColors.yellow_logo_200,
         destructive: baseColors.red_300,
       },
       interactive_2: {
@@ -465,7 +465,7 @@ const themes: Themes = {
         hover: baseColors.blue_dark_800,
         active: baseColors.blue_dark_700,
         disabled: contrastColorWithAlpha(baseColors.blue_dark_900, 0.20),
-        outline: baseColors.marine_light_200,
+        outline: baseColors.yellow_logo_200,
         destructive: baseColors.red_300,
       },
       interactive_3: {
@@ -473,7 +473,7 @@ const themes: Themes = {
         hover: baseColors.green_dark_800,
         active: baseColors.green_dark_600,
         disabled: contrastColorWithAlpha(baseColors.green_dark_700, 0.20),
-        outline: baseColors.marine_light_200,
+        outline: baseColors.yellow_logo_200,
         destructive: baseColors.red_300,
       },
       interactive_destructive: {
@@ -481,7 +481,7 @@ const themes: Themes = {
         hover: baseColors.red_600,
         active: baseColors.red_200,
         disabled: contrastColorWithAlpha(baseColors.red_500, 0.20),
-        outline: baseColors.marine_light_200,
+        outline: baseColors.yellow_logo_200,
         destructive: baseColors.red_300,
       },
     },

@@ -386,7 +386,7 @@ const themes: Themes = {
       },
       info: {
         primary: baseColors.marine_dark_700,
-        secondary: baseColors.marine_light_700,
+        secondary: baseColors.marine_light_200,
       },
       warning: {
         primary: baseColors.yellow_200,
@@ -488,51 +488,51 @@ const themes: Themes = {
     transport: {
       transport_city: {
         primary: baseColors.green_light_300,
-        secondary: baseColors.green_light_400,
+        secondary: baseColors.green_light_200,
       },
       transport_region: {
         primary: baseColors.blue_dark_600,
-        secondary: baseColors.blue_dark_700,
+        secondary: baseColors.blue_dark_500,
       },
       transport_airport_express: {
         primary: baseColors.blue_dark_600,
-        secondary: baseColors.blue_dark_700,
+        secondary: baseColors.blue_dark_500,
       },
       transport_boat: {
         primary: baseColors.blue_logo_500,
-        secondary: baseColors.blue_logo_600,
+        secondary: baseColors.blue_logo_400,
       },
       transport_train: {
         primary: baseColors.red_dark_800,
-        secondary: baseColors.red_dark_900,
+        secondary: baseColors.red_dark_700,
       },
       transport_airport: {
         primary: baseColors.orange_400,
-        secondary: baseColors.orange_500,
+        secondary: baseColors.orange_300,
       },
       transport_plane: {
         primary: baseColors.pink_light_300,
-        secondary: baseColors.pink_light_400,
+        secondary: baseColors.pink_light_200,
       },
       transport_flexible: {
         primary: baseColors.pink_light_300,
-        secondary: baseColors.pink_light_400,
+        secondary: baseColors.pink_light_200,
       },
       transport_bike: {
         primary: baseColors.red_800,
-        secondary: baseColors.red_900,
+        secondary: baseColors.red_700,
       },
       transport_scooter: {
         primary: baseColors.green_dark_700,
-        secondary: baseColors.green_dark_800,
+        secondary: baseColors.green_dark_600,
       },
       transport_car: {
         primary: baseColors.red_dark_400,
-        secondary: baseColors.red_dark_500,
+        secondary: baseColors.red_dark_300,
       },
       transport_other: {
         primary: baseColors.gray_600,
-        secondary: baseColors.gray_700,
+        secondary: baseColors.gray_500,
       },
     },
     static: {

@@ -160,6 +160,23 @@
   --transport-transport_other-primary-text: #FFFFFF;
   --transport-transport_other-secondary-background: #2B343A;
   --transport-transport_other-secondary-text: #FFFFFF;
+
+  --status-valid-primary-background: #A2AD00;
+  --status-valid-primary-text: #000000;
+  --status-valid-secondary-background: #A2AD00;
+  --status-valid-secondary-text: #000000;
+  --status-info-primary-background: #71D6E0;
+  --status-info-primary-text: #000000;
+  --status-info-secondary-background: #71D6E0;
+  --status-info-secondary-text: #000000;
+  --status-warning-primary-background: #E4D700;
+  --status-warning-primary-text: #000000;
+  --status-warning-secondary-background: #E4D700;
+  --status-warning-secondary-text: #000000;
+  --status-error-primary-background: #A51140;
+  --status-error-primary-text: #FFFFFF;
+  --status-error-secondary-background: #A51140;
+  --status-error-secondary-text: #FFFFFF;
 }
 
 
@@ -323,6 +340,23 @@
   --transport-transport_other-primary-text: #000000;
   --transport-transport_other-secondary-background: #8D9398;
   --transport-transport_other-secondary-text: #000000;
+
+  --status-valid-primary-background: #A2AD00;
+  --status-valid-primary-text: #000000;
+  --status-valid-secondary-background: #A2AD00;
+  --status-valid-secondary-text: #000000;
+  --status-info-primary-background: #71D6E0;
+  --status-info-primary-text: #000000;
+  --status-info-secondary-background: #71D6E0;
+  --status-info-secondary-text: #000000;
+  --status-warning-primary-background: #E4D700;
+  --status-warning-primary-text: #000000;
+  --status-warning-secondary-background: #E4D700;
+  --status-warning-secondary-text: #000000;
+  --status-error-primary-background: #A51140;
+  --status-error-primary-text: #FFFFFF;
+  --status-error-secondary-background: #A51140;
+  --status-error-secondary-text: #FFFFFF;
 }
 
 
@@ -486,6 +520,23 @@
   --transport-transport_other-primary-text: #000000;
   --transport-transport_other-secondary-background: #8D9398;
   --transport-transport_other-secondary-text: #000000;
+
+  --status-valid-primary-background: #A2AD00;
+  --status-valid-primary-text: #000000;
+  --status-valid-secondary-background: #A2AD00;
+  --status-valid-secondary-text: #000000;
+  --status-info-primary-background: #71D6E0;
+  --status-info-primary-text: #000000;
+  --status-info-secondary-background: #71D6E0;
+  --status-info-secondary-text: #000000;
+  --status-warning-primary-background: #E4D700;
+  --status-warning-primary-text: #000000;
+  --status-warning-secondary-background: #E4D700;
+  --status-warning-secondary-text: #000000;
+  --status-error-primary-background: #A51140;
+  --status-error-primary-text: #FFFFFF;
+  --status-error-secondary-background: #A51140;
+  --status-error-secondary-text: #FFFFFF;
 }
 }
 
@@ -716,4 +767,37 @@
 .interactive-interactive_destructive:disabled {
   background-color: var(--interactive-interactive_destructive-disabled-background);
   color: var(--interactive-interactive_destructive-disabled-text);
+}
+
+.status-valid-primary {
+  background-color: var(--status-valid-primary-background);
+  color: var(--status-valid-primary-text);
+}
+.status-valid-secondary {
+  background-color: var(--status-valid-secondary-background);
+  color: var(--status-valid-secondary-text);
+}
+.status-info-primary {
+  background-color: var(--status-info-primary-background);
+  color: var(--status-info-primary-text);
+}
+.status-info-secondary {
+  background-color: var(--status-info-secondary-background);
+  color: var(--status-info-secondary-text);
+}
+.status-warning-primary {
+  background-color: var(--status-warning-primary-background);
+  color: var(--status-warning-primary-text);
+}
+.status-warning-secondary {
+  background-color: var(--status-warning-secondary-background);
+  color: var(--status-warning-secondary-text);
+}
+.status-error-primary {
+  background-color: var(--status-error-primary-background);
+  color: var(--status-error-primary-text);
+}
+.status-error-secondary {
+  background-color: var(--status-error-secondary-background);
+  color: var(--status-error-secondary-text);
 }

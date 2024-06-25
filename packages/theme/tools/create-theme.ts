@@ -3,6 +3,7 @@ import {writeFile} from 'fs/promises';
 import {join} from 'path';
 import {ContrastColor, Mode, Theme, InteractiveColor} from '../src';
 import {indentJoin, maybeConvertToRem} from './utils';
+import {StatusColor} from "../lib";
 
 export default async function outputThemes(
   themeOutputDirName: string,
@@ -35,6 +36,8 @@ ${printContrastColors('static', themes.light.static)}
 ${printContrastColors('transport', themes.light.transport)}
 
 ${printInteractiveColors('interactive', themes.light.interactive)}
+
+${printStatusColors('status', themes.light.status)}
 `;
 }
 
@@ -58,6 +61,8 @@ ${extract('static')}
 ${extract('interactive')}
 
 ${extract('transport')}
+
+${extract('status')}
 }
 `;
 }
@@ -81,6 +86,8 @@ ${extract('static')}
 ${extract('interactive')}
 
 ${extract('transport')}
+
+${extract('status')}
 }
 }
 `;
@@ -94,7 +101,7 @@ function printWithPrefix<T>(
 ) {
   let data: string[] = [];
   for (let [name, colorValue] of Object.entries(obj)) {
-    if (isContrastColor(colorValue)) {
+    if (isContrastColor(colorValue) || (isStatusColor(colorValue))) {
       const {...withoutText} = colorValue;
       data = data.concat(
         printWithPrefix(`${prefix}-${name}`, withoutText, valueConvert),
@@ -155,6 +162,22 @@ function printInteractiveColors(
   return data.join('\n');
 }
 
+function printStatusColors(
+  name: string,
+  obj: ObjColors,
+  prefix: string = '',
+) {
+  let data: string[] = [];
+  for (let key in obj) {
+    const val = obj[key];
+    if (isStatusColor(val)) {
+      return printContrastColors(name, obj, prefix);
+    }
+  }
+  return data.join('\n');
+}
+
+
 function isContrastColor(a: any): a is ContrastColor {
   return typeof a === 'object' && 'background' in a && 'text' in a;
 }
@@ -167,5 +190,13 @@ function isInteractive(a: any): a is InteractiveColor {
     'active' in a &&
     'disabled' in a &&
     'outline' in a
+  );
+}
+
+function isStatusColor(a: any): a is StatusColor {
+  return (
+    typeof a === 'object' &&
+    'primary' in a &&
+    'secondary' in a
   );
 }

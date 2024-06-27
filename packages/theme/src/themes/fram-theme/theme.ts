@@ -372,7 +372,7 @@ const themes: Themes = {
         background_accent_2: baseColors.blue_logo_100,
         background_accent_3: baseColors.marine_dark_600,
         background_accent_4: baseColors.yellow_logo_200,
-        background_accent_5: baseColors.blue_logo_200,
+        background_accent_5: baseColors.blue_logo_500,
       },
       zone_selection: {
         from: baseColors.green_light_300,

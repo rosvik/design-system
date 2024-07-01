@@ -191,13 +191,13 @@ const themes: Themes = {
       },
     },
     transport: {
-      transport_city: {
-        primary: baseColors.green_700,
-        secondary: baseColors.green_800,
-      },
       transport_region: {
+        primary: baseColors.green_800,
+        secondary: baseColors.green_900,
+      },
+      transport_city: {
         primary: baseColors.blue_400,
-        secondary: baseColors.blue_400,
+        secondary: baseColors.blue_500,
       },
       transport_airport_express: {
         primary: baseColors.red_400,

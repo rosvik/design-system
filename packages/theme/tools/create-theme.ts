@@ -1,9 +1,8 @@
 import {Themes} from './../src/theme';
 import {writeFile} from 'fs/promises';
 import {join} from 'path';
-import {ContrastColor, Mode, Theme, InteractiveColor} from '../src';
+import {ContrastColor, Mode, Theme, InteractiveColor, StatusColor} from '../src';
 import {indentJoin, maybeConvertToRem} from './utils';
-import {StatusColor} from "../lib";
 
 export default async function outputThemes(
   themeOutputDirName: string,

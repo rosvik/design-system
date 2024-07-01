@@ -112,14 +112,14 @@
   --interactive-interactive_destructive-destructive-background: #B71416;
   --interactive-interactive_destructive-destructive-text: #FFFFFF;
 
-  --transport-transport_city-primary-background: #6B9956;
-  --transport-transport_city-primary-text: #000000;
-  --transport-transport_city-secondary-background: #507341;
-  --transport-transport_city-secondary-text: #FFFFFF;
-  --transport-transport_region-primary-background: #334DCE;
+  --transport-transport_region-primary-background: #507341;
   --transport-transport_region-primary-text: #FFFFFF;
-  --transport-transport_region-secondary-background: #334DCE;
+  --transport-transport_region-secondary-background: #3E5932;
   --transport-transport_region-secondary-text: #FFFFFF;
+  --transport-transport_city-primary-background: #334DCE;
+  --transport-transport_city-primary-text: #FFFFFF;
+  --transport-transport_city-secondary-background: #0020C2;
+  --transport-transport_city-secondary-text: #FFFFFF;
   --transport-transport_airport_express-primary-background: #D44546;
   --transport-transport_airport_express-primary-text: #000000;
   --transport-transport_airport_express-secondary-background: #C91618;
@@ -591,14 +591,6 @@
   color: var(--static-zone_selection-to-text);
 }
 
-.transport-transport_city-primary {
-  background-color: var(--transport-transport_city-primary-background);
-  color: var(--transport-transport_city-primary-text);
-}
-.transport-transport_city-secondary {
-  background-color: var(--transport-transport_city-secondary-background);
-  color: var(--transport-transport_city-secondary-text);
-}
 .transport-transport_region-primary {
   background-color: var(--transport-transport_region-primary-background);
   color: var(--transport-transport_region-primary-text);
@@ -606,6 +598,14 @@
 .transport-transport_region-secondary {
   background-color: var(--transport-transport_region-secondary-background);
   color: var(--transport-transport_region-secondary-text);
+}
+.transport-transport_city-primary {
+  background-color: var(--transport-transport_city-primary-background);
+  color: var(--transport-transport_city-primary-text);
+}
+.transport-transport_city-secondary {
+  background-color: var(--transport-transport_city-secondary-background);
+  color: var(--transport-transport_city-secondary-text);
 }
 .transport-transport_airport_express-primary {
   background-color: var(--transport-transport_airport_express-primary-background);

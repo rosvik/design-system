@@ -79,7 +79,7 @@
   --interactive-interactive_2-default-text: #000000;
   --interactive-interactive_2-hover-background: #D5E3EB;
   --interactive-interactive_2-hover-text: #000000;
-  --interactive-interactive_2-active-background: #AAC7D7;
+  --interactive-interactive_2-active-background: #ACD097;
   --interactive-interactive_2-active-text: #000000;
   --interactive-interactive_2-disabled-background: rgba(255, 255, 255, 0.2);
   --interactive-interactive_2-disabled-text: #000000;
@@ -239,7 +239,7 @@
   --interactive-interactive_0-active-text: #000000;
   --interactive-interactive_0-disabled-background: rgba(0, 122, 181, 0.2);
   --interactive-interactive_0-disabled-text: #FFFFFF;
-  --interactive-interactive_0-outline-background: #F0E991;
+  --interactive-interactive_0-outline-background: #ACD097;
   --interactive-interactive_0-outline-text: #000000;
   --interactive-interactive_0-destructive-background: #EE777B;
   --interactive-interactive_0-destructive-text: #000000;
@@ -251,7 +251,7 @@
   --interactive-interactive_1-active-text: #FFFFFF;
   --interactive-interactive_1-disabled-background: rgba(0, 122, 181, 0.2);
   --interactive-interactive_1-disabled-text: #FFFFFF;
-  --interactive-interactive_1-outline-background: #F0E991;
+  --interactive-interactive_1-outline-background: #ACD097;
   --interactive-interactive_1-outline-text: #000000;
   --interactive-interactive_1-destructive-background: #EE777B;
   --interactive-interactive_1-destructive-text: #000000;
@@ -259,11 +259,11 @@
   --interactive-interactive_2-default-text: #FFFFFF;
   --interactive-interactive_2-hover-background: #012C44;
   --interactive-interactive_2-hover-text: #FFFFFF;
-  --interactive-interactive_2-active-background: #014165;
+  --interactive-interactive_2-active-background: #284320;
   --interactive-interactive_2-active-text: #FFFFFF;
   --interactive-interactive_2-disabled-background: rgba(1, 22, 34, 0.2);
   --interactive-interactive_2-disabled-text: #FFFFFF;
-  --interactive-interactive_2-outline-background: #F0E991;
+  --interactive-interactive_2-outline-background: #ACD097;
   --interactive-interactive_2-outline-text: #000000;
   --interactive-interactive_2-destructive-background: #EE777B;
   --interactive-interactive_2-destructive-text: #000000;
@@ -275,7 +275,7 @@
   --interactive-interactive_3-active-text: #FFFFFF;
   --interactive-interactive_3-disabled-background: rgba(40, 67, 32, 0.2);
   --interactive-interactive_3-disabled-text: #FFFFFF;
-  --interactive-interactive_3-outline-background: #F0E991;
+  --interactive-interactive_3-outline-background: #ACD097;
   --interactive-interactive_3-outline-text: #000000;
   --interactive-interactive_3-destructive-background: #EE777B;
   --interactive-interactive_3-destructive-text: #000000;
@@ -287,7 +287,7 @@
   --interactive-interactive_destructive-active-text: #000000;
   --interactive-interactive_destructive-disabled-background: rgba(227, 27, 34, 0.2);
   --interactive-interactive_destructive-disabled-text: #FFFFFF;
-  --interactive-interactive_destructive-outline-background: #F0E991;
+  --interactive-interactive_destructive-outline-background: #ACD097;
   --interactive-interactive_destructive-outline-text: #000000;
   --interactive-interactive_destructive-destructive-background: #EE777B;
   --interactive-interactive_destructive-destructive-text: #000000;
@@ -419,7 +419,7 @@
   --interactive-interactive_0-active-text: #000000;
   --interactive-interactive_0-disabled-background: rgba(0, 122, 181, 0.2);
   --interactive-interactive_0-disabled-text: #FFFFFF;
-  --interactive-interactive_0-outline-background: #F0E991;
+  --interactive-interactive_0-outline-background: #ACD097;
   --interactive-interactive_0-outline-text: #000000;
   --interactive-interactive_0-destructive-background: #EE777B;
   --interactive-interactive_0-destructive-text: #000000;
@@ -431,7 +431,7 @@
   --interactive-interactive_1-active-text: #FFFFFF;
   --interactive-interactive_1-disabled-background: rgba(0, 122, 181, 0.2);
   --interactive-interactive_1-disabled-text: #FFFFFF;
-  --interactive-interactive_1-outline-background: #F0E991;
+  --interactive-interactive_1-outline-background: #ACD097;
   --interactive-interactive_1-outline-text: #000000;
   --interactive-interactive_1-destructive-background: #EE777B;
   --interactive-interactive_1-destructive-text: #000000;
@@ -439,11 +439,11 @@
   --interactive-interactive_2-default-text: #FFFFFF;
   --interactive-interactive_2-hover-background: #012C44;
   --interactive-interactive_2-hover-text: #FFFFFF;
-  --interactive-interactive_2-active-background: #014165;
+  --interactive-interactive_2-active-background: #284320;
   --interactive-interactive_2-active-text: #FFFFFF;
   --interactive-interactive_2-disabled-background: rgba(1, 22, 34, 0.2);
   --interactive-interactive_2-disabled-text: #FFFFFF;
-  --interactive-interactive_2-outline-background: #F0E991;
+  --interactive-interactive_2-outline-background: #ACD097;
   --interactive-interactive_2-outline-text: #000000;
   --interactive-interactive_2-destructive-background: #EE777B;
   --interactive-interactive_2-destructive-text: #000000;
@@ -455,7 +455,7 @@
   --interactive-interactive_3-active-text: #FFFFFF;
   --interactive-interactive_3-disabled-background: rgba(40, 67, 32, 0.2);
   --interactive-interactive_3-disabled-text: #FFFFFF;
-  --interactive-interactive_3-outline-background: #F0E991;
+  --interactive-interactive_3-outline-background: #ACD097;
   --interactive-interactive_3-outline-text: #000000;
   --interactive-interactive_3-destructive-background: #EE777B;
   --interactive-interactive_3-destructive-text: #000000;
@@ -467,7 +467,7 @@
   --interactive-interactive_destructive-active-text: #000000;
   --interactive-interactive_destructive-disabled-background: rgba(227, 27, 34, 0.2);
   --interactive-interactive_destructive-disabled-text: #FFFFFF;
-  --interactive-interactive_destructive-outline-background: #F0E991;
+  --interactive-interactive_destructive-outline-background: #ACD097;
   --interactive-interactive_destructive-outline-text: #000000;
   --interactive-interactive_destructive-destructive-background: #EE777B;
   --interactive-interactive_destructive-destructive-text: #000000;

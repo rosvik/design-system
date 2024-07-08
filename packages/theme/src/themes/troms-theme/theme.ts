@@ -174,11 +174,11 @@ const themes: Themes = {
         destructive: baseColors.red_600,
       },
       interactive_3: {
-        default: baseColors.orange_100,
-        hover: baseColors.orange_200,
+        default: baseColors.orange_600,
+        hover: baseColors.orange_300,
         active: baseColors.orange_200,
         disabled: baseColors.gray_100,
-        outline: baseColors.orange_500,
+        outline: baseColors.orange_700,
         destructive: baseColors.red_600,
       },
       interactive_destructive: {
@@ -349,11 +349,11 @@ const themes: Themes = {
         destructive: baseColors.red_300,
       },
       interactive_3: {
-        default: baseColors.orange_1000,
-        hover: baseColors.orange_900,
-        active: baseColors.orange_800,
+        default: baseColors.orange_600,
+        hover: baseColors.orange_800,
+        active: baseColors.orange_900,
         disabled: baseColors.gray_700,
-        outline: baseColors.orange_900,
+        outline: baseColors.orange_700,
         destructive: baseColors.red_600,
       },
       interactive_destructive: {
@@ -366,13 +366,13 @@ const themes: Themes = {
       },
     },
     transport: {
-      transport_city: {
-        primary: baseColors.green_700,
-        secondary: baseColors.green_800,
-      },
       transport_region: {
+        primary: baseColors.green_800,
+        secondary: baseColors.green_900,
+      },
+      transport_city: {
         primary: baseColors.blue_400,
-        secondary: baseColors.blue_400,
+        secondary: baseColors.blue_500,
       },
       transport_airport_express: {
         primary: baseColors.red_400,

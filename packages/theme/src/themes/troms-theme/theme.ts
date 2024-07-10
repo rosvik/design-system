@@ -37,10 +37,11 @@ export const baseColors = {
   gray_1000: contrastColor('#000000', 'light'),
 
   // green
-  green_100: contrastColor('#F7FFF4', 'dark'),
-  green_200: contrastColor('#F3FFEE', 'dark'),
-  green_300: contrastColor('#E7FFDD', 'dark'),
-  green_400: contrastColor('#B2FF90', 'dark'),
+  green_50: contrastColor('#F7FFF4', 'dark'),
+  green_100: contrastColor('#F3FFEE', 'dark'),
+  green_200: contrastColor('#E7FFDD', 'dark'),
+  green_300: contrastColor('#B2FF90', 'dark'),
+  green_400: contrastColor('#A0E682', 'dark'),
   green_500: contrastColor('#8ECC73', 'dark'),
   green_600: contrastColor('#86BF6C', 'dark'),
   green_700: contrastColor('#6B9956', 'dark'),
@@ -72,11 +73,12 @@ export const baseColors = {
   cyan_900: contrastColor('#2C5759', 'light'),
 
   // burgundy
-  burgundy_100: contrastColor('#FDECF6', 'dark'),
-  burgundy_200: contrastColor('#FCE3F2', 'dark'),
-  burgundy_300: contrastColor('#F9C5E3', 'dark'),
-  burgundy_400: contrastColor('#EC43A6', 'dark'),
-  burgundy_500: contrastColor('#D43C95', 'dark'),
+  burgundy_50: contrastColor('#FDECF6', 'dark'),
+  burgundy_100: contrastColor('#FCE3F2', 'dark'),
+  burgundy_200: contrastColor('#F9C5E3', 'dark'),
+  burgundy_300: contrastColor('#EC43A6', 'dark'),
+  burgundy_400: contrastColor('#D43C95', 'dark'),
+  burgundy_500: contrastColor('#BD3685', 'light'),
   burgundy_600: contrastColor('#B1327D', 'light'),
   burgundy_700: contrastColor('#8E2864', 'light'),
   burgundy_800: contrastColor('#6A1E4B', 'light'),

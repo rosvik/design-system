@@ -46,7 +46,7 @@
   --static-background-background_accent_4-text: #000000;
   --static-background-background_accent_5-background: #D24600;
   --static-background-background_accent_5-text: #FFFFFF;
-  --static-zone_selection-from-background: #E7FFDD;
+  --static-zone_selection-from-background: #B2FF90;
   --static-zone_selection-from-text: #000000;
   --static-zone_selection-to-background: #D7FDFF;
   --static-zone_selection-to-text: #000000;
@@ -128,8 +128,8 @@
   --transport-transport_boat-primary-text: #FFFFFF;
   --transport-transport_boat-secondary-background: #397073;
   --transport-transport_boat-secondary-text: #FFFFFF;
-  --transport-transport_train-primary-background: #D43C95;
-  --transport-transport_train-primary-text: #000000;
+  --transport-transport_train-primary-background: #BD3685;
+  --transport-transport_train-primary-text: #FFFFFF;
   --transport-transport_train-secondary-background: #8E2864;
   --transport-transport_train-secondary-text: #FFFFFF;
   --transport-transport_airport-primary-background: #D24600;
@@ -226,7 +226,7 @@
   --static-background-background_accent_4-text: #000000;
   --static-background-background_accent_5-background: #D24600;
   --static-background-background_accent_5-text: #FFFFFF;
-  --static-zone_selection-from-background: #E7FFDD;
+  --static-zone_selection-from-background: #B2FF90;
   --static-zone_selection-from-text: #000000;
   --static-zone_selection-to-background: #D7FDFF;
   --static-zone_selection-to-text: #000000;
@@ -308,8 +308,8 @@
   --transport-transport_boat-primary-text: #FFFFFF;
   --transport-transport_boat-secondary-background: #397073;
   --transport-transport_boat-secondary-text: #FFFFFF;
-  --transport-transport_train-primary-background: #D43C95;
-  --transport-transport_train-primary-text: #000000;
+  --transport-transport_train-primary-background: #BD3685;
+  --transport-transport_train-primary-text: #FFFFFF;
   --transport-transport_train-secondary-background: #8E2864;
   --transport-transport_train-secondary-text: #FFFFFF;
   --transport-transport_airport-primary-background: #D24600;
@@ -406,7 +406,7 @@
   --static-background-background_accent_4-text: #000000;
   --static-background-background_accent_5-background: #D24600;
   --static-background-background_accent_5-text: #FFFFFF;
-  --static-zone_selection-from-background: #E7FFDD;
+  --static-zone_selection-from-background: #B2FF90;
   --static-zone_selection-from-text: #000000;
   --static-zone_selection-to-background: #D7FDFF;
   --static-zone_selection-to-text: #000000;
@@ -488,8 +488,8 @@
   --transport-transport_boat-primary-text: #FFFFFF;
   --transport-transport_boat-secondary-background: #397073;
   --transport-transport_boat-secondary-text: #FFFFFF;
-  --transport-transport_train-primary-background: #D43C95;
-  --transport-transport_train-primary-text: #000000;
+  --transport-transport_train-primary-background: #BD3685;
+  --transport-transport_train-primary-text: #FFFFFF;
   --transport-transport_train-secondary-background: #8E2864;
   --transport-transport_train-secondary-text: #FFFFFF;
   --transport-transport_airport-primary-background: #D24600;

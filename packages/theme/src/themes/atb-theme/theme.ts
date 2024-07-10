@@ -60,6 +60,7 @@ export const baseColors = {
   blue_900: contrastColor('#002329', 'light'),
 
   // cyan
+  cyan_50: contrastColor('#DEF5F8', 'dark'),
   cyan_100: contrastColor('#BFEDF1', 'dark'),
   cyan_200: contrastColor('#71D6E0', 'dark'),
   cyan_300: contrastColor('#62BAC3', 'dark'),
@@ -256,20 +257,20 @@ const themes: Themes = {
     },
     status: {
       valid: {
-        primary: baseColors.green_300,
-        secondary: baseColors.green_300,
+        primary: baseColors.green_400,
+        secondary: baseColors.green_100,
       },
       info: {
-        primary: baseColors.cyan_200,
-        secondary: baseColors.cyan_200,
+        primary: baseColors.blue_500,
+        secondary: baseColors.cyan_50,
       },
       warning: {
         primary: baseColors.yellow_200,
-        secondary: baseColors.yellow_200,
+        secondary: baseColors.yellow_50,
       },
       error: {
-        primary: baseColors.red_600,
-        secondary: baseColors.red_600,
+        primary: baseColors.red_500,
+        secondary: baseColors.red_50,
       },
     },
     text: {
@@ -431,20 +432,20 @@ const themes: Themes = {
     },
     status: {
       valid: {
-        primary: baseColors.green_300,
-        secondary: baseColors.green_300,
+        primary: baseColors.green_400,
+        secondary: baseColors.green_700,
       },
       info: {
-        primary: baseColors.cyan_200,
-        secondary: baseColors.cyan_200,
+        primary: baseColors.blue_500,
+        secondary: baseColors.blue_800,
       },
       warning: {
         primary: baseColors.yellow_200,
-        secondary: baseColors.yellow_200,
+        secondary: baseColors.green_900,
       },
       error: {
-        primary: baseColors.red_600,
-        secondary: baseColors.red_600,
+        primary: baseColors.red_500,
+        secondary: baseColors.red_900,
       },
     },
     text: {

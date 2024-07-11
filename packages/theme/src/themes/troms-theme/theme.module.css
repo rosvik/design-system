@@ -161,21 +161,21 @@
   --transport-transport_other-secondary-background: #2B343A;
   --transport-transport_other-secondary-text: #FFFFFF;
 
-  --status-valid-primary-background: #6B9956;
+  --status-valid-primary-background: #86BF6C;
   --status-valid-primary-text: #000000;
-  --status-valid-secondary-background: #6B9956;
+  --status-valid-secondary-background: #F7FFF4;
   --status-valid-secondary-text: #000000;
   --status-info-primary-background: #546AD6;
   --status-info-primary-text: #FFFFFF;
-  --status-info-secondary-background: #546AD6;
-  --status-info-secondary-text: #FFFFFF;
+  --status-info-secondary-background: #E6E9F9;
+  --status-info-secondary-text: #000000;
   --status-warning-primary-background: #E6D220;
   --status-warning-primary-text: #000000;
-  --status-warning-secondary-background: #E6D220;
+  --status-warning-secondary-background: #FFFDE9;
   --status-warning-secondary-text: #000000;
-  --status-error-primary-background: #DB6364;
+  --status-error-primary-background: #D44546;
   --status-error-primary-text: #000000;
-  --status-error-secondary-background: #DB6364;
+  --status-error-secondary-background: #FAE8E8;
   --status-error-secondary-text: #000000;
 }
 
@@ -341,22 +341,22 @@
   --transport-transport_other-secondary-background: #8D9398;
   --transport-transport_other-secondary-text: #000000;
 
-  --status-valid-primary-background: #6B9956;
+  --status-valid-primary-background: #86BF6C;
   --status-valid-primary-text: #000000;
-  --status-valid-secondary-background: #6B9956;
-  --status-valid-secondary-text: #000000;
-  --status-info-primary-background: #546AD6;
-  --status-info-primary-text: #FFFFFF;
-  --status-info-secondary-background: #546AD6;
+  --status-valid-secondary-background: #3E5932;
+  --status-valid-secondary-text: #FFFFFF;
+  --status-info-primary-background: #8A98E3;
+  --status-info-primary-text: #000000;
+  --status-info-secondary-background: #000D51;
   --status-info-secondary-text: #FFFFFF;
   --status-warning-primary-background: #E6D220;
   --status-warning-primary-text: #000000;
-  --status-warning-secondary-background: #E6D220;
-  --status-warning-secondary-text: #000000;
-  --status-error-primary-background: #DB6364;
+  --status-warning-secondary-background: #59520D;
+  --status-warning-secondary-text: #FFFFFF;
+  --status-error-primary-background: #D44546;
   --status-error-primary-text: #000000;
-  --status-error-secondary-background: #DB6364;
-  --status-error-secondary-text: #000000;
+  --status-error-secondary-background: #54090A;
+  --status-error-secondary-text: #FFFFFF;
 }
 
 
@@ -521,22 +521,22 @@
   --transport-transport_other-secondary-background: #8D9398;
   --transport-transport_other-secondary-text: #000000;
 
-  --status-valid-primary-background: #6B9956;
+  --status-valid-primary-background: #86BF6C;
   --status-valid-primary-text: #000000;
-  --status-valid-secondary-background: #6B9956;
-  --status-valid-secondary-text: #000000;
-  --status-info-primary-background: #546AD6;
-  --status-info-primary-text: #FFFFFF;
-  --status-info-secondary-background: #546AD6;
+  --status-valid-secondary-background: #3E5932;
+  --status-valid-secondary-text: #FFFFFF;
+  --status-info-primary-background: #8A98E3;
+  --status-info-primary-text: #000000;
+  --status-info-secondary-background: #000D51;
   --status-info-secondary-text: #FFFFFF;
   --status-warning-primary-background: #E6D220;
   --status-warning-primary-text: #000000;
-  --status-warning-secondary-background: #E6D220;
-  --status-warning-secondary-text: #000000;
-  --status-error-primary-background: #DB6364;
+  --status-warning-secondary-background: #59520D;
+  --status-warning-secondary-text: #FFFFFF;
+  --status-error-primary-background: #D44546;
   --status-error-primary-text: #000000;
-  --status-error-secondary-background: #DB6364;
-  --status-error-secondary-text: #000000;
+  --status-error-secondary-background: #54090A;
+  --status-error-secondary-text: #FFFFFF;
 }
 }
 

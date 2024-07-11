@@ -48,6 +48,7 @@ export const baseColors = {
   green_900: contrastColor('#1F2100', 'light'),
 
   // blue
+  blue_50: contrastColor('#DEF5F8', 'dark'),
   blue_100: contrastColor('#D4E9EC', 'dark'),
   blue_200: contrastColor('#A6D1D9', 'dark'),
   blue_300: contrastColor('#75B8C4', 'dark'),
@@ -59,6 +60,7 @@ export const baseColors = {
   blue_900: contrastColor('#002329', 'light'),
 
   // cyan
+  cyan_50: contrastColor('#DEF5F8', 'dark'),
   cyan_100: contrastColor('#BFEDF1', 'dark'),
   cyan_200: contrastColor('#71D6E0', 'dark'),
   cyan_300: contrastColor('#62BAC3', 'dark'),
@@ -92,6 +94,7 @@ export const baseColors = {
   orange_900: contrastColor('#341805', 'light'),
 
   // yellow
+  yellow_50: contrastColor('#FBF9DA', 'dark'),
   yellow_100: contrastColor('#F0E973', 'dark'),
   yellow_200: contrastColor('#E4D700', 'dark'),
   yellow_300: contrastColor('#C6AE00', 'dark'),
@@ -103,6 +106,7 @@ export const baseColors = {
   yellow_900: contrastColor('#460200', 'light'),
 
   // red
+  red_50: contrastColor('#F4E1E7', 'dark'),
   red_100: contrastColor('#EED2DB', 'dark'),
   red_200: contrastColor('#E4B8C6', 'dark'),
   red_300: contrastColor('#D691A7', 'dark'),
@@ -253,20 +257,20 @@ const themes: Themes = {
     },
     status: {
       valid: {
-        primary: baseColors.green_300,
-        secondary: baseColors.green_300,
+        primary: baseColors.green_400,
+        secondary: baseColors.green_100,
       },
       info: {
-        primary: baseColors.cyan_200,
-        secondary: baseColors.cyan_200,
+        primary: baseColors.blue_500,
+        secondary: baseColors.cyan_50,
       },
       warning: {
         primary: baseColors.yellow_200,
-        secondary: baseColors.yellow_200,
+        secondary: baseColors.yellow_50,
       },
       error: {
-        primary: baseColors.red_600,
-        secondary: baseColors.red_600,
+        primary: baseColors.red_500,
+        secondary: baseColors.red_50,
       },
     },
     text: {
@@ -428,20 +432,20 @@ const themes: Themes = {
     },
     status: {
       valid: {
-        primary: baseColors.green_300,
-        secondary: baseColors.green_300,
+        primary: baseColors.green_400,
+        secondary: baseColors.green_700,
       },
       info: {
-        primary: baseColors.cyan_200,
-        secondary: baseColors.cyan_200,
+        primary: baseColors.blue_500,
+        secondary: baseColors.blue_800,
       },
       warning: {
         primary: baseColors.yellow_200,
-        secondary: baseColors.yellow_200,
+        secondary: baseColors.green_900,
       },
       error: {
-        primary: baseColors.red_600,
-        secondary: baseColors.red_600,
+        primary: baseColors.red_500,
+        secondary: baseColors.red_900,
       },
     },
     text: {

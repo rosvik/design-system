@@ -21,9 +21,9 @@ const contrastColor = (
 export const baseColors = {
   // gray
   gray_0: contrastColor('#FFFFFF', 'dark'),
-  gray_50: contrastColor('#F1F2F2', 'dark'),
-  gray_100: contrastColor('#E3E5E6', 'dark'),
-  gray_150: contrastColor('#D5D7D9', 'dark'),
+  gray_50: contrastColor('#EEF3F6', 'dark'),
+  gray_100: contrastColor('#E1E7EB', 'dark'),
+  gray_150: contrastColor('#D5DCE0', 'dark'),
   gray_200: contrastColor('#C7CACC', 'dark'),
   gray_300: contrastColor('#A9AEB1', 'dark'),
   gray_400: contrastColor('#8D9398', 'dark'),

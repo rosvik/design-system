@@ -2,7 +2,7 @@
 
 /* Light theme data */
 .light {
-  --border-primary: #F1F2F2;
+  --border-primary: #EEF3F6;
   --border-secondary: #000000;
   --border-focus: #007C92;
   --border-radius-circle: 1.25rem;
@@ -28,11 +28,11 @@
 
   --static-background-background_0-background: #FFFFFF;
   --static-background-background_0-text: #000000;
-  --static-background-background_1-background: #F1F2F2;
+  --static-background-background_1-background: #EEF3F6;
   --static-background-background_1-text: #000000;
-  --static-background-background_2-background: #E3E5E6;
+  --static-background-background_2-background: #E1E7EB;
   --static-background-background_2-text: #000000;
-  --static-background-background_3-background: #D5D7D9;
+  --static-background-background_3-background: #D5DCE0;
   --static-background-background_3-text: #000000;
   --static-background-background_accent_0-background: #37424A;
   --static-background-background_accent_0-text: #FFFFFF;
@@ -93,7 +93,7 @@
   --interactive-interactive_3-hover-text: #000000;
   --interactive-interactive_3-active-background: #A6D1D9;
   --interactive-interactive_3-active-text: #000000;
-  --interactive-interactive_3-disabled-background: #E3E5E6;
+  --interactive-interactive_3-disabled-background: #E1E7EB;
   --interactive-interactive_3-disabled-text: #000000;
   --interactive-interactive_3-outline-background: #004E5C;
   --interactive-interactive_3-outline-text: #FFFFFF;
@@ -203,7 +203,7 @@
   --icon-size-xSmall: 0.75rem;
 
   --text-colors-primary: #FFFFFF;
-  --text-colors-secondary: #E3E5E6;
+  --text-colors-secondary: #E1E7EB;
   --text-colors-disabled: #A9AEB1;
 
   --static-background-background_0-background: #000000;
@@ -383,7 +383,7 @@
   --icon-size-xSmall: 0.75rem;
 
   --text-colors-primary: #FFFFFF;
-  --text-colors-secondary: #E3E5E6;
+  --text-colors-secondary: #E1E7EB;
   --text-colors-disabled: #A9AEB1;
 
   --static-background-background_0-background: #000000;

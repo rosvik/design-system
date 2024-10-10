@@ -7,6 +7,8 @@ import {
   FRAMThemes,
   TromsThemes,
   InnlandetThemes,
+  VKTThemes,
+  FarteThemes,
 } from './themes';
 export type Themes = {
   light: Theme;
@@ -139,6 +141,8 @@ export enum ThemeVariant {
   FRAM,
   Troms,
   Innlandet,
+  VKT,
+  Farte,
 }
 
 export function createThemesFor(themeVariant: ThemeVariant) {
@@ -153,6 +157,10 @@ export function createThemesFor(themeVariant: ThemeVariant) {
       return TromsThemes;
     case ThemeVariant.Innlandet:
       return InnlandetThemes;
+    case ThemeVariant.VKT:
+      return VKTThemes;
+    case ThemeVariant.Farte:
+      return FarteThemes;
     default:
       throw Error('A valid ThemeVariant must be provided');
   }

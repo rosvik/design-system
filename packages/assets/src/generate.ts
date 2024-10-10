@@ -20,6 +20,8 @@ export const vaildOrgIds = [
   ThemeVariant.FRAM,
   ThemeVariant.Troms,
   ThemeVariant.Innlandet,
+  ThemeVariant.VKT,
+  ThemeVariant.Farte,
 ];
 export const searchGlob = '**/*.{svg,png,jpg,jpeg,ico}';
 export const searchGlobSvg = '**/*.svg';

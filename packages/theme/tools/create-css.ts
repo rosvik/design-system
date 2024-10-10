@@ -6,6 +6,8 @@ import {
   FRAMThemes,
   TromsThemes,
   InnlandetThemes,
+  VKTThemes,
+  FarteThemes,
 } from '../src/themes';
 
 Promise.all([
@@ -14,5 +16,7 @@ Promise.all([
   outputThemes('fram-theme', FRAMThemes),
   outputThemes('troms-theme', TromsThemes),
   outputThemes('innlandet-theme', InnlandetThemes),
+  outputThemes('vkt-theme', VKTThemes),
+  outputThemes('farte-theme', FarteThemes),
   outputTypography(),
 ]).then(() => console.log('Written CSS files'), console.error);

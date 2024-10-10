@@ -18,6 +18,10 @@ export function themeVariantAsString(org: ThemeVariant): string {
       return 'troms';
     case ThemeVariant.Innlandet:
       return 'innlandet';
+    case ThemeVariant.VKT:
+      return 'vkt';
+    case ThemeVariant.Farte:
+      return 'farte';
   }
 }
 
@@ -33,6 +37,10 @@ export function stringAsThemeVariant(org: string): ThemeVariant {
       return ThemeVariant.Troms;
     case 'innlandet':
       return ThemeVariant.Innlandet;
+    case 'vkt':
+      return ThemeVariant.VKT;
+    case 'farte':
+      return ThemeVariant.Farte;
   }
 
   throw new Error('Invalid org');

@@ -11,7 +11,7 @@ import {
 import {indentLine, maybeConvertToRem} from './utils';
 
 export default async function outputTypography() {
-  const base = join(__dirname, '../src');
+  const base = join(__dirname, '../src/generated');
   const cssModule = join(base, 'typography.module.css');
   const regular = join(base, 'typography.css');
 

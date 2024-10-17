@@ -1,7 +1,7 @@
 import {ThemeVariant} from '@atb-as/theme';
 import {constants, promises} from 'fs';
 import path from 'path';
-import {vaildOrgIds} from '../generate';
+import {validOrgIds} from '../generate';
 import {fgNormalizedForUnix, themeVariantAsString} from '../utils';
 
 validateValidOrgs();
@@ -49,7 +49,7 @@ async function verifyThatMissingOrgFilesHasCommonReplacements(
 async function validateValidOrgs() {
   const expectedFiles = await fromOrgFiles(ThemeVariant.AtB);
   const extraOrgs = await Promise.all(
-    vaildOrgIds.filter((i) => i != ThemeVariant.AtB).map(fromOrgFiles),
+    validOrgIds.filter((i) => i != ThemeVariant.AtB).map(fromOrgFiles),
   );
 
   let hasErrors = false;

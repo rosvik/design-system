@@ -1,0 +1,790 @@
+
+
+/* Light theme data */
+.light {
+  --border-primary: #DAE2E4;
+  --border-secondary: #000000;
+  --border-focus: #28778B;
+  --border-radius-small: 0.25rem;
+  --border-radius-regular: 0.5rem;
+  --border-radius-circle: 1.25rem;
+  --border-width-slim: 0.0625rem;
+  --border-width-medium: 0.125rem;
+
+  --spacings-xSmall: 0.25rem;
+  --spacings-small: 0.5rem;
+  --spacings-medium: 0.75rem;
+  --spacings-large: 1.25rem;
+  --spacings-xLarge: 1.5rem;
+
+  --icon-size-xSmall: 0.75rem;
+  --icon-size-small: 1rem;
+  --icon-size-normal: 1.25rem;
+  --icon-size-large: 1.625rem;
+
+  --text-light-primary: #FFFFFF;
+  --text-light-secondary: #DAE2E4;
+  --text-light-disabled: #8FA9AF;
+  --text-dark-primary: #000000;
+  --text-dark-secondary: #555760;
+  --text-dark-disabled: #8FA9AF;
+  --text-colors-primary: #000000;
+  --text-colors-secondary: #555760;
+  --text-colors-disabled: #8FA9AF;
+  --text-inverse-primary: #FFFFFF;
+  --text-inverse-secondary: #DAE2E4;
+  --text-inverse-disabled: #8FA9AF;
+
+  --static-background-background_0-background: #FFFFFF;
+  --static-background-background_0-text: #000000;
+  --static-background-background_1-background: #ECF1F2;
+  --static-background-background_1-text: #000000;
+  --static-background-background_2-background: #DAE2E4;
+  --static-background-background_2-text: #000000;
+  --static-background-background_3-background: #C7D4D7;
+  --static-background-background_3-text: #000000;
+  --static-background-background_accent_0-background: #0181A3;
+  --static-background-background_accent_0-text: #FFFFFF;
+  --static-background-background_accent_1-background: #349AB6;
+  --static-background-background_accent_1-text: #000000;
+  --static-background-background_accent_2-background: #CCE6ED;
+  --static-background-background_accent_2-text: #000000;
+  --static-background-background_accent_3-background: #046078;
+  --static-background-background_accent_3-text: #FFFFFF;
+  --static-background-background_accent_4-background: #FDCB8A;
+  --static-background-background_accent_4-text: #000000;
+  --static-background-background_accent_5-background: #9ACDDA;
+  --static-background-background_accent_5-text: #000000;
+  --static-zone_selection-from-background: #F2726A;
+  --static-zone_selection-from-text: #000000;
+  --static-zone_selection-to-background: #EF4E45;
+  --static-zone_selection-to-text: #000000;
+
+  --interactive-interactive_0-default-background: #046078;
+  --interactive-interactive_0-default-text: #FFFFFF;
+  --interactive-interactive_0-hover-background: #034151;
+  --interactive-interactive_0-hover-text: #FFFFFF;
+  --interactive-interactive_0-active-background: #70A4B2;
+  --interactive-interactive_0-active-text: #000000;
+  --interactive-interactive_0-disabled-background: #DBE9EC;
+  --interactive-interactive_0-disabled-text: #000000;
+  --interactive-interactive_0-outline-background: #70A4B2;
+  --interactive-interactive_0-outline-text: #000000;
+  --interactive-interactive_0-destructive-background: #C03F38;
+  --interactive-interactive_0-destructive-text: #FFFFFF;
+  --interactive-interactive_1-default-background: #046078;
+  --interactive-interactive_1-default-text: #FFFFFF;
+  --interactive-interactive_1-hover-background: #034151;
+  --interactive-interactive_1-hover-text: #FFFFFF;
+  --interactive-interactive_1-active-background: #022129;
+  --interactive-interactive_1-active-text: #FFFFFF;
+  --interactive-interactive_1-disabled-background: #DBE9EC;
+  --interactive-interactive_1-disabled-text: #000000;
+  --interactive-interactive_1-outline-background: #70A4B2;
+  --interactive-interactive_1-outline-text: #000000;
+  --interactive-interactive_1-destructive-background: #C03F38;
+  --interactive-interactive_1-destructive-text: #FFFFFF;
+  --interactive-interactive_2-default-background: #FFFFFF;
+  --interactive-interactive_2-default-text: #000000;
+  --interactive-interactive_2-hover-background: #DBE9EC;
+  --interactive-interactive_2-hover-text: #000000;
+  --interactive-interactive_2-active-background: #C9DDE2;
+  --interactive-interactive_2-active-text: #000000;
+  --interactive-interactive_2-disabled-background: #FFFFFF;
+  --interactive-interactive_2-disabled-text: #000000;
+  --interactive-interactive_2-outline-background: #70A4B2;
+  --interactive-interactive_2-outline-text: #000000;
+  --interactive-interactive_2-destructive-background: #C03F38;
+  --interactive-interactive_2-destructive-text: #FFFFFF;
+  --interactive-interactive_3-default-background: #33AF85;
+  --interactive-interactive_3-default-text: #000000;
+  --interactive-interactive_3-hover-background: #33AF85;
+  --interactive-interactive_3-hover-text: #000000;
+  --interactive-interactive_3-active-background: #66C3A4;
+  --interactive-interactive_3-active-text: #000000;
+  --interactive-interactive_3-disabled-background: #DAE2E4;
+  --interactive-interactive_3-disabled-text: #000000;
+  --interactive-interactive_3-outline-background: #70A4B2;
+  --interactive-interactive_3-outline-text: #000000;
+  --interactive-interactive_3-destructive-background: #C03F38;
+  --interactive-interactive_3-destructive-text: #FFFFFF;
+  --interactive-interactive_destructive-default-background: #EF4E45;
+  --interactive-interactive_destructive-default-text: #000000;
+  --interactive-interactive_destructive-hover-background: #C03F38;
+  --interactive-interactive_destructive-hover-text: #FFFFFF;
+  --interactive-interactive_destructive-active-background: #F9B9B5;
+  --interactive-interactive_destructive-active-text: #000000;
+  --interactive-interactive_destructive-disabled-background: #FCDCDA;
+  --interactive-interactive_destructive-disabled-text: #000000;
+  --interactive-interactive_destructive-outline-background: #70A4B2;
+  --interactive-interactive_destructive-outline-text: #000000;
+  --interactive-interactive_destructive-destructive-background: #C03F38;
+  --interactive-interactive_destructive-destructive-text: #FFFFFF;
+
+  --transport-transport_city-primary-background: #004D61;
+  --transport-transport_city-primary-text: #FFFFFF;
+  --transport-transport_city-secondary-background: #013441;
+  --transport-transport_city-secondary-text: #FFFFFF;
+  --transport-transport_region-primary-background: #6B7D2E;
+  --transport-transport_region-primary-text: #000000;
+  --transport-transport_region-secondary-background: #566526;
+  --transport-transport_region-secondary-text: #FFFFFF;
+  --transport-transport_airport_express-primary-background: #8A61C2;
+  --transport-transport_airport_express-primary-text: #FFFFFF;
+  --transport-transport_airport_express-secondary-background: #6F4E9C;
+  --transport-transport_airport_express-secondary-text: #FFFFFF;
+  --transport-transport_flexible-primary-background: #707070;
+  --transport-transport_flexible-primary-text: #FFFFFF;
+  --transport-transport_flexible-secondary-background: #555760;
+  --transport-transport_flexible-secondary-text: #FFFFFF;
+  --transport-transport_boat-primary-background: #5CA1E3;
+  --transport-transport_boat-primary-text: #000000;
+  --transport-transport_boat-secondary-background: #4D87BE;
+  --transport-transport_boat-secondary-text: #FFFFFF;
+  --transport-transport_train-primary-background: #A281CE;
+  --transport-transport_train-primary-text: #000000;
+  --transport-transport_train-secondary-background: #8A61C2;
+  --transport-transport_train-secondary-text: #FFFFFF;
+  --transport-transport_scooter-primary-background: #414C1C;
+  --transport-transport_scooter-primary-text: #FFFFFF;
+  --transport-transport_scooter-secondary-background: #2B3313;
+  --transport-transport_scooter-secondary-text: #FFFFFF;
+  --transport-transport_car-primary-background: #533B75;
+  --transport-transport_car-primary-text: #FFFFFF;
+  --transport-transport_car-secondary-background: #38274E;
+  --transport-transport_car-secondary-text: #FFFFFF;
+  --transport-transport_bike-primary-background: #902F2A;
+  --transport-transport_bike-primary-text: #FFFFFF;
+  --transport-transport_bike-secondary-background: #60201C;
+  --transport-transport_bike-secondary-text: #FFFFFF;
+  --transport-transport_other-primary-background: #707070;
+  --transport-transport_other-primary-text: #FFFFFF;
+  --transport-transport_other-secondary-background: #555760;
+  --transport-transport_other-secondary-text: #FFFFFF;
+
+  --status-valid-primary-background: #33AF85;
+  --status-valid-primary-text: #000000;
+  --status-valid-secondary-background: #CCEBE1;
+  --status-valid-secondary-text: #000000;
+  --status-info-primary-background: #046078;
+  --status-info-primary-text: #FFFFFF;
+  --status-info-secondary-background: #DBE9EC;
+  --status-info-secondary-text: #000000;
+  --status-warning-primary-background: #FCBA63;
+  --status-warning-primary-text: #000000;
+  --status-warning-secondary-background: #FEEED8;
+  --status-warning-secondary-text: #000000;
+  --status-error-primary-background: #EF4E45;
+  --status-error-primary-text: #000000;
+  --status-error-secondary-background: #FCDCDA;
+  --status-error-secondary-text: #000000;
+}
+
+
+/* Dark theme data */
+.dark {
+  --border-primary: #034151;
+  --border-secondary: #022129;
+  --border-focus: #28778B;
+  --border-radius-small: 0.25rem;
+  --border-radius-regular: 0.5rem;
+  --border-radius-circle: 1.25rem;
+  --border-width-slim: 0.0625rem;
+  --border-width-medium: 0.125rem;
+
+  --spacings-xSmall: 0.25rem;
+  --spacings-small: 0.5rem;
+  --spacings-medium: 0.75rem;
+  --spacings-large: 1.25rem;
+  --spacings-xLarge: 1.5rem;
+
+  --icon-size-xSmall: 0.75rem;
+  --icon-size-small: 1rem;
+  --icon-size-normal: 1.25rem;
+  --icon-size-large: 1.625rem;
+
+  --text-light-primary: #FFFFFF;
+  --text-light-secondary: #DAE2E4;
+  --text-light-disabled: #8FA9AF;
+  --text-dark-primary: #000000;
+  --text-dark-secondary: #555760;
+  --text-dark-disabled: #8FA9AF;
+  --text-colors-primary: #FFFFFF;
+  --text-colors-secondary: #DAE2E4;
+  --text-colors-disabled: #8FA9AF;
+  --text-inverse-primary: #000000;
+  --text-inverse-secondary: #555760;
+  --text-inverse-disabled: #8FA9AF;
+
+  --static-background-background_0-background: #022129;
+  --static-background-background_0-text: #FFFFFF;
+  --static-background-background_1-background: #03313D;
+  --static-background-background_1-text: #FFFFFF;
+  --static-background-background_2-background: #034151;
+  --static-background-background_2-text: #FFFFFF;
+  --static-background-background_3-background: #046078;
+  --static-background-background_3-text: #FFFFFF;
+  --static-background-background_accent_0-background: #046078;
+  --static-background-background_accent_0-text: #FFFFFF;
+  --static-background-background_accent_1-background: #034151;
+  --static-background-background_accent_1-text: #FFFFFF;
+  --static-background-background_accent_2-background: #022129;
+  --static-background-background_accent_2-text: #FFFFFF;
+  --static-background-background_accent_3-background: #9ACDDA;
+  --static-background-background_accent_3-text: #000000;
+  --static-background-background_accent_4-background: #FDCB8A;
+  --static-background-background_accent_4-text: #000000;
+  --static-background-background_accent_5-background: #03313D;
+  --static-background-background_accent_5-text: #FFFFFF;
+  --static-zone_selection-from-background: #F2726A;
+  --static-zone_selection-from-text: #000000;
+  --static-zone_selection-to-background: #EF4E45;
+  --static-zone_selection-to-text: #000000;
+
+  --interactive-interactive_0-default-background: #0181A3;
+  --interactive-interactive_0-default-text: #FFFFFF;
+  --interactive-interactive_0-hover-background: #026883;
+  --interactive-interactive_0-hover-text: #FFFFFF;
+  --interactive-interactive_0-active-background: #9ACDDA;
+  --interactive-interactive_0-active-text: #000000;
+  --interactive-interactive_0-disabled-background: #CCE6ED;
+  --interactive-interactive_0-disabled-text: #000000;
+  --interactive-interactive_0-outline-background: #B8D2D9;
+  --interactive-interactive_0-outline-text: #000000;
+  --interactive-interactive_0-destructive-background: #F59590;
+  --interactive-interactive_0-destructive-text: #000000;
+  --interactive-interactive_1-default-background: #0181A3;
+  --interactive-interactive_1-default-text: #FFFFFF;
+  --interactive-interactive_1-hover-background: #026883;
+  --interactive-interactive_1-hover-text: #FFFFFF;
+  --interactive-interactive_1-active-background: #011A21;
+  --interactive-interactive_1-active-text: #FFFFFF;
+  --interactive-interactive_1-disabled-background: #CCE6ED;
+  --interactive-interactive_1-disabled-text: #000000;
+  --interactive-interactive_1-outline-background: #B8D2D9;
+  --interactive-interactive_1-outline-text: #000000;
+  --interactive-interactive_1-destructive-background: #F59590;
+  --interactive-interactive_1-destructive-text: #000000;
+  --interactive-interactive_2-default-background: #022129;
+  --interactive-interactive_2-default-text: #FFFFFF;
+  --interactive-interactive_2-hover-background: #034151;
+  --interactive-interactive_2-hover-text: #FFFFFF;
+  --interactive-interactive_2-active-background: #046078;
+  --interactive-interactive_2-active-text: #FFFFFF;
+  --interactive-interactive_2-disabled-background: #000000;
+  --interactive-interactive_2-disabled-text: #FFFFFF;
+  --interactive-interactive_2-outline-background: #94BBC5;
+  --interactive-interactive_2-outline-text: #000000;
+  --interactive-interactive_2-destructive-background: #F59590;
+  --interactive-interactive_2-destructive-text: #000000;
+  --interactive-interactive_3-default-background: #1A5843;
+  --interactive-interactive_3-default-text: #FFFFFF;
+  --interactive-interactive_3-hover-background: #123B2D;
+  --interactive-interactive_3-hover-text: #FFFFFF;
+  --interactive-interactive_3-active-background: #237559;
+  --interactive-interactive_3-active-text: #FFFFFF;
+  --interactive-interactive_3-disabled-background: #707070;
+  --interactive-interactive_3-disabled-text: #FFFFFF;
+  --interactive-interactive_3-outline-background: #B8D2D9;
+  --interactive-interactive_3-outline-text: #000000;
+  --interactive-interactive_3-destructive-background: #F59590;
+  --interactive-interactive_3-destructive-text: #000000;
+  --interactive-interactive_destructive-default-background: #EF4E45;
+  --interactive-interactive_destructive-default-text: #000000;
+  --interactive-interactive_destructive-hover-background: #C03F38;
+  --interactive-interactive_destructive-hover-text: #FFFFFF;
+  --interactive-interactive_destructive-active-background: #F9B9B5;
+  --interactive-interactive_destructive-active-text: #000000;
+  --interactive-interactive_destructive-disabled-background: #FCDCDA;
+  --interactive-interactive_destructive-disabled-text: #000000;
+  --interactive-interactive_destructive-outline-background: #B8D2D9;
+  --interactive-interactive_destructive-outline-text: #000000;
+  --interactive-interactive_destructive-destructive-background: #F59590;
+  --interactive-interactive_destructive-destructive-text: #000000;
+
+  --transport-transport_city-primary-background: #004D61;
+  --transport-transport_city-primary-text: #FFFFFF;
+  --transport-transport_city-secondary-background: #256778;
+  --transport-transport_city-secondary-text: #FFFFFF;
+  --transport-transport_region-primary-background: #6B7D2E;
+  --transport-transport_region-primary-text: #000000;
+  --transport-transport_region-secondary-background: #899758;
+  --transport-transport_region-secondary-text: #000000;
+  --transport-transport_airport_express-primary-background: #8A61C2;
+  --transport-transport_airport_express-primary-text: #FFFFFF;
+  --transport-transport_airport_express-secondary-background: #A281CE;
+  --transport-transport_airport_express-secondary-text: #000000;
+  --transport-transport_flexible-primary-background: #707070;
+  --transport-transport_flexible-primary-text: #FFFFFF;
+  --transport-transport_flexible-secondary-background: #888888;
+  --transport-transport_flexible-secondary-text: #000000;
+  --transport-transport_boat-primary-background: #5CA1E3;
+  --transport-transport_boat-primary-text: #000000;
+  --transport-transport_boat-secondary-background: #85B9EA;
+  --transport-transport_boat-secondary-text: #000000;
+  --transport-transport_train-primary-background: #A281CE;
+  --transport-transport_train-primary-text: #000000;
+  --transport-transport_train-secondary-background: #B9A0DB;
+  --transport-transport_train-secondary-text: #000000;
+  --transport-transport_scooter-primary-background: #414C1C;
+  --transport-transport_scooter-primary-text: #FFFFFF;
+  --transport-transport_scooter-secondary-background: #566526;
+  --transport-transport_scooter-secondary-text: #FFFFFF;
+  --transport-transport_car-primary-background: #533B75;
+  --transport-transport_car-primary-text: #FFFFFF;
+  --transport-transport_car-secondary-background: #6F4E9C;
+  --transport-transport_car-secondary-text: #FFFFFF;
+  --transport-transport_bike-primary-background: #902F2A;
+  --transport-transport_bike-primary-text: #FFFFFF;
+  --transport-transport_bike-secondary-background: #C03F38;
+  --transport-transport_bike-secondary-text: #FFFFFF;
+  --transport-transport_other-primary-background: #707070;
+  --transport-transport_other-primary-text: #FFFFFF;
+  --transport-transport_other-secondary-background: #888888;
+  --transport-transport_other-secondary-text: #000000;
+
+  --status-valid-primary-background: #66C3A4;
+  --status-valid-primary-text: #000000;
+  --status-valid-secondary-background: #1A5843;
+  --status-valid-secondary-text: #FFFFFF;
+  --status-info-primary-background: #046078;
+  --status-info-primary-text: #FFFFFF;
+  --status-info-secondary-background: #034151;
+  --status-info-secondary-text: #FFFFFF;
+  --status-warning-primary-background: #FCBA63;
+  --status-warning-primary-text: #000000;
+  --status-warning-secondary-background: #3F2F19;
+  --status-warning-secondary-text: #FFFFFF;
+  --status-error-primary-background: #EF4E45;
+  --status-error-primary-text: #000000;
+  --status-error-secondary-background: #60201C;
+  --status-error-secondary-text: #FFFFFF;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .light:not(.override-light) {
+  --border-primary: #034151;
+  --border-secondary: #022129;
+  --border-focus: #28778B;
+  --border-radius-small: 0.25rem;
+  --border-radius-regular: 0.5rem;
+  --border-radius-circle: 1.25rem;
+  --border-width-slim: 0.0625rem;
+  --border-width-medium: 0.125rem;
+
+  --spacings-xSmall: 0.25rem;
+  --spacings-small: 0.5rem;
+  --spacings-medium: 0.75rem;
+  --spacings-large: 1.25rem;
+  --spacings-xLarge: 1.5rem;
+
+  --icon-size-xSmall: 0.75rem;
+  --icon-size-small: 1rem;
+  --icon-size-normal: 1.25rem;
+  --icon-size-large: 1.625rem;
+
+  --text-light-primary: #FFFFFF;
+  --text-light-secondary: #DAE2E4;
+  --text-light-disabled: #8FA9AF;
+  --text-dark-primary: #000000;
+  --text-dark-secondary: #555760;
+  --text-dark-disabled: #8FA9AF;
+  --text-colors-primary: #FFFFFF;
+  --text-colors-secondary: #DAE2E4;
+  --text-colors-disabled: #8FA9AF;
+  --text-inverse-primary: #000000;
+  --text-inverse-secondary: #555760;
+  --text-inverse-disabled: #8FA9AF;
+
+  --static-background-background_0-background: #022129;
+  --static-background-background_0-text: #FFFFFF;
+  --static-background-background_1-background: #03313D;
+  --static-background-background_1-text: #FFFFFF;
+  --static-background-background_2-background: #034151;
+  --static-background-background_2-text: #FFFFFF;
+  --static-background-background_3-background: #046078;
+  --static-background-background_3-text: #FFFFFF;
+  --static-background-background_accent_0-background: #046078;
+  --static-background-background_accent_0-text: #FFFFFF;
+  --static-background-background_accent_1-background: #034151;
+  --static-background-background_accent_1-text: #FFFFFF;
+  --static-background-background_accent_2-background: #022129;
+  --static-background-background_accent_2-text: #FFFFFF;
+  --static-background-background_accent_3-background: #9ACDDA;
+  --static-background-background_accent_3-text: #000000;
+  --static-background-background_accent_4-background: #FDCB8A;
+  --static-background-background_accent_4-text: #000000;
+  --static-background-background_accent_5-background: #03313D;
+  --static-background-background_accent_5-text: #FFFFFF;
+  --static-zone_selection-from-background: #F2726A;
+  --static-zone_selection-from-text: #000000;
+  --static-zone_selection-to-background: #EF4E45;
+  --static-zone_selection-to-text: #000000;
+
+  --interactive-interactive_0-default-background: #0181A3;
+  --interactive-interactive_0-default-text: #FFFFFF;
+  --interactive-interactive_0-hover-background: #026883;
+  --interactive-interactive_0-hover-text: #FFFFFF;
+  --interactive-interactive_0-active-background: #9ACDDA;
+  --interactive-interactive_0-active-text: #000000;
+  --interactive-interactive_0-disabled-background: #CCE6ED;
+  --interactive-interactive_0-disabled-text: #000000;
+  --interactive-interactive_0-outline-background: #B8D2D9;
+  --interactive-interactive_0-outline-text: #000000;
+  --interactive-interactive_0-destructive-background: #F59590;
+  --interactive-interactive_0-destructive-text: #000000;
+  --interactive-interactive_1-default-background: #0181A3;
+  --interactive-interactive_1-default-text: #FFFFFF;
+  --interactive-interactive_1-hover-background: #026883;
+  --interactive-interactive_1-hover-text: #FFFFFF;
+  --interactive-interactive_1-active-background: #011A21;
+  --interactive-interactive_1-active-text: #FFFFFF;
+  --interactive-interactive_1-disabled-background: #CCE6ED;
+  --interactive-interactive_1-disabled-text: #000000;
+  --interactive-interactive_1-outline-background: #B8D2D9;
+  --interactive-interactive_1-outline-text: #000000;
+  --interactive-interactive_1-destructive-background: #F59590;
+  --interactive-interactive_1-destructive-text: #000000;
+  --interactive-interactive_2-default-background: #022129;
+  --interactive-interactive_2-default-text: #FFFFFF;
+  --interactive-interactive_2-hover-background: #034151;
+  --interactive-interactive_2-hover-text: #FFFFFF;
+  --interactive-interactive_2-active-background: #046078;
+  --interactive-interactive_2-active-text: #FFFFFF;
+  --interactive-interactive_2-disabled-background: #000000;
+  --interactive-interactive_2-disabled-text: #FFFFFF;
+  --interactive-interactive_2-outline-background: #94BBC5;
+  --interactive-interactive_2-outline-text: #000000;
+  --interactive-interactive_2-destructive-background: #F59590;
+  --interactive-interactive_2-destructive-text: #000000;
+  --interactive-interactive_3-default-background: #1A5843;
+  --interactive-interactive_3-default-text: #FFFFFF;
+  --interactive-interactive_3-hover-background: #123B2D;
+  --interactive-interactive_3-hover-text: #FFFFFF;
+  --interactive-interactive_3-active-background: #237559;
+  --interactive-interactive_3-active-text: #FFFFFF;
+  --interactive-interactive_3-disabled-background: #707070;
+  --interactive-interactive_3-disabled-text: #FFFFFF;
+  --interactive-interactive_3-outline-background: #B8D2D9;
+  --interactive-interactive_3-outline-text: #000000;
+  --interactive-interactive_3-destructive-background: #F59590;
+  --interactive-interactive_3-destructive-text: #000000;
+  --interactive-interactive_destructive-default-background: #EF4E45;
+  --interactive-interactive_destructive-default-text: #000000;
+  --interactive-interactive_destructive-hover-background: #C03F38;
+  --interactive-interactive_destructive-hover-text: #FFFFFF;
+  --interactive-interactive_destructive-active-background: #F9B9B5;
+  --interactive-interactive_destructive-active-text: #000000;
+  --interactive-interactive_destructive-disabled-background: #FCDCDA;
+  --interactive-interactive_destructive-disabled-text: #000000;
+  --interactive-interactive_destructive-outline-background: #B8D2D9;
+  --interactive-interactive_destructive-outline-text: #000000;
+  --interactive-interactive_destructive-destructive-background: #F59590;
+  --interactive-interactive_destructive-destructive-text: #000000;
+
+  --transport-transport_city-primary-background: #004D61;
+  --transport-transport_city-primary-text: #FFFFFF;
+  --transport-transport_city-secondary-background: #256778;
+  --transport-transport_city-secondary-text: #FFFFFF;
+  --transport-transport_region-primary-background: #6B7D2E;
+  --transport-transport_region-primary-text: #000000;
+  --transport-transport_region-secondary-background: #899758;
+  --transport-transport_region-secondary-text: #000000;
+  --transport-transport_airport_express-primary-background: #8A61C2;
+  --transport-transport_airport_express-primary-text: #FFFFFF;
+  --transport-transport_airport_express-secondary-background: #A281CE;
+  --transport-transport_airport_express-secondary-text: #000000;
+  --transport-transport_flexible-primary-background: #707070;
+  --transport-transport_flexible-primary-text: #FFFFFF;
+  --transport-transport_flexible-secondary-background: #888888;
+  --transport-transport_flexible-secondary-text: #000000;
+  --transport-transport_boat-primary-background: #5CA1E3;
+  --transport-transport_boat-primary-text: #000000;
+  --transport-transport_boat-secondary-background: #85B9EA;
+  --transport-transport_boat-secondary-text: #000000;
+  --transport-transport_train-primary-background: #A281CE;
+  --transport-transport_train-primary-text: #000000;
+  --transport-transport_train-secondary-background: #B9A0DB;
+  --transport-transport_train-secondary-text: #000000;
+  --transport-transport_scooter-primary-background: #414C1C;
+  --transport-transport_scooter-primary-text: #FFFFFF;
+  --transport-transport_scooter-secondary-background: #566526;
+  --transport-transport_scooter-secondary-text: #FFFFFF;
+  --transport-transport_car-primary-background: #533B75;
+  --transport-transport_car-primary-text: #FFFFFF;
+  --transport-transport_car-secondary-background: #6F4E9C;
+  --transport-transport_car-secondary-text: #FFFFFF;
+  --transport-transport_bike-primary-background: #902F2A;
+  --transport-transport_bike-primary-text: #FFFFFF;
+  --transport-transport_bike-secondary-background: #C03F38;
+  --transport-transport_bike-secondary-text: #FFFFFF;
+  --transport-transport_other-primary-background: #707070;
+  --transport-transport_other-primary-text: #FFFFFF;
+  --transport-transport_other-secondary-background: #888888;
+  --transport-transport_other-secondary-text: #000000;
+
+  --status-valid-primary-background: #66C3A4;
+  --status-valid-primary-text: #000000;
+  --status-valid-secondary-background: #1A5843;
+  --status-valid-secondary-text: #FFFFFF;
+  --status-info-primary-background: #046078;
+  --status-info-primary-text: #FFFFFF;
+  --status-info-secondary-background: #034151;
+  --status-info-secondary-text: #FFFFFF;
+  --status-warning-primary-background: #FCBA63;
+  --status-warning-primary-text: #000000;
+  --status-warning-secondary-background: #3F2F19;
+  --status-warning-secondary-text: #FFFFFF;
+  --status-error-primary-background: #EF4E45;
+  --status-error-primary-text: #000000;
+  --status-error-secondary-background: #60201C;
+  --status-error-secondary-text: #FFFFFF;
+}
+}
+
+
+/* Theme color pairs */
+.static-background-background_0 {
+  background-color: var(--static-background-background_0-background);
+  color: var(--static-background-background_0-text);
+}
+.static-background-background_1 {
+  background-color: var(--static-background-background_1-background);
+  color: var(--static-background-background_1-text);
+}
+.static-background-background_2 {
+  background-color: var(--static-background-background_2-background);
+  color: var(--static-background-background_2-text);
+}
+.static-background-background_3 {
+  background-color: var(--static-background-background_3-background);
+  color: var(--static-background-background_3-text);
+}
+.static-background-background_accent_0 {
+  background-color: var(--static-background-background_accent_0-background);
+  color: var(--static-background-background_accent_0-text);
+}
+.static-background-background_accent_1 {
+  background-color: var(--static-background-background_accent_1-background);
+  color: var(--static-background-background_accent_1-text);
+}
+.static-background-background_accent_2 {
+  background-color: var(--static-background-background_accent_2-background);
+  color: var(--static-background-background_accent_2-text);
+}
+.static-background-background_accent_3 {
+  background-color: var(--static-background-background_accent_3-background);
+  color: var(--static-background-background_accent_3-text);
+}
+.static-background-background_accent_4 {
+  background-color: var(--static-background-background_accent_4-background);
+  color: var(--static-background-background_accent_4-text);
+}
+.static-background-background_accent_5 {
+  background-color: var(--static-background-background_accent_5-background);
+  color: var(--static-background-background_accent_5-text);
+}
+.static-zone_selection-from {
+  background-color: var(--static-zone_selection-from-background);
+  color: var(--static-zone_selection-from-text);
+}
+.static-zone_selection-to {
+  background-color: var(--static-zone_selection-to-background);
+  color: var(--static-zone_selection-to-text);
+}
+
+.transport-transport_city-primary {
+  background-color: var(--transport-transport_city-primary-background);
+  color: var(--transport-transport_city-primary-text);
+}
+.transport-transport_city-secondary {
+  background-color: var(--transport-transport_city-secondary-background);
+  color: var(--transport-transport_city-secondary-text);
+}
+.transport-transport_region-primary {
+  background-color: var(--transport-transport_region-primary-background);
+  color: var(--transport-transport_region-primary-text);
+}
+.transport-transport_region-secondary {
+  background-color: var(--transport-transport_region-secondary-background);
+  color: var(--transport-transport_region-secondary-text);
+}
+.transport-transport_airport_express-primary {
+  background-color: var(--transport-transport_airport_express-primary-background);
+  color: var(--transport-transport_airport_express-primary-text);
+}
+.transport-transport_airport_express-secondary {
+  background-color: var(--transport-transport_airport_express-secondary-background);
+  color: var(--transport-transport_airport_express-secondary-text);
+}
+.transport-transport_flexible-primary {
+  background-color: var(--transport-transport_flexible-primary-background);
+  color: var(--transport-transport_flexible-primary-text);
+}
+.transport-transport_flexible-secondary {
+  background-color: var(--transport-transport_flexible-secondary-background);
+  color: var(--transport-transport_flexible-secondary-text);
+}
+.transport-transport_boat-primary {
+  background-color: var(--transport-transport_boat-primary-background);
+  color: var(--transport-transport_boat-primary-text);
+}
+.transport-transport_boat-secondary {
+  background-color: var(--transport-transport_boat-secondary-background);
+  color: var(--transport-transport_boat-secondary-text);
+}
+.transport-transport_train-primary {
+  background-color: var(--transport-transport_train-primary-background);
+  color: var(--transport-transport_train-primary-text);
+}
+.transport-transport_train-secondary {
+  background-color: var(--transport-transport_train-secondary-background);
+  color: var(--transport-transport_train-secondary-text);
+}
+.transport-transport_scooter-primary {
+  background-color: var(--transport-transport_scooter-primary-background);
+  color: var(--transport-transport_scooter-primary-text);
+}
+.transport-transport_scooter-secondary {
+  background-color: var(--transport-transport_scooter-secondary-background);
+  color: var(--transport-transport_scooter-secondary-text);
+}
+.transport-transport_car-primary {
+  background-color: var(--transport-transport_car-primary-background);
+  color: var(--transport-transport_car-primary-text);
+}
+.transport-transport_car-secondary {
+  background-color: var(--transport-transport_car-secondary-background);
+  color: var(--transport-transport_car-secondary-text);
+}
+.transport-transport_bike-primary {
+  background-color: var(--transport-transport_bike-primary-background);
+  color: var(--transport-transport_bike-primary-text);
+}
+.transport-transport_bike-secondary {
+  background-color: var(--transport-transport_bike-secondary-background);
+  color: var(--transport-transport_bike-secondary-text);
+}
+.transport-transport_other-primary {
+  background-color: var(--transport-transport_other-primary-background);
+  color: var(--transport-transport_other-primary-text);
+}
+.transport-transport_other-secondary {
+  background-color: var(--transport-transport_other-secondary-background);
+  color: var(--transport-transport_other-secondary-text);
+}
+
+.interactive-interactive_0 {
+  background-color: var(--interactive-interactive_0-default-background);
+  color: var(--interactive-interactive_0-default-text);
+}
+.interactive-interactive_0:hover {
+  background-color: var(--interactive-interactive_0-hover-background);
+  color: var(--interactive-interactive_0-hover-text);
+}
+.interactive-interactive_0:active {
+  background-color: var(--interactive-interactive_0-active-background);
+  color: var(--interactive-interactive_0-active-text);
+}
+.interactive-interactive_0:disabled {
+  background-color: var(--interactive-interactive_0-disabled-background);
+  color: var(--interactive-interactive_0-disabled-text);
+}
+.interactive-interactive_1 {
+  background-color: var(--interactive-interactive_1-default-background);
+  color: var(--interactive-interactive_1-default-text);
+}
+.interactive-interactive_1:hover {
+  background-color: var(--interactive-interactive_1-hover-background);
+  color: var(--interactive-interactive_1-hover-text);
+}
+.interactive-interactive_1:active {
+  background-color: var(--interactive-interactive_1-active-background);
+  color: var(--interactive-interactive_1-active-text);
+}
+.interactive-interactive_1:disabled {
+  background-color: var(--interactive-interactive_1-disabled-background);
+  color: var(--interactive-interactive_1-disabled-text);
+}
+.interactive-interactive_2 {
+  background-color: var(--interactive-interactive_2-default-background);
+  color: var(--interactive-interactive_2-default-text);
+}
+.interactive-interactive_2:hover {
+  background-color: var(--interactive-interactive_2-hover-background);
+  color: var(--interactive-interactive_2-hover-text);
+}
+.interactive-interactive_2:active {
+  background-color: var(--interactive-interactive_2-active-background);
+  color: var(--interactive-interactive_2-active-text);
+}
+.interactive-interactive_2:disabled {
+  background-color: var(--interactive-interactive_2-disabled-background);
+  color: var(--interactive-interactive_2-disabled-text);
+}
+.interactive-interactive_3 {
+  background-color: var(--interactive-interactive_3-default-background);
+  color: var(--interactive-interactive_3-default-text);
+}
+.interactive-interactive_3:hover {
+  background-color: var(--interactive-interactive_3-hover-background);
+  color: var(--interactive-interactive_3-hover-text);
+}
+.interactive-interactive_3:active {
+  background-color: var(--interactive-interactive_3-active-background);
+  color: var(--interactive-interactive_3-active-text);
+}
+.interactive-interactive_3:disabled {
+  background-color: var(--interactive-interactive_3-disabled-background);
+  color: var(--interactive-interactive_3-disabled-text);
+}
+.interactive-interactive_destructive {
+  background-color: var(--interactive-interactive_destructive-default-background);
+  color: var(--interactive-interactive_destructive-default-text);
+}
+.interactive-interactive_destructive:hover {
+  background-color: var(--interactive-interactive_destructive-hover-background);
+  color: var(--interactive-interactive_destructive-hover-text);
+}
+.interactive-interactive_destructive:active {
+  background-color: var(--interactive-interactive_destructive-active-background);
+  color: var(--interactive-interactive_destructive-active-text);
+}
+.interactive-interactive_destructive:disabled {
+  background-color: var(--interactive-interactive_destructive-disabled-background);
+  color: var(--interactive-interactive_destructive-disabled-text);
+}
+
+.status-valid-primary {
+  background-color: var(--status-valid-primary-background);
+  color: var(--status-valid-primary-text);
+}
+.status-valid-secondary {
+  background-color: var(--status-valid-secondary-background);
+  color: var(--status-valid-secondary-text);
+}
+.status-info-primary {
+  background-color: var(--status-info-primary-background);
+  color: var(--status-info-primary-text);
+}
+.status-info-secondary {
+  background-color: var(--status-info-secondary-background);
+  color: var(--status-info-secondary-text);
+}
+.status-warning-primary {
+  background-color: var(--status-warning-primary-background);
+  color: var(--status-warning-primary-text);
+}
+.status-warning-secondary {
+  background-color: var(--status-warning-secondary-background);
+  color: var(--status-warning-secondary-text);
+}
+.status-error-primary {
+  background-color: var(--status-error-primary-background);
+  color: var(--status-error-primary-text);
+}
+.status-error-secondary {
+  background-color: var(--status-error-secondary-background);
+  color: var(--status-error-secondary-text);
+}

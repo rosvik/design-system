@@ -81,6 +81,6 @@ export function createTextTypeStyles(
  * @param extension - Object to extend original text type style. Can be nested with same keys as style
  * @returns new deep merged intersection
  */
-export function extendTextTypeStyles<T>(type: PlatformTypes, extension: T) {
+export function extendTextTypeStyles<T extends {}>(type: PlatformTypes, extension: T) {
   return merge(textTypeStyles[mapType(type)], extension);
 }

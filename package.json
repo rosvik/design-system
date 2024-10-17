@@ -24,6 +24,7 @@
     "pub": "lerna publish",
     "bootstrap": "lerna bootstrap",
     "build-all": "lerna run build",
+    "fetch-variables": "yarn workspace @atb-as/theme fetch-variables",
     "pack-all": "lerna run pack",
     "build": "yarn workspace @atb-as/design-system build && cp -r ./web/public .",
     "dev": "yarn workspace @atb-as/design-system dev"

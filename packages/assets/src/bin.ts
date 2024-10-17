@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import {vaildOrgIds, generateAssets, searchGlob} from './generate';
+import {validOrgIds, generateAssets, searchGlob} from './generate';
 import pathlib from 'path';
 import {AssetType, stringAsThemeVariant, themeVariantAsString} from './utils';
 import {setDebug} from './logger';
@@ -26,7 +26,7 @@ program
   )
   .addArgument(
     new Argument('<orgId>', 'Generate for specific organization')
-      .choices(vaildOrgIds.map(themeVariantAsString))
+      .choices(validOrgIds.map(themeVariantAsString))
       .argRequired(),
   )
   .requiredOption('-o, --out-dir <output>', 'Output directory')

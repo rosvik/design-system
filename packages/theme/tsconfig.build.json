@@ -1,10 +1,8 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "target": "es5",
     "declaration": true,
-    "outDir": "./lib",
-    "sourceMap": true,
+    "outDir": "./lib/",
     "noEmit": false
   },
   "exclude": ["node_modules", "lib", "tools"],

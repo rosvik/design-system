@@ -36,7 +36,7 @@ npx generate-assets -h
 ### Import through `ts`/`js`:
 
 ```ts
-import generateAssets from '@atb-as/generate-assets';
+import { generateAssets } from '@atb-as/generate-assets';
 
 // This line will copy assets for selected orgId to selected destinationDirectory
 generateAssets(

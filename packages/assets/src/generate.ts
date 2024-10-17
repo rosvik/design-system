@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import {createReadStream, createWriteStream} from 'fs';
 import path from 'path';
 
-import {createThemesFor, Themes, ThemeVariant} from '@atb-as/theme/lib/';
+import {createThemesFor, Themes, ThemeVariant} from '@atb-as/theme';
 
 import micromatch from 'micromatch';
 import {sed as updateFiles} from 'stream-editor';
@@ -14,7 +14,7 @@ import {
 } from './utils';
 import {log} from './logger';
 
-export const vaildOrgIds = [
+export const validOrgIds = [
   ThemeVariant.AtB,
   ThemeVariant.Nfk,
   ThemeVariant.FRAM,
@@ -59,8 +59,8 @@ export async function generateAssets(
     return fgNormalizedForUnix(fullPath);
   };
 
-  if (!vaildOrgIds.includes(orgId))
-    throw new Error(`Invalid orgId provided, valid orgIds are ${vaildOrgIds}`);
+  if (!validOrgIds.includes(orgId))
+    throw new Error(`Invalid orgId provided, valid orgIds are ${validOrgIds}`);
 
   // File paths are returned as UNIX type separators.
   const commonFiles = await fromBase('common');

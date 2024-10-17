@@ -1,4 +1,4 @@
-import {ThemeVariant} from '@atb-as/theme/lib/';
+import {ThemeVariant} from '@atb-as/theme';
 
 export {ThemeVariant};
 import fg from 'fast-glob';

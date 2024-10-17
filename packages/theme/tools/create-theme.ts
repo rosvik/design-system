@@ -6,9 +6,9 @@ import {indentJoin, maybeConvertToRem} from './utils';
 
 export default async function outputThemes(
   themeOutputDirName: string,
-  themes: Themes,
+  themes: Themes<Theme>,
 ) {
-  const base = join(__dirname, `../src/themes/${themeOutputDirName}`);
+  const base = join(__dirname, `../src/generated/themes/${themeOutputDirName}`);
 
   const cssModule = join(base, 'theme.module.css');
   const regular = join(base, 'theme.css');
@@ -93,7 +93,7 @@ ${extract('status')}
 }
 
 type Converter = (v: any, name: string) => any;
-function printWithPrefix<T>(
+function printWithPrefix<T extends Array<unknown> | {}>(
   prefix: string,
   obj: T,
   valueConvert: Converter = (i) => i,
@@ -105,7 +105,7 @@ function printWithPrefix<T>(
       data = data.concat(
         printWithPrefix(`${prefix}-${name}`, withoutText, valueConvert),
       );
-    } else if (typeof colorValue === 'object') {
+    } else if (colorValue && typeof colorValue === 'object') {
       data = data.concat(
         printWithPrefix(`${prefix}-${name}`, colorValue, valueConvert),
       );

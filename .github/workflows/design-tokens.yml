@@ -14,7 +14,8 @@ jobs:
           node-version: '20'
       - name: Fetch variables from Figma
         env:
-          FIGMA_TOKEN: ${{ secrets.FIGMA_REST_API_KEY }}
+          FIGMA_REST_API_KEY: ${{ secrets.FIGMA_REST_API_KEY }}
+          FIGMA_VARIABLES_URL: ${{ vars.FIGMA_VARIABLES_URL }}
         run: | 
           yarn install --immutable
           yarn fetch-variables

@@ -255,7 +255,7 @@ const generateThemes = async () => {
 
   const response = await fetch(`${process.env.FIGMA_VARIABLES_URL}`, {
     headers: {
-      'X-FIGMA-TOKEN': process.env.FIGMA_TOKEN ?? "Figma token inaccessible or not set."
+      'X-FIGMA-TOKEN': process.env.FIGMA_REST_API_KEY ?? "FIGMA_REST_API_KEY inaccessible or not set."
     }
   })
 

@@ -260,7 +260,7 @@ export default {
         text: "#ffffff"
       },
       secondary: {
-        background: "#0020c2",
+        background: "#546ad6",
         text: "#ffffff"
       }
     },

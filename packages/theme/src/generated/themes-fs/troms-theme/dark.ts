@@ -449,7 +449,7 @@ export default {
           }
         },
         secondary: {
-          background: "#0020c2",
+          background: "#546ad6",
           foreground: {
             primary: "#ffffff",
             secondary: "#e3e5e6",

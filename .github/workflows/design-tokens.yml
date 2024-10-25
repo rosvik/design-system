@@ -1,6 +1,22 @@
 name: update-design-tokens
 run-name: Update design tokens from Figma
-on: [workflow_dispatch]
+on:
+  workflow_dispatch:
+    inputs:
+      organization:
+        type: choice
+        description: Which org did you make changes for?
+        required: false
+        default: all
+        options:
+        - all
+        - atb
+        - fram
+        - nfk
+        - troms
+        - innlandet
+        - vkt
+        - farte
 jobs:
   update-variables:
     runs-on: ubuntu-latest
@@ -26,12 +42,23 @@ jobs:
 
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
+          if [[ "${{ inputs.organization }}" == "all" || -z "${{ inputs.organization }}" ]]; then
+            # Stage all changes if no org was specified
+            git add **/src/generated/{themes,themes-fs}/*
+          else
+            # Stage only files related to the selected organization
+            git add **/src/generated/{themes,themes-fs}/${{ inputs.organization }}-theme/*
+          fi
           git commit -m "style: Updated design tokens"
           git push origin "${CURRENT_BRANCH}"
       - name: Create PR for changes
         run: |
           CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-          gh pr create --title "[BOT] Updated design tokens" --body "Design tokens were automatically fetched from Figma and parsed into design tokens. The changes can be reviewed in the `Files changed` tab." --head "${CURRENT_BRANCH}" --base main
+          if [[ "${{ inputs.organization }}" == "all" || -z "${{ inputs.organization }}" ]]; then
+            ORG_SUFFIX=""
+          else
+            ORG_SUFFIX=" for \`${{ inputs.organization }}\`"
+          fi
+          gh pr create --title "[BOT] Updated design tokens${ORG_SUFFIX}" --body "Design tokens ${ORG_SUFFIX} were automatically fetched from Figma and parsed into design tokens. The changes can be reviewed in the `Files changed` tab." --head "${CURRENT_BRANCH}" --base main
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

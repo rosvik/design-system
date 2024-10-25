@@ -1,0 +1,13 @@
+# Design system as a whole
+* @gorandalum @rosvik @marius-at-atb
+
+# OMS generated theme
+/packages/theme/src/generated/ @mortennordseth @jonasbrunvoll
+
+# Troms generated theme
+/packages/theme/src/generated/themes/troms-theme/ @tft-abel @mortennordseth @jonasbrunvoll
+/packages/theme/src/generated/themes-fs/troms-theme/ @tft-abel @mortennordseth @jonasbrunvoll
+
+# AtB generated theme
+/packages/theme/src/generated/themes/atb-theme/ @AtB-AS/design 
+/packages/theme/src/generated/themes-fs/atb-theme/ @AtB-AS/design 

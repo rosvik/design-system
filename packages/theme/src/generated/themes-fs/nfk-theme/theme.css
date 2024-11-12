@@ -1,0 +1,10 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* Import dark mode */
+@import url('dark.css') layer(theme.dark);
+/* Import light mode */
+@import url('light.css') layer(theme.light);
+/* Override light mode if the user prefers the dark color scheme */
+@import url('dark.css') layer(theme.dark-override) (prefers-color-scheme: dark);

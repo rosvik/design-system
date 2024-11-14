@@ -1,0 +1,47 @@
+{
+  "name": "@atb-as/token",
+  "version": "0.0.0",
+  "description": "PostCSS plugin that adds a token() function to CSS. It accepts a variable in dot separated syntax. This call will fail if the CSS variable does not exist.",
+  "type": "commonjs",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "design-tokens",
+    "postcss-typesafe-design-tokens",
+    "design-system",
+    "atb"
+  ],
+  "license": "EUPL-1.2",
+  "scripts": {
+    "unit": "node --test index.test.js",
+    "test": "npm run unit && eslint ."
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "@atb-as/theme": "11.0.1",
+    "postcss": "^8.4.27"
+  },
+  "dependencies": {
+    "postcss-functions": "4.0.2"
+  },
+  "devDependencies": {
+    "@atb-as/theme": "11.0.1",
+    "eslint": "^8.47.0",
+    "postcss": "^8.4.27"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ]
+  }
+}

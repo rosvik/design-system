@@ -1,6 +1,6 @@
 {
   "name": "@atb-as/token",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "PostCSS plugin that adds a token() function to CSS. It accepts a variable in dot separated syntax. This call will fail if the CSS variable does not exist.",
   "type": "commonjs",
   "keywords": [

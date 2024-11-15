@@ -199,11 +199,11 @@ export default themes`;
  * Contents of the main CSS file linking the themes
  */
 const cssIndex = `/* Import dark mode */
-@import url('dark.css') layer(theme.dark);
+@import url('dark.css');
 /* Import light mode */
-@import url('light.css') layer(theme.light);
+@import url('light.css');
 /* Override light mode if the user prefers the dark color scheme */
-@import url('dark.css') layer(theme.dark-override) (prefers-color-scheme: dark);
+@import url('dark.css') (prefers-color-scheme: dark);
 `;
 
 /**
@@ -348,7 +348,7 @@ const generateThemes = async () => {
             {
               format: 'css/variables',
               options: {
-                selector: `.${mode}, :root { color-scheme: ${mode}; } \n.${mode}, :root`,
+                selector: `[data-theme="${mode}"], [data-theme="auto"] { color-scheme: ${mode}; } \n[data-theme="${mode}"], [data-theme="auto"]`,
               },
               destination: `${mode}.css`,
               filter: 'filter-palette',

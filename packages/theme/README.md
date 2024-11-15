@@ -22,10 +22,10 @@ console.log(themes.light.colors.background_0);
 ### Usage CSS
 
 > ⚠️ We're currently transitioning to a new variable structure.
-> Importing CSS from `../theme-fs/..` applies variables to `:root`.
+> Importing CSS from `../theme-fs/..` applies variables to `data-theme["auto"]`.
 > The theme follows the device preference.
 >
-> This behaviour can be overwritten by explicitly setting `.light` or `.dark`
+> This behaviour can be overwritten by explicitly setting `data-theme["light"]` or `data-theme["dark"]`
 > on an element. All children will follow that specific theme.
 
 Or you could import CSS files or as CSS Modules. The actual content is currently the same, but named differently to be imported by CSS modules.

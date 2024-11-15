@@ -2,8 +2,8 @@
  * Do not edit directly, this file was auto-generated.
  */
 
-.dark, :root { color-scheme: dark; } 
-.dark, :root {
+[data-theme="dark"], [data-theme="auto"] { color-scheme: dark; } 
+[data-theme="dark"], [data-theme="auto"] {
   --color-foreground-light-primary: #ffffff;
   --color-foreground-light-secondary: #e6e6e6;
   --color-foreground-light-disabled: #b3b3b3;

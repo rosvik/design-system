@@ -64,7 +64,7 @@ export default {
         text: "#000000"
       },
       background_accent_5: {
-        background: "#d24600",
+        background: "#000000",
         text: "#ffffff"
       }
     },

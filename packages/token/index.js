@@ -4,9 +4,7 @@ const { name } = require('./package.json')
 
 const { createThemesFor, ThemeVariant } = require('@atb-as/theme')
 
-const { light: theme } = createThemesFor(ThemeVariant.AtB, {
-  useFigmaStructure: true
-})
+const { light: theme } = createThemesFor(ThemeVariant.AtB)
 
 const camelToKebab = (str) => {
   return str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();

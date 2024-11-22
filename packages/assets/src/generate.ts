@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import {createReadStream, createWriteStream} from 'fs';
 import path from 'path';
 
-import {createThemesFor, Themes, ThemeVariant} from '@atb-as/theme';
+import {createThemesFor, Mode, Themes, ThemeVariant} from '@atb-as/theme';
 
 import micromatch from 'micromatch';
 import {sed as updateFiles} from 'stream-editor';
@@ -139,7 +139,7 @@ export async function generateMonoIconsInDestinationDirectory(
 }
 
 async function rewriteAndSave(
-  color: keyof Themes,
+  color: Mode,
   themes: Themes,
   absoluteFile: string,
   monoIconsBase: string,
@@ -159,7 +159,7 @@ async function rewriteAndSave(
     from: createReadStream(absoluteFile),
     to: createWriteStream(destination),
     match: /((fill|stroke)\=\"(?:[^"]+)\")/,
-    replacement: `$2="${themes[color].text.colors.primary}"`,
+    replacement: `$2="${themes[color].color.foreground.dynamic.primary}"`,
   });
 
   return destination;

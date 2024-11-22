@@ -10,16 +10,9 @@ import {
 } from '../src/typography';
 import {indentLine, maybeConvertToRem} from './utils';
 
-export default async function outputTypography() {
-  const base = join(__dirname, '../src/generated');
-  const cssModule = join(base, 'typography.module.css');
-  const regular = join(base, 'typography.css');
-
-  return Promise.all([
-    writeFile(cssModule, generateCss(true)),
-    writeFile(regular, generateCss(false)),
-  ]);
-}
+const base = join(__dirname, '../src/generated');
+const cssModule = join(base, 'typography.module.css');
+const regular = join(base, 'typography.css');
 
 function generateCss(cssModule: boolean) {
   const typo = createTextTypeStyles('web');
@@ -163,3 +156,8 @@ function printTextStyleCustomProps(obj: TextTypeStyles) {
   }
   return data.join('\n');
 }
+
+Promise.all([
+  writeFile(cssModule, generateCss(true)),
+  writeFile(regular, generateCss(false)),
+]).then(() => console.log('Written CSS files'), console.error);

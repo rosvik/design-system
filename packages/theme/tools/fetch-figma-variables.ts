@@ -8,8 +8,7 @@ import { fileHeader } from 'style-dictionary/utils';
 import type { Config, DesignTokens, TransformedToken, File, Dictionary } from 'style-dictionary/types';
 
 import path from 'path';
-import { convertToCamelCase, convertToSnakeCase } from "./utils";
-import { ThemeOptions } from "../src";
+import { convertToCamelCase } from "./utils";
 
 export type OrganizationId = 'atb' | 'fram' | 'innlandet' | 'nfk' | 'troms' | 'vkt' | 'farte'
 export interface Organization {
@@ -41,7 +40,6 @@ type FormatOptions = {
   file: File,
   options?: {
     content?: string
-    useFigmaStructure?: boolean
   },
   dictionary?: Dictionary
 }
@@ -77,93 +75,6 @@ StyleDictionary.registerTransform({
 });
 
 /**
- * Converts Figma structure back to the `theme.ts` structure
- * for backwards compatibility with versions < 11.0.0 of `@atb-as/theme`
- */
-StyleDictionary.registerTransform({
-  name: 'attribute/compat-path',
-  type: 'attribute',
-  transform: (token: TransformedToken) => {
-
-    const compatPath = token.path.reduce((acc, cur, index, all) => {
-
-      switch (cur) {
-        case "0":
-        case "1":
-        case "2":
-        case "3":
-        case "4":
-        case "5":
-        case "city":
-        case "region":
-        case "airportExpress":
-        case "boat":
-        case "train":
-        case "flexible":
-        case "bike":
-        case "scooter":
-        case "car":
-        case "other":
-          return acc
-        case "destructive":
-          // Keep the destructive key if it is the last one
-          // Happens in `interactive/x/destructive`
-          if (index === 3) {
-            return acc.concat(cur)
-          }
-          return acc
-        case "color":
-          if (index === 0) {
-            return acc
-          }
-          return acc.concat(cur)
-        case "background":
-          if (index === all.length - 1) {
-            // Unpack ContrastColor when border color
-            if (all.includes("border")) {
-              return acc
-            }
-            else return acc.concat(cur)
-          }
-
-          return acc.concat("static", "background")
-        case "neutral":
-          return acc.concat(`background_${all[index + 1]}`)
-        case "accent":
-          return acc.concat(`background_accent_${all[index + 1]}`)
-        case "interactive":
-        case "transport":
-          let mode = convertToSnakeCase(all[index + 1])
-          return acc.concat(cur, `${cur}_${mode}`)
-        case "foreground":
-          return acc.concat("text")
-        case "primary":
-          // If ContrastColor
-          if (index === all.length - 1 && all[index - 1] === "foreground" && cur === "primary") {
-            return acc
-          }
-
-          return acc.concat(cur)
-        case "dynamic":
-          return acc.concat("colors")
-        case "zone":
-          return acc.concat("static", "zone_selection")
-        case "geofencingZone":
-          return acc.concat("geofencingZones")
-        case "spacing":
-          return acc.concat("spacings")
-        default:
-          return acc.concat(cur)
-      }
-    }, [] as string[])
-
-    token.compatPath = compatPath;
-
-    return token;
-  },
-});
-
-/**
  * Removes the base colors (color palette) from the final output.
  */
 StyleDictionary.registerFilter({
@@ -173,10 +84,9 @@ StyleDictionary.registerFilter({
   }
 });
 
-const mainIndex = (options?: ThemeOptions) => {
-  const postfix = options?.useFigmaStructure ? `Fs`: ``
+const mainIndex = () => {
   return organizations.map(organization => (
-    `export {default as ${organization.name}Themes${postfix}} from './${organization.id}-theme/theme';`
+    `export {default as ${organization.name}Themes} from './${organization.id}-theme/theme';`
     ))
     .join("\n")
 }
@@ -265,8 +175,8 @@ const expandToNestedObject = (tokens: TransformedToken[], pathKey = 'path') => {
  */
 StyleDictionary.registerFormat({
   name: 'typescript/obj',
-  format: async ({ dictionary, file, options }: FormatOptions) => (`${await fileHeader({ file })
-    }export default ${JSON.stringify(expandToNestedObject(dictionary!.allTokens, options?.useFigmaStructure ? 'path' : 'compatPath'), null, 2).replace(/"([^"]+)":/g, '$1:')
+  format: async ({ dictionary, file }: FormatOptions) => (`${await fileHeader({ file })
+    }export default ${JSON.stringify(expandToNestedObject(dictionary!.allTokens, 'path'), null, 2).replace(/"([^"]+)":/g, '$1:')
     };\n`),
 });
 
@@ -276,7 +186,7 @@ StyleDictionary.registerFormat({
  * @param organization Name of the organization
  * @returns Output folder
  */
-const makeDestination = (organization: Organization, themeOptions?: ThemeOptions): string => path.join(outDir, `${themeOptions?.useFigmaStructure ? 'themes-fs' : 'themes'}/${organization.id}-theme/`);
+const makeDestination = (organization: Organization): string => path.join(outDir, `themes/${organization.id}-theme/`);
 
 const generateThemes = async () => {
 
@@ -338,9 +248,7 @@ const generateThemes = async () => {
       tokens: makeTokens(organization, mode),
       platforms: {
         css: {
-          buildPath: makeDestination(organization, {
-            useFigmaStructure: true
-          }),
+          buildPath: makeDestination(organization),
           expand: true,
           // `css` transformGroup with `attribbute/append-type` prepended
           transforms: ['attribute/append-type', 'attribute/cti', 'name/kebab', 'time/seconds', 'html/icon', 'size/pxToRem', 'color/css', 'asset/url', 'fontFamily/css', 'cubicBezier/css', 'strokeStyle/css/shorthand', 'border/css/shorthand', 'typography/css/shorthand', 'transition/css/shorthand', 'shadow/css/shorthand'],
@@ -366,7 +274,7 @@ const generateThemes = async () => {
           buildPath: makeDestination(organization),
           expand: true,
           // `js` transformGroup with `attribbute/append-type` prepended
-          transforms: ['attribute/append-type', 'attribute/cti', 'attribute/compat-path', 'name/pascal', 'color/hex'],
+          transforms: ['attribute/append-type', 'attribute/cti', 'name/pascal', 'color/hex'],
           files: [
             {
               format: 'typescript/obj',
@@ -389,40 +297,6 @@ const generateThemes = async () => {
             },
           ],
         },
-        tsFs: {
-          buildPath: makeDestination(organization, {
-            useFigmaStructure: true
-          }),
-          expand: true,
-          // `js` transformGroup with `attribbute/append-type` prepended
-          transforms: ['attribute/append-type', 'attribute/cti', 'attribute/compat-path', 'name/pascal', 'color/hex'],
-          files: [
-            {
-              format: 'typescript/obj',
-              destination: `${mode}.ts`,
-              options: {
-                useFigmaStructure: true
-              } as ThemeOptions,
-              filter: 'filter-palette',
-            },
-            {
-              format: 'index',
-              options: {
-                content: tsIndex,
-              },
-              destination: 'theme.ts',
-            },
-            {
-              format: 'index',
-              options: {
-                content: mainIndex({
-                  useFigmaStructure: true
-                }),
-              },
-              destination: '../index.ts',
-            },
-          ],
-        }
       },
     };
   };

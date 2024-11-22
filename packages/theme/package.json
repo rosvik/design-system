@@ -15,9 +15,9 @@
     "tsc": "tsc",
     "clean": "rm -rf lib",
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "build": "yarn create-css && tsc -p tsconfig.build.json && yarn copy-css",
+    "build": "yarn create-typo && tsc -p tsconfig.build.json && yarn copy-css",
+    "create-typo": "tsx ./tools/create-typo.ts",
     "copy-css": "copyfiles -u 1 \"src/**/*.{css,woff,woff2,ttf,eot,svg,png}\" lib",
-    "create-css": "tsx ./tools/create-css.ts",
     "fetch-variables": "tsx ./tools/fetch-figma-variables.ts"
   },
   "devDependencies": {

@@ -1,7 +1,6 @@
 # PostCSS plugin for typesafe CSS Custom Properties 
 
-This package adds a `token(...)` function to your CSS, which checks and parses the token passed in the argument
-and turns it into a CSS Custom Property (`var(--variable-name)`).
+This package adds a `token(...)` function to your CSS, which checks and parses the token passed in the argument and turns it into a CSS Custom Property (`var(--variable-name)`).
 
 ## Install
 

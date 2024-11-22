@@ -28,53 +28,53 @@ export default {
   static: {
     background: {
       background_0: {
-        background: "#000000",
+        background: "#555e65",
         text: "#ffffff"
       },
       background_1: {
-        background: "#242b30",
+        background: "#37424a",
         text: "#ffffff"
       },
       background_2: {
-        background: "#37424a",
+        background: "#2b343a",
         text: "#ffffff"
       },
       background_3: {
-        background: "#555e65",
+        background: "#1a2024",
         text: "#ffffff"
       },
       background_accent_0: {
-        background: "#37424a",
+        background: "#000000",
         text: "#ffffff"
       },
       background_accent_1: {
-        background: "#555e65",
+        background: "#00542b",
         text: "#ffffff"
       },
       background_accent_2: {
-        background: "#d4e9ec",
+        background: "#c1f5e1",
         text: "#000000"
       },
       background_accent_3: {
-        background: "#007c92",
-        text: "#ffffff"
+        background: "#00975f",
+        text: "#000000"
       },
       background_accent_4: {
-        background: "#e5e8b8",
+        background: "#ffd733",
         text: "#000000"
       },
       background_accent_5: {
-        background: "#2b343a",
+        background: "#006b37",
         text: "#ffffff"
       }
     },
     zone_selection: {
       from: {
-        background: "#a2ad00",
+        background: "#8acfb5",
         text: "#000000"
       },
       to: {
-        background: "#71d6e0",
+        background: "#b0e0ec",
         text: "#000000"
       }
     }
@@ -82,41 +82,41 @@ export default {
   status: {
     valid: {
       primary: {
-        background: "#909a00",
+        background: "#54a37c",
         text: "#000000"
       },
       secondary: {
-        background: "#464a00",
+        background: "#006b37",
         text: "#ffffff"
       }
     },
     info: {
       primary: {
-        background: "#007c92",
+        background: "#009bc2",
         text: "#ffffff"
       },
       secondary: {
-        background: "#003943",
+        background: "#004151",
         text: "#ffffff"
       }
     },
     warning: {
       primary: {
-        background: "#e4d700",
+        background: "#ffd733",
         text: "#000000"
       },
       secondary: {
-        background: "#1f2100",
+        background: "#8c7100",
         text: "#ffffff"
       }
     },
     error: {
       primary: {
-        background: "#b74166",
+        background: "#b7173d",
         text: "#000000"
       },
       secondary: {
-        background: "#380616",
+        background: "#650d22",
         text: "#ffffff"
       }
     }
@@ -124,41 +124,41 @@ export default {
   interactive: {
     interactive_0: {
       default: {
-        background: "#007c92",
-        text: "#ffffff"
-      },
-      hover: {
-        background: "#006678",
-        text: "#ffffff"
-      },
-      active: {
-        background: "#a6d1d9",
+        background: "#00975f",
         text: "#000000"
       },
+      hover: {
+        background: "#00763c",
+        text: "#000000"
+      },
+      active: {
+        background: "#003f23",
+        text: "#ffffff"
+      },
       disabled: {
-        background: "#d4e9ec",
+        background: "#c1f5e1",
         text: "#000000"
       },
       outline: {
-        background: "#71d6e0",
+        background: "#00975f",
         text: "#000000"
       },
       destructive: {
-        background: "#d691a7",
+        background: "#cf647d",
         text: "#000000"
       }
     },
     interactive_1: {
       default: {
-        background: "#555e65",
+        background: "#003f23",
         text: "#ffffff"
       },
       hover: {
-        background: "#6f777d",
+        background: "#8d9398",
         text: "#000000"
       },
       active: {
-        background: "#1a2024",
+        background: "#002d19",
         text: "#ffffff"
       },
       disabled: {
@@ -166,89 +166,89 @@ export default {
         text: "#000000"
       },
       outline: {
-        background: "#007c92",
+        background: "#003f23",
         text: "#ffffff"
       },
       destructive: {
-        background: "#d691a7",
+        background: "#cf647d",
         text: "#000000"
       }
     },
     interactive_2: {
       default: {
-        background: "#000000",
+        background: "#1a2024",
         text: "#ffffff"
       },
       hover: {
-        background: "#002329",
+        background: "#003f23",
         text: "#ffffff"
       },
       active: {
-        background: "#004e5c",
+        background: "#006b37",
         text: "#ffffff"
       },
       disabled: {
-        background: "#000000",
+        background: "#1a2024",
         text: "#ffffff"
       },
       outline: {
-        background: "#007c92",
+        background: "#006b37",
         text: "#ffffff"
       },
       destructive: {
-        background: "#d691a7",
+        background: "#cf647d",
         text: "#000000"
       }
     },
     interactive_3: {
       default: {
-        background: "#004e5c",
-        text: "#ffffff"
+        background: "#00763c",
+        text: "#000000"
       },
       hover: {
-        background: "#003943",
+        background: "#00542b",
         text: "#ffffff"
       },
       active: {
-        background: "#003943",
-        text: "#ffffff"
+        background: "#00763c",
+        text: "#000000"
       },
       disabled: {
-        background: "#555e65",
+        background: "#37424a",
         text: "#ffffff"
       },
       outline: {
-        background: "#d4e9ec",
-        text: "#000000"
+        background: "#82102b",
+        text: "#ffffff"
       },
       destructive: {
-        background: "#a51140",
+        background: "#756c29",
         text: "#ffffff"
       }
     },
     interactive_destructive: {
       default: {
-        background: "#a51140",
+        background: "#82102b",
         text: "#ffffff"
       },
       hover: {
-        background: "#b74166",
-        text: "#000000"
+        background: "#a71538",
+        text: "#ffffff"
       },
       active: {
-        background: "#380616",
+        background: "#a71538",
         text: "#ffffff"
       },
       disabled: {
-        background: "#eed2db",
+        background: "#e9b7c3",
         text: "#000000"
       },
       outline: {
-        background: "#007c92",
+        background: "#4d0a1a",
         text: "#ffffff"
       },
       destructive: {
-        background: "#d691a7",
+        background: "#cf647d",
         text: "#000000"
       }
     }
@@ -256,97 +256,97 @@ export default {
   transport: {
     transport_city: {
       primary: {
-        background: "#a2ad00",
-        text: "#000000"
+        background: "#009bc2",
+        text: "#ffffff"
       },
       secondary: {
-        background: "#909a00",
-        text: "#000000"
+        background: "#006e8a",
+        text: "#ffffff"
       }
     },
     transport_region: {
       primary: {
-        background: "#007c92",
-        text: "#ffffff"
+        background: "#00763c",
+        text: "#000000"
       },
       secondary: {
-        background: "#006678",
+        background: "#00542b",
         text: "#ffffff"
       }
     },
     transport_airport_express: {
       primary: {
-        background: "#a51140",
-        text: "#ffffff"
+        background: "#c54564",
+        text: "#000000"
       },
       secondary: {
-        background: "#7d0d31",
+        background: "#a71538",
         text: "#ffffff"
       }
     },
     transport_flexible: {
       primary: {
-        background: "#c75b12",
-        text: "#000000"
+        background: "#e8bb00",
+        text: "#ffffff"
       },
       secondary: {
-        background: "#97450e",
+        background: "#b59200",
         text: "#ffffff"
       }
     },
     transport_boat: {
       primary: {
-        background: "#71d6e0",
-        text: "#000000"
+        background: "#1c6c6c",
+        text: "#ffffff"
       },
       secondary: {
-        background: "#539ca4",
-        text: "#000000"
+        background: "#196262",
+        text: "#ffffff"
       }
     },
     transport_train: {
       primary: {
-        background: "#4b2942",
-        text: "#ffffff"
+        background: "#907395",
+        text: "#000000"
       },
       secondary: {
-        background: "#2c1827",
-        text: "#ffffff"
+        background: "#7b5881",
+        text: "#000000"
       }
     },
     transport_scooter: {
       primary: {
-        background: "#464a00",
-        text: "#ffffff"
+        background: "#54a37c",
+        text: "#000000"
       },
       secondary: {
-        background: "#323600",
-        text: "#ffffff"
+        background: "#00763c",
+        text: "#000000"
       }
     },
     transport_car: {
       primary: {
-        background: "#6f5468",
+        background: "#5a2e61",
         text: "#ffffff"
       },
       secondary: {
-        background: "#4b2942",
+        background: "#402145",
         text: "#ffffff"
       }
     },
     transport_bike: {
       primary: {
-        background: "#7d0d31",
+        background: "#82102b",
         text: "#ffffff"
       },
       secondary: {
-        background: "#5c0a24",
+        background: "#650d22",
         text: "#ffffff"
       }
     },
     transport_other: {
       primary: {
-        background: "#c7cacc",
+        background: "#a9aeb1",
         text: "#000000"
       },
       secondary: {
@@ -358,7 +358,7 @@ export default {
   geofencingZones: {
     allowed: {
       color: {
-        background: "#007c92",
+        background: "#008db1",
         text: "#ffffff"
       },
       fillOpacity: 0.07999999821186066,
@@ -367,7 +367,7 @@ export default {
     },
     slow: {
       color: {
-        background: "#f0e973",
+        background: "#e3dfc2",
         text: "#000000"
       },
       fillOpacity: 0.6000000238418579,
@@ -376,7 +376,7 @@ export default {
     },
     noParking: {
       color: {
-        background: "#c76b89",
+        background: "#b7173d",
         text: "#000000"
       },
       fillOpacity: 0.5,
@@ -385,7 +385,7 @@ export default {
     },
     noEntry: {
       color: {
-        background: "#380616",
+        background: "#650d22",
         text: "#ffffff"
       },
       fillOpacity: 0.550000011920929,
@@ -394,9 +394,9 @@ export default {
     }
   },
   border: {
-    primary: "#242b30",
-    secondary: "#ffffff",
-    focus: "#448086",
+    primary: "#1a2024",
+    secondary: "#eef3f6",
+    focus: "#00975f",
     radius: {
       small: 4,
       regular: 8,

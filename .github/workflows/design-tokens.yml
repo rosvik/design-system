@@ -44,10 +44,10 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           if [[ "${{ inputs.organization }}" == "all" || -z "${{ inputs.organization }}" ]]; then
             # Stage all changes if no org was specified
-            git add **/src/generated/{themes,themes-fs}/*
+            git add **/src/generated/themes/*
           else
             # Stage only files related to the selected organization
-            git add **/src/generated/{themes,themes-fs}/${{ inputs.organization }}-theme/*
+            git add **/src/generated/themes/${{ inputs.organization }}-theme/*
           fi
           git commit -m "style: Updated design tokens"
           git push origin "${CURRENT_BRANCH}"

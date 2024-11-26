@@ -135,8 +135,8 @@ export default {
         primary: {
           background: "#009bc2",
           foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
+            primary: "#000000",
+            secondary: "#555e65",
             disabled: "#a9aeb1"
           }
         },
@@ -171,8 +171,8 @@ export default {
         primary: {
           background: "#b7173d",
           foreground: {
-            primary: "#000000",
-            secondary: "#555e65",
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
             disabled: "#a9aeb1"
           }
         },
@@ -199,8 +199,8 @@ export default {
         hover: {
           background: "#00763c",
           foreground: {
-            primary: "#000000",
-            secondary: "#555e65",
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
             disabled: "#a9aeb1"
           }
         },
@@ -341,8 +341,8 @@ export default {
         default: {
           background: "#00763c",
           foreground: {
-            primary: "#000000",
-            secondary: "#555e65",
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
             disabled: "#a9aeb1"
           }
         },
@@ -357,8 +357,8 @@ export default {
         active: {
           background: "#00763c",
           foreground: {
-            primary: "#000000",
-            secondary: "#555e65",
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
             disabled: "#a9aeb1"
           }
         },
@@ -443,8 +443,8 @@ export default {
         primary: {
           background: "#009bc2",
           foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
+            primary: "#000000",
+            secondary: "#555e65",
             disabled: "#a9aeb1"
           }
         },
@@ -461,8 +461,8 @@ export default {
         primary: {
           background: "#00763c",
           foreground: {
-            primary: "#000000",
-            secondary: "#555e65",
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
             disabled: "#a9aeb1"
           }
         },
@@ -479,8 +479,8 @@ export default {
         primary: {
           background: "#c54564",
           foreground: {
-            primary: "#000000",
-            secondary: "#555e65",
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
             disabled: "#a9aeb1"
           }
         },
@@ -497,16 +497,16 @@ export default {
         primary: {
           background: "#e8bb00",
           foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
+            primary: "#000000",
+            secondary: "#555e65",
             disabled: "#a9aeb1"
           }
         },
         secondary: {
           background: "#b59200",
           foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
+            primary: "#000000",
+            secondary: "#555e65",
             disabled: "#a9aeb1"
           }
         }
@@ -541,8 +541,8 @@ export default {
         secondary: {
           background: "#7b5881",
           foreground: {
-            primary: "#000000",
-            secondary: "#555e65",
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
             disabled: "#a9aeb1"
           }
         }
@@ -559,8 +559,8 @@ export default {
         secondary: {
           background: "#00763c",
           foreground: {
-            primary: "#000000",
-            secondary: "#555e65",
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
             disabled: "#a9aeb1"
           }
         }
@@ -643,8 +643,8 @@ export default {
         color: {
           background: "#008db1",
           foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
+            primary: "#000000",
+            secondary: "#555e65",
             disabled: "#a9aeb1"
           }
         },
@@ -669,8 +669,8 @@ export default {
         color: {
           background: "#b7173d",
           foreground: {
-            primary: "#000000",
-            secondary: "#555e65",
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
             disabled: "#a9aeb1"
           }
         },

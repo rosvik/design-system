@@ -477,7 +477,7 @@ export default {
       },
       airportExpress: {
         primary: {
-          background: "#a51140",
+          background: "#555e65",
           foreground: {
             primary: "#ffffff",
             secondary: "#e1e7eb",
@@ -485,7 +485,7 @@ export default {
           }
         },
         secondary: {
-          background: "#7d0d31",
+          background: "#37424a",
           foreground: {
             primary: "#ffffff",
             secondary: "#e1e7eb",
@@ -513,7 +513,7 @@ export default {
       },
       boat: {
         primary: {
-          background: "#71d6e0",
+          background: "#62bac3",
           foreground: {
             primary: "#000000",
             secondary: "#555e65",
@@ -567,7 +567,7 @@ export default {
       },
       car: {
         primary: {
-          background: "#5b3c53",
+          background: "#6f5468",
           foreground: {
             primary: "#ffffff",
             secondary: "#e1e7eb",
@@ -575,7 +575,7 @@ export default {
           }
         },
         secondary: {
-          background: "#4b2942",
+          background: "#5b3c53",
           foreground: {
             primary: "#ffffff",
             secondary: "#e1e7eb",

@@ -449,7 +449,7 @@ export default {
           }
         },
         secondary: {
-          background: "#909a00",
+          background: "#c9cf6b",
           foreground: {
             primary: "#000000",
             secondary: "#555e65",
@@ -459,43 +459,7 @@ export default {
       },
       region: {
         primary: {
-          background: "#007c92",
-          foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
-            disabled: "#a9aeb1"
-          }
-        },
-        secondary: {
-          background: "#006678",
-          foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
-            disabled: "#a9aeb1"
-          }
-        }
-      },
-      airportExpress: {
-        primary: {
-          background: "#a51140",
-          foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
-            disabled: "#a9aeb1"
-          }
-        },
-        secondary: {
-          background: "#7d0d31",
-          foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
-            disabled: "#a9aeb1"
-          }
-        }
-      },
-      flexible: {
-        primary: {
-          background: "#c75b12",
+          background: "#429eae",
           foreground: {
             primary: "#000000",
             secondary: "#555e65",
@@ -503,10 +467,46 @@ export default {
           }
         },
         secondary: {
-          background: "#97450e",
+          background: "#75b8c4",
           foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
+            primary: "#000000",
+            secondary: "#555e65",
+            disabled: "#a9aeb1"
+          }
+        }
+      },
+      airportExpress: {
+        primary: {
+          background: "#8d9398",
+          foreground: {
+            primary: "#000000",
+            secondary: "#555e65",
+            disabled: "#a9aeb1"
+          }
+        },
+        secondary: {
+          background: "#a9aeb1",
+          foreground: {
+            primary: "#000000",
+            secondary: "#555e65",
+            disabled: "#a9aeb1"
+          }
+        }
+      },
+      flexible: {
+        primary: {
+          background: "#d27c41",
+          foreground: {
+            primary: "#000000",
+            secondary: "#555e65",
+            disabled: "#a9aeb1"
+          }
+        },
+        secondary: {
+          background: "#dea076",
+          foreground: {
+            primary: "#000000",
+            secondary: "#555e65",
             disabled: "#a9aeb1"
           }
         }
@@ -521,7 +521,7 @@ export default {
           }
         },
         secondary: {
-          background: "#539ca4",
+          background: "#bfedf1",
           foreground: {
             primary: "#000000",
             secondary: "#555e65",
@@ -531,79 +531,7 @@ export default {
       },
       train: {
         primary: {
-          background: "#4b2942",
-          foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
-            disabled: "#a9aeb1"
-          }
-        },
-        secondary: {
-          background: "#2c1827",
-          foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
-            disabled: "#a9aeb1"
-          }
-        }
-      },
-      scooter: {
-        primary: {
-          background: "#464a00",
-          foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
-            disabled: "#a9aeb1"
-          }
-        },
-        secondary: {
-          background: "#323600",
-          foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
-            disabled: "#a9aeb1"
-          }
-        }
-      },
-      car: {
-        primary: {
-          background: "#6f5468",
-          foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
-            disabled: "#a9aeb1"
-          }
-        },
-        secondary: {
-          background: "#4b2942",
-          foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
-            disabled: "#a9aeb1"
-          }
-        }
-      },
-      bike: {
-        primary: {
-          background: "#7d0d31",
-          foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
-            disabled: "#a9aeb1"
-          }
-        },
-        secondary: {
-          background: "#5c0a24",
-          foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
-            disabled: "#a9aeb1"
-          }
-        }
-      },
-      other: {
-        primary: {
-          background: "#c7cacc",
+          background: "#867080",
           foreground: {
             primary: "#000000",
             secondary: "#555e65",
@@ -611,7 +539,79 @@ export default {
           }
         },
         secondary: {
+          background: "#a08e9b",
+          foreground: {
+            primary: "#000000",
+            secondary: "#555e65",
+            disabled: "#a9aeb1"
+          }
+        }
+      },
+      scooter: {
+        primary: {
+          background: "#c9cf6b",
+          foreground: {
+            primary: "#000000",
+            secondary: "#555e65",
+            disabled: "#a9aeb1"
+          }
+        },
+        secondary: {
+          background: "#e5e8b8",
+          foreground: {
+            primary: "#000000",
+            secondary: "#555e65",
+            disabled: "#a9aeb1"
+          }
+        }
+      },
+      car: {
+        primary: {
+          background: "#b7a9b3",
+          foreground: {
+            primary: "#000000",
+            secondary: "#555e65",
+            disabled: "#a9aeb1"
+          }
+        },
+        secondary: {
+          background: "#d0c7ce",
+          foreground: {
+            primary: "#000000",
+            secondary: "#555e65",
+            disabled: "#a9aeb1"
+          }
+        }
+      },
+      bike: {
+        primary: {
+          background: "#c76b89",
+          foreground: {
+            primary: "#000000",
+            secondary: "#555e65",
+            disabled: "#a9aeb1"
+          }
+        },
+        secondary: {
+          background: "#d691a7",
+          foreground: {
+            primary: "#000000",
+            secondary: "#555e65",
+            disabled: "#a9aeb1"
+          }
+        }
+      },
+      other: {
+        primary: {
           background: "#8d9398",
+          foreground: {
+            primary: "#000000",
+            secondary: "#555e65",
+            disabled: "#a9aeb1"
+          }
+        },
+        secondary: {
+          background: "#a9aeb1",
           foreground: {
             primary: "#000000",
             secondary: "#555e65",

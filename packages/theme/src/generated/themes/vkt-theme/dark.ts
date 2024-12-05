@@ -441,24 +441,6 @@ export default {
     transport: {
       city: {
         primary: {
-          background: "#009bc2",
-          foreground: {
-            primary: "#000000",
-            secondary: "#555e65",
-            disabled: "#a9aeb1"
-          }
-        },
-        secondary: {
-          background: "#006e8a",
-          foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
-            disabled: "#a9aeb1"
-          }
-        }
-      },
-      region: {
-        primary: {
           background: "#00763c",
           foreground: {
             primary: "#ffffff",
@@ -468,6 +450,24 @@ export default {
         },
         secondary: {
           background: "#00542b",
+          foreground: {
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
+            disabled: "#a9aeb1"
+          }
+        }
+      },
+      region: {
+        primary: {
+          background: "#009bc2",
+          foreground: {
+            primary: "#000000",
+            secondary: "#555e65",
+            disabled: "#a9aeb1"
+          }
+        },
+        secondary: {
+          background: "#006e8a",
           foreground: {
             primary: "#ffffff",
             secondary: "#e1e7eb",

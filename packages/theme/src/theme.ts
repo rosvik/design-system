@@ -116,6 +116,11 @@ export interface Theme {
       error: StatusColor<ContrastColor>;
     };
 
+    brand: {
+      primary: ContrastColor;
+      secondary: ContrastColor;
+    };
+
     background: {
       neutral: {
         0: ContrastColor;

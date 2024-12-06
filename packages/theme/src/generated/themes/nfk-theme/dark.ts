@@ -4,6 +4,24 @@
 
 export default {
   color: {
+    brand: {
+      primary: {
+        background: "#0181a3",
+        foreground: {
+          primary: "#ffffff",
+          secondary: "#dae2e4",
+          disabled: "#8fa9af"
+        }
+      },
+      secondary: {
+        background: "#fcba63",
+        foreground: {
+          primary: "#000000",
+          secondary: "#555760",
+          disabled: "#8fa9af"
+        }
+      }
+    },
     foreground: {
       light: {
         primary: "#ffffff",

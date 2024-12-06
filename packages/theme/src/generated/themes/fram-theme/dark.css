@@ -4,6 +4,14 @@
 
 [data-theme="dark"], [data-theme="auto"] { color-scheme: dark; } 
 [data-theme="dark"], [data-theme="auto"] {
+  --color-brand-primary-background: #005686;
+  --color-brand-primary-foreground-primary: #ffffff;
+  --color-brand-primary-foreground-secondary: #e6e6e6;
+  --color-brand-primary-foreground-disabled: #b3b3b3;
+  --color-brand-secondary-background: #007ab5;
+  --color-brand-secondary-foreground-primary: #ffffff;
+  --color-brand-secondary-foreground-secondary: #e6e6e6;
+  --color-brand-secondary-foreground-disabled: #b3b3b3;
   --color-foreground-light-primary: #ffffff;
   --color-foreground-light-secondary: #e6e6e6;
   --color-foreground-light-disabled: #b3b3b3;

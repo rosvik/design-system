@@ -18,11 +18,11 @@
   --color-foreground-dark-primary: #000000;
   --color-foreground-dark-secondary: #595958;
   --color-foreground-dark-disabled: #a9a9a8;
-  --color-foreground-dynamic-primary: #000000;
-  --color-foreground-dynamic-secondary: #595958;
+  --color-foreground-dynamic-primary: #ffffff;
+  --color-foreground-dynamic-secondary: #e2e2e2;
   --color-foreground-dynamic-disabled: #a9a9a8;
-  --color-foreground-inverse-primary: #ffffff;
-  --color-foreground-inverse-secondary: #e2e2e2;
+  --color-foreground-inverse-primary: #000000;
+  --color-foreground-inverse-secondary: #595958;
   --color-foreground-inverse-disabled: #a9a9a8;
   --color-background-neutral-0-background: #ffffff;
   --color-background-neutral-0-foreground-primary: #000000;

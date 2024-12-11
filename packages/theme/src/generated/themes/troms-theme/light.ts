@@ -6,10 +6,10 @@ export default {
   color: {
     brand: {
       primary: {
-        background: "#e85912",
+        background: "#d24600",
         foreground: {
-          primary: "#000000",
-          secondary: "#555e65",
+          primary: "#ffffff",
+          secondary: "#e3e5e6",
           disabled: "#a9aeb1"
         }
       },

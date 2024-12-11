@@ -4,9 +4,9 @@
 
 [data-theme="light"], [data-theme="auto"] { color-scheme: light; } 
 [data-theme="light"], [data-theme="auto"] {
-  --color-brand-primary-background: #e85912;
-  --color-brand-primary-foreground-primary: #000000;
-  --color-brand-primary-foreground-secondary: #555e65;
+  --color-brand-primary-background: #d24600;
+  --color-brand-primary-foreground-primary: #ffffff;
+  --color-brand-primary-foreground-secondary: #e3e5e6;
   --color-brand-primary-foreground-disabled: #a9aeb1;
   --color-brand-secondary-background: #001db1;
   --color-brand-secondary-foreground-primary: #ffffff;

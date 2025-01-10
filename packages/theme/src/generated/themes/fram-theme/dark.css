@@ -40,7 +40,7 @@
   --color-background-neutral-3-foreground-primary: #ffffff;
   --color-background-neutral-3-foreground-secondary: #e6e6e6;
   --color-background-neutral-3-foreground-disabled: #b3b3b3;
-  --color-background-accent-0-background: #005686;
+  --color-background-accent-0-background: #1a1a1a;
   --color-background-accent-0-foreground-primary: #ffffff;
   --color-background-accent-0-foreground-secondary: #e6e6e6;
   --color-background-accent-0-foreground-disabled: #b3b3b3;
@@ -48,7 +48,7 @@
   --color-background-accent-1-foreground-primary: #ffffff;
   --color-background-accent-1-foreground-secondary: #e6e6e6;
   --color-background-accent-1-foreground-disabled: #b3b3b3;
-  --color-background-accent-2-background: #011622;
+  --color-background-accent-2-background: #012133;
   --color-background-accent-2-foreground-primary: #ffffff;
   --color-background-accent-2-foreground-secondary: #e6e6e6;
   --color-background-accent-2-foreground-disabled: #b3b3b3;
@@ -120,15 +120,15 @@
   --color-interactive-0-destructive-foreground-primary: #000000;
   --color-interactive-0-destructive-foreground-secondary: #676767;
   --color-interactive-0-destructive-foreground-disabled: #b3b3b3;
-  --color-interactive-1-default-background: #007ab5;
+  --color-interactive-1-default-background: #013149;
   --color-interactive-1-default-foreground-primary: #ffffff;
   --color-interactive-1-default-foreground-secondary: #e6e6e6;
   --color-interactive-1-default-foreground-disabled: #b3b3b3;
-  --color-interactive-1-hover-background: #016291;
+  --color-interactive-1-hover-background: #011925;
   --color-interactive-1-hover-foreground-primary: #ffffff;
   --color-interactive-1-hover-foreground-secondary: #e6e6e6;
   --color-interactive-1-hover-foreground-disabled: #b3b3b3;
-  --color-interactive-1-active-background: #011925;
+  --color-interactive-1-active-background: #014a6d;
   --color-interactive-1-active-foreground-primary: #ffffff;
   --color-interactive-1-active-foreground-secondary: #e6e6e6;
   --color-interactive-1-active-foreground-disabled: #b3b3b3;
@@ -152,7 +152,7 @@
   --color-interactive-2-hover-foreground-primary: #ffffff;
   --color-interactive-2-hover-foreground-secondary: #e6e6e6;
   --color-interactive-2-hover-foreground-disabled: #b3b3b3;
-  --color-interactive-2-active-background: #284320;
+  --color-interactive-2-active-background: #014165;
   --color-interactive-2-active-foreground-primary: #ffffff;
   --color-interactive-2-active-foreground-secondary: #e6e6e6;
   --color-interactive-2-active-foreground-disabled: #b3b3b3;
@@ -296,6 +296,14 @@
   --color-transport-other-secondary-foreground-primary: #000000;
   --color-transport-other-secondary-foreground-secondary: #676767;
   --color-transport-other-secondary-foreground-disabled: #b3b3b3;
+  --color-transport-shuttle-primary-background: #82b962;
+  --color-transport-shuttle-primary-foreground-primary: #000000;
+  --color-transport-shuttle-primary-foreground-secondary: #676767;
+  --color-transport-shuttle-primary-foreground-disabled: #b3b3b3;
+  --color-transport-shuttle-secondary-background: #acd097;
+  --color-transport-shuttle-secondary-foreground-primary: #000000;
+  --color-transport-shuttle-secondary-foreground-secondary: #676767;
+  --color-transport-shuttle-secondary-foreground-disabled: #b3b3b3;
   --color-zone-from-background: #82b962;
   --color-zone-from-foreground-primary: #000000;
   --color-zone-from-foreground-secondary: #676767;
@@ -346,7 +354,8 @@
   --color-border-focus-foreground-disabled: #b3b3b3;
   --border-radius-small: 0.25rem;
   --border-radius-regular: 0.5rem;
-  --border-radius-circle: 1.25rem;
+  --border-radius-large: 1.25rem;
+  --border-radius-circle: 62.4375rem;
   --border-width-slim: 0.0625rem;
   --border-width-medium: 0.125rem;
   --typography-ios-font: 'SF Pro Text';
@@ -363,5 +372,5 @@
   --icon-size-x-small: 0.75rem;
   --icon-size-small: 1rem;
   --icon-size-normal: 1.25rem;
-  --icon-size-large: 1.625rem;
+  --icon-size-large: 1.75rem;
 }

@@ -81,7 +81,7 @@ export default {
       },
       accent: {
         0: {
-          background: "#046078",
+          background: "#151819",
           foreground: {
             primary: "#ffffff",
             secondary: "#dae2e4",
@@ -97,7 +97,7 @@ export default {
           }
         },
         2: {
-          background: "#022129",
+          background: "#03313d",
           foreground: {
             primary: "#ffffff",
             secondary: "#dae2e4",
@@ -257,7 +257,7 @@ export default {
       },
       1: {
         default: {
-          background: "#0181a3",
+          background: "#013442",
           foreground: {
             primary: "#ffffff",
             secondary: "#dae2e4",
@@ -265,7 +265,7 @@ export default {
           }
         },
         hover: {
-          background: "#026883",
+          background: "#011a21",
           foreground: {
             primary: "#ffffff",
             secondary: "#dae2e4",
@@ -273,7 +273,7 @@ export default {
           }
         },
         active: {
-          background: "#011a21",
+          background: "#014e62",
           foreground: {
             primary: "#ffffff",
             secondary: "#dae2e4",
@@ -636,6 +636,24 @@ export default {
             disabled: "#8fa9af"
           }
         }
+      },
+      shuttle: {
+        primary: {
+          background: "#004d61",
+          foreground: {
+            primary: "#ffffff",
+            secondary: "#dae2e4",
+            disabled: "#8fa9af"
+          }
+        },
+        secondary: {
+          background: "#256778",
+          foreground: {
+            primary: "#ffffff",
+            secondary: "#dae2e4",
+            disabled: "#8fa9af"
+          }
+        }
       }
     },
     zone: {
@@ -741,7 +759,8 @@ export default {
     radius: {
       small: 4,
       regular: 8,
-      circle: 20
+      large: 20,
+      circle: 999
     },
     width: {
       slim: 1,
@@ -774,7 +793,7 @@ export default {
       xSmall: 12,
       small: 16,
       normal: 20,
-      large: 26
+      large: 28
     }
   }
 };

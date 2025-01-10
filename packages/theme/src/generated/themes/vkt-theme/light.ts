@@ -81,18 +81,18 @@ export default {
       },
       accent: {
         0: {
-          background: "#00763c",
+          background: "#e1e7eb",
           foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
+            primary: "#000000",
+            secondary: "#555e65",
             disabled: "#a9aeb1"
           }
         },
         1: {
-          background: "#00542b",
+          background: "#8acfb5",
           foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
+            primary: "#000000",
+            secondary: "#555e65",
             disabled: "#a9aeb1"
           }
         },
@@ -257,15 +257,15 @@ export default {
       },
       1: {
         default: {
-          background: "#006b37",
+          background: "#c1f5e1",
           foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
+            primary: "#000000",
+            secondary: "#555e65",
             disabled: "#a9aeb1"
           }
         },
         hover: {
-          background: "#00975f",
+          background: "#54a37c",
           foreground: {
             primary: "#000000",
             secondary: "#555e65",
@@ -273,10 +273,10 @@ export default {
           }
         },
         active: {
-          background: "#003f23",
+          background: "#8acfb5",
           foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e7eb",
+            primary: "#000000",
+            secondary: "#555e65",
             disabled: "#a9aeb1"
           }
         },
@@ -315,7 +315,7 @@ export default {
           }
         },
         hover: {
-          background: "#54a37c",
+          background: "#8acfb5",
           foreground: {
             primary: "#000000",
             secondary: "#555e65",
@@ -323,7 +323,7 @@ export default {
           }
         },
         active: {
-          background: "#8acfb5",
+          background: "#c1f5e1",
           foreground: {
             primary: "#000000",
             secondary: "#555e65",
@@ -636,6 +636,24 @@ export default {
             disabled: "#a9aeb1"
           }
         }
+      },
+      shuttle: {
+        primary: {
+          background: "#00763c",
+          foreground: {
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
+            disabled: "#a9aeb1"
+          }
+        },
+        secondary: {
+          background: "#00542b",
+          foreground: {
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
+            disabled: "#a9aeb1"
+          }
+        }
       }
     },
     zone: {
@@ -741,7 +759,8 @@ export default {
     radius: {
       small: 4,
       regular: 8,
-      circle: 20
+      large: 20,
+      circle: 999
     },
     width: {
       slim: 1,
@@ -774,7 +793,7 @@ export default {
       xSmall: 12,
       small: 16,
       normal: 20,
-      large: 26
+      large: 28
     }
   }
 };

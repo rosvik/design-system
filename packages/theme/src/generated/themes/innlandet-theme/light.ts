@@ -81,10 +81,10 @@ export default {
       },
       accent: {
         0: {
-          background: "#37424a",
+          background: "#e3e5e6",
           foreground: {
-            primary: "#ffffff",
-            secondary: "#e3e5e6",
+            primary: "#000000",
+            secondary: "#555e65",
             disabled: "#a9aeb1"
           }
         },
@@ -636,6 +636,24 @@ export default {
             disabled: "#a9aeb1"
           }
         }
+      },
+      shuttle: {
+        primary: {
+          background: "#a2ad00",
+          foreground: {
+            primary: "#000000",
+            secondary: "#555e65",
+            disabled: "#a9aeb1"
+          }
+        },
+        secondary: {
+          background: "#909a00",
+          foreground: {
+            primary: "#000000",
+            secondary: "#555e65",
+            disabled: "#a9aeb1"
+          }
+        }
       }
     },
     zone: {
@@ -741,7 +759,8 @@ export default {
     radius: {
       small: 4,
       regular: 8,
-      circle: 20
+      large: 20,
+      circle: 999
     },
     width: {
       slim: 1,
@@ -774,7 +793,7 @@ export default {
       xSmall: 12,
       small: 16,
       normal: 20,
-      large: 26
+      large: 28
     }
   }
 };

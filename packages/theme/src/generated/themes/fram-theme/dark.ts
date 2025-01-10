@@ -81,7 +81,7 @@ export default {
       },
       accent: {
         0: {
-          background: "#005686",
+          background: "#1a1a1a",
           foreground: {
             primary: "#ffffff",
             secondary: "#e6e6e6",
@@ -97,7 +97,7 @@ export default {
           }
         },
         2: {
-          background: "#011622",
+          background: "#012133",
           foreground: {
             primary: "#ffffff",
             secondary: "#e6e6e6",
@@ -257,7 +257,7 @@ export default {
       },
       1: {
         default: {
-          background: "#007ab5",
+          background: "#013149",
           foreground: {
             primary: "#ffffff",
             secondary: "#e6e6e6",
@@ -265,7 +265,7 @@ export default {
           }
         },
         hover: {
-          background: "#016291",
+          background: "#011925",
           foreground: {
             primary: "#ffffff",
             secondary: "#e6e6e6",
@@ -273,7 +273,7 @@ export default {
           }
         },
         active: {
-          background: "#011925",
+          background: "#014a6d",
           foreground: {
             primary: "#ffffff",
             secondary: "#e6e6e6",
@@ -323,7 +323,7 @@ export default {
           }
         },
         active: {
-          background: "#284320",
+          background: "#014165",
           foreground: {
             primary: "#ffffff",
             secondary: "#e6e6e6",
@@ -636,6 +636,24 @@ export default {
             disabled: "#b3b3b3"
           }
         }
+      },
+      shuttle: {
+        primary: {
+          background: "#82b962",
+          foreground: {
+            primary: "#000000",
+            secondary: "#676767",
+            disabled: "#b3b3b3"
+          }
+        },
+        secondary: {
+          background: "#acd097",
+          foreground: {
+            primary: "#000000",
+            secondary: "#676767",
+            disabled: "#b3b3b3"
+          }
+        }
       }
     },
     zone: {
@@ -741,7 +759,8 @@ export default {
     radius: {
       small: 4,
       regular: 8,
-      circle: 20
+      large: 20,
+      circle: 999
     },
     width: {
       slim: 1,
@@ -774,7 +793,7 @@ export default {
       xSmall: 12,
       small: 16,
       normal: 20,
-      large: 26
+      large: 28
     }
   }
 };

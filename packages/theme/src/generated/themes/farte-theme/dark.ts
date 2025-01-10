@@ -81,7 +81,7 @@ export default {
       },
       accent: {
         0: {
-          background: "#000000",
+          background: "#161616",
           foreground: {
             primary: "#ffffff",
             secondary: "#e2e2e2",
@@ -89,7 +89,7 @@ export default {
           }
         },
         1: {
-          background: "#2c2c2c",
+          background: "#665200",
           foreground: {
             primary: "#ffffff",
             secondary: "#e2e2e2",
@@ -97,10 +97,10 @@ export default {
           }
         },
         2: {
-          background: "#ffffff",
+          background: "#332900",
           foreground: {
-            primary: "#000000",
-            secondary: "#595958",
+            primary: "#ffffff",
+            secondary: "#e2e2e2",
             disabled: "#a9a9a8"
           }
         },
@@ -257,7 +257,7 @@ export default {
       },
       1: {
         default: {
-          background: "#595958",
+          background: "#0c3c27",
           foreground: {
             primary: "#ffffff",
             secondary: "#e2e2e2",
@@ -265,15 +265,15 @@ export default {
           }
         },
         hover: {
-          background: "#8c8c8b",
+          background: "#061e14",
           foreground: {
-            primary: "#000000",
-            secondary: "#595958",
+            primary: "#ffffff",
+            secondary: "#e2e2e2",
             disabled: "#a9a9a8"
           }
         },
         active: {
-          background: "#161616",
+          background: "#13593b",
           foreground: {
             primary: "#ffffff",
             secondary: "#e2e2e2",
@@ -281,10 +281,10 @@ export default {
           }
         },
         disabled: {
-          background: "#c5c5c5",
+          background: "#6f6f6e",
           foreground: {
-            primary: "#000000",
-            secondary: "#595958",
+            primary: "#ffffff",
+            secondary: "#e2e2e2",
             disabled: "#a9a9a8"
           }
         },
@@ -307,34 +307,34 @@ export default {
       },
       2: {
         default: {
-          background: "#ffffff",
+          background: "#000000",
           foreground: {
-            primary: "#000000",
-            secondary: "#595958",
+            primary: "#ffffff",
+            secondary: "#e2e2e2",
             disabled: "#a9a9a8"
           }
         },
         hover: {
-          background: "#fff5cc",
+          background: "#332900",
           foreground: {
-            primary: "#000000",
-            secondary: "#595958",
+            primary: "#ffffff",
+            secondary: "#e2e2e2",
             disabled: "#a9a9a8"
           }
         },
         active: {
-          background: "#ffe166",
+          background: "#665200",
           foreground: {
-            primary: "#000000",
-            secondary: "#595958",
+            primary: "#ffffff",
+            secondary: "#e2e2e2",
             disabled: "#a9a9a8"
           }
         },
         disabled: {
-          background: "#ffffff",
+          background: "#6f6f6e",
           foreground: {
-            primary: "#000000",
-            secondary: "#595958",
+            primary: "#ffffff",
+            secondary: "#e2e2e2",
             disabled: "#a9a9a8"
           }
         },
@@ -381,10 +381,10 @@ export default {
           }
         },
         disabled: {
-          background: "#e6eeef",
+          background: "#6f6f6e",
           foreground: {
-            primary: "#000000",
-            secondary: "#595958",
+            primary: "#ffffff",
+            secondary: "#e2e2e2",
             disabled: "#a9a9a8"
           }
         },
@@ -636,6 +636,24 @@ export default {
             disabled: "#a9a9a8"
           }
         }
+      },
+      shuttle: {
+        primary: {
+          background: "#ffe166",
+          foreground: {
+            primary: "#000000",
+            secondary: "#595958",
+            disabled: "#a9a9a8"
+          }
+        },
+        secondary: {
+          background: "#b7ad61",
+          foreground: {
+            primary: "#000000",
+            secondary: "#595958",
+            disabled: "#a9a9a8"
+          }
+        }
       }
     },
     zone: {
@@ -741,7 +759,8 @@ export default {
     radius: {
       small: 4,
       regular: 8,
-      circle: 20
+      large: 20,
+      circle: 999
     },
     width: {
       slim: 1,
@@ -774,7 +793,7 @@ export default {
       xSmall: 12,
       small: 16,
       normal: 20,
-      large: 26
+      large: 28
     }
   }
 };

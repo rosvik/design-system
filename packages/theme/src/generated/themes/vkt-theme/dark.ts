@@ -81,7 +81,7 @@ export default {
       },
       accent: {
         0: {
-          background: "#000000",
+          background: "#1a2024",
           foreground: {
             primary: "#ffffff",
             secondary: "#e1e7eb",
@@ -97,10 +97,10 @@ export default {
           }
         },
         2: {
-          background: "#c1f5e1",
+          background: "#002d19",
           foreground: {
-            primary: "#000000",
-            secondary: "#555e65",
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
             disabled: "#a9aeb1"
           }
         },
@@ -265,15 +265,15 @@ export default {
           }
         },
         hover: {
-          background: "#8d9398",
+          background: "#002d19",
           foreground: {
-            primary: "#000000",
-            secondary: "#555e65",
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
             disabled: "#a9aeb1"
           }
         },
         active: {
-          background: "#002d19",
+          background: "#00542b",
           foreground: {
             primary: "#ffffff",
             secondary: "#e1e7eb",
@@ -636,6 +636,24 @@ export default {
             disabled: "#a9aeb1"
           }
         }
+      },
+      shuttle: {
+        primary: {
+          background: "#00763c",
+          foreground: {
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
+            disabled: "#a9aeb1"
+          }
+        },
+        secondary: {
+          background: "#00542b",
+          foreground: {
+            primary: "#ffffff",
+            secondary: "#e1e7eb",
+            disabled: "#a9aeb1"
+          }
+        }
       }
     },
     zone: {
@@ -741,7 +759,8 @@ export default {
     radius: {
       small: 4,
       regular: 8,
-      circle: 20
+      large: 20,
+      circle: 999
     },
     width: {
       slim: 1,
@@ -774,7 +793,7 @@ export default {
       xSmall: 12,
       small: 16,
       normal: 20,
-      large: 26
+      large: 28
     }
   }
 };

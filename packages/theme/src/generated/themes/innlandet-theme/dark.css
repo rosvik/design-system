@@ -40,7 +40,7 @@
   --color-background-neutral-3-foreground-primary: #ffffff;
   --color-background-neutral-3-foreground-secondary: #e3e5e6;
   --color-background-neutral-3-foreground-disabled: #a9aeb1;
-  --color-background-accent-0-background: #37424a;
+  --color-background-accent-0-background: #1a2024;
   --color-background-accent-0-foreground-primary: #ffffff;
   --color-background-accent-0-foreground-secondary: #e3e5e6;
   --color-background-accent-0-foreground-disabled: #a9aeb1;
@@ -296,6 +296,14 @@
   --color-transport-other-secondary-foreground-primary: #000000;
   --color-transport-other-secondary-foreground-secondary: #555e65;
   --color-transport-other-secondary-foreground-disabled: #a9aeb1;
+  --color-transport-shuttle-primary-background: #a2ad00;
+  --color-transport-shuttle-primary-foreground-primary: #000000;
+  --color-transport-shuttle-primary-foreground-secondary: #555e65;
+  --color-transport-shuttle-primary-foreground-disabled: #a9aeb1;
+  --color-transport-shuttle-secondary-background: #909a00;
+  --color-transport-shuttle-secondary-foreground-primary: #000000;
+  --color-transport-shuttle-secondary-foreground-secondary: #555e65;
+  --color-transport-shuttle-secondary-foreground-disabled: #a9aeb1;
   --color-zone-from-background: #a2ad00;
   --color-zone-from-foreground-primary: #000000;
   --color-zone-from-foreground-secondary: #555e65;
@@ -346,7 +354,8 @@
   --color-border-focus-foreground-disabled: #a9aeb1;
   --border-radius-small: 0.25rem;
   --border-radius-regular: 0.5rem;
-  --border-radius-circle: 1.25rem;
+  --border-radius-large: 1.25rem;
+  --border-radius-circle: 62.4375rem;
   --border-width-slim: 0.0625rem;
   --border-width-medium: 0.125rem;
   --typography-ios-font: 'SF Pro Text';
@@ -363,5 +372,5 @@
   --icon-size-x-small: 0.75rem;
   --icon-size-small: 1rem;
   --icon-size-normal: 1.25rem;
-  --icon-size-large: 1.625rem;
+  --icon-size-large: 1.75rem;
 }

@@ -296,8 +296,14 @@
   --color-transport-other-secondary-foreground-primary: #ffffff;
   --color-transport-other-secondary-foreground-secondary: #e1e8eb;
   --color-transport-other-secondary-foreground-disabled: #a7b6be;
-  --color-transport-shuttle-primary: #002677;
-  --color-transport-shuttle-secondary: #002677;
+  --color-transport-shuttle-primary-background: #002677;
+  --color-transport-shuttle-primary-foreground-primary: #000000;
+  --color-transport-shuttle-primary-foreground-secondary: #415058;
+  --color-transport-shuttle-primary-foreground-disabled: #73848c;
+  --color-transport-shuttle-secondary-background: #002677;
+  --color-transport-shuttle-secondary-foreground-primary: #000000;
+  --color-transport-shuttle-secondary-foreground-secondary: #415058;
+  --color-transport-shuttle-secondary-foreground-disabled: #73848c;
   --color-zone-from-background: #c1db70;
   --color-zone-from-foreground-primary: #000000;
   --color-zone-from-foreground-secondary: #415058;

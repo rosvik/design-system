@@ -638,8 +638,22 @@ export default {
         }
       },
       shuttle: {
-        primary: "#002677",
-        secondary: "#002677"
+        primary: {
+          background: "#002677",
+          foreground: {
+            primary: "#000000",
+            secondary: "#415058",
+            disabled: "#73848c"
+          }
+        },
+        secondary: {
+          background: "#002677",
+          foreground: {
+            primary: "#000000",
+            secondary: "#415058",
+            disabled: "#73848c"
+          }
+        }
       }
     },
     zone: {

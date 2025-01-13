@@ -1,5 +1,5 @@
 import merge from 'ts-deepmerge';
-import { ConfigurationOverride, overrideConfig } from './utils/override-config';
+import {ConfigurationOverride, overrideConfig} from './utils/override-config';
 import {
   AtBThemes,
   NfkThemes,
@@ -7,7 +7,7 @@ import {
   TromsThemes,
   InnlandetThemes,
   VKTThemes,
-  FarteThemes
+  FarteThemes,
 } from './generated/themes';
 
 export type Themes<T = Theme> = {
@@ -19,26 +19,27 @@ export type Mode = keyof Themes;
 export type TextColor = keyof Theme['color']['foreground']['dynamic'];
 export type TextColorType = keyof Theme['color']['foreground'];
 
-export type RadiusSizes = keyof Theme['border']['radius']
+export type RadiusSizes = keyof Theme['border']['radius'];
 
-export type BackgroundColors = Theme['color']['background']
-export type BackgroundColorName = keyof Theme['color']['background']
-export type BackgroundColorState<T extends BackgroundColorName> = keyof Theme['color']['background'][T]
+export type BackgroundColors = Theme['color']['background'];
+export type BackgroundColorName = keyof Theme['color']['background'];
+export type BackgroundColorState<T extends BackgroundColorName> =
+  keyof Theme['color']['background'][T];
 
 export type TransportColor<T = ContrastColor> = {
   primary: T;
   secondary: T;
 };
-export type TransportColorName = keyof Theme['color']['transport']
-export type TransportColors = Theme['color']['transport']
-export type TransportColorState = keyof Theme['color']['transport']['city']
+export type TransportColorName = keyof Theme['color']['transport'];
+export type TransportColors = Theme['color']['transport'];
+export type TransportColorState = keyof Theme['color']['transport']['city'];
 
 export type StatusColor<T = ContrastColor> = {
   primary: T;
   secondary: T;
 };
-export type StatusColorName = keyof Theme['color']['status']
-export type StatusColors = Theme['color']['status']
+export type StatusColorName = keyof Theme['color']['status'];
+export type StatusColors = Theme['color']['status'];
 
 export type InteractiveColor<T = ContrastColor> = {
   default: T;
@@ -48,9 +49,9 @@ export type InteractiveColor<T = ContrastColor> = {
   outline: T;
   destructive: T;
 };
-export type InteractiveColorName = keyof Theme['color']['interactive']
-export type InteractiveColors = Theme['color']['interactive']
-export type InteractiveState = keyof InteractiveColor
+export type InteractiveColorName = keyof Theme['color']['interactive'];
+export type InteractiveColors = Theme['color']['interactive'];
+export type InteractiveState = keyof InteractiveColor;
 
 // The colors can be changed, but should follow standard practice as commented:
 export enum GeofencingZoneCodes {
@@ -107,6 +108,7 @@ export interface Theme {
       bike: TransportColor<ContrastColor>;
       car: TransportColor<ContrastColor>;
       other: TransportColor<ContrastColor>;
+      shuttle: TransportColor<ContrastColor>;
     };
 
     status: {
@@ -156,6 +158,7 @@ export interface Theme {
     radius: {
       small: number;
       regular: number;
+      large: number;
       circle: number;
     };
     width: {
@@ -170,7 +173,7 @@ export interface Theme {
       small: number;
       normal: number;
       large: number;
-    }
+    };
   };
 
   spacing: {
@@ -197,7 +200,7 @@ export interface Theme {
       number: number;
     };
   };
-};
+}
 
 export enum ThemeVariant {
   AtB,
@@ -211,13 +214,11 @@ export enum ThemeVariant {
 
 /**
  * Get a theme object for a specific organization in the desired format.
- * 
+ *
  * @param themeVariant Organization
  * @returns Theme object
  */
-export function createThemesFor(
-  themeVariant: ThemeVariant
-): Themes {
+export function createThemesFor(themeVariant: ThemeVariant): Themes {
   switch (themeVariant) {
     case ThemeVariant.AtB:
       return AtBThemes;
@@ -289,10 +290,10 @@ export function createThemes(
  */
 export function createExtendedThemes<T extends {}, M extends Theme = Theme>(
   themes: Themes<M>,
-  extension: { light: T; dark: T },
+  extension: {light: T; dark: T},
 ): {
-  light: Themes<M>['light'] & T,
-  dark: Themes<M>['dark'] & T,
+  light: Themes<M>['light'] & T;
+  dark: Themes<M>['dark'] & T;
 } {
   return {
     light: merge(themes.light, extension.light) as Themes<M>['light'] & T,

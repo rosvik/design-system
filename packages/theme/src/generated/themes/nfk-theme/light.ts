@@ -257,7 +257,7 @@ export default {
       },
       1: {
         default: {
-          background: "#d7e8f8",
+          background: "#9acdda",
           foreground: {
             primary: "#000000",
             secondary: "#555760",
@@ -265,7 +265,7 @@ export default {
           }
         },
         hover: {
-          background: "#85b9ea",
+          background: "#67b4c8",
           foreground: {
             primary: "#000000",
             secondary: "#555760",
@@ -273,7 +273,7 @@ export default {
           }
         },
         active: {
-          background: "#aed0f1",
+          background: "#9acdda",
           foreground: {
             primary: "#000000",
             secondary: "#555760",

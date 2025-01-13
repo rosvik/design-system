@@ -257,7 +257,7 @@ export default {
       },
       1: {
         default: {
-          background: "#d2eae0",
+          background: "#a5d5c0",
           foreground: {
             primary: "#000000",
             secondary: "#595958",

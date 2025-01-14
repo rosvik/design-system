@@ -55,14 +55,6 @@ export default {
           }
         },
         1: {
-          background: "#21282c",
-          foreground: {
-            primary: "#ffffff",
-            secondary: "#e1e8eb",
-            disabled: "#a7b6be"
-          }
-        },
-        2: {
           background: "#161b1d",
           foreground: {
             primary: "#ffffff",
@@ -70,8 +62,16 @@ export default {
             disabled: "#a7b6be"
           }
         },
-        3: {
+        2: {
           background: "#0b0d0f",
+          foreground: {
+            primary: "#ffffff",
+            secondary: "#e1e8eb",
+            disabled: "#a7b6be"
+          }
+        },
+        3: {
+          background: "#000000",
           foreground: {
             primary: "#ffffff",
             secondary: "#e1e8eb",
@@ -81,7 +81,7 @@ export default {
       },
       accent: {
         0: {
-          background: "#161b1d",
+          background: "#0b0d0f",
           foreground: {
             primary: "#ffffff",
             secondary: "#e1e8eb",

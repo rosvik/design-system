@@ -1,6 +1,6 @@
 {
   "name": "@atb-as/generate-assets",
-  "version": "14.0.1",
+  "version": "14.0.2",
   "private": false,
   "type": "commonjs",
   "description": "OOS Design System generate-assets",

@@ -128,7 +128,7 @@
   --color-interactive-1-hover-foreground-primary: #ffffff;
   --color-interactive-1-hover-foreground-secondary: #e1e8eb;
   --color-interactive-1-hover-foreground-disabled: #a7b6be;
-  --color-interactive-1-active-background: #006a80;
+  --color-interactive-1-active-background: #008099;
   --color-interactive-1-active-foreground-primary: #ffffff;
   --color-interactive-1-active-foreground-secondary: #e1e8eb;
   --color-interactive-1-active-foreground-disabled: #a7b6be;
@@ -296,10 +296,10 @@
   --color-transport-other-secondary-foreground-primary: #000000;
   --color-transport-other-secondary-foreground-secondary: #415058;
   --color-transport-other-secondary-foreground-disabled: #73848c;
-  --color-transport-shuttle-primary-background: #ffffff;
-  --color-transport-shuttle-primary-foreground-primary: #000000;
-  --color-transport-shuttle-primary-foreground-secondary: #415058;
-  --color-transport-shuttle-primary-foreground-disabled: #73848c;
+  --color-transport-shuttle-primary-background: #002677;
+  --color-transport-shuttle-primary-foreground-primary: #ffffff;
+  --color-transport-shuttle-primary-foreground-secondary: #e1e8eb;
+  --color-transport-shuttle-primary-foreground-disabled: #a7b6be;
   --color-transport-shuttle-secondary-background: #307fe2;
   --color-transport-shuttle-secondary-foreground-primary: #000000;
   --color-transport-shuttle-secondary-foreground-secondary: #415058;

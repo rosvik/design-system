@@ -231,7 +231,7 @@ export default {
           }
         },
         disabled: {
-          background: "#c2cfd6",
+          background: "#8f9ca3",
           foreground: {
             primary: "#000000",
             secondary: "#415058",
@@ -281,7 +281,7 @@ export default {
           }
         },
         disabled: {
-          background: "#c2cfd6",
+          background: "#8f9ca3",
           foreground: {
             primary: "#000000",
             secondary: "#415058",
@@ -331,7 +331,7 @@ export default {
           }
         },
         disabled: {
-          background: "#c2cfd6",
+          background: "#8f9ca3",
           foreground: {
             primary: "#000000",
             secondary: "#415058",
@@ -381,7 +381,7 @@ export default {
           }
         },
         disabled: {
-          background: "#c2cfd6",
+          background: "#8f9ca3",
           foreground: {
             primary: "#000000",
             secondary: "#415058",

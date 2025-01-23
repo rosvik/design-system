@@ -47,7 +47,7 @@ export default {
     background: {
       neutral: {
         0: {
-          background: "#011622",
+          background: "#012c44",
           foreground: {
             primary: "#ffffff",
             secondary: "#e6e6e6",
@@ -63,7 +63,7 @@ export default {
           }
         },
         2: {
-          background: "#012c44",
+          background: "#011622",
           foreground: {
             primary: "#ffffff",
             secondary: "#e6e6e6",
@@ -71,7 +71,7 @@ export default {
           }
         },
         3: {
-          background: "#014165",
+          background: "#000000",
           foreground: {
             primary: "#ffffff",
             secondary: "#e6e6e6",
@@ -81,7 +81,7 @@ export default {
       },
       accent: {
         0: {
-          background: "#1a1a1a",
+          background: "#011622",
           foreground: {
             primary: "#ffffff",
             secondary: "#e6e6e6",
@@ -257,7 +257,7 @@ export default {
       },
       1: {
         default: {
-          background: "#013149",
+          background: "#014a6d",
           foreground: {
             primary: "#ffffff",
             secondary: "#e6e6e6",
@@ -265,7 +265,7 @@ export default {
           }
         },
         hover: {
-          background: "#011925",
+          background: "#013149",
           foreground: {
             primary: "#ffffff",
             secondary: "#e6e6e6",
@@ -273,7 +273,7 @@ export default {
           }
         },
         active: {
-          background: "#014a6d",
+          background: "#016291",
           foreground: {
             primary: "#ffffff",
             secondary: "#e6e6e6",
@@ -307,7 +307,7 @@ export default {
       },
       2: {
         default: {
-          background: "#011622",
+          background: "#012c44",
           foreground: {
             primary: "#ffffff",
             secondary: "#e6e6e6",
@@ -315,7 +315,7 @@ export default {
           }
         },
         hover: {
-          background: "#012c44",
+          background: "#012133",
           foreground: {
             primary: "#ffffff",
             secondary: "#e6e6e6",

@@ -24,13 +24,10 @@ Options:
 As a local dependency
 
 ```
-
 npm install -D @atb-as/generate-assets
 
 # Run locally installed bin
-
 npx generate-assets -h
-
 ```
 
 ### Import through `ts`/`js`:

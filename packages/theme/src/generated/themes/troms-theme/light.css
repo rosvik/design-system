@@ -96,11 +96,11 @@
   --color-status-error-secondary-foreground-primary: #000000;
   --color-status-error-secondary-foreground-secondary: #555e65;
   --color-status-error-secondary-foreground-disabled: #a9aeb1;
-  --color-interactive-0-default-background: #4f1e06;
+  --color-interactive-0-default-background: #d24600;
   --color-interactive-0-default-foreground-primary: #ffffff;
   --color-interactive-0-default-foreground-secondary: #e3e5e6;
   --color-interactive-0-default-foreground-disabled: #a9aeb1;
-  --color-interactive-0-hover-background: #742700;
+  --color-interactive-0-hover-background: #bf4000;
   --color-interactive-0-hover-foreground-primary: #ffffff;
   --color-interactive-0-hover-foreground-secondary: #e3e5e6;
   --color-interactive-0-hover-foreground-disabled: #a9aeb1;

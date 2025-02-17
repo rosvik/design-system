@@ -207,7 +207,7 @@ export default {
     interactive: {
       0: {
         default: {
-          background: "#4f1e06",
+          background: "#d24600",
           foreground: {
             primary: "#ffffff",
             secondary: "#e3e5e6",
@@ -215,7 +215,7 @@ export default {
           }
         },
         hover: {
-          background: "#742700",
+          background: "#bf4000",
           foreground: {
             primary: "#ffffff",
             secondary: "#e3e5e6",

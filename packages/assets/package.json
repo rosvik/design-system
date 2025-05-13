@@ -1,6 +1,6 @@
 {
   "name": "@atb-as/generate-assets",
-  "version": "17.2.0",
+  "version": "17.2.1",
   "private": false,
   "type": "commonjs",
   "description": "OOS Design System generate-assets",
@@ -28,7 +28,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@atb-as/theme": "^14.0.0",
+    "@atb-as/theme": "^14.0.1",
     "commander": "^9.4.0",
     "fast-glob": "^3.2.11",
     "micromatch": "^4.0.5",

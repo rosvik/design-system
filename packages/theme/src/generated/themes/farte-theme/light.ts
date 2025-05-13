@@ -113,10 +113,10 @@ export default {
           }
         },
         4: {
-          background: "#ffcd00",
+          background: "#000000",
           foreground: {
-            primary: "#000000",
-            secondary: "#595958",
+            primary: "#ffffff",
+            secondary: "#e2e2e2",
             disabled: "#a9a9a8"
           }
         },

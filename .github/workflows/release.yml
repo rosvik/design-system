@@ -15,12 +15,12 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     outputs:
-      generate-assets--tag_name: ${{ steps.release.outputs.generate-assets--tag_name}}
-      generate-assets--release_created: ${{ steps.release.outputs.generate-assets--release_created}}
-      theme--tag_name: ${{ steps.release.outputs.theme--tag_name}}
-      theme--release_created: ${{ steps.release.outputs.theme--release_created}}
-      token--tag_name: ${{ steps.release.outputs.token--tag_name}}
-      token--release_created: ${{ steps.release.outputs.token--release_created}}
+      generate-assets--tag_name: ${{ steps.release.outputs['packages/assets--tag_name'] }}
+      generate-assets--release_created: ${{ steps.release.outputs['packages/assets--release_created'] }}
+      theme--tag_name: ${{ steps.release.outputs['packages/theme--tag_name'] }}
+      theme--release_created: ${{ steps.release.outputs['packages/theme--release_created'] }}
+      token--tag_name: ${{ steps.release.outputs['packages/token--tag_name'] }}
+      token--release_created: ${{ steps.release.outputs['packages/token--release_created'] }}
     steps:
       - uses: googleapis/release-please-action@v4
         id: release
@@ -59,7 +59,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: yarn install --frozen-lockfile
       - run: yarn workspace rosvik-test-theme install --frozen-lockfile
       - run: yarn workspace rosvik-test-theme build
       - run: yarn workspace rosvik-test-theme publish

@@ -1,0 +1,21 @@
+{
+  "include-component-in-tag": true,
+  "include-v-in-tag": true,
+  "tag-separator": "@",
+  "separate-pull-requests": true,
+  "packages": {
+    "packages/assets": {
+      "path": "packages/assets",
+      "release-type": "node"
+    },
+    "packages/theme": {
+      "path": "packages/theme",
+      "release-type": "node"
+    },
+    "packages/token": {
+      "path": "packages/token",
+      "release-type": "node"
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
+}

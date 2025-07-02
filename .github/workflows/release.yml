@@ -15,23 +15,63 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     outputs:
-      release_created: ${{ steps.release.outputs.release_created }}
+      generate-assets--tag_name: ${{ steps.release.outputs.generate-assets--tag_name}}
+      generate-assets--release_created: ${{ steps.release.outputs.generate-assets--release_created}}
+      theme--tag_name: ${{ steps.release.outputs.theme--tag_name}}
+      theme--release_created: ${{ steps.release.outputs.theme--release_created}}
+      token--tag_name: ${{ steps.release.outputs.token--tag_name}}
+      token--release_created: ${{ steps.release.outputs.token--release_created}}
     steps:
       - uses: googleapis/release-please-action@v4
         id: release
         with:
-          release-type: node
-  release:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+      - name: Print release outputs for debugging
+        continue-on-error: true
+        run: |
+          echo "Release outputs:"
+          echo "${{ toJson(steps.release.outputs) }}"
+
+  release-generate-assets:
+    if: ${{needs.release-please.outputs.generate-assets--release_created}}
     runs-on: ubuntu-latest
     needs: release-please
-    if: ${{ needs.release-please.outputs.release_created }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: ./.github/actions/setup-node-env
         with:
-          node-version: 20
-          registry-url: 'https://registry.npmjs.org'
-      - run: yarn install --frozen-lockfile
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          node-version: 22
+          cache-path: packages/assets/node_modules
+          cache-key: "${{hashFiles('packages/assets/package-lock.json')}}"
+          project: packages/assets
+      - run: npm publish --dry-run --workspace packages/assets
+
+  release-theme:
+    if: ${{needs.release-please.outputs.theme--release_created}}
+    runs-on: ubuntu-latest
+    needs: release-please
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-node-env
+        with:
+          node-version: 22
+          cache-path: packages/theme/node_modules
+          cache-key: "${{hashFiles('packages/theme/package-lock.json')}}"
+          project: packages/theme
+      - run: npm publish --dry-run --workspace packages/theme
+
+  release-token:
+    if: ${{needs.release-please.outputs.token--release_created}}
+    runs-on: ubuntu-latest
+    needs: release-please
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-node-env
+        with:
+          node-version: 22
+          cache-path: packages/token/node_modules
+          cache-key: "${{hashFiles('packages/token/package-lock.json')}}"
+          project: packages/token
+      - run: npm publish --dry-run --workspace packages/token

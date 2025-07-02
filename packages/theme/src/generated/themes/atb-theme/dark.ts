@@ -459,7 +459,7 @@ export default {
     transport: {
       city: {
         primary: {
-          background: "#94c20a",
+          background: "#a9d22d",
           foreground: {
             primary: "#000000",
             secondary: "#415058",
@@ -477,7 +477,7 @@ export default {
       },
       region: {
         primary: {
-          background: "#22a8c3",
+          background: "#0095b2",
           foreground: {
             primary: "#000000",
             secondary: "#415058",
@@ -485,7 +485,7 @@ export default {
           }
         },
         secondary: {
-          background: "#47bad1",
+          background: "#0095b2",
           foreground: {
             primary: "#000000",
             secondary: "#415058",
@@ -503,7 +503,7 @@ export default {
           }
         },
         secondary: {
-          background: "#a7b6be",
+          background: "#8f9ca3",
           foreground: {
             primary: "#000000",
             secondary: "#415058",
@@ -521,7 +521,7 @@ export default {
           }
         },
         secondary: {
-          background: "#e08d52",
+          background: "#d97126",
           foreground: {
             primary: "#000000",
             secondary: "#415058",
@@ -531,7 +531,43 @@ export default {
       },
       boat: {
         primary: {
-          background: "#337fcc",
+          background: "#99d9e5",
+          foreground: {
+            primary: "#000000",
+            secondary: "#415058",
+            disabled: "#73848c"
+          }
+        },
+        secondary: {
+          background: "#99d9e5",
+          foreground: {
+            primary: "#000000",
+            secondary: "#415058",
+            disabled: "#73848c"
+          }
+        }
+      },
+      train: {
+        primary: {
+          background: "#cd98cd",
+          foreground: {
+            primary: "#000000",
+            secondary: "#415058",
+            disabled: "#73848c"
+          }
+        },
+        secondary: {
+          background: "#cd98cd",
+          foreground: {
+            primary: "#000000",
+            secondary: "#415058",
+            disabled: "#73848c"
+          }
+        }
+      },
+      scooter: {
+        primary: {
+          background: "#5c99d6",
           foreground: {
             primary: "#000000",
             secondary: "#415058",
@@ -547,7 +583,7 @@ export default {
           }
         }
       },
-      train: {
+      car: {
         primary: {
           background: "#ac53ac",
           foreground: {
@@ -557,43 +593,7 @@ export default {
           }
         },
         secondary: {
-          background: "#bd75bd",
-          foreground: {
-            primary: "#000000",
-            secondary: "#415058",
-            disabled: "#73848c"
-          }
-        }
-      },
-      scooter: {
-        primary: {
-          background: "#c1db70",
-          foreground: {
-            primary: "#000000",
-            secondary: "#415058",
-            disabled: "#73848c"
-          }
-        },
-        secondary: {
-          background: "#c9e085",
-          foreground: {
-            primary: "#000000",
-            secondary: "#415058",
-            disabled: "#73848c"
-          }
-        }
-      },
-      car: {
-        primary: {
-          background: "#bd75bd",
-          foreground: {
-            primary: "#000000",
-            secondary: "#415058",
-            disabled: "#73848c"
-          }
-        },
-        secondary: {
-          background: "#cd98cd",
+          background: "#ac53ac",
           foreground: {
             primary: "#000000",
             secondary: "#415058",
@@ -611,7 +611,7 @@ export default {
           }
         },
         secondary: {
-          background: "#e06c7f",
+          background: "#d7425b",
           foreground: {
             primary: "#000000",
             secondary: "#415058",
@@ -629,7 +629,7 @@ export default {
           }
         },
         secondary: {
-          background: "#a7b6be",
+          background: "#8f9ca3",
           foreground: {
             primary: "#000000",
             secondary: "#415058",

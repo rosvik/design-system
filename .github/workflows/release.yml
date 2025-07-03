@@ -35,9 +35,9 @@ jobs:
           echo "${{ toJson(steps.release.outputs) }}"
 
   release-generate-assets:
-    if: ${{needs.release-please.outputs.generate-assets--release_created}}
     runs-on: ubuntu-latest
     needs: release-please
+    if: ${{needs.release-please.outputs.generate-assets--release_created}}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -50,9 +50,9 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
   release-theme:
-    if: ${{needs.release-please.outputs.theme--release_created}}
     runs-on: ubuntu-latest
     needs: release-please
+    if: ${{needs.release-please.outputs.theme--release_created}}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -65,16 +65,14 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
   release-token:
-    if: ${{needs.release-please.outputs.token--release_created}}
     runs-on: ubuntu-latest
     needs: release-please
+    if: ${{needs.release-please.outputs.token--release_created}}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: yarn workspace rosvik-test-token install --frozen-lockfile
-      - run: yarn workspace rosvik-test-token build
       - run: yarn workspace rosvik-test-token publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

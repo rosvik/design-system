@@ -3,6 +3,14 @@
   "include-v-in-tag": true,
   "tag-separator": "@",
   "separate-pull-requests": true,
+  "release-type": "node",
+  "always-update": true,
+  "bump-minor-pre-major": true,
+  "bump-patch-for-minor-pre-major": true,
+  "skip-changelog": true,
+
+  "bootstrap-sha": "0789cbcc03e3d468652548ba02a954f67d22d79b",
+
   "packages": {
     "packages/assets": {
       "path": "packages/assets",

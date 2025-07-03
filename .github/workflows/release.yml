@@ -47,7 +47,7 @@ jobs:
           node-version: 22
       - run: yarn workspace rosvik-test-generate-assets install --frozen-lockfile
       - run: yarn workspace rosvik-test-generate-assets build
-      - run: npm --workspace packages/assets publish
+      - run: npm --workspace packages/assets publish --access public
 
   release-theme:
     runs-on: ubuntu-latest
@@ -62,7 +62,7 @@ jobs:
           node-version: 22
       - run: yarn workspace rosvik-test-theme install --frozen-lockfile
       - run: yarn workspace rosvik-test-theme build
-      - run: npm --workspace packages/theme publish
+      - run: npm --workspace packages/theme publish --access public
 
   release-token:
     runs-on: ubuntu-latest
@@ -75,4 +75,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm --workspace packages/token publish
+      - run: npm --workspace packages/token publish --access public

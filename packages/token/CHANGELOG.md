@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/rosvik/design-system/compare/rosvik-test-token@v0.1.2...rosvik-test-token@v0.1.3) (2025-07-03)
+
+
+### Features
+
+* update token ([9196f50](https://github.com/rosvik/design-system/commit/9196f50fb30a3dd7664971997a21e676f06a4dc0))
+
 ## [0.1.2](https://github.com/rosvik/design-system/compare/rosvik-test-token@v0.1.1...rosvik-test-token@v0.1.2) (2025-07-03)
 
 

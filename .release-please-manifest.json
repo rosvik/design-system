@@ -1,5 +1,5 @@
 {
   "packages/assets": "17.4.0",
   "packages/theme": "15.0.0",
-  "packages/token": "0.0.3"
+  "packages/token": "0.1.0"
 }

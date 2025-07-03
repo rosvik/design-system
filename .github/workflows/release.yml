@@ -40,10 +40,9 @@ jobs:
     needs: release-please
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup-node-env
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
-          project: packages/assets
       - run: yarn workspace rosvik-test-generate-assets install --frozen-lockfile
       - run: yarn workspace rosvik-test-generate-assets build
       - run: yarn workspace rosvik-test-generate-assets publish
@@ -71,10 +70,9 @@ jobs:
     needs: release-please
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup-node-env
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
-          project: packages/token
       - run: yarn workspace rosvik-test-token install --frozen-lockfile
       - run: yarn workspace rosvik-test-token build
       - run: yarn workspace rosvik-test-token publish

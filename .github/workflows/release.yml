@@ -45,10 +45,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          always-auth: true
       - run: yarn workspace rosvik-test-generate-assets install --frozen-lockfile
       - run: yarn workspace rosvik-test-generate-assets build
-      - run: yarn workspace rosvik-test-generate-assets publish
+      - run: npm --workspace packages/assets publish
 
   release-theme:
     runs-on: ubuntu-latest
@@ -61,10 +60,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          always-auth: true
       - run: yarn workspace rosvik-test-theme install --frozen-lockfile
       - run: yarn workspace rosvik-test-theme build
-      - run: yarn workspace rosvik-test-theme publish
+      - run: npm --workspace packages/theme publish
 
   release-token:
     runs-on: ubuntu-latest
@@ -77,5 +75,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          always-auth: true
-      - run: yarn workspace rosvik-test-token publish
+      - run: npm --workspace packages/token publish

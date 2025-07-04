@@ -38,8 +38,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: release-please
     if: ${{needs.release-please.outputs.generate-assets--release_created}}
-    env:
-      NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -48,14 +46,14 @@ jobs:
           node-version: 22
       - run: yarn workspace rosvik-test-generate-assets install --frozen-lockfile
       - run: yarn workspace rosvik-test-generate-assets build
-      - run: npm --prefix packages/assets publish --access public
+      - run: npm --workspace packages/assets publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
   release-theme:
     runs-on: ubuntu-latest
     needs: release-please
     if: ${{needs.release-please.outputs.theme--release_created}}
-    env:
-      NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -64,18 +62,20 @@ jobs:
           node-version: 22
       - run: yarn workspace rosvik-test-theme install --frozen-lockfile
       - run: yarn workspace rosvik-test-theme build
-      - run: npm --prefix packages/theme publish --access public
+      - run: npm --workspace packages/theme publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
   release-token:
     runs-on: ubuntu-latest
     needs: release-please
     if: ${{needs.release-please.outputs.token--release_created}}
-    env:
-      NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           always-auth: true
           node-version: 22
-      - run: npm --prefix packages/token publish --access public
+      - run: npm --prefix packages/token publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

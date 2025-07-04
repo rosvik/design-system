@@ -1,5 +1,12 @@
 # Changelog
 
+## [15.2.0](https://github.com/rosvik/design-system/compare/rosvik-test-theme@v15.1.0...rosvik-test-theme@v15.2.0) (2025-07-04)
+
+
+### Features
+
+* add registry-url ([24e314b](https://github.com/rosvik/design-system/commit/24e314b2034466a30b6eaae79306658ea57d4d86))
+
 ## [15.1.0](https://github.com/rosvik/design-system/compare/rosvik-test-theme@v15.0.0...rosvik-test-theme@v15.1.0) (2025-07-04)
 
 

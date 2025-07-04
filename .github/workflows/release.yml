@@ -76,6 +76,6 @@ jobs:
         with:
           always-auth: true
           node-version: 22
-      - run: npm --prefix packages/token publish
+      - run: npm --workspace packages/token publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

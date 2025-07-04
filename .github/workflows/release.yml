@@ -44,6 +44,7 @@ jobs:
         with:
           always-auth: true
           node-version: 22
+          registry-url: 'https://registry.npmjs.org'
       - run: yarn workspace rosvik-test-generate-assets install --frozen-lockfile
       - run: yarn workspace rosvik-test-generate-assets build
       - run: npm --workspace packages/assets publish
@@ -60,6 +61,7 @@ jobs:
         with:
           always-auth: true
           node-version: 22
+          registry-url: 'https://registry.npmjs.org'
       - run: yarn workspace rosvik-test-theme install --frozen-lockfile
       - run: yarn workspace rosvik-test-theme build
       - run: npm --workspace packages/theme publish
@@ -76,6 +78,7 @@ jobs:
         with:
           always-auth: true
           node-version: 22
+          registry-url: 'https://registry.npmjs.org'
       - run: npm --workspace packages/token publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

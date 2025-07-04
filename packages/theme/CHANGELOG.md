@@ -1,5 +1,12 @@
 # Changelog
 
+## [15.3.0](https://github.com/rosvik/design-system/compare/rosvik-test-theme@v15.2.0...rosvik-test-theme@v15.3.0) (2025-07-04)
+
+
+### Features
+
+* update ci ([56e6c02](https://github.com/rosvik/design-system/commit/56e6c02fbd5d9d829f31500294553818cd79bebe))
+
 ## [15.2.0](https://github.com/rosvik/design-system/compare/rosvik-test-theme@v15.1.0...rosvik-test-theme@v15.2.0) (2025-07-04)
 
 

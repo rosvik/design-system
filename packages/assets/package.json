@@ -15,6 +15,7 @@
     "files"
   ],
   "scripts": {
+    "clean": "rm -rf lib",
     "build": "tsc && node lib/tools/validate-files",
     "pack": "yarn pack"
   },

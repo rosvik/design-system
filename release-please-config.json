@@ -1,0 +1,25 @@
+{
+  "include-component-in-tag": true,
+  "include-v-in-tag": true,
+  "tag-separator": "@",
+  "separate-pull-requests": true,
+  "release-type": "node",
+  "always-update": true,
+  "bump-minor-pre-major": true,
+  "bump-patch-for-minor-pre-major": true,
+
+  "bootstrap-sha": "0789cbcc03e3d468652548ba02a954f67d22d79b",
+
+  "packages": {
+    "packages/assets": {
+      "path": "packages/assets"
+    },
+    "packages/theme": {
+      "path": "packages/theme"
+    },
+    "packages/token": {
+      "path": "packages/token"
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
+}

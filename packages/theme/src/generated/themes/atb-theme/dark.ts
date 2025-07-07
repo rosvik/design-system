@@ -686,7 +686,8 @@ export default {
         },
         fillOpacity: 0.10000000149011612,
         strokeOpacity: 1,
-        layerIndexWeight: 1
+        layerIndexWeight: 1,
+        lineStyle: "solid"
       },
       slow: {
         color: {
@@ -699,7 +700,8 @@ export default {
         },
         fillOpacity: 0.10000000149011612,
         strokeOpacity: 1,
-        layerIndexWeight: 2
+        layerIndexWeight: 2,
+        lineStyle: "dashed"
       },
       noParking: {
         color: {
@@ -712,7 +714,8 @@ export default {
         },
         fillOpacity: 0.20000000298023224,
         strokeOpacity: 1,
-        layerIndexWeight: 3
+        layerIndexWeight: 3,
+        lineStyle: "solid"
       },
       noEntry: {
         color: {
@@ -725,7 +728,8 @@ export default {
         },
         fillOpacity: 0.30000001192092896,
         strokeOpacity: 1,
-        layerIndexWeight: 5
+        layerIndexWeight: 5,
+        lineStyle: "solid"
       }
     },
     border: {

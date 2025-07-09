@@ -47,7 +47,7 @@ jobs:
           always-auth: true
           node-version: 22
           registry-url: 'https://registry.npmjs.org'
-      - run: yarn workspace @atb-as/generate-assets install --frozen-lockfile
+      - run: yarn workspace @atb-as/generate-assets install --frozen-lockfile --focus
       - run: yarn workspace @atb-as/generate-assets build
       - run: yarn workspace @atb-as/generate-assets publish
 
@@ -64,7 +64,7 @@ jobs:
           always-auth: true
           node-version: 22
           registry-url: 'https://registry.npmjs.org'
-      - run: yarn workspace @atb-as/theme install --frozen-lockfile
+      - run: yarn workspace @atb-as/theme install --frozen-lockfile --focus
       - run: yarn workspace @atb-as/theme build
       - run: yarn workspace @atb-as/theme publish
 

@@ -31,8 +31,7 @@
     "baseUrl": ".",
 
     "paths": {
-      "@atb-as/*/lib": ["packages/*/src"],
-      "@atb-as/theme/lib/*": ["packages/profile/src/*"]
+      "@atb-as/*/lib": ["packages/*/src"]
     }
   },
   "exclude": ["node_modules"],

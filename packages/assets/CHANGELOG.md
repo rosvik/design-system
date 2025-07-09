@@ -1,5 +1,12 @@
 # Changelog
 
+## [17.6.2](https://github.com/rosvik/design-system/compare/generate-assets@v17.6.1...generate-assets@v17.6.2) (2025-07-09)
+
+
+### Bug Fixes
+
+* remove paths from tsconfig ([356d192](https://github.com/rosvik/design-system/commit/356d192e88f95c225dfcc40360d5a5c61d920f26))
+
 ## [17.6.1](https://github.com/rosvik/design-system/compare/generate-assets@v17.6.0...generate-assets@v17.6.1) (2025-07-09)
 
 

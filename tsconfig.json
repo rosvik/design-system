@@ -28,7 +28,11 @@
     "noImplicitAny": true,
 
     "noEmit": false,
-    "baseUrl": "."
+    "baseUrl": ".",
+
+    "paths": {
+      "@atb-as/theme": ["packages/theme/src"],
+    }
   },
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx"]

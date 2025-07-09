@@ -1,5 +1,12 @@
 # Changelog
 
+## [17.6.1](https://github.com/rosvik/design-system/compare/generate-assets@v17.6.0...generate-assets@v17.6.1) (2025-07-09)
+
+
+### Bug Fixes
+
+* bump theme dep ([b926955](https://github.com/rosvik/design-system/commit/b9269555ca9c51a4e395a7dff180d0c7e0848c0b))
+
 ## [17.6.0](https://github.com/rosvik/design-system/compare/generate-assets@v17.5.0...generate-assets@v17.6.0) (2025-07-09)
 
 

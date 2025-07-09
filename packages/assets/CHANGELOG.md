@@ -1,5 +1,12 @@
 # Changelog
 
+## [17.6.4](https://github.com/rosvik/design-system/compare/generate-assets@v17.6.3...generate-assets@v17.6.4) (2025-07-09)
+
+
+### Bug Fixes
+
+* focus ([49ab4ed](https://github.com/rosvik/design-system/commit/49ab4ed39978b37d127fc800944284e305d57699))
+
 ## [17.6.3](https://github.com/rosvik/design-system/compare/generate-assets@v17.6.2...generate-assets@v17.6.3) (2025-07-09)
 
 

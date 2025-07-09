@@ -1,5 +1,12 @@
 # Changelog
 
+## [17.5.1](https://github.com/AtB-AS/design-system/compare/generate-assets@v17.5.0...generate-assets@v17.5.1) (2025-07-09)
+
+
+### Bug Fixes
+
+* remove duplicate folder and fix release build ([#317](https://github.com/AtB-AS/design-system/issues/317)) ([69ef6ab](https://github.com/AtB-AS/design-system/commit/69ef6ab5db0925a06ffd77a039f5ddff1863c4e3))
+
 ## [17.5.0](https://github.com/AtB-AS/design-system/compare/generate-assets@v17.4.0...generate-assets@v17.5.0) (2025-07-09)
 
 

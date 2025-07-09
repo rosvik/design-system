@@ -28,12 +28,7 @@
     "noImplicitAny": true,
 
     "noEmit": false,
-    "baseUrl": ".",
-
-    "paths": {
-      "@atb-as/*/lib": ["packages/*/src"],
-      "@atb-as/theme/lib/*": ["packages/profile/src/*"]
-    }
+    "baseUrl": "."
   },
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx"]

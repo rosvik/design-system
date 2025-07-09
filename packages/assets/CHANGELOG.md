@@ -1,5 +1,12 @@
 # Changelog
 
+## [17.5.2](https://github.com/AtB-AS/design-system/compare/generate-assets@v17.5.1...generate-assets@v17.5.2) (2025-07-09)
+
+
+### Bug Fixes
+
+* lock `@atb-as/theme` to v14.0.1 ([#319](https://github.com/AtB-AS/design-system/issues/319)) ([99b12df](https://github.com/AtB-AS/design-system/commit/99b12df8eec9e908f94c0d4e787626ad33e04007))
+
 ## [17.5.1](https://github.com/AtB-AS/design-system/compare/generate-assets@v17.5.0...generate-assets@v17.5.1) (2025-07-09)
 
 

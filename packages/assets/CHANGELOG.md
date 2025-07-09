@@ -1,5 +1,12 @@
 # Changelog
 
+## [17.6.3](https://github.com/rosvik/design-system/compare/generate-assets@v17.6.2...generate-assets@v17.6.3) (2025-07-09)
+
+
+### Bug Fixes
+
+* paths ([c392572](https://github.com/rosvik/design-system/commit/c3925720456d340d9eb3f7153d6734c4aaea3325))
+
 ## [17.6.2](https://github.com/rosvik/design-system/compare/generate-assets@v17.6.1...generate-assets@v17.6.2) (2025-07-09)
 
 

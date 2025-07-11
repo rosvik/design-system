@@ -1,5 +1,12 @@
 # Changelog
 
+## [18.1.0](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.0.0...generate-assets@v18.1.0) (2025-07-11)
+
+
+### Features
+
+* add outline variants of transport icons ([#323](https://github.com/AtB-AS/design-system/issues/323)) ([d8d0ec1](https://github.com/AtB-AS/design-system/commit/d8d0ec1e6c4fc16a22e3de972d8dd82870fa00c6))
+
 ## [18.0.0](https://github.com/AtB-AS/design-system/compare/generate-assets@v17.5.2...generate-assets@v18.0.0) (2025-07-11)
 
 

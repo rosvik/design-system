@@ -1,5 +1,12 @@
 # Changelog
 
+## [18.1.1](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.1.0...generate-assets@v18.1.1) (2025-07-18)
+
+
+### Bug Fixes
+
+* make privacy icon monochrome ([#326](https://github.com/AtB-AS/design-system/issues/326)) ([c2287e3](https://github.com/AtB-AS/design-system/commit/c2287e398a428022dba05f2399c4ab883ddcdc49))
+
 ## [18.1.0](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.0.0...generate-assets@v18.1.0) (2025-07-11)
 
 

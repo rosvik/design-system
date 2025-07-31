@@ -1,5 +1,12 @@
 # Changelog
 
+## [18.2.0](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.1.1...generate-assets@v18.2.0) (2025-07-31)
+
+
+### Features
+
+* Added new illustrations for ProfileCard ([#329](https://github.com/AtB-AS/design-system/issues/329)) ([7d80a63](https://github.com/AtB-AS/design-system/commit/7d80a6396d7fb7031e14a08f1e50efeab8e41cea))
+
 ## [18.1.1](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.1.0...generate-assets@v18.1.1) (2025-07-18)
 
 

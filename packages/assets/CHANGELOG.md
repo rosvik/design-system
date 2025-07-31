@@ -1,5 +1,14 @@
 # Changelog
 
+## [18.3.0](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.2.0...generate-assets@v18.3.0) (2025-07-31)
+
+
+### Features
+
+* Added common ProfileCardLoggedIn ([d894bed](https://github.com/AtB-AS/design-system/commit/d894bed7e2f62bf6f38e0185cef96c4121006d79))
+* Added ProfileCard images to light common ([d8107d9](https://github.com/AtB-AS/design-system/commit/d8107d9a66af65c6fd52f098b7bae127e530d09d))
+* Added ProfileCardLoggedOut to common ([9d32b33](https://github.com/AtB-AS/design-system/commit/9d32b331286ab5dd5ee779a3dabe9bc97953825f))
+
 ## [18.2.0](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.1.1...generate-assets@v18.2.0) (2025-07-31)
 
 

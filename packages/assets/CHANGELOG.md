@@ -1,5 +1,12 @@
 # Changelog
 
+## [18.3.1](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.3.0...generate-assets@v18.3.1) (2025-08-04)
+
+
+### Bug Fixes
+
+* Swappet loggedIn and Out, and updated colors for other counties ([#332](https://github.com/AtB-AS/design-system/issues/332)) ([6c3930e](https://github.com/AtB-AS/design-system/commit/6c3930ef5861c1a7041cd5b2a707515bf40ce301))
+
 ## [18.3.0](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.2.0...generate-assets@v18.3.0) (2025-07-31)
 
 

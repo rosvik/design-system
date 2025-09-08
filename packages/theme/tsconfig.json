@@ -2,7 +2,8 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "declaration": true,
-    "noEmit": true
+    "noEmit": true,
+    "module": "es2020"
   },
   "exclude": ["node_modules", "lib"],
   "include": ["src", "tools"]

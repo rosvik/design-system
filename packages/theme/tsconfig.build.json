@@ -3,7 +3,8 @@
   "compilerOptions": {
     "declaration": true,
     "outDir": "./lib/",
-    "noEmit": false
+    "noEmit": false,
+    "module": "es2020"
   },
   "exclude": ["node_modules", "lib", "tools"],
   "include": ["src"]

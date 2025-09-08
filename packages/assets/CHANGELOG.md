@@ -1,5 +1,12 @@
 # Changelog
 
+## [18.4.0](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.3.1...generate-assets@v18.4.0) (2025-09-08)
+
+
+### Features
+
+* Add new illustrations for Smart Park & Ride ([#335](https://github.com/AtB-AS/design-system/issues/335)) ([36c85be](https://github.com/AtB-AS/design-system/commit/36c85bec8c353d69523f1fb89fc60ca35c88c13f))
+
 ## [18.3.1](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.3.0...generate-assets@v18.3.1) (2025-08-04)
 
 

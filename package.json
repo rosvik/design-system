@@ -13,7 +13,7 @@
     "atb"
   ],
   "devDependencies": {
-    "typescript": "^4.4.3"
+    "typescript": "^5.1.6"
   },
   "dependencies": {},
   "scripts": {

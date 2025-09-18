@@ -1,5 +1,12 @@
 # Changelog
 
+## [18.5.0](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.4.0...generate-assets@v18.5.0) (2025-09-18)
+
+
+### Features
+
+* Add baby on scooter illustration ([#340](https://github.com/AtB-AS/design-system/issues/340)) ([6708b4f](https://github.com/AtB-AS/design-system/commit/6708b4fb0bd80e091c59885cdb34ee25cdf1077b))
+
 ## [18.4.0](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.3.1...generate-assets@v18.4.0) (2025-09-08)
 
 

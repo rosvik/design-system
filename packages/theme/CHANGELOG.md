@@ -1,5 +1,12 @@
 # Changelog
 
+## [14.2.1](https://github.com/AtB-AS/design-system/compare/theme@v14.2.0...theme@v14.2.1) (2025-10-22)
+
+
+### Bug Fixes
+
+* Add own tsconfig for tools to fix module config ([#348](https://github.com/AtB-AS/design-system/issues/348)) ([a670915](https://github.com/AtB-AS/design-system/commit/a67091591c4e7863fa133722e6cdc7d693249503))
+
 ## [14.2.0](https://github.com/AtB-AS/design-system/compare/theme@v14.1.0...theme@v14.2.0) (2025-10-22)
 
 

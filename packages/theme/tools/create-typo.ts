@@ -1,6 +1,5 @@
 import {writeFile} from 'fs/promises';
-import {fileURLToPath} from 'url';
-import {join, dirname} from 'path';
+import {join} from 'path';
 import {
   createTextTypeStyles,
   FontBook,
@@ -11,8 +10,6 @@ import {
 } from '../src/typography';
 import {indentLine, maybeConvertToRem} from './utils';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 const base = join(__dirname, '../src/generated');
 const cssModule = join(base, 'typography.module.css');
 const regular = join(base, 'typography.css');

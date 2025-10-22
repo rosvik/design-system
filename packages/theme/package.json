@@ -16,9 +16,9 @@
     "clean": "rm -rf lib",
     "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "yarn create-typo && tsc -p tsconfig.build.json && yarn copy-css",
-    "create-typo": "tsx ./tools/create-typo.ts",
+    "create-typo": "tsx --tsconfig tsconfig.tools.json ./tools/create-typo.ts",
     "copy-css": "copyfiles -u 1 \"src/**/*.{css,woff,woff2,ttf,eot,svg,png}\" lib",
-    "fetch-variables": "tsx ./tools/fetch-figma-variables.ts"
+    "fetch-variables": "tsx --tsconfig tsconfig.tools.json ./tools/fetch-figma-variables.ts"
   },
   "devDependencies": {
     "@figma/rest-api-spec": "^0.16.0",

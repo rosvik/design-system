@@ -1,11 +1,10 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "module": "es2020",
     "target": "es2020",
     "moduleResolution": "node",
     "noEmit": true
   },
-  "include": ["tools/**/*"],
-  "exclude": ["node_modules", "lib", "src"]
+  "include": ["./**/*"]
 }

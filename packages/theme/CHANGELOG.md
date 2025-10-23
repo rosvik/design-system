@@ -1,5 +1,12 @@
 # Changelog
 
+## [14.2.2](https://github.com/AtB-AS/design-system/compare/theme@v14.2.1...theme@v14.2.2) (2025-10-23)
+
+
+### Bug Fixes
+
+* Move tools tsconfig ([#351](https://github.com/AtB-AS/design-system/issues/351)) ([2098f74](https://github.com/AtB-AS/design-system/commit/2098f742f43c2918bf6c52ba476d5363b74bc251))
+
 ## [14.2.1](https://github.com/AtB-AS/design-system/compare/theme@v14.2.0...theme@v14.2.1) (2025-10-22)
 
 

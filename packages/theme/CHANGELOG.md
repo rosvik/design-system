@@ -1,5 +1,12 @@
 # Changelog
 
+## [14.3.1](https://github.com/AtB-AS/design-system/compare/theme@v14.3.0...theme@v14.3.1) (2025-10-27)
+
+
+### Bug Fixes
+
+* **typography:** update fontWeight to 600 for headings ([#342](https://github.com/AtB-AS/design-system/issues/342)) ([eabb477](https://github.com/AtB-AS/design-system/commit/eabb4778f518d4dc6f74917cdce4d0e332dc4d95))
+
 ## [14.3.0](https://github.com/AtB-AS/design-system/compare/theme@v14.2.2...theme@v14.3.0) (2025-10-23)
 
 

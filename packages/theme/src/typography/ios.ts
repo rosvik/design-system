@@ -97,7 +97,7 @@ export const iosTextTypeStyles: TextTypeStyles = {
     fontSize: 20,
     lineHeight: 24,
     letterSpacing: -0.31,
-    fontWeight: '700',
+    fontWeight: '600',
   },
   'heading--big': {
     fontSize: 24,
@@ -109,7 +109,7 @@ export const iosTextTypeStyles: TextTypeStyles = {
     fontSize: 32,
     lineHeight: 38,
     letterSpacing: -0.31,
-    fontWeight: 'bold',
+    fontWeight: '600',
   },
   label__uppercase: {
     ...labelBase,

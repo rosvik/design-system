@@ -106,19 +106,19 @@
   --baseTypo-heading--medium-fontSize: 1.25rem;
   --baseTypo-heading--medium-lineHeight: 1.5rem;
   --baseTypo-heading--medium-letterSpacing: 0.03125rem;
-  --baseTypo-heading--medium-fontWeight: bold;
+  --baseTypo-heading--medium-fontWeight: 600;
 
   /* Definitions for heading--big */
   --baseTypo-heading--big-fontSize: 1.5rem;
   --baseTypo-heading--big-lineHeight: 1.75rem;
   --baseTypo-heading--big-letterSpacing: -0.019375rem;
-  --baseTypo-heading--big-fontWeight: bold;
+  --baseTypo-heading--big-fontWeight: 600;
 
   /* Definitions for heading--jumbo */
   --baseTypo-heading--jumbo-fontSize: 2rem;
   --baseTypo-heading--jumbo-lineHeight: 2.375rem;
   --baseTypo-heading--jumbo-letterSpacing: -0.019375rem;
-  --baseTypo-heading--jumbo-fontWeight: bold;
+  --baseTypo-heading--jumbo-fontWeight: 600;
 
   /* Definitions for label__uppercase */
   --baseTypo-label__uppercase-fontSize: 0.625rem;
@@ -239,19 +239,19 @@
   font-size: var(--baseTypo-heading--medium-fontSize, 1.25rem);
   line-height: var(--baseTypo-heading--medium-lineHeight, 1.5rem);
   letter-spacing: var(--baseTypo-heading--medium-letterSpacing, 0.03125rem);
-  font-weight: var(--baseTypo-heading--medium-fontWeight, bold);
+  font-weight: var(--baseTypo-heading--medium-fontWeight, 600);
 }
 .typo-heading--big {
   font-size: var(--baseTypo-heading--big-fontSize, 1.5rem);
   line-height: var(--baseTypo-heading--big-lineHeight, 1.75rem);
   letter-spacing: var(--baseTypo-heading--big-letterSpacing, -0.019375rem);
-  font-weight: var(--baseTypo-heading--big-fontWeight, bold);
+  font-weight: var(--baseTypo-heading--big-fontWeight, 600);
 }
 .typo-heading--jumbo {
   font-size: var(--baseTypo-heading--jumbo-fontSize, 2rem);
   line-height: var(--baseTypo-heading--jumbo-lineHeight, 2.375rem);
   letter-spacing: var(--baseTypo-heading--jumbo-letterSpacing, -0.019375rem);
-  font-weight: var(--baseTypo-heading--jumbo-fontWeight, bold);
+  font-weight: var(--baseTypo-heading--jumbo-fontWeight, 600);
 }
 .typo-label__uppercase {
   font-size: var(--baseTypo-label__uppercase-fontSize, 0.625rem);

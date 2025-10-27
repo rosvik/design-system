@@ -98,19 +98,19 @@ export const androidTextTypeStyles: TextTypeStyles = {
     fontSize: 20,
     lineHeight: 24,
     letterSpacing: 0.5,
-    fontWeight: 'bold',
+    fontWeight: '600',
   },
   'heading--big': {
     fontSize: 24,
     lineHeight: 28,
     letterSpacing: -0.31,
-    fontWeight: 'bold',
+    fontWeight: '600',
   },
   'heading--jumbo': {
     fontSize: 32,
     lineHeight: 38,
     letterSpacing: -0.31,
-    fontWeight: 'bold',
+    fontWeight: '600',
   },
   label__uppercase: {
     ...labelBase,

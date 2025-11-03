@@ -53,14 +53,8 @@ export type InteractiveColorName = keyof Theme['color']['interactive'];
 export type InteractiveColors = Theme['color']['interactive'];
 export type InteractiveState = keyof InteractiveColor;
 
-// The colors can be changed, but should follow standard practice as commented:
-export enum GeofencingZoneCodes {
-  allowed = 'Allowed', // blue
-  slow = 'Slow', // yellow
-  noParking = 'NoParking', // red
-  noEntry = 'NoEntry', // dark/black
-}
-export type GeofencingZoneKeys = keyof typeof GeofencingZoneCodes;
+export type GeofencingZoneCode = 'allowed' | 'slow' | 'noParking' | 'noEntry';
+
 export type GeofencingZoneStyle<T = ContrastColor> = {
   color: T;
   fillOpacity: number;
@@ -72,7 +66,7 @@ export type GeofencingZoneStyle<T = ContrastColor> = {
   layerIndexWeight: number;
 };
 export type GeofencingZoneStyles<T = ContrastColor> = {
-  [GZKey in GeofencingZoneKeys]: GeofencingZoneStyle<T>;
+  [GZCode in GeofencingZoneCode]: GeofencingZoneStyle<T>;
 };
 
 export type ContrastColor = {

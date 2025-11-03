@@ -1,5 +1,12 @@
 # Changelog
 
+## [14.3.2](https://github.com/AtB-AS/design-system/compare/theme@v14.3.1...theme@v14.3.2) (2025-11-03)
+
+
+### Bug Fixes
+
+* standarize name geofencing zone code ([#356](https://github.com/AtB-AS/design-system/issues/356)) ([7cb3411](https://github.com/AtB-AS/design-system/commit/7cb341170068dac852b8f4caa386b0d9db2a37d3))
+
 ## [14.3.1](https://github.com/AtB-AS/design-system/compare/theme@v14.3.0...theme@v14.3.1) (2025-10-27)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [14.4.0](https://github.com/AtB-AS/design-system/compare/theme@v14.3.2...theme@v14.4.0) (2025-11-03)
+
+
+### Features
+
+* **theme:** update design tokens for `atb` ([#358](https://github.com/AtB-AS/design-system/issues/358)) ([2a6b570](https://github.com/AtB-AS/design-system/commit/2a6b570d2d53e3d46f39ac1e98d68a992335487f))
+
 ## [14.3.2](https://github.com/AtB-AS/design-system/compare/theme@v14.3.1...theme@v14.3.2) (2025-11-03)
 
 

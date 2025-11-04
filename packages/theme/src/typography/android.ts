@@ -1,119 +1,107 @@
 import {FontBook, TextStyle, TextTypeStyles} from './types';
 
-const primaryBase: TextStyle = {
-  fontSize: 16,
-  lineHeight: 20,
-  letterSpacing: 0.5,
-};
-const secondaryBase: TextStyle = {
-  fontSize: 14,
-  lineHeight: 20,
-  letterSpacing: 0.25,
-};
-const tertiaryBase: TextStyle = {
+const MEDIUM_WEIGHT = '500';
+const SEMIBOLD_WEIGHT = '600';
+
+const xSmallBase: TextStyle = {
   fontSize: 12,
   lineHeight: 16,
-  letterSpacing: 0.4,
+  letterSpacing: 0.3,
 };
-const labelBase: TextStyle = {
-  fontSize: 10,
-  lineHeight: 16,
-  letterSpacing: 0,
+const smallBase: TextStyle = {
+  fontSize: 14,
+  lineHeight: 18,
+  letterSpacing: 0.25,
+};
+const mediumBase: TextStyle = {
+  fontSize: 16,
+  lineHeight: 20,
+  letterSpacing: 0.1,
+};
+const largeBase: TextStyle = {
+  fontSize: 20,
+  lineHeight: 24,
+  letterSpacing: 0.3,
+};
+const xLargeBase: TextStyle = {
+  fontSize: 24,
+  lineHeight: 28,
+  letterSpacing: 0.3,
+};
+const xxLargeBase: TextStyle = {
+  fontSize: 32,
+  lineHeight: 38,
+  letterSpacing: 0.5,
+};
+const xxxLargeBase: TextStyle = {
+  fontSize: 36,
+  lineHeight: 40,
+  letterSpacing: 0.5,
 };
 
 export const androidFontData: FontBook = {
   main: {
-    url: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap',
+    url: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap',
     fontFamily: `'Roboto', sans-serif`,
   },
 };
 
 export const androidTextTypeStyles: TextTypeStyles = {
-  body__primary: primaryBase,
-  'body__primary--bold': {
-    ...primaryBase,
-    fontWeight: '500',
+  body__m: {
+    ...mediumBase,
   },
-  'body__primary--strike': {
-    ...primaryBase,
-    textDecorationLine: 'line-through',
+  body__m__strong: {
+    ...mediumBase,
+    fontWeight: MEDIUM_WEIGHT,
   },
-  'body__primary--underline': {
-    ...primaryBase,
+  body__m__underline: {
+    ...mediumBase,
     textDecorationLine: 'underline',
   },
-  'body__primary--big': {
-    fontSize: 24,
-    lineHeight: 28,
-    letterSpacing: 0.25,
-  },
-  'body__primary--big--bold': {
-    fontSize: 24,
-    lineHeight: 28,
-    letterSpacing: 0.25,
-    fontWeight: 'bold',
-  },
-  'body__primary--jumbo': {
-    fontSize: 36,
-    lineHeight: 40,
-    letterSpacing: 0.25,
-  },
-  'body__primary--jumbo--bold': {
-    fontSize: 36,
-    lineHeight: 40,
-    letterSpacing: 0.25,
-    fontWeight: 'bold',
-  },
-  body__secondary: secondaryBase,
-  'body__secondary--bold': {
-    ...secondaryBase,
-    fontWeight: '500',
-  },
-  body__tertiary: tertiaryBase,
-  'body__tertiary--bold': {
-    ...tertiaryBase,
-    fontWeight: '500',
-  },
-  'body__tertiary--strike': {
-    ...tertiaryBase,
+  body__m__strike: {
+    ...mediumBase,
     textDecorationLine: 'line-through',
   },
-  'body__tertiary--uppercase': {
-    ...primaryBase,
-    textTransform: 'uppercase',
+  body__s: {
+    ...smallBase,
   },
-  heading__title: {
-    ...primaryBase,
-    fontWeight: 'bold',
+  body__s__strong: {
+    ...smallBase,
+    fontWeight: MEDIUM_WEIGHT,
   },
-  heading__component: {
-    ...primaryBase,
-    fontWeight: '500',
+  body__xs: {
+    ...xSmallBase,
   },
-  heading__paragraph: {
-    ...primaryBase,
-    fontWeight: '500',
+  body__xs__strike: {
+    ...xSmallBase,
+    textDecorationLine: 'line-through',
   },
-  'heading--medium': {
-    fontSize: 20,
-    lineHeight: 24,
-    letterSpacing: 0.5,
-    fontWeight: '600',
+  heading__3xl: {
+    ...xxxLargeBase,
+    fontWeight: SEMIBOLD_WEIGHT,
   },
-  'heading--big': {
-    fontSize: 24,
-    lineHeight: 28,
-    letterSpacing: -0.31,
-    fontWeight: '600',
+  heading__2xl: {
+    ...xxLargeBase,
+    fontWeight: SEMIBOLD_WEIGHT,
   },
-  'heading--jumbo': {
-    fontSize: 32,
-    lineHeight: 38,
-    letterSpacing: -0.31,
-    fontWeight: '600',
+  heading__xl: {
+    ...xLargeBase,
+    fontWeight: SEMIBOLD_WEIGHT,
   },
-  label__uppercase: {
-    ...labelBase,
-    textTransform: 'uppercase',
+  heading__l: {
+    ...largeBase,
+    fontWeight: SEMIBOLD_WEIGHT,
+  },
+  heading__m: {
+    ...mediumBase,
+    fontWeight: SEMIBOLD_WEIGHT,
+  },
+  heading__s: {
+    ...smallBase,
+    fontWeight: SEMIBOLD_WEIGHT,
+  },
+  heading__xs: {
+    ...xSmallBase,
+    fontWeight: SEMIBOLD_WEIGHT,
   },
 };

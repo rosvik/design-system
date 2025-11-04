@@ -1,24 +1,41 @@
 import {FontBook, TextStyle, TextTypeStyles} from './types';
 
-const primaryBase: TextStyle = {
-  fontSize: 16,
-  lineHeight: 20,
-  letterSpacing: -0.31,
-};
-const secondaryBase: TextStyle = {
-  fontSize: 14,
-  lineHeight: 20,
-  letterSpacing: -0.15,
-};
-const tertiaryBase: TextStyle = {
+const SEMIBOLD_WEIGHT = '600';
+
+const xSmallBase: TextStyle = {
   fontSize: 12,
   lineHeight: 16,
   letterSpacing: 0,
 };
-const labelBase: TextStyle = {
-  fontSize: 10,
-  lineHeight: 16,
-  letterSpacing: 0,
+const smallBase: TextStyle = {
+  fontSize: 14,
+  lineHeight: 18,
+  letterSpacing: -0.15,
+};
+const mediumBase: TextStyle = {
+  fontSize: 16,
+  lineHeight: 20,
+  letterSpacing: -0.3,
+};
+const largeBase: TextStyle = {
+  fontSize: 20,
+  lineHeight: 24,
+  letterSpacing: -0.3,
+};
+const xLargeBase: TextStyle = {
+  fontSize: 24,
+  lineHeight: 28,
+  letterSpacing: -0.3,
+};
+const xxLargeBase: TextStyle = {
+  fontSize: 32,
+  lineHeight: 36,
+  letterSpacing: -0.3,
+};
+const xxxLargeBase: TextStyle = {
+  fontSize: 36,
+  lineHeight: 44,
+  letterSpacing: -0.3,
 };
 
 export const iosFontData: FontBook = {
@@ -28,91 +45,61 @@ export const iosFontData: FontBook = {
 };
 
 export const iosTextTypeStyles: TextTypeStyles = {
-  body__primary: primaryBase,
-  'body__primary--bold': {
-    ...primaryBase,
-    fontWeight: '600',
+  body__m: {
+    ...mediumBase,
   },
-  'body__primary--strike': {
-    ...primaryBase,
-    textDecorationLine: 'line-through',
+  body__m__strong: {
+    ...mediumBase,
+    fontWeight: SEMIBOLD_WEIGHT,
   },
-  'body__primary--underline': {
-    ...primaryBase,
+  body__m__underline: {
+    ...mediumBase,
     textDecorationLine: 'underline',
   },
-  'body__primary--big': {
-    fontSize: 24,
-    lineHeight: 28,
-    letterSpacing: 0.41,
-  },
-  'body__primary--big--bold': {
-    fontSize: 24,
-    lineHeight: 28,
-    letterSpacing: 0.41,
-    fontWeight: 'bold',
-  },
-  'body__primary--jumbo': {
-    fontSize: 36,
-    lineHeight: 40,
-    letterSpacing: 0.41,
-  },
-  'body__primary--jumbo--bold': {
-    fontSize: 36,
-    lineHeight: 40,
-    letterSpacing: 0.41,
-    fontWeight: 'bold',
-  },
-  body__secondary: secondaryBase,
-  'body__secondary--bold': {
-    ...secondaryBase,
-    fontWeight: '600',
-  },
-  body__tertiary: tertiaryBase,
-  'body__tertiary--bold': {
-    ...tertiaryBase,
-    fontWeight: '600',
-  },
-  'body__tertiary--strike': {
-    ...tertiaryBase,
+  body__m__strike: {
+    ...mediumBase,
     textDecorationLine: 'line-through',
   },
-  'body__tertiary--uppercase': {
-    ...primaryBase,
-    textTransform: 'uppercase',
+  body__s: {
+    ...smallBase,
   },
-  heading__title: {
-    ...primaryBase,
-    fontWeight: 'bold',
+  body__s__strong: {
+    ...smallBase,
+    fontWeight: SEMIBOLD_WEIGHT,
   },
-  heading__component: {
-    ...primaryBase,
-    fontWeight: '600',
+  body__xs: {
+    ...xSmallBase,
   },
-  heading__paragraph: {
-    ...primaryBase,
-    fontWeight: '600',
+  body__xs__strike: {
+    ...xSmallBase,
+    textDecorationLine: 'line-through',
   },
-  'heading--medium': {
-    fontSize: 20,
-    lineHeight: 24,
-    letterSpacing: -0.31,
-    fontWeight: '600',
+  heading__3xl: {
+    ...xxxLargeBase,
+    fontWeight: SEMIBOLD_WEIGHT,
   },
-  'heading--big': {
-    fontSize: 24,
-    lineHeight: 28,
-    letterSpacing: -0.31,
-    fontWeight: '600',
+  heading__2xl: {
+    ...xxLargeBase,
+    fontWeight: SEMIBOLD_WEIGHT,
   },
-  'heading--jumbo': {
-    fontSize: 32,
-    lineHeight: 38,
-    letterSpacing: -0.31,
-    fontWeight: '600',
+  heading__xl: {
+    ...xLargeBase,
+    fontWeight: SEMIBOLD_WEIGHT,
   },
-  label__uppercase: {
-    ...labelBase,
-    textTransform: 'uppercase',
+  heading__l: {
+    ...largeBase,
+    fontWeight: SEMIBOLD_WEIGHT,
+  },
+  heading__m: {
+    ...mediumBase,
+    fontWeight: SEMIBOLD_WEIGHT,
+  },
+  heading__s: {
+    ...smallBase,
+    fontWeight: SEMIBOLD_WEIGHT,
+  },
+  heading__xs: {
+    ...xSmallBase,
+    fontWeight: SEMIBOLD_WEIGHT,
   },
 };

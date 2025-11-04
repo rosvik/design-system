@@ -1,5 +1,16 @@
 # Changelog
 
+## [15.0.0](https://github.com/AtB-AS/design-system/compare/theme@v14.4.0...theme@v15.0.0) (2025-11-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* update typography names ([#361](https://github.com/AtB-AS/design-system/issues/361))
+
+### Features
+
+* update typography names ([#361](https://github.com/AtB-AS/design-system/issues/361)) ([b7f69f7](https://github.com/AtB-AS/design-system/commit/b7f69f79a6d5049c92bc894e837436bb71a367d2))
+
 ## [14.4.0](https://github.com/AtB-AS/design-system/compare/theme@v14.3.2...theme@v14.4.0) (2025-11-03)
 
 

@@ -2,11 +2,11 @@
 * @rosvik @marius-at-atb
 
 # OMS generated theme
-/packages/theme/src/generated/ @mortennordseth @jonasbrunvoll
+/packages/theme/src/generated/ @mortennordseth @mathiazom
 
 # Troms generated theme
-/packages/theme/src/generated/themes/troms-theme/ @tft-abel @mortennordseth @jonasbrunvoll
-/packages/theme/src/generated/themes-fs/troms-theme/ @tft-abel @mortennordseth @jonasbrunvoll
+/packages/theme/src/generated/themes/troms-theme/ @tft-abel @mortennordseth @mathiazom
+/packages/theme/src/generated/themes-fs/troms-theme/ @tft-abel @mortennordseth @mathiazom
 
 # AtB generated theme
 /packages/theme/src/generated/themes/atb-theme/ @AtB-AS/design

@@ -1,5 +1,12 @@
 # Changelog
 
+## [18.6.0](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.5.1...generate-assets@v18.6.0) (2025-11-10)
+
+
+### Features
+
+* added new flash icons ([#363](https://github.com/AtB-AS/design-system/issues/363)) ([95a626b](https://github.com/AtB-AS/design-system/commit/95a626b8a6dac3dec7e08107cf49efe82ef1c3ce))
+
 ## [18.5.1](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.5.0...generate-assets@v18.5.1) (2025-10-22)
 
 

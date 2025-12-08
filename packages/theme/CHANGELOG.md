@@ -1,5 +1,12 @@
 # Changelog
 
+## [15.0.1](https://github.com/AtB-AS/design-system/compare/theme@v15.0.0...theme@v15.0.1) (2025-12-08)
+
+
+### Bug Fixes
+
+* explicitly set fontWeight for regular text ([#366](https://github.com/AtB-AS/design-system/issues/366)) ([7c862cf](https://github.com/AtB-AS/design-system/commit/7c862cf6c469fd4426912dd52283a84412c1dd98))
+
 ## [15.0.0](https://github.com/AtB-AS/design-system/compare/theme@v14.4.0...theme@v15.0.0) (2025-11-04)
 
 

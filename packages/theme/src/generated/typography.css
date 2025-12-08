@@ -9,6 +9,7 @@
   --baseTypo-body__m-fontSize: 1rem;
   --baseTypo-body__m-lineHeight: 1.25rem;
   --baseTypo-body__m-letterSpacing: 0.00625rem;
+  --baseTypo-body__m-fontWeight: 400;
 
   /* Definitions for body__m__strong */
   --baseTypo-body__m__strong-fontSize: 1rem;
@@ -21,17 +22,20 @@
   --baseTypo-body__m__underline-lineHeight: 1.25rem;
   --baseTypo-body__m__underline-letterSpacing: 0.00625rem;
   --baseTypo-body__m__underline-textDecorationLine: underline;
+  --baseTypo-body__m__underline-fontWeight: 400;
 
   /* Definitions for body__m__strike */
   --baseTypo-body__m__strike-fontSize: 1rem;
   --baseTypo-body__m__strike-lineHeight: 1.25rem;
   --baseTypo-body__m__strike-letterSpacing: 0.00625rem;
   --baseTypo-body__m__strike-textDecorationLine: line-through;
+  --baseTypo-body__m__strike-fontWeight: 400;
 
   /* Definitions for body__s */
   --baseTypo-body__s-fontSize: 0.875rem;
   --baseTypo-body__s-lineHeight: 1.125rem;
   --baseTypo-body__s-letterSpacing: 0.015625rem;
+  --baseTypo-body__s-fontWeight: 400;
 
   /* Definitions for body__s__strong */
   --baseTypo-body__s__strong-fontSize: 0.875rem;
@@ -43,12 +47,14 @@
   --baseTypo-body__xs-fontSize: 0.75rem;
   --baseTypo-body__xs-lineHeight: 1rem;
   --baseTypo-body__xs-letterSpacing: 0.01875rem;
+  --baseTypo-body__xs-fontWeight: 400;
 
   /* Definitions for body__xs__strike */
   --baseTypo-body__xs__strike-fontSize: 0.75rem;
   --baseTypo-body__xs__strike-lineHeight: 1rem;
   --baseTypo-body__xs__strike-letterSpacing: 0.01875rem;
   --baseTypo-body__xs__strike-textDecorationLine: line-through;
+  --baseTypo-body__xs__strike-fontWeight: 400;
 
   /* Definitions for heading__3xl */
   --baseTypo-heading__3xl-fontSize: 2.25rem;
@@ -109,6 +115,7 @@ html {
   font-size: var(--baseTypo-body__m-fontSize, 1rem);
   line-height: var(--baseTypo-body__m-lineHeight, 1.25rem);
   letter-spacing: var(--baseTypo-body__m-letterSpacing, 0.00625rem);
+  font-weight: var(--baseTypo-body__m-fontWeight, 400);
 }
 .typo-body__m__strong {
   font-size: var(--baseTypo-body__m__strong-fontSize, 1rem);
@@ -121,17 +128,20 @@ html {
   line-height: var(--baseTypo-body__m__underline-lineHeight, 1.25rem);
   letter-spacing: var(--baseTypo-body__m__underline-letterSpacing, 0.00625rem);
   text-decoration: var(--baseTypo-body__m__underline-textDecorationLine, underline);
+  font-weight: var(--baseTypo-body__m__underline-fontWeight, 400);
 }
 .typo-body__m__strike {
   font-size: var(--baseTypo-body__m__strike-fontSize, 1rem);
   line-height: var(--baseTypo-body__m__strike-lineHeight, 1.25rem);
   letter-spacing: var(--baseTypo-body__m__strike-letterSpacing, 0.00625rem);
   text-decoration: var(--baseTypo-body__m__strike-textDecorationLine, line-through);
+  font-weight: var(--baseTypo-body__m__strike-fontWeight, 400);
 }
 .typo-body__s {
   font-size: var(--baseTypo-body__s-fontSize, 0.875rem);
   line-height: var(--baseTypo-body__s-lineHeight, 1.125rem);
   letter-spacing: var(--baseTypo-body__s-letterSpacing, 0.015625rem);
+  font-weight: var(--baseTypo-body__s-fontWeight, 400);
 }
 .typo-body__s__strong {
   font-size: var(--baseTypo-body__s__strong-fontSize, 0.875rem);
@@ -143,12 +153,14 @@ html {
   font-size: var(--baseTypo-body__xs-fontSize, 0.75rem);
   line-height: var(--baseTypo-body__xs-lineHeight, 1rem);
   letter-spacing: var(--baseTypo-body__xs-letterSpacing, 0.01875rem);
+  font-weight: var(--baseTypo-body__xs-fontWeight, 400);
 }
 .typo-body__xs__strike {
   font-size: var(--baseTypo-body__xs__strike-fontSize, 0.75rem);
   line-height: var(--baseTypo-body__xs__strike-lineHeight, 1rem);
   letter-spacing: var(--baseTypo-body__xs__strike-letterSpacing, 0.01875rem);
   text-decoration: var(--baseTypo-body__xs__strike-textDecorationLine, line-through);
+  font-weight: var(--baseTypo-body__xs__strike-fontWeight, 400);
 }
 .typo-heading__3xl {
   font-size: var(--baseTypo-heading__3xl-fontSize, 2.25rem);

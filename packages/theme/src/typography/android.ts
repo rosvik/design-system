@@ -1,5 +1,6 @@
 import {FontBook, TextStyle, TextTypeStyles} from './types';
 
+const REGULAR_WEIGHT = '400';
 const MEDIUM_WEIGHT = '500';
 const SEMIBOLD_WEIGHT = '600';
 
@@ -49,6 +50,7 @@ export const androidFontData: FontBook = {
 export const androidTextTypeStyles: TextTypeStyles = {
   body__m: {
     ...mediumBase,
+    fontWeight: REGULAR_WEIGHT,
   },
   body__m__strong: {
     ...mediumBase,
@@ -57,13 +59,16 @@ export const androidTextTypeStyles: TextTypeStyles = {
   body__m__underline: {
     ...mediumBase,
     textDecorationLine: 'underline',
+    fontWeight: REGULAR_WEIGHT,
   },
   body__m__strike: {
     ...mediumBase,
     textDecorationLine: 'line-through',
+    fontWeight: REGULAR_WEIGHT,
   },
   body__s: {
     ...smallBase,
+    fontWeight: REGULAR_WEIGHT,
   },
   body__s__strong: {
     ...smallBase,
@@ -71,10 +76,12 @@ export const androidTextTypeStyles: TextTypeStyles = {
   },
   body__xs: {
     ...xSmallBase,
+    fontWeight: REGULAR_WEIGHT,
   },
   body__xs__strike: {
     ...xSmallBase,
     textDecorationLine: 'line-through',
+    fontWeight: REGULAR_WEIGHT,
   },
   heading__3xl: {
     ...xxxLargeBase,

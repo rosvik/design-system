@@ -742,7 +742,7 @@ export default {
         }
       },
       secondary: {
-        background: "#1a2024",
+        background: "#111518",
         foreground: {
           primary: "#ffffff",
           secondary: "#e1e7eb",

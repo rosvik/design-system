@@ -1,5 +1,13 @@
 # Changelog
 
+## [18.7.0](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.6.0...generate-assets@v18.7.0) (2026-01-19)
+
+
+### Features
+
+* add Apple Pay icon ([#371](https://github.com/AtB-AS/design-system/issues/371)) ([3b6a438](https://github.com/AtB-AS/design-system/commit/3b6a4385f06cf934523407528a82e72942409d12))
+* add custom map illustration for AtB ([#368](https://github.com/AtB-AS/design-system/issues/368)) ([8ebb745](https://github.com/AtB-AS/design-system/commit/8ebb745d563027da0b29d43e147de3d3442fc2d8))
+
 ## [18.6.0](https://github.com/AtB-AS/design-system/compare/generate-assets@v18.5.1...generate-assets@v18.6.0) (2025-11-10)
 
 

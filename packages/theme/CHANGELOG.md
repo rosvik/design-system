@@ -1,5 +1,32 @@
 # Changelog
 
+## [16.0.0](https://github.com/rosvik/design-system/compare/theme@v15.0.1...theme@v16.0.0) (2026-01-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* update typography names ([#361](https://github.com/rosvik/design-system/issues/361))
+
+### Features
+
+* add lineStyle on GeofencingZoneStyle ([#311](https://github.com/rosvik/design-system/issues/311)) ([e0bb7f2](https://github.com/rosvik/design-system/commit/e0bb7f27339f0badcaabf13bc7ff1d828028d65c))
+* **theme:** update design tokens ([#314](https://github.com/rosvik/design-system/issues/314)) ([75558e9](https://github.com/rosvik/design-system/commit/75558e94fad80d6614cf4ddf75f6e3f58283a759))
+* **theme:** update design tokens ([#338](https://github.com/rosvik/design-system/issues/338)) ([2591154](https://github.com/rosvik/design-system/commit/2591154bb4faba716fb94913622ce3e12d83e056))
+* **theme:** update design tokens for `atb` ([#358](https://github.com/rosvik/design-system/issues/358)) ([2a6b570](https://github.com/rosvik/design-system/commit/2a6b570d2d53e3d46f39ac1e98d68a992335487f))
+* **theme:** update design tokens for `vkt` ([#353](https://github.com/rosvik/design-system/issues/353)) ([367668d](https://github.com/rosvik/design-system/commit/367668d91c10504878fb0d78cd99ac846370b3a4))
+* **theme:** update design tokens for `vkt` ([#365](https://github.com/rosvik/design-system/issues/365)) ([4c0262c](https://github.com/rosvik/design-system/commit/4c0262c4ec025b491476d9170541b63e8b910abd))
+* update typography names ([#361](https://github.com/rosvik/design-system/issues/361)) ([b7f69f7](https://github.com/rosvik/design-system/commit/b7f69f79a6d5049c92bc894e837436bb71a367d2))
+
+
+### Bug Fixes
+
+* Add own tsconfig for tools to fix module config ([#348](https://github.com/rosvik/design-system/issues/348)) ([a670915](https://github.com/rosvik/design-system/commit/a67091591c4e7863fa133722e6cdc7d693249503))
+* EmptyIllustration ([#344](https://github.com/rosvik/design-system/issues/344)) ([064b5f2](https://github.com/rosvik/design-system/commit/064b5f2550ac952637c847d582027fb212021c6b))
+* explicitly set fontWeight for regular text ([#366](https://github.com/rosvik/design-system/issues/366)) ([7c862cf](https://github.com/rosvik/design-system/commit/7c862cf6c469fd4426912dd52283a84412c1dd98))
+* Move tools tsconfig ([#351](https://github.com/rosvik/design-system/issues/351)) ([2098f74](https://github.com/rosvik/design-system/commit/2098f742f43c2918bf6c52ba476d5363b74bc251))
+* standarize name geofencing zone code ([#356](https://github.com/rosvik/design-system/issues/356)) ([7cb3411](https://github.com/rosvik/design-system/commit/7cb341170068dac852b8f4caa386b0d9db2a37d3))
+* **typography:** update fontWeight to 600 for headings ([#342](https://github.com/rosvik/design-system/issues/342)) ([eabb477](https://github.com/rosvik/design-system/commit/eabb4778f518d4dc6f74917cdce4d0e332dc4d95))
+
 ## [15.0.1](https://github.com/AtB-AS/design-system/compare/theme@v15.0.0...theme@v15.0.1) (2025-12-08)
 
 
